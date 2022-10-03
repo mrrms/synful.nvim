@@ -42,7 +42,7 @@ M.themes = {
 M.editor = {
   Normal = { fg = colors.fg, bg = colors.bg },
   Visual = { fg = colors.cyan, bg = colors.blue },
-  Pmenu = { fg = colors.lightGreen, bg = color.green }
+  Pmenu = { fg = colors.lightGreen, bg = colors.green }
 }
 
 M.syntax = {
