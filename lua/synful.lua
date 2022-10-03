@@ -33,22 +33,23 @@ local white       = '#C0C0FC'
 
 --> Editor Highlight
 local editor_syntax = {
-  CursorLine   = { bg = bg },
-  Cursor       = { fg = bg_dark, bg = yellow },
-  Directory    = { fg = deep_blue, gui = 'bold' },
-  DiffAdd      = { fg = green },
+  CursorLine   = { bg = bg_dark },
+  Cursor       = { fg = bg_dark, bg = red },
+  Directory    = { fg = blue, gui = 'bold' },
+  Variable     = { fg = white },
+  DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
   EndOfBuffer  = { bg = bg_dark, fg = bg_dark },
-  ErrorMsg     = { fg = heavy_red, gui = 'bold' },
+  ErrorMsg     = { fg = heavy_red },
   VertSplit    = { bg = bg_dark, fg = bg },
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
   SignColumn   = { fg = yellow },
   IncSearch    = { bg = yellow, fg = bg },
   Substitute   = { bg = blue, fg = bg },
-  LineNr       = { fg = fg_dark },
+  LineNr       = { fg = bg },
   CursorLineNr = { fg = fg },
   MatchParen   = { fg = heavy_red, gui = 'bold' },
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
@@ -73,7 +74,7 @@ local editor_syntax = {
   Whitespace   = { bg = yellow }, -- TODO: i don't know where this is
 
   -- git highlighting
-  gitcommitComment        = { fg = fg_dark, gui = 'italic' },
+  gitcommitComment        = { fg = bg_light, gui = 'italic' },
   gitcommitUntracked      = { fg = fg_dark, gui = 'italic' },
   gitcommitDiscarded      = { fg = fg_dark, gui = 'italic' },
   gitcommitSelected       = { fg = fg_dark, gui = 'italic' },
@@ -115,7 +116,7 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Comment   = { fg = fg_dark, gui = 'italic' },
+  Comment   = { fg = bg_light, gui = 'bold,italic' },
   Constant  = { fg = deep_blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = green, gui = 'bold' },
@@ -132,7 +133,7 @@ local code_syntax = {
   Label       = { fg = deep_blue, gui = 'italic' },
   Exception   = { fg = deep_blue, gui = 'italic' },
   Operator    = { fg = deep_blue },
-  Keyword     = { fg = deep_blue },
+  Keyword     = { fg = green, gui = 'bold' },
 
   Include   = { fg = deep_blue },
   Define    = { fg = purple },
