@@ -8,18 +8,18 @@ function M.apply()
 
   -- 1. colorscheme
   for group, colors in pairs(groups.themes) do
-    util._Highlight(group, colors)
+    util.highlight(group, colors)
   end
 
   -- 2. editor
   for editor, highlight in pairs(groups.editor) do
-    util._Highlight(editor, highlight)
+    util.highlight(editor, highlight)
   end
 
   -- 3. link
   -- syntax --> colorscheme groups
   for syntax, highlight in pairs(groups.syntax) do
-    util._Link(syntax, highlight)
+    util.link(syntax, highlight)
   end
 end
 
