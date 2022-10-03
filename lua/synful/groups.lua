@@ -1,9 +1,8 @@
 local M = {}
 
 local colors = {
-  bg = '#06111C',
-  fg = '#C0C0FC',
-
+  bg         = '#06111C',
+  fg         = '#C0C0FC',
   white      = '#FFFFFF',
   grey       = '#444465',
   darkGrey   = '#232333',
@@ -18,8 +17,7 @@ local colors = {
   purple     = '#BB80B3',
   yellow     = '#ebcb8b',
   orange     = '#DB9280',
-
-  none = 'NONE'
+  none       = 'NONE'
 }
 
 M.themes = {
@@ -36,7 +34,7 @@ M.themes = {
   Pink       = { fg = colors.pink },
   Purple     = { fg = colors.purple },
   Yellow     = { fg = colors.yellow },
-  Orange     = { fg = colors.orange },
+  Orange     = { fg = colors.orange }
 }
 
 M.editor = {
