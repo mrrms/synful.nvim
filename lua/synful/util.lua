@@ -12,8 +12,8 @@ M._Highlight = function(group, color)
 end
 
 --> go through the table and link the highlight groups
-M._Link = function(group, highlight)
-  local cmd = 'highlight! link ' .. group .. ' ' .. highlight
+M._Link = function(group, hl)
+  local cmd = "highlight! link " .. group .. ' ' .. hl
   --> print(cmd)
   vim.cmd(cmd)
 end
