@@ -9,26 +9,26 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local bg_darker      = '#121622'
-local bg_dark        = '#1b1e2b'
+local bg_darker      = '#111119'
+local bg_dark        = '#151725'
 local bg             = '#292d3e'
 local bg_light       = '#32374d'
-local bg_lighter     = '#444267'
-local grey           = '#8796b0'
-local red            = '#f07178'
-local heavy_red      = '#ff5370'
-local green          = '#c3e88d'
+local bg_lighter     = '#454575'
+local grey           = '#8585AA'
+local red            = '#9C4F63'
+local heavy_red      = '#D20434'
+local green          = '#5F875F'
 local blue           = '#82aaff'
-local yellow         = '#ffcb6b'
-local orange         = '#f78c6c'
-local purple         = '#c792ea'
-local cyan           = '#89ddff'
-local fg             = '#959dcb'
-local fg_light       = '#a6accd'
+local yellow         = '#ebcb8b'
+local orange         = '#DB9280'
+local purple         = '#BB91ED'
+local cyan           = '#7AA7FF'
+local fg             = '#a8b4f6'
+local fg_light       = '#B5B5E3'
 local fg_dark        = '#676e96'
-local hollow         = '#424760'
-local hollow_lighter = '#30354e'
-local white          = '#ffffff'
+local hollow         = '#565E99'
+local hollow_lighter = '#6C7DD0'
+local white          = '#C0C0FC'
 
 --> Editor Highlight
 local editor_syntax = {
@@ -50,7 +50,7 @@ local editor_syntax = {
   LineNr       = { fg = fg_dark },
   CursorLineNr = { fg = fg },
   MatchParen   = { fg = cyan, gui = 'bold' },
-  Normal       = { fg = fg_light, bg = bg_dark },
+  Normal       = { fg = fg_light, bg = bg_darker },
   NormalFloat  = { bg = bg_darker },
   Pmenu        = { bg = bg_darker, fg = fg_light },
   PmenuSel     = { bg = cyan, fg = bg_lighter, gui = 'bold' },
