@@ -14,7 +14,7 @@ end
 M.link = function(group, highlight)
   local cmd = "highlight! link " .. group .. " " .. highlight
   --> print(cmd)
-  vim.(cmd)
+  vim.cmd(cmd)
 end
 
 return M
