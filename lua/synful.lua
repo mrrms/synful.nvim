@@ -124,14 +124,14 @@ local code_syntax = {
   Boolean   = { fg = orange },
 
   Identifier = { fg = fg_light },
-  Function   = { fg = deep_blue, gui = 'italic' },
+  Function   = { fg = blue, gui = 'bold' },
 
   Statement   = { fg = deep_blue, gui = 'italic' },
   Conditional = { fg = deep_blue, gui = 'italic' },
   Repeat      = { fg = deep_blue, gui = 'italic' },
   Label       = { fg = deep_blue, gui = 'italic' },
   Exception   = { fg = deep_blue, gui = 'italic' },
-  Operator    = { fg = deep_blue },
+  Operator    = { fg = purple },
   Keyword     = { fg = green, gui = 'bold' },
 
   Include   = { fg = deep_blue },
