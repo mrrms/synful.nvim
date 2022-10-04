@@ -66,7 +66,7 @@ local editor_syntax = {
   TabLine      = { bg = bg, fg = fg_light },
   TabLineFill  = { bg = bg, fg = fg_light },
   TabLineSel   = { bg = blue, fg = bg_dark, gui = 'bold' },
-  Title        = { fg = green },
+  Title        = { fg = fg_light },
   Visual       = { fg = white, bg = deep_blue },
   VisualNOS    = { fg = white, bg = deep_blue },
   WarningMsg   = { fg = yellow, gui = 'italic' },
@@ -118,12 +118,12 @@ local code_syntax = {
   Comment   = { fg = hollow, gui = 'bold,italic' },
   Constant  = { fg = deep_blue },
   String    = { fg = light_green, gui = 'italic' },
-  Character = { fg = green, gui = 'bold' },
+  Character = { fg = fg_light, gui = 'bold' },
   Number    = { fg = orange },
   Float     = { fg = orange },
   Boolean   = { fg = orange },
 
-  Identifier = { fg = green },
+  Identifier = { fg = fg_light },
   Function   = { fg = deep_blue, gui = 'italic' },
 
   Statement   = { fg = deep_blue, gui = 'italic' },
