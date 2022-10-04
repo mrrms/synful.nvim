@@ -1,5 +1,4 @@
 -- vim:fdm=marker
-
 --> Highlight Function And Color definitons
 local function highlight(group, styles)
   local gui = styles.gui and 'gui=' .. styles.gui or 'gui=NONE'
@@ -9,9 +8,8 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local bg_darker   = '#111119'
 local bg_dark     = '#151725'
-local bg          = '#292d3e'
+local bg          = '#1b2336'
 local bg_light    = '#32374d'
 local bg_lighter  = '#454575'
 local grey        = '#8585AA'
@@ -33,7 +31,7 @@ local white       = '#C0C0FC'
 
 --> Editor Highlight
 local editor_syntax = {
-  CursorLine   = { bg = bg_dark },
+  CursorLine   = { bg = bg },
   Cursor       = { fg = bg_dark, bg = red },
   Directory    = { fg = blue, gui = 'bold' },
   Variable     = { fg = white },
@@ -47,18 +45,18 @@ local editor_syntax = {
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
   SignColumn   = { fg = yellow },
-  IncSearch    = { bg = yellow, fg = bg },
+  IncSearch    = { bg = purple, fg = bg },
   Substitute   = { bg = blue, fg = bg },
   LineNr       = { fg = bg },
   CursorLineNr = { fg = fg },
   MatchParen   = { fg = heavy_red, gui = 'bold' },
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
   NormalFloat  = {},
-  Pmenu        = { fg = fg_dark },
+  Pmenu        = { fg = fg, bg = bg },
   PmenuSel     = { bg = deep_blue, fg = pale_blue, gui = 'bold' },
   PmenuSbar    = { bg = bg_lighter },
   PmenuThumb   = { bg = fg },
-  Search       = { bg = hollow },
+  Search       = { fg = white, bg = hollow },
   SpecialKey   = { bg = bg_light },
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
@@ -68,8 +66,8 @@ local editor_syntax = {
   TabLineFill  = { bg = bg, fg = fg_light },
   TabLineSel   = { bg = blue, fg = bg_dark, gui = 'bold' },
   Title        = { fg = green },
-  Visual       = { bg = deep_blue },
-  VisualNOS    = { bg = deep_blue },
+  Visual       = { fg = white, bg = deep_blue },
+  VisualNOS    = { fg = white, bg = deep_blue },
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { bg = yellow }, -- TODO: i don't know where this is
 
@@ -116,7 +114,7 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Comment   = { fg = bg_light, gui = 'bold,italic' },
+  Comment   = { fg = hollow, gui = 'bold,italic' },
   Constant  = { fg = deep_blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = green, gui = 'bold' },
