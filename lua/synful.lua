@@ -6,7 +6,7 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local bg_dark     = '#151725'
+local bg_dark     = '#010713' --> a slight reduction in transparency is recommended
 local bg          = '#2A293D'
 local bg_light    = '#444466'
 local bg_lighter  = '#454575'
