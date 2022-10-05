@@ -52,7 +52,7 @@ local editor_syntax = {
   MatchParen   = { fg = rouge, gui = 'bold' },
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
   NormalFloat  = {},
-  Pmenu        = { fg = fg, bg = bg_dark },
+  Pmenu        = { fg = fg },
   PmenuSel     = { bg = bg_lighter, fg = pale_blue },
   PmenuSbar    = { bg = bg },
   PmenuThumb   = { bg = bg_lighter },
