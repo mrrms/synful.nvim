@@ -9,7 +9,7 @@ local function highlight(group, styles)
 end
 
 local bg_dark     = '#151725'
-local bg          = '#1b2336'
+local bg          = '#2A293D'
 local bg_light    = '#444466'
 local bg_lighter  = '#454575'
 local grey        = '#8585AA'
@@ -73,6 +73,7 @@ local editor_syntax = {
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
   FloatBorder  = { fg = bg_light },
+  Constructor  = { fg = fg },
 
   -- git highlighting
   gitcommitComment        = { fg = bg_light, gui = 'italic' },
@@ -127,7 +128,7 @@ local code_syntax = {
   Command   = { fg = blue },
   Noise     = { fg = pink },
 
-  Identifier = { fg = pale_blue },
+  Identifier = { fg = fg },
   Function   = { fg = white, gui = 'bold' },
 
   Repeat      = { fg = green },
