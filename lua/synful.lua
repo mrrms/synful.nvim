@@ -1,4 +1,4 @@
--- vim:fdm=marker
+--> vim:fdm=marker
 --> Highlight Function And Color definitons
 local function highlight(group, styles)
   local gui = styles.gui and 'gui=' .. styles.gui or 'gui=NONE'
@@ -211,6 +211,7 @@ local lang_syntax = {
   zshCommands        = { fg = blue },
   zshOptStart        = { fg = blue, gui = 'italic' },
   zshOption          = { fg = blue, gui = 'italic' },
+  zshFunction        = { fg = yellow, gui = 'italic,bold' },
   zshNumber          = code_syntax.Number,
   zshSubst           = { fg = yellow },
   zshSubstDelim      = { fg = blue },
