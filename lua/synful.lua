@@ -135,7 +135,7 @@ local code_syntax = {
   Label       = { fg = blue, gui = 'italic' },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = bg_lighter },
-  Keyword     = { fg = green, gui = 'bold' },
+  Keyword     = { fg = blue, gui = 'bold' },
 
   Include   = { fg = blue },
   Define    = { fg = blue },
@@ -153,7 +153,7 @@ local code_syntax = {
   Tag            = { fg = orange },
   SpecialComment = { fg = fg_dark, gui = 'bold' },
   Debug          = {},
-  Delimiter      = {},
+  Delimiter      = { fg = bg_lighter },
 
   Ignore     = {},
   Underlined = { gui = 'underline' },
@@ -191,7 +191,7 @@ local lang_syntax = {
   luaFuncCall       = { fg = blue },
   luaFuncName       = { fg = blue },
   luaBuiltIn        = { fg = blue },
-  luaLocal          = { fg = purple },
+  luaLocal          = { fg = green, gui = 'bold' },
   luaSpecialValue   = { fg = purple },
   luaStatement      = { fg = purple },
   luaFunction       = { fg = blue, gui = 'italic' },
