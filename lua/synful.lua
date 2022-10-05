@@ -211,7 +211,7 @@ local lang_syntax = {
   zshCommands        = { fg = blue },
   zshOptStart        = { fg = blue, gui = 'italic' },
   zshOption          = { fg = blue, gui = 'italic' },
-  zshFunction        = { fg = yellow, gui = 'italic,bold' },
+  zshFunction        = { fg = yellow, gui = 'italic' },
   zshNumber          = code_syntax.Number,
   zshSubst           = { fg = yellow },
   zshSubstDelim      = { fg = blue },
