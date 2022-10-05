@@ -36,7 +36,7 @@ local editor_syntax = {
   CursorLine   = { bg = bg_light },
   CursorLineNr = { fg = fg },
   Directory    = { fg = blue, gui = 'bold' },
-  variable     = { fg = blue },
+  variable     = { fg = fg_light },
   field        = { fg = white },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
@@ -73,7 +73,7 @@ local editor_syntax = {
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
   FloatBorder  = { fg = bg_light },
-  Constructor  = { fg = fg },
+  Constructor  = { fg = fg_light },
 
   -- git highlighting
   gitcommitComment        = { fg = bg_light, gui = 'italic' },
