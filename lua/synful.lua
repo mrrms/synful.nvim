@@ -10,11 +10,14 @@ end
 
 local bg_dark     = '#151725'
 local bg          = '#1b2336'
-local bg_light    = '#32374d'
+local bg_light    = '#444466'
 local bg_lighter  = '#454575'
 local grey        = '#8585AA'
+local hollow      = '#565E99'
+local fg_dark     = '#676e96'
 local red         = '#9C4F63'
-local heavy_red   = '#D20434'
+local pink        = '#AF749C'
+local rouge       = '#D20434'
 local green       = '#5F875F'
 local light_green = '#96C0C0'
 local pale_blue   = '#7AA7FF'
@@ -25,32 +28,30 @@ local orange      = '#DB9280'
 local purple      = '#BB91ED'
 local fg          = '#a8b4f6'
 local fg_light    = '#B5B5E3'
-local fg_dark     = '#676e96'
-local hollow      = '#565E99'
 local white       = '#C0C0FC'
 
 --> Editor Highlight
 local editor_syntax = {
-  CursorLine   = { bg = bg },
   Cursor       = { fg = bg_dark, bg = red },
+  CursorLine   = { bg = bg_light },
+  CursorLineNr = { fg = fg },
   Directory    = { fg = blue, gui = 'bold' },
-  variable     = { fg = white },
+  Variable     = { fg = blue },
   field        = { fg = white },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
   EndOfBuffer  = { bg = bg_dark, fg = bg_dark },
-  ErrorMsg     = { fg = heavy_red },
+  ErrorMsg     = { fg = rouge },
   VertSplit    = { bg = bg_dark, fg = bg },
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
   SignColumn   = { fg = yellow },
   IncSearch    = { bg = purple, fg = bg },
   Substitute   = { bg = blue, fg = bg },
-  LineNr       = { fg = bg },
-  CursorLineNr = { fg = fg },
-  MatchParen   = { fg = heavy_red, gui = 'bold' },
+  LineNr       = { fg = bg_lighter },
+  MatchParen   = { fg = rouge, gui = 'bold' },
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = bg },
@@ -70,7 +71,8 @@ local editor_syntax = {
   Visual       = { fg = white, bg = deep_blue },
   VisualNOS    = { fg = white, bg = deep_blue },
   WarningMsg   = { fg = yellow, gui = 'italic' },
-  Whitespace   = { bg = yellow }, -- TODO: i don't know where this is
+  Whitespace   = { fg = pale_blue },
+  FloatBorder  = { fg = bg_light },
 
   -- git highlighting
   gitcommitComment        = { fg = bg_light, gui = 'italic' },
@@ -116,31 +118,33 @@ end
 --> Vim Default Code Syntax
 local code_syntax = {
   Comment   = { fg = hollow, gui = 'bold,italic' },
-  Constant  = { fg = deep_blue },
+  Constant  = { fg = blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = fg_light, gui = 'bold' },
-  Number    = { fg = orange },
-  Float     = { fg = orange },
-  Boolean   = { fg = orange },
+  Number    = { fg = purple },
+  Float     = { fg = purple },
+  Boolean   = { fg = purple },
+  Command   = { fg = blue },
+  Noise     = { fg = pink },
 
-  Identifier = { fg = fg_light },
-  Function   = { fg = blue, gui = 'bold' },
+  Identifier = { fg = pink },
+  Function   = { fg = white, gui = 'bold' },
 
-  Statement   = { fg = deep_blue, gui = 'italic' },
-  Conditional = { fg = deep_blue, gui = 'italic' },
-  Repeat      = { fg = deep_blue, gui = 'italic' },
-  Label       = { fg = deep_blue, gui = 'italic' },
-  Exception   = { fg = deep_blue, gui = 'italic' },
-  Operator    = { fg = purple },
+  Repeat      = { fg = green },
+  Statement   = { fg = light_green, gui = 'italic' },
+  Conditional = { fg = blue, gui = 'italic' },
+  Label       = { fg = blue, gui = 'italic' },
+  Exception   = { fg = blue, gui = 'italic' },
+  Operator    = { fg = bg_lighter },
   Keyword     = { fg = green, gui = 'bold' },
 
-  Include   = { fg = deep_blue },
-  Define    = { fg = purple },
+  Include   = { fg = blue },
+  Define    = { fg = blue },
   Macro     = { fg = purple },
   PreProc   = { fg = yellow },
   PreCondit = { fg = yellow },
 
-  Type         = { fg = yellow },
+  Type         = { fg = green },
   StorageClass = { fg = yellow },
   Structure    = { fg = yellow },
   Typedef      = { fg = yellow },
@@ -154,8 +158,8 @@ local code_syntax = {
 
   Ignore     = {},
   Underlined = { gui = 'underline' },
-  Error      = { fg = heavy_red },
-  Todo       = { fg = purple, gui = 'bold' },
+  Error      = { fg = rouge },
+  Todo       = { fg = pale_blue, gui = 'bold' },
 }
 
 for group, styles in pairs(code_syntax) do
@@ -169,7 +173,7 @@ local plugin_syntax = {
   GitGutterDelete       = { fg = red },
   GitGutterChangeDelete = { fg = orange },
   diffAdded             = { fg = green },
-  diffRemoved           = { fg = heavy_red },
+  diffRemoved           = { fg = rouge },
 }
 
 for group, styles in pairs(plugin_syntax) do
@@ -227,31 +231,31 @@ local lang_syntax = {
 
   -- javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = blue, gui = 'italic' },
-  jsFuncName            = { fg = blue },
+  jsFuncName            = { fg = pink, gui = 'bold' },
   jsImport              = { fg = blue, gui = 'italic' },
   jsFrom                = { fg = blue, gui = 'italic' },
   jsStorageClass        = { fg = purple },
   jsAsyncKeyword        = { fg = blue, gui = 'italic' },
   jsForAwait            = { fg = blue, gui = 'italic' },
-  jsArrowFunction       = { fg = purple },
-  jsReturn              = { fg = purple },
-  jsFuncCall            = { fg = blue },
+  jsArrowFunction       = { fg = bg_light },
+  jsReturn              = { fg = green },
+  jsFuncCall            = { fg = fg },
+  jsFuncBlock           = { fg = fg },
   jsFuncBraces          = { fg = bg_light },
   jsExport              = { fg = blue, gui = 'italic' },
-  jsGlobalObjects       = { fg = yellow },
-  jsxTagName            = { fg = red },
-  jsxComponentName      = { fg = yellow },
-  jsxAttrib             = { fg = purple },
+  jsGlobalObjects       = { fg = green },
+  jsxTagName            = { fg = blue },
+  jsxComponentName      = { fg = blue },
+  jsxAttrib             = { fg = pale_blue },
   jsxBraces             = { fg = bg_light },
-  jsTemplateBraces      = { fg = bg_light },
+  jsTemplateBraces      = { fg = red },
   jsFuncParens          = { fg = bg_light },
   jsDestructuringBraces = { fg = bg_light },
   jsObjectBraces        = { fg = bg_light },
   jsObjectKey           = { fg = pale_blue },
   jsObjectShorthandProp = { fg = fg_light },
-  jsNull                = { fg = orange },
+  jsNull                = { fg = purple },
 
-  typescriptOperator          = { fg = blue },
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
   typescriptBraces            = { fg = bg_light },
@@ -268,8 +272,8 @@ local lang_syntax = {
   typescriptStringMethod      = { fg = blue },
   typescriptTypeReference     = { fg = yellow },
   typescriptObjectLabel       = { fg = red },
-  typescriptParens            = { fg = bg_light },
-  typescriptTypeBrackets      = { fg = blue },
+  typescriptParens            = { fg = bg_lighter },
+  typescriptTypeBrackets      = { fg = bg_lighter },
   typescriptXHRMethod         = { fg = blue },
   typescriptResponseProp      = { fg = blue },
   typescriptBOMLocationMethod = { fg = blue },
