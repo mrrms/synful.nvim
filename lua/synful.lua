@@ -31,11 +31,11 @@ local white       = '#C0C0FC'
 --> Editor Highlight
 local editor_syntax = {
   Cursor       = { fg = bg_dark, bg = red },
-  CursorLine   = { bg = bg_lighter },
+  CursorLine   = { bg = bg },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
-  Variable     = { fg = fg_light },
-  Field        = { fg = fg_light },
+  variable     = { fg = fg_light },
+  field        = { fg = fg_light },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
@@ -129,7 +129,7 @@ local code_syntax = {
   Identifier = { fg = fg },
   Function   = { fg = white, gui = 'bold' },
 
-  Repeat      = { fg = green },
+  Repeat      = { fg = green, gui = 'bold' },
   Statement   = { fg = light_green, gui = 'italic' },
   Conditional = { fg = blue, gui = 'italic' },
   Label       = { fg = blue, gui = 'italic' },
@@ -168,7 +168,7 @@ end
 --> Plugin Highlight Groups
 local plugin_syntax = {
   GitGutterAdd          = { fg = green },
-  GitGutterChange       = { fg = yellow },
+  GitGutterChange       = { fg = pale_blue },
   GitGutterDelete       = { fg = red },
   GitGutterChangeDelete = { fg = orange },
   diffAdded             = { fg = green },
@@ -258,6 +258,9 @@ local lang_syntax = {
 
   --> telescope
   TelescopeBorder = { fg = bg_light },
+
+  --> cmp
+  CmpCompletionBorder = { fg = bg_light },
 
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
