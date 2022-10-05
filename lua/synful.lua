@@ -1,5 +1,3 @@
---> vim:fdm=marker
---> Highlight Function And Color definitons
 local function highlight(group, styles)
   local gui = styles.gui and 'gui=' .. styles.gui or 'gui=NONE'
   local sp = styles.sp and 'guisp=' .. styles.sp or 'guisp=NONE'
@@ -33,17 +31,17 @@ local white       = '#C0C0FC'
 --> Editor Highlight
 local editor_syntax = {
   Cursor       = { fg = bg_dark, bg = red },
-  CursorLine   = { bg = bg },
-  CursorLineNr = { fg = fg },
+  CursorLine   = { bg = bg_lighter },
+  CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
-  variable     = { fg = fg_light },
-  field        = { fg = white },
+  Variable     = { fg = fg_light },
+  Field        = { fg = fg_light },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
-  EndOfBuffer  = { bg = bg_dark, fg = bg_dark },
   ErrorMsg     = { fg = rouge },
+  EndOfBuffer  = { bg = bg_dark, fg = bg_dark },
   VertSplit    = { bg = bg_dark, fg = bg },
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
@@ -55,9 +53,9 @@ local editor_syntax = {
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = bg },
-  PmenuSel     = { bg = deep_blue, fg = pale_blue, gui = 'bold' },
-  PmenuSbar    = { bg = bg_lighter },
-  PmenuThumb   = { bg = fg },
+  PmenuSel     = { bg = pink, fg = fg },
+  PmenuSbar    = { bg = bg },
+  PmenuThumb   = { bg = bg_lighter },
   Search       = { fg = white, bg = hollow },
   SpecialKey   = { bg = bg_light },
   SpellBad     = { gui = 'underline', sp = red },
@@ -75,7 +73,7 @@ local editor_syntax = {
   FloatBorder  = { fg = bg_light },
   Constructor  = { fg = fg_light },
 
-  -- git highlighting
+  --> git highlighting
   gitcommitComment        = { fg = bg_light, gui = 'italic' },
   gitcommitUntracked      = { fg = fg_dark, gui = 'italic' },
   gitcommitDiscarded      = { fg = fg_dark, gui = 'italic' },
@@ -98,7 +96,7 @@ local editor_syntax = {
   gitcommitHeader         = {},
   gitcommitFile           = {},
 
-  -- User dependent groups, probably useless to change the default:
+  --> User dependent groups
   Conceal      = {},
   ModeMsg      = {},
   MsgArea      = {},
@@ -258,6 +256,9 @@ local lang_syntax = {
   jsObjectShorthandProp = { fg = fg_light },
   jsNull                = { fg = purple },
 
+  --> telescope
+  TelescopeBorder = { fg = bg_light },
+
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
   typescriptBraces            = { fg = bg_light },
@@ -301,11 +302,11 @@ vim.g.terminal_color_6          = blue
 vim.g.terminal_color_7          = fg
 vim.g.terminal_color_8          = grey
 vim.g.terminal_color_9          = red
-vim.g.terminal_color_10         = green
+vim.g.terminal_color_10         = light_green
 vim.g.terminal_color_11         = orange
 vim.g.terminal_color_12         = blue
 vim.g.terminal_color_13         = purple
 vim.g.terminal_color_14         = blue
 vim.g.terminal_color_15         = white
-vim.g.terminal_color_background = bg_dark
+vim.g.terminal_color_background = bg_light --> whoa whoa whoa
 vim.g.terminal_color_foreground = fg_light
