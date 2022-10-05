@@ -36,7 +36,7 @@ local editor_syntax = {
   CursorLine   = { bg = bg_light },
   CursorLineNr = { fg = fg },
   Directory    = { fg = blue, gui = 'bold' },
-  Variable     = { fg = blue },
+  variable     = { fg = blue },
   field        = { fg = white },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
@@ -127,7 +127,7 @@ local code_syntax = {
   Command   = { fg = blue },
   Noise     = { fg = pink },
 
-  Identifier = { fg = pink },
+  Identifier = { fg = pale_blue },
   Function   = { fg = white, gui = 'bold' },
 
   Repeat      = { fg = green },
