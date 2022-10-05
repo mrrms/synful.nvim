@@ -33,7 +33,7 @@ local white       = '#C0C0FC'
 --> Editor Highlight
 local editor_syntax = {
   Cursor       = { fg = bg_dark, bg = red },
-  CursorLine   = { bg = bg_light },
+  CursorLine   = { bg = bg },
   CursorLineNr = { fg = fg },
   Directory    = { fg = blue, gui = 'bold' },
   variable     = { fg = fg_light },
