@@ -21,7 +21,7 @@ local light_green = '#96C0C0'
 local pale_blue   = '#7AA7FF'
 local blue        = '#6C7DD0'
 local deep_blue   = '#445599'
-local yellow      = '#ebcb8b'
+local yellow      = '#f2dcd3'
 local orange      = '#DB9280'
 local purple      = '#BB91ED'
 local fg          = '#a8b4f6'
@@ -34,7 +34,7 @@ local editor_syntax = {
   CursorLine   = { bg = bg },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
-  variable     = { fg = fg_light },
+  Variable     = { fg = fg_light },
   field        = { fg = fg_light },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
@@ -72,6 +72,8 @@ local editor_syntax = {
   Whitespace   = { fg = pale_blue },
   FloatBorder  = { fg = bg_light },
   Constructor  = { fg = fg_light },
+  Builtin      = { fg = fg_light },
+  Return       = { fg = green, gui = 'bold' },
 
   --> git highlighting
   gitcommitComment        = { fg = bg_light, gui = 'italic' },
