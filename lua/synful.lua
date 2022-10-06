@@ -6,10 +6,10 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local bg          = '#2A293D'
-local bg_dark     = '#0F1521'
-local bg_light    = '#444466'
-local bg_lighter  = '#454575'
+local zero_dark   = '#0F1521'
+local deep_blue   = '#151D2D'
+local dead_grey   = '#454575'
+local bruise      = '#2A293D'
 local grey        = '#8585AA'
 local hollow      = '#565E99'
 local fg_dark     = '#676e96'
@@ -20,7 +20,6 @@ local green       = '#5F875F'
 local light_green = '#96C0C0'
 local pale_blue   = '#7AA7FF'
 local blue        = '#6C7DD0'
-local deep_blue   = '#445599'
 local yellow      = '#f2dcd3'
 local orange      = '#DB9280'
 local purple      = '#BB91ED'
@@ -30,8 +29,8 @@ local white       = '#C0C0FC'
 
 --> Editor Highlight
 local editor_syntax = {
-  Cursor       = { fg = bg_dark, bg = red },
-  CursorLine   = { bg = bg_dark },
+  Cursor       = { fg = zero_dark, bg = red },
+  CursorLine   = { bg = deep_blue },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
   Variable     = { fg = fg_light },
@@ -41,33 +40,33 @@ local editor_syntax = {
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
   ErrorMsg     = { fg = rouge },
-  EndOfBuffer  = { fg = bg_dark, bg = bg_dark, },
-  VertSplit    = { bg = bg_dark, fg = bg },
+  EndOfBuffer  = { fg = zero_dark, bg = zero_dark, },
+  VertSplit    = { bg = zero_dark, fg = bruise },
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
   SignColumn   = { fg = yellow },
-  IncSearch    = { bg = purple, fg = bg },
-  Substitute   = { bg = blue, fg = bg },
-  LineNr       = { fg = bg_lighter },
+  IncSearch    = { bg = purple, fg = bruise },
+  Substitute   = { bg = blue, fg = bruise },
+  LineNr       = { fg = dead_grey },
   MatchParen   = { fg = rouge, gui = 'bold' },
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
   NormalFloat  = {},
-  Pmenu        = { fg = fg },
-  PmenuSel     = { bg = bg_lighter, fg = pale_blue },
-  PmenuSbar    = { bg = bg },
-  PmenuThumb   = { bg = bg_lighter },
+  Pmenu        = { fg = fg, bg = zero_dark },
+  PmenuSel     = { fg = yellow, bg = green },
+  PmenuSbar    = { bg = bruise },
+  PmenuThumb   = { bg = dead_grey },
   Search       = { fg = white, bg = hollow },
   SpecialKey   = { bg = bg_light },
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
   SpellLocal   = { gui = 'underline', sp = orange },
   SpellRare    = { gui = 'underline', sp = blue },
-  TabLine      = { bg = bg, fg = fg_light },
-  TabLineFill  = { bg = bg, fg = fg_light },
-  TabLineSel   = { bg = blue, fg = bg_dark, gui = 'bold' },
+  TabLine      = { bg = bruise, fg = fg_light },
+  TabLineFill  = { bg = bruise, fg = fg_light },
+  TabLineSel   = { bg = blue, fg = zero_dark, gui = 'bold' },
   Title        = { fg = fg_light },
-  Visual       = { fg = white, bg = deep_blue },
-  VisualNOS    = { fg = white, bg = deep_blue },
+  Visual       = { fg = white, bg = blue },
+  VisualNOS    = { fg = white, bg = blue },
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
   FloatBorder  = { fg = bg_light },
@@ -136,7 +135,7 @@ local code_syntax = {
   Conditional = { fg = blue, gui = 'italic' },
   Label       = { fg = blue, gui = 'italic' },
   Exception   = { fg = blue, gui = 'italic' },
-  Operator    = { fg = bg_lighter },
+  Operator    = { fg = dead_grey },
   Keyword     = { fg = blue, gui = 'bold' },
 
   Include   = { fg = blue },
@@ -155,7 +154,7 @@ local code_syntax = {
   Tag            = { fg = orange },
   SpecialComment = { fg = fg_dark, gui = 'bold' },
   Debug          = {},
-  Delimiter      = { fg = bg_lighter },
+  Delimiter      = { fg = dead_grey },
 
   Ignore     = {},
   Underlined = { gui = 'underline' },
@@ -280,8 +279,8 @@ local lang_syntax = {
   typescriptStringMethod      = { fg = blue },
   typescriptTypeReference     = { fg = yellow },
   typescriptObjectLabel       = { fg = red },
-  typescriptParens            = { fg = bg_lighter },
-  typescriptTypeBrackets      = { fg = bg_lighter },
+  typescriptParens            = { fg = dead_grey },
+  typescriptTypeBrackets      = { fg = dead_grey },
   typescriptXHRMethod         = { fg = blue },
   typescriptResponseProp      = { fg = blue },
   typescriptBOMLocationMethod = { fg = blue },
@@ -297,7 +296,7 @@ for group, styles in pairs(lang_syntax) do
 end
 
 --> Setting Neovim Terminal Color
-vim.g.terminal_color_0          = bg_dark
+vim.g.terminal_color_0          = zero_dark
 vim.g.terminal_color_1          = red
 vim.g.terminal_color_2          = light_green
 vim.g.terminal_color_3          = yellow
