@@ -53,7 +53,7 @@ local editor_syntax = {
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = zero_dark },
   PmenuSel     = { fg = white, bg = hollow },
-  PmenuSbar    = { fg = bruise },
+  PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
   Search       = { fg = white, bg = hollow },
   SpecialKey   = { bg = dead_grey },
