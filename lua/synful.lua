@@ -40,7 +40,7 @@ local editor_syntax = {
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
   ErrorMsg     = { fg = rouge },
-  EndOfBuffer  = { fg = zero_dark, bg = zero_dark, },
+  EndOfBuffer  = { fg = zero_dark, bg = zero_dark },
   VertSplit    = { bg = zero_dark, fg = bruise },
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
@@ -56,7 +56,7 @@ local editor_syntax = {
   PmenuSbar    = { bg = bruise },
   PmenuThumb   = { bg = dead_grey },
   Search       = { fg = white, bg = hollow },
-  SpecialKey   = { bg = bg_light },
+  SpecialKey   = { bg = dead_grey },
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
   SpellLocal   = { gui = 'underline', sp = orange },
@@ -69,13 +69,13 @@ local editor_syntax = {
   VisualNOS    = { fg = white, bg = blue },
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
-  FloatBorder  = { fg = bg_light },
+  FloatBorder  = { fg = dead_grey },
   Constructor  = { fg = fg_light },
   Builtin      = { fg = fg_light },
   Return       = { fg = green, gui = 'bold' },
 
   --> git highlighting
-  gitcommitComment        = { fg = bg_light, gui = 'italic' },
+  gitcommitComment        = { fg = dead_grey, gui = 'italic' },
   gitcommitUntracked      = { fg = fg_dark, gui = 'italic' },
   gitcommitDiscarded      = { fg = fg_dark, gui = 'italic' },
   gitcommitSelected       = { fg = fg_dark, gui = 'italic' },
@@ -185,7 +185,7 @@ local lang_syntax = {
   xmlEndTag         = { fg = blue, gui = 'italic' },
   -- lua.vim
   luaTable          = { fg = fg_light },
-  luaBraces         = { fg = bg_light },
+  luaBraces         = { fg = dead_grey },
   luaIn             = { fg = blue, gui = 'italic' },
   -- lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
@@ -238,34 +238,34 @@ local lang_syntax = {
   jsStorageClass        = { fg = purple },
   jsAsyncKeyword        = { fg = blue, gui = 'italic' },
   jsForAwait            = { fg = blue, gui = 'italic' },
-  jsArrowFunction       = { fg = bg_light },
+  jsArrowFunction       = { fg = dead_grey },
   jsReturn              = { fg = green },
   jsFuncCall            = { fg = fg },
   jsFuncBlock           = { fg = fg },
-  jsFuncBraces          = { fg = bg_light },
+  jsFuncBraces          = { fg = dead_grey },
   jsExport              = { fg = blue, gui = 'italic' },
   jsGlobalObjects       = { fg = green },
   jsxTagName            = { fg = blue },
   jsxComponentName      = { fg = blue },
   jsxAttrib             = { fg = pale_blue },
-  jsxBraces             = { fg = bg_light },
+  jsxBraces             = { fg = dead_grey },
   jsTemplateBraces      = { fg = red },
-  jsFuncParens          = { fg = bg_light },
-  jsDestructuringBraces = { fg = bg_light },
-  jsObjectBraces        = { fg = bg_light },
+  jsFuncParens          = { fg = dead_grey },
+  jsDestructuringBraces = { fg = dead_grey },
+  jsObjectBraces        = { fg = dead_grey },
   jsObjectKey           = { fg = pale_blue },
   jsObjectShorthandProp = { fg = fg_light },
   jsNull                = { fg = purple },
 
   --> telescope
-  TelescopeBorder = { fg = bg_light },
+  TelescopeBorder = { fg = dead_grey },
 
   --> cmp
-  CmpCompletionBorder = { fg = bg_light },
+  CmpCompletionBorder = { fg = dead_grey },
 
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
-  typescriptBraces            = { fg = bg_light },
+  typescriptBraces            = { fg = dead_grey },
   typescriptTemplateSB        = { fg = blue },
   typescriptTry               = { fg = blue, gui = 'italic' },
   typescriptExceptions        = { fg = blue, gui = 'italic' },
@@ -312,5 +312,5 @@ vim.g.terminal_color_12         = blue
 vim.g.terminal_color_13         = purple
 vim.g.terminal_color_14         = blue
 vim.g.terminal_color_15         = white
-vim.g.terminal_color_background = bg_light --> whoa whoa whoa
+vim.g.terminal_color_background = dead_grey --> whoa whoa whoa
 vim.g.terminal_color_foreground = fg_light
