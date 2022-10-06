@@ -52,9 +52,9 @@ local editor_syntax = {
   Normal       = { fg = fg_light }, --> no background colour permits the shell's default
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = zero_dark },
-  PmenuSel     = { fg = yellow, bg = green },
-  PmenuSbar    = { bg = bruise },
-  PmenuThumb   = { bg = dead_grey },
+  PmenuSel     = { fg = white, bg = hollow },
+  PmenuSbar    = { fg = bruise },
+  PmenuThumb   = { fg = bruise },
   Search       = { fg = white, bg = hollow },
   SpecialKey   = { bg = dead_grey },
   SpellBad     = { gui = 'underline', sp = red },
