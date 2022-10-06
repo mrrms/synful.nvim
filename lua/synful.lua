@@ -6,8 +6,8 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local bg_dark     = '#010713' --> a slight reduction in transparency is recommended
 local bg          = '#2A293D'
+local bg_dark     = '#010713'
 local bg_light    = '#444466'
 local bg_lighter  = '#454575'
 local grey        = '#8585AA'
@@ -41,7 +41,7 @@ local editor_syntax = {
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
   ErrorMsg     = { fg = rouge },
-  EndOfBuffer  = { bg = bg_dark, fg = bg_dark },
+  EndOfBuffer  = { fg = bg_dark, bg = bg_dark, },
   VertSplit    = { bg = bg_dark, fg = bg },
   Folded       = { fg = fg_dark, gui = 'italic' },
   FoldColumn   = { fg = yellow },
