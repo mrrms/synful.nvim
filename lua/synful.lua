@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 local bg          = '#2A293D'
-local bg_dark     = '#010713'
+local bg_dark     = '#0F1521'
 local bg_light    = '#444466'
 local bg_lighter  = '#454575'
 local grey        = '#8585AA'
@@ -31,7 +31,7 @@ local white       = '#C0C0FC'
 --> Editor Highlight
 local editor_syntax = {
   Cursor       = { fg = bg_dark, bg = red },
-  CursorLine   = { bg = bg },
+  CursorLine   = { bg = bg_dark },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
   Variable     = { fg = fg_light },
