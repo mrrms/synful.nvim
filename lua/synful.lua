@@ -125,7 +125,7 @@ local code_syntax = {
   Command   = { fg = blue },
   Noise     = { fg = pink },
 
-  Identifier = { fg = bold_light },
+  Identifier = { fg = yellow, gui = 'italic' },
   Function   = { fg = bold_light, gui = 'bold' },
 
   Repeat      = { fg = green, gui = 'bold' },
