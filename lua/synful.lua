@@ -13,28 +13,28 @@ local dead_grey   = '#454575'
 local hollow      = '#565E99'
 local blue        = '#6C7DD0'
 local pale_blue   = '#7AA7FF'
-local fg_dark     = '#676e96'
+local fg_dark     = '#676E96'
 local grey        = '#8585AA'
 local purple      = '#BB91ED'
 local pink        = '#AF749C'
-local red         = '#883344'
 local rouge       = '#994455'
+local red         = '#883344'
 local green       = '#5F875F'
 local light_green = '#96C0C0'
-local yellow      = '#f2dcd3'
+local yellow      = '#F2DCD3'
 local orange      = '#DB9280'
-local fg          = '#a8b4f6'
-local fg_light    = '#B5B5E3'
+local bold_light  = '#A8B4F6'
+local fg          = '#B5B5E3'
+local fg_light    = '#BEBEEF'
 local white       = '#C0C0FC'
 
---> Editor Highlight
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
   CursorLine   = { bg = deep_blue },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
-  Variable     = { fg = fg_light },
-  field        = { fg = fg_light },
+  Variable     = { fg = fg },
+  field        = { fg = fg },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
@@ -49,7 +49,7 @@ local editor_syntax = {
   Substitute   = { bg = blue, fg = bruise },
   LineNr       = { fg = dead_grey },
   MatchParen   = { fg = rouge, gui = 'bold' },
-  Normal       = { fg = fg_light }, --> no background colour permits the shell's default
+  Normal       = { fg = fg }, --> no background colour permits the shell's default
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = zero_dark },
   PmenuSel     = { fg = white, bg = hollow },
@@ -63,7 +63,7 @@ local editor_syntax = {
   SpellRare    = { gui = 'underline', sp = blue },
   TabLine      = { bg = bruise, fg = fg_light },
   TabLineFill  = { bg = bruise, fg = fg_light },
-  TabLineSel   = { bg = blue, fg = zero_dark, gui = 'bold' },
+  TabLineSel   = { fg = zero_dark, gui = 'bold', bg = blue },
   Title        = { fg = fg_light },
   Visual       = { fg = white, bg = blue },
   VisualNOS    = { fg = white, bg = blue },
@@ -74,7 +74,6 @@ local editor_syntax = {
   Builtin      = { fg = fg_light },
   Return       = { fg = green, gui = 'bold' },
 
-  --> git highlighting
   gitcommitComment        = { fg = dead_grey, gui = 'italic' },
   gitcommitUntracked      = { fg = fg_dark, gui = 'italic' },
   gitcommitDiscarded      = { fg = fg_dark, gui = 'italic' },
@@ -97,7 +96,6 @@ local editor_syntax = {
   gitcommitHeader         = {},
   gitcommitFile           = {},
 
-  --> User dependent groups
   Conceal      = {},
   ModeMsg      = {},
   MsgArea      = {},
@@ -240,8 +238,8 @@ local lang_syntax = {
   jsForAwait            = { fg = blue, gui = 'italic' },
   jsArrowFunction       = { fg = dead_grey },
   jsReturn              = { fg = green },
-  jsFuncCall            = { fg = fg },
-  jsFuncBlock           = { fg = fg },
+  jsFuncCall            = { fg = bold_light, 'bold' },
+  jsFuncBlock           = { fg = bold_light },
   jsFuncBraces          = { fg = dead_grey },
   jsExport              = { fg = blue, gui = 'italic' },
   jsGlobalObjects       = { fg = green },
