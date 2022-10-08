@@ -33,7 +33,7 @@ local editor_syntax = {
   CursorLine   = { bg = deep_blue },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = blue, gui = 'bold' },
-  Variable     = { fg = fg },
+  variable     = { fg = fg },
   field        = { fg = fg },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
@@ -70,7 +70,7 @@ local editor_syntax = {
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
   FloatBorder  = { fg = dead_grey },
-  Constructor  = { fg = fg_light },
+  constructor  = { fg = fg },
   Builtin      = { fg = fg_light },
   Return       = { fg = green, gui = 'bold' },
 
