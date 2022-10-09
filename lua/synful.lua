@@ -24,9 +24,9 @@ local light_green = '#96C0C0'
 local yellow      = '#F2DCD3'
 local orange      = '#DB9280'
 local bold_light  = '#A8B4F6'
+local white       = '#C0C0FC'
 local fg          = '#B5B5E3'
 local fg_light    = '#DEDEFF'
-local white       = '#C0C0FC'
 
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
@@ -284,7 +284,7 @@ local lang_syntax = {
   typescriptBOMLocationMethod = { fg = blue },
   typescriptHeadersMethod     = { fg = blue },
   typescriptVariable          = { fg = purple },
-  TSConstructor               = { fg = blue, gui = 'bold' },
+  TSConstructor               = { fg = fg },
   TSVariable                  = { fg = fg },
 
   htmlTag = { fg = blue },
