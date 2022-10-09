@@ -290,7 +290,7 @@ local lang_syntax = {
   TSConstructor               = { fg = blue },
   TSFeild                     = { fg = fg },
   TSKeywordReturn             = { fg = green, gui = 'italic' },
-  TSVariable                  = { fg = fg }
+  TSVariable                  = { fg = fg },
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
