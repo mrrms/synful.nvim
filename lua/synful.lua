@@ -134,7 +134,7 @@ local code_syntax = {
   Label       = { fg = hollow },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
-  Keyword     = { fg = green, gui = 'bold' },
+  Keyword     = { fg = blue },
 
   Include   = { fg = blue },
   Define    = { fg = blue },
@@ -286,9 +286,10 @@ local lang_syntax = {
   typescriptBOMLocationMethod = { fg = blue },
   typescriptHeadersMethod     = { fg = blue },
   typescriptVariable          = { fg = purple },
-  TSKeywordFunction           = { fg = hollow },
-  TSConstructor               = { fg = blue },
+  TSKeywordFunction           = { fg = blue },
+  TSConstructor               = { fg = fg },
   TSFeild                     = { fg = fg },
+  TSKeywordReturn             = { fg = green, gui = 'italic' },
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
