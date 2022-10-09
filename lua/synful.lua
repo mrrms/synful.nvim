@@ -287,9 +287,10 @@ local lang_syntax = {
   typescriptHeadersMethod     = { fg = blue },
   typescriptVariable          = { fg = purple },
   TSKeywordFunction           = { fg = blue },
-  TSConstructor               = { fg = fg },
+  TSConstructor               = { fg = blue },
   TSFeild                     = { fg = fg },
   TSKeywordReturn             = { fg = green, gui = 'italic' },
+  TSVariable                  = { fg = fg }
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
