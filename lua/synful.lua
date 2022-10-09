@@ -51,7 +51,7 @@ local editor_syntax = {
   MatchParen   = { fg = rouge, gui = 'bold' },
   Normal       = { fg = fg_light },
   NormalFloat  = {},
-  Pmenu        = { fg = fg, bg = 'NONE' },
+  Pmenu        = { fg = fg, bg = zero_dark },
   PmenuSel     = { fg = white, bg = dead_grey },
   PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
