@@ -134,7 +134,7 @@ local code_syntax = {
   Label       = { fg = hollow },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
-  Keyword     = { fg = green, gui = 'bold,italic' },
+  Keyword     = { fg = green, gui = 'bold' },
 
   Include   = { fg = blue },
   Define    = { fg = blue },
@@ -288,6 +288,7 @@ local lang_syntax = {
   typescriptVariable          = { fg = purple },
   TSKeywordFunction           = { fg = hollow },
   TSConstructor               = { fg = blue },
+  TSFeild                     = { fg = fg },
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
