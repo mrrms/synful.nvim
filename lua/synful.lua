@@ -286,6 +286,8 @@ local lang_syntax = {
   typescriptBOMLocationMethod = { fg = blue },
   typescriptHeadersMethod     = { fg = blue },
   typescriptVariable          = { fg = purple },
+  TSKeywordFunction           = { fg = hollow },
+  TSConstructor               = { fg = blue },
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
