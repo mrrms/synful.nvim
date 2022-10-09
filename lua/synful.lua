@@ -25,7 +25,7 @@ local yellow      = '#F2DCD3'
 local orange      = '#DB9280'
 local bold_light  = '#A8B4F6'
 local fg          = '#B5B5E3'
-local fg_light    = '#BEBEEF'
+local fg_light    = '#DEDEFF'
 local white       = '#C0C0FC'
 
 local editor_syntax = {
@@ -49,7 +49,7 @@ local editor_syntax = {
   Substitute   = { bg = blue, fg = bruise },
   LineNr       = { fg = dead_grey },
   MatchParen   = { fg = rouge, gui = 'bold' },
-  Normal       = { fg = fg }, --> no background colour permits the shell's default
+  Normal       = { fg = fg_light },
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = zero_dark },
   PmenuSel     = { fg = white, bg = hollow },
@@ -284,6 +284,8 @@ local lang_syntax = {
   typescriptBOMLocationMethod = { fg = blue },
   typescriptHeadersMethod     = { fg = blue },
   typescriptVariable          = { fg = purple },
+  TSConstructor               = { fg = blue, gui = 'bold' },
+  TSVariable                  = { fg = fg },
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
