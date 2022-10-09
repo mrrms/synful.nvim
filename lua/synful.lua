@@ -10,7 +10,6 @@ local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
 local dead_grey   = '#454575'
-local apple_blue  = '#1665ba'
 local hollow      = '#565E99'
 local blue        = '#6C7DD0'
 local pale_blue   = '#7AA7FF'
@@ -53,7 +52,7 @@ local editor_syntax = {
   Normal       = { fg = fg_light },
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = zero_dark },
-  PmenuSel     = { fg = white, bg = apple_blue },
+  PmenuSel     = { fg = white, bg = bruise },
   PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
   Search       = { fg = white, bg = hollow },
