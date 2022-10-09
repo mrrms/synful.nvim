@@ -131,7 +131,7 @@ local code_syntax = {
   Repeat      = { fg = green, gui = 'bold' },
   Statement   = { fg = light_green, gui = 'italic' },
   Conditional = { fg = blue, gui = 'italic' },
-  Label       = { fg = blue, gui = 'italic' },
+  Label       = { fg = hollow },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
   Keyword     = { fg = blue, gui = 'bold' },
@@ -284,8 +284,6 @@ local lang_syntax = {
   typescriptBOMLocationMethod = { fg = blue },
   typescriptHeadersMethod     = { fg = blue },
   typescriptVariable          = { fg = purple },
-  TSConstructor               = { fg = fg },
-  TSVariable                  = { fg = fg },
 
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
