@@ -125,7 +125,7 @@ local code_syntax = {
   Command   = { fg = blue },
   Noise     = { fg = pink },
 
-  Identifier = { fg = fg },
+  Identifier = { fg = pale_blue },
   Function   = { fg = bold_light, gui = 'bold' },
 
   Repeat      = { fg = green, gui = 'bold' },
@@ -134,7 +134,7 @@ local code_syntax = {
   Label       = { fg = hollow },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
-  Keyword     = { fg = blue, gui = 'bold' },
+  Keyword     = { fg = green, gui = 'bold,italic' },
 
   Include   = { fg = blue },
   Define    = { fg = blue },
@@ -147,7 +147,7 @@ local code_syntax = {
   Structure    = { fg = yellow },
   Typedef      = { fg = yellow },
 
-  Special        = { fg = blue },
+  Special        = { fg = fg },
   SpecialChar    = {},
   Tag            = { fg = orange },
   SpecialComment = { fg = fg_dark, gui = 'bold' },
@@ -180,11 +180,13 @@ end
 
 --> Syntax Plugin And Language Highlight Groups
 local lang_syntax = {
-  xmlEndTag         = { fg = blue, gui = 'italic' },
+  xmlEndTag    = { fg = blue, gui = 'italic' },
   -- lua.vim
-  luaTable          = { fg = fg_light },
-  luaBraces         = { fg = dead_grey },
-  luaIn             = { fg = blue, gui = 'italic' },
+  luaTable     = { fg = fg_light },
+  luaBraces    = { fg = dead_grey },
+  luaIn        = { fg = blue, gui = 'italic' },
+  luaTSKeyword = { fg = green, gui = 'bold' },
+
   -- lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
   luaFuncCall       = { fg = blue },
