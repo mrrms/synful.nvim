@@ -10,7 +10,7 @@ local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
 local dead_grey   = '#454575'
-local hollow      = '#565E99'
+local lagoon      = '#6070C1'
 local blue        = '#6C7DD0'
 local pale_blue   = '#7AA7FF'
 local fg_dark     = '#676E96'
@@ -55,7 +55,7 @@ local editor_syntax = {
   PmenuSel     = { fg = zero_dark, bg = light_green },
   PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
-  Search       = { fg = white, bg = hollow },
+  Search       = { fg = white, bg = lagoon },
   SpecialKey   = { bg = dead_grey },
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
@@ -115,7 +115,7 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Comment   = { fg = hollow, gui = 'bold,italic' },
+  Comment   = { fg = lagoon, gui = 'bold,italic' },
   Constant  = { fg = blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = fg_light, gui = 'bold' },
@@ -131,7 +131,7 @@ local code_syntax = {
   Repeat      = { fg = green, gui = 'bold' },
   Statement   = { fg = light_green, gui = 'italic' },
   Conditional = { fg = blue, gui = 'italic' },
-  Label       = { fg = hollow },
+  Label       = { fg = lagoon },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
   Keyword     = { fg = blue },
