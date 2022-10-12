@@ -39,7 +39,7 @@ local editor_syntax = {
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
-  ErrorMsg     = { fg = rouge },
+  ErrorMsg     = { fg = red },
   EndOfBuffer  = { fg = zero_dark, bg = zero_dark },
   VertSplit    = { bg = zero_dark, fg = bruise },
   Folded       = { fg = fg_dark, gui = 'italic' },
@@ -48,7 +48,7 @@ local editor_syntax = {
   IncSearch    = { bg = purple, fg = bruise },
   Substitute   = { bg = blue, fg = bruise },
   LineNr       = { fg = dead_grey },
-  MatchParen   = { fg = rouge, gui = 'bold' },
+  MatchParen   = { fg = red, gui = 'bold' },
   Normal       = { fg = fg_light },
   NormalFloat  = {},
   Pmenu        = { fg = fg, bg = zero_dark },
@@ -156,7 +156,7 @@ local code_syntax = {
 
   Ignore     = {},
   Underlined = { gui = 'underline' },
-  Error      = { fg = rouge },
+  Error      = { fg = red },
   Todo       = { fg = pale_blue, gui = 'bold' },
 }
 
@@ -171,7 +171,7 @@ local plugin_syntax = {
   GitGutterDelete       = { fg = red },
   GitGutterChangeDelete = { fg = orange },
   diffAdded             = { fg = green },
-  diffRemoved           = { fg = rouge },
+  diffRemoved           = { fg = red },
 }
 
 for group, styles in pairs(plugin_syntax) do
