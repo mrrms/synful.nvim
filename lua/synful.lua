@@ -11,7 +11,7 @@ local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
 local dead_grey   = '#454575'
 local lagoon      = '#6070C1'
-local blue        = '#6C7DD0'
+local blue        = '#5F79C2'
 local pale_blue   = '#7AA7FF'
 local fg_dark     = '#676E96'
 local grey        = '#8585AA'
@@ -32,13 +32,13 @@ local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
   CursorLine   = { bg = deep_blue },
   CursorLineNr = { fg = pale_blue },
-  Directory    = { fg = blue, gui = 'bold' },
+  Directory    = { fg = lagoon, gui = 'bold' },
   variable     = { fg = fg },
   field        = { fg = fg },
   DiffAdd      = { fg = light_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
-  DiffText     = { fg = blue },
+  DiffText     = { fg = lagoon },
   ErrorMsg     = { fg = rouge },
   EndOfBuffer  = { fg = zero_dark, bg = zero_dark },
   VertSplit    = { bg = zero_dark, fg = bruise },
@@ -46,7 +46,7 @@ local editor_syntax = {
   FoldColumn   = { fg = yellow },
   SignColumn   = { fg = yellow },
   IncSearch    = { bg = purple, fg = bruise },
-  Substitute   = { bg = blue, fg = bruise },
+  Substitute   = { bg = lagoon, fg = bruise },
   LineNr       = { fg = dead_grey },
   MatchParen   = { fg = rouge, gui = 'bold' },
   Normal       = { fg = fg_light },
@@ -60,10 +60,10 @@ local editor_syntax = {
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
   SpellLocal   = { gui = 'underline', sp = orange },
-  SpellRare    = { gui = 'underline', sp = blue },
+  SpellRare    = { gui = 'underline', sp = lagoon },
   TabLine      = { bg = bruise, fg = fg_light },
   TabLineFill  = { bg = bruise, fg = fg_light },
-  TabLineSel   = { fg = zero_dark, gui = 'bold', bg = blue },
+  TabLineSel   = { fg = zero_dark, gui = 'bold', bg = lagoon },
   Title        = { fg = fg_light },
   Visual       = { fg = white, bg = dead_grey },
   VisualNOS    = { fg = white, bg = dead_grey },
@@ -83,7 +83,7 @@ local editor_syntax = {
   gitcommitNoBranch       = { fg = purple },
   gitcommitDiscardedType  = { fg = red },
   gitcommitSelectedType   = { fg = green },
-  gitcommitUntrackedFile  = { fg = blue },
+  gitcommitUntrackedFile  = { fg = lagoon },
   gitcommitDiscardedFile  = { fg = red },
   gitcommitDiscardedArrow = { fg = red },
   gitcommitSelectedFile   = { fg = green },
@@ -116,13 +116,13 @@ end
 --> Vim Default Code Syntax
 local code_syntax = {
   Comment   = { fg = lagoon, gui = 'bold,italic' },
-  Constant  = { fg = blue },
+  Constant  = { fg = lagoon },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = fg_light, gui = 'bold' },
   Number    = { fg = purple },
   Float     = { fg = purple },
   Boolean   = { fg = purple },
-  Command   = { fg = blue },
+  Command   = { fg = lagoon },
   Noise     = { fg = pink },
 
   Identifier = { fg = pale_blue },
@@ -130,14 +130,14 @@ local code_syntax = {
 
   Repeat      = { fg = green, gui = 'bold' },
   Statement   = { fg = light_green, gui = 'italic' },
-  Conditional = { fg = blue, gui = 'italic' },
+  Conditional = { fg = lagoon, gui = 'italic' },
   Label       = { fg = lagoon },
-  Exception   = { fg = blue, gui = 'italic' },
+  Exception   = { fg = lagoon, gui = 'italic' },
   Operator    = { fg = dead_grey },
-  Keyword     = { fg = blue },
+  Keyword     = { fg = lagoon },
 
-  Include   = { fg = blue },
-  Define    = { fg = blue },
+  Include   = { fg = lagoon },
+  Define    = { fg = lagoon },
   Macro     = { fg = purple },
   PreProc   = { fg = yellow },
   PreCondit = { fg = yellow },
@@ -180,23 +180,23 @@ end
 
 --> Syntax Plugin And Language Highlight Groups
 local lang_syntax = {
-  xmlEndTag    = { fg = blue, gui = 'italic' },
+  xmlEndTag    = { fg = lagoon, gui = 'italic' },
   -- lua.vim
   luaTable     = { fg = fg_light },
   luaBraces    = { fg = dead_grey },
-  luaIn        = { fg = blue, gui = 'italic' },
+  luaIn        = { fg = lagoon, gui = 'italic' },
   luaTSKeyword = { fg = green, gui = 'bold' },
 
   -- lua polyglot (tbastos/vim-lua)
-  luaFunc           = { fg = blue },
-  luaFuncCall       = { fg = blue },
-  luaFuncName       = { fg = blue },
-  luaBuiltIn        = { fg = blue },
+  luaFunc           = { fg = lagoon },
+  luaFuncCall       = { fg = lagoon },
+  luaFuncName       = { fg = lagoon },
+  luaBuiltIn        = { fg = lagoon },
   luaLocal          = { fg = green, gui = 'bold' },
   luaSpecialValue   = { fg = purple },
   luaStatement      = { fg = purple },
-  luaFunction       = { fg = blue, gui = 'italic' },
-  luaSymbolOperator = { fg = blue },
+  luaFunction       = { fg = lagoon, gui = 'italic' },
+  luaSymbolOperator = { fg = lagoon },
   luaConstant       = { fg = orange },
 
   -- zsh.vim
@@ -204,25 +204,25 @@ local lang_syntax = {
   zshComment         = code_syntax.Comment,
   zshPreProc         = code_syntax.PreProc,
   zshString          = code_syntax.String,
-  zshStringDelimiter = { fg = blue },
-  zshPrecommand      = { fg = blue },
+  zshStringDelimiter = { fg = lagoon },
+  zshPrecommand      = { fg = lagoon },
   zshKeyword         = code_syntax.Function,
-  zshCommands        = { fg = blue },
-  zshOptStart        = { fg = blue, gui = 'italic' },
-  zshOption          = { fg = blue, gui = 'italic' },
+  zshCommands        = { fg = lagoon },
+  zshOptStart        = { fg = lagoon, gui = 'italic' },
+  zshOption          = { fg = lagoon, gui = 'italic' },
   zshFunction        = { fg = yellow, gui = 'italic' },
   zshNumber          = code_syntax.Number,
   zshSubst           = { fg = yellow },
-  zshSubstDelim      = { fg = blue },
+  zshSubstDelim      = { fg = lagoon },
 
   -- rust polyglot (rust.vim)
   rustKeyword     = { fg = orange },
-  rustFuncCall    = { fg = blue },
-  rustModPathSep  = { fg = blue },
+  rustFuncCall    = { fg = lagoon },
+  rustModPathSep  = { fg = lagoon },
   rustIdentifier  = { fg = fg_light },
-  rustFuncName    = { fg = blue },
-  rustSigil       = { fg = blue },
-  rustMacro       = { fg = blue },
+  rustFuncName    = { fg = lagoon },
+  rustSigil       = { fg = lagoon },
+  rustMacro       = { fg = lagoon },
   rustStorage     = { fg = orange },
   rustModPath     = { fg = fg_light },
   rustEnumVariant = { fg = fg_light },
@@ -231,22 +231,22 @@ local lang_syntax = {
 
 
   -- javascript polyglot (pangloss/vim-javascript)
-  jsFunction            = { fg = blue, gui = 'italic' },
+  jsFunction            = { fg = lagoon, gui = 'italic' },
   jsFuncName            = { fg = pink, gui = 'bold' },
-  jsImport              = { fg = blue, gui = 'italic' },
-  jsFrom                = { fg = blue, gui = 'italic' },
+  jsImport              = { fg = lagoon, gui = 'italic' },
+  jsFrom                = { fg = lagoon, gui = 'italic' },
   jsStorageClass        = { fg = purple },
-  jsAsyncKeyword        = { fg = blue, gui = 'italic' },
-  jsForAwait            = { fg = blue, gui = 'italic' },
+  jsAsyncKeyword        = { fg = lagoon, gui = 'italic' },
+  jsForAwait            = { fg = lagoon, gui = 'italic' },
   jsArrowFunction       = { fg = dead_grey },
   jsReturn              = { fg = green },
   jsFuncCall            = { fg = bold_light, 'bold' },
   jsFuncBlock           = { fg = bold_light },
   jsFuncBraces          = { fg = dead_grey },
-  jsExport              = { fg = blue, gui = 'italic' },
+  jsExport              = { fg = lagoon, gui = 'italic' },
   jsGlobalObjects       = { fg = green },
-  jsxTagName            = { fg = blue },
-  jsxComponentName      = { fg = blue },
+  jsxTagName            = { fg = lagoon },
+  jsxComponentName      = { fg = lagoon },
   jsxAttrib             = { fg = pale_blue },
   jsxBraces             = { fg = dead_grey },
   jsTemplateBraces      = { fg = red },
@@ -263,37 +263,37 @@ local lang_syntax = {
   --> cmp
   CmpCompletionBorder = { fg = dead_grey },
 
-  typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
+  typescriptAsyncFuncKeyword  = { fg = lagoon, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
   typescriptBraces            = { fg = dead_grey },
-  typescriptTemplateSB        = { fg = blue },
-  typescriptTry               = { fg = blue, gui = 'italic' },
-  typescriptExceptions        = { fg = blue, gui = 'italic' },
-  typescriptOperator          = { fg = blue, gui = 'italic' },
-  typescriptExport            = { fg = blue, gui = 'italic' },
-  typescriptStatementKeyword  = { fg = blue, gui = 'italic' },
-  typescriptImport            = { fg = blue, gui = 'italic' },
+  typescriptTemplateSB        = { fg = lagoon },
+  typescriptTry               = { fg = lagoon, gui = 'italic' },
+  typescriptExceptions        = { fg = lagoon, gui = 'italic' },
+  typescriptOperator          = { fg = lagoon, gui = 'italic' },
+  typescriptExport            = { fg = lagoon, gui = 'italic' },
+  typescriptStatementKeyword  = { fg = lagoon, gui = 'italic' },
+  typescriptImport            = { fg = lagoon, gui = 'italic' },
   typescriptArrowFunc         = { fg = purple },
   typescriptArrowFuncArg      = { fg = fg_light },
-  typescriptArrayMethod       = { fg = blue },
-  typescriptStringMethod      = { fg = blue },
+  typescriptArrayMethod       = { fg = lagoon },
+  typescriptStringMethod      = { fg = lagoon },
   typescriptTypeReference     = { fg = yellow },
   typescriptObjectLabel       = { fg = red },
   typescriptParens            = { fg = dead_grey },
   typescriptTypeBrackets      = { fg = dead_grey },
-  typescriptXHRMethod         = { fg = blue },
-  typescriptResponseProp      = { fg = blue },
-  typescriptBOMLocationMethod = { fg = blue },
-  typescriptHeadersMethod     = { fg = blue },
+  typescriptXHRMethod         = { fg = lagoon },
+  typescriptResponseProp      = { fg = lagoon },
+  typescriptBOMLocationMethod = { fg = lagoon },
+  typescriptHeadersMethod     = { fg = lagoon },
   typescriptVariable          = { fg = purple },
-  TSKeywordFunction           = { fg = blue },
-  TSConstructor               = { fg = blue },
+  TSKeywordFunction           = { fg = lagoon },
+  TSConstructor               = { fg = lagoon },
   TSFeild                     = { fg = fg },
   TSKeywordReturn             = { fg = green, gui = 'bold' },
   TSVariable                  = { fg = fg },
 
-  htmlTag = { fg = blue },
-  htmlEndTag = { fg = blue },
+  htmlTag = { fg = lagoon },
+  htmlEndTag = { fg = lagoon },
 }
 
 for group, styles in pairs(lang_syntax) do
@@ -305,17 +305,17 @@ vim.g.terminal_color_0          = zero_dark
 vim.g.terminal_color_1          = red
 vim.g.terminal_color_2          = light_green
 vim.g.terminal_color_3          = yellow
-vim.g.terminal_color_4          = blue
+vim.g.terminal_color_4          = lagoon
 vim.g.terminal_color_5          = purple
-vim.g.terminal_color_6          = blue
+vim.g.terminal_color_6          = lagoon
 vim.g.terminal_color_7          = fg
 vim.g.terminal_color_8          = grey
 vim.g.terminal_color_9          = red
 vim.g.terminal_color_10         = light_green
 vim.g.terminal_color_11         = orange
-vim.g.terminal_color_12         = blue
+vim.g.terminal_color_12         = lagoon
 vim.g.terminal_color_13         = purple
-vim.g.terminal_color_14         = blue
+vim.g.terminal_color_14         = lagoon
 vim.g.terminal_color_15         = white
 vim.g.terminal_color_background = dead_grey --> whoa whoa whoa
 vim.g.terminal_color_foreground = fg_light
