@@ -17,8 +17,8 @@ local fg_dark     = '#676E96'
 local grey        = '#8585AA'
 local purple      = '#BB91ED'
 local pink        = '#AF749C'
-local rouge       = '#994455'
-local red         = '#883344'
+local red         = '#B8042E'
+local rouge       = '#883344'
 local green       = '#5F875F'
 local light_green = '#96C0C0'
 local yellow      = '#F2DCD3'
@@ -39,7 +39,7 @@ local editor_syntax = {
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = blue },
-  ErrorMsg     = { fg = red },
+  ErrorMsg     = { fg = rouge },
   EndOfBuffer  = { fg = zero_dark, bg = zero_dark },
   VertSplit    = { bg = zero_dark, fg = bruise },
   Folded       = { fg = fg_dark, gui = 'italic' },
