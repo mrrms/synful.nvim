@@ -124,10 +124,8 @@ local code_syntax = {
   Boolean   = { fg = purple },
   Command   = { fg = blue },
   Noise     = { fg = pink },
-
   Identifier = { fg = pale_blue },
   Function   = { fg = bold_light, gui = 'bold' },
-
   Repeat      = { fg = green, gui = 'bold' },
   Statement   = { fg = light_green, gui = 'italic' },
   Conditional = { fg = blue, gui = 'italic' },
@@ -135,18 +133,15 @@ local code_syntax = {
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
   Keyword     = { fg = blue },
-
   Include   = { fg = blue },
   Define    = { fg = blue },
   Macro     = { fg = purple },
   PreProc   = { fg = yellow },
   PreCondit = { fg = yellow },
-
   Type         = { fg = green },
   StorageClass = { fg = yellow },
   Structure    = { fg = yellow },
   Typedef      = { fg = yellow },
-
   Special        = { fg = fg },
   SpecialChar    = {},
   Tag            = { fg = orange },
@@ -291,7 +286,7 @@ local lang_syntax = {
   TSFeild                     = { fg = fg },
   TSKeywordReturn             = { fg = green, gui = 'italic' },
   TSVariable                  = { fg = fg },
-
+  TSError                     = { fg = light_green, gui = 'italic' },
   htmlTag = { fg = blue },
   htmlEndTag = { fg = blue },
 }
