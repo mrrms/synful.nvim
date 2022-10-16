@@ -251,6 +251,7 @@ local lang_syntax = {
   jsObjectKey           = { fg = pale_blue },
   jsObjectShorthandProp = { fg = fg_light },
   jsNull                = { fg = purple },
+  NvimInternalError     = { fg = rouge },
 
   --> telescope
   TelescopeBorder = { fg = dead_grey },
