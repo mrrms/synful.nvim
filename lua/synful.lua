@@ -143,7 +143,7 @@ local code_syntax = {
   Structure    = { fg = yellow },
   Typedef      = { fg = yellow },
   Special      = { fg = lagoon },
-  SpecialChar    = {},
+  SpecialChar    = { fg = dead_grey },
   Tag            = { fg = orange },
   SpecialComment = { fg = fg_dark, gui = 'bold' },
   Debug          = {},
