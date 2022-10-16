@@ -132,7 +132,7 @@ local code_syntax = {
   Label       = { fg = lagoon },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
-  Keyword     = { fg = green, gui = 'italic' },
+  keyword     = { fg = lagoon, gui = 'italic' },
   Include   = { fg = blue },
   Define    = { fg = blue },
   Macro     = { fg = purple },
@@ -180,7 +180,7 @@ local lang_syntax = {
   luaTable     = { fg = fg_light },
   luaBraces    = { fg = dead_grey },
   luaIn        = { fg = blue, gui = 'italic' },
-  luaTSKeyword = { fg = green, gui = 'bold' },
+  luaKeyword = { fg = green, gui = 'bold' },
 
   -- lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
