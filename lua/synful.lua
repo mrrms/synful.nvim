@@ -148,7 +148,6 @@ local code_syntax = {
   SpecialComment = { fg = fg_dark, gui = 'bold' },
   Debug          = {},
   Delimiter      = { fg = dead_grey },
-
   Ignore     = {},
   Underlined = { gui = 'underline' },
   Error      = { fg = red },
@@ -176,13 +175,13 @@ end
 --> Syntax Plugin And Language Highlight Groups
 local lang_syntax = {
   xmlEndTag    = { fg = blue, gui = 'italic' },
-  -- lua.vim
+  --> lua.vim
   luaTable     = { fg = fg_light },
   luaBraces    = { fg = dead_grey },
   luaIn        = { fg = blue, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
 
-  -- lua polyglot (tbastos/vim-lua)
+  --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
   luaFuncCall       = { fg = blue },
   luaFuncName       = { fg = blue },
@@ -194,7 +193,7 @@ local lang_syntax = {
   luaSymbolOperator = { fg = blue },
   luaConstant       = { fg = orange },
 
-  -- zsh.vim
+  --> zsh.vim
   zshTodo            = code_syntax.Todo,
   zshComment         = code_syntax.Comment,
   zshPreProc         = code_syntax.PreProc,
@@ -210,7 +209,7 @@ local lang_syntax = {
   zshSubst           = { fg = yellow },
   zshSubstDelim      = { fg = blue },
 
-  -- rust polyglot (rust.vim)
+  --> rust polyglot (rust.vim)
   rustKeyword     = { fg = orange },
   rustFuncCall    = { fg = blue },
   rustModPathSep  = { fg = blue },
@@ -224,8 +223,7 @@ local lang_syntax = {
   rustStructure   = { fg = orange },
   rustTypedef     = { fg = orange },
 
-
-  -- javascript polyglot (pangloss/vim-javascript)
+  --> javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = blue, gui = 'italic' },
   jsFuncName            = { fg = pink, gui = 'bold' },
   jsImport              = { fg = blue, gui = 'italic' },
@@ -258,6 +256,12 @@ local lang_syntax = {
 
   --> cmp
   CmpCompletionBorder = { fg = dead_grey },
+  CmpItemAbbrMatch = { fg = pale_blue },
+  CmpItemAbbrMatchFuzzy = { fg = pale_blue },
+  CmpItemKindFunction = { fg = purple },
+  CmpItemKindMethod = {fg = purple },
+  CmpItemKindVariable = { fg = light_green },
+  CmpItemKindKeyword = { fg= yellow },
 
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
