@@ -263,11 +263,11 @@ local lang_syntax = {
   CmpItemKindColor = { fg = bold_light },
   CmpItemKindConstant = { fg = blue },
   CmpItemKindDefault = { fg = blue },
-  CmpItemKindFolder = { fg = light_green, gui = 'bold' },
+  CmpItemKindFolder = { fg = green, gui = 'bold' },
   CmpItemKindMatchFuzzy = { fg = red },
   CmpItemKindOperator = { fg = bold_light },
   CmpItemKindProperty = { fg = purple },
-  CmpItemMenu = { fg = light_green, gui = 'bold' },
+  CmpItemMenu = { fg = pink, gui = 'bold,italic' },
 
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
