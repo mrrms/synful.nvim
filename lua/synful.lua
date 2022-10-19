@@ -132,7 +132,7 @@ local code_syntax = {
   Label       = { fg = lagoon },
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
-  keyword     = { fg = lagoon, gui = 'italic' },
+  keyword     = { fg = lagoon },
   Include   = { fg = blue },
   Define    = { fg = blue },
   Macro     = { fg = purple },
