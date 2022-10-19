@@ -251,10 +251,8 @@ local lang_syntax = {
   jsNull                = { fg = purple },
   NvimInternalError     = { fg = rouge },
 
-  --> telescope
   TelescopeBorder = { fg = dead_grey },
 
-  --> cmp
   CmpCompletionBorder = { fg = dead_grey },
   CmpItemAbbrMatch = { fg = pale_blue },
   CmpItemAbbrMatchFuzzy = { fg = pale_blue },
@@ -265,11 +263,11 @@ local lang_syntax = {
   CmpItemKindColor = { fg = bold_light },
   CmpItemKindConstant = { fg = blue },
   CmpItemKindDefault = { fg = blue },
-  CmpItemKindFolder = { fg = light_green, gui = 'italic' },
+  CmpItemKindFolder = { fg = light_green, gui = 'bold' },
   CmpItemKindMatchFuzzy = { fg = red },
   CmpItemKindOperator = { fg = bold_light },
   CmpItemKindProperty = { fg = purple },
-  CmpItemMenu = { fg = light_green, gui = 'italic' },
+  CmpItemMenu = { fg = light_green, gui = 'bold' },
 
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
