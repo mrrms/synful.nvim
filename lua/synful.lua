@@ -133,7 +133,7 @@ local code_syntax = {
   Exception   = { fg = blue, gui = 'italic' },
   Operator    = { fg = dead_grey },
   keyword     = { fg = blue, gui = 'bold' },
-  Include   = { fg = blue },
+  Include   = { fg = blue, bold = 'bold' },
   Define    = { fg = blue },
   Macro     = { fg = purple },
   PreProc   = { fg = yellow },
