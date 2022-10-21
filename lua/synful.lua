@@ -238,7 +238,7 @@ local lang_syntax = {
   jsFuncBraces          = { fg = dead_grey },
   jsExport              = { fg = blue, gui = 'italic' },
   jsGlobalObjects       = { fg = green },
-  jsxTagName            = { fg = blue },
+  jsxTagName            = { fg = blue, gui = 'bold' },
   jsxComponentName      = { fg = blue },
   jsxAttrib             = { fg = pale_blue },
   jsxBraces             = { fg = dead_grey },
