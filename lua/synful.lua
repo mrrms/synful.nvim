@@ -9,7 +9,7 @@ end
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
-local dead_grey   = '#454555'
+local dead_grey   = '#444460'
 local lagoon      = '#6070C1'
 local blue        = '#7989FF'
 local pale_blue   = '#7AA7FF'
@@ -27,7 +27,6 @@ local bold_light  = '#A8B4F6'
 local white       = '#C0C0FC'
 local fg          = '#B5B5E3'
 local fg_light    = '#DEDEFF'
-
 
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
@@ -116,7 +115,7 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Comment   = { fg = dead_grey },
+  Comment   = { fg = dead_grey, gui = 'bold,italic' },
   Constant  = { fg = blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = fg_light, gui = 'bold' },
@@ -132,7 +131,7 @@ local code_syntax = {
   Conditional = { fg = blue, gui = 'italic' },
   Label       = { fg = lagoon },
   Exception   = { fg = blue, gui = 'italic' },
-  Operator    = { fg = dead_grey },
+  Operator    = { fg = lagoon },
   keyword     = { fg = blue, gui = 'bold' },
   Include   = { fg = blue, bold = 'bold' },
   Define    = { fg = blue },
@@ -177,7 +176,7 @@ end
 local lang_syntax = {
   xmlEndTag    = { fg = blue, gui = 'italic' },
   --> lua.vim
-  luaTable     = { fg = fg_light },
+  luaTable     = { fg = dead_grey },
   luaBraces    = { fg = dead_grey },
   luaIn        = { fg = blue, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
@@ -185,13 +184,15 @@ local lang_syntax = {
   --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
   luaFuncCall       = { fg = blue },
+  luaTableBlock     = { fg = dead_grey },
+  luaFunctionBlock  = { fg = bold_light, gui = 'bold' },
   luaFuncName       = { fg = blue },
   luaBuiltIn        = { fg = blue },
   luaLocal          = { fg = green, gui = 'bold' },
   luaSpecialValue   = { fg = purple },
-  luaStatement      = { fg = purple },
+  luaStatement      = { fg = green, gui = 'bold' },
   luaFunction       = { fg = blue, gui = 'italic' },
-  luaSymbolOperator = { fg = blue },
+  luaSymbolOperator = { fg = dead_grey },
   luaConstant       = { fg = orange },
 
   --> zsh.vim
@@ -227,15 +228,16 @@ local lang_syntax = {
   --> javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = blue, gui = 'italic' },
   jsFuncName            = { fg = pink, gui = 'bold' },
-  jsImport              = { fg = blue, gui = 'italic' },
+  jsImport              = { fg = lagoon },
   jsFrom                = { fg = blue, gui = 'italic' },
-  jsStorageClass        = { fg = purple },
+  jsStorageClass        = { fg = lagoon },
   jsAsyncKeyword        = { fg = blue, gui = 'italic' },
   jsForAwait            = { fg = blue, gui = 'italic' },
   jsArrowFunction       = { fg = dead_grey },
-  jsReturn              = { fg = green },
+  jsReturn              = { fg = green, gui = 'bold' },
+  jsFuncBlock           = { fg = lagoon, gui = 'bold' },
+  jsParens              = { fg = dead_grey },
   jsFuncCall            = { fg = bold_light, 'bold' },
-  jsFuncBlock           = { fg = bold_light },
   jsFuncBraces          = { fg = dead_grey },
   jsExport              = { fg = blue, gui = 'italic' },
   jsGlobalObjects       = { fg = green },
@@ -245,6 +247,7 @@ local lang_syntax = {
   jsxBraces             = { fg = dead_grey },
   jsTemplateBraces      = { fg = red },
   jsFuncParens          = { fg = dead_grey },
+  jsModuleBraces        = { fg = dead_grey },
   jsDestructuringBraces = { fg = dead_grey },
   jsObjectBraces        = { fg = dead_grey },
   jsObjectKey           = { fg = pale_blue },
