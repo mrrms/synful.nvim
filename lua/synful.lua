@@ -28,6 +28,7 @@ local white       = '#C0C0FC'
 local fg          = '#B5B5E3'
 local fg_light    = '#DEDEFF'
 
+
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
   CursorLine   = { bg = deep_blue },
@@ -320,5 +321,7 @@ vim.g.terminal_color_12         = blue
 vim.g.terminal_color_13         = purple
 vim.g.terminal_color_14         = blue
 vim.g.terminal_color_15         = white
-vim.g.terminal_color_background = dead_grey --> whoa whoa whoa
+vim.g.terminal_color_background = dead_grey
 vim.g.terminal_color_foreground = fg_light
+
+vim.api.nvim_set(0, "@keyword.return", { link = "Return"})
