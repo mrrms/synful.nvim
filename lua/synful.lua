@@ -9,7 +9,7 @@ end
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
-local dead_grey   = '#454575'
+local dead_grey   = '#454555'
 local lagoon      = '#6070C1'
 local blue        = '#7989FF'
 local pale_blue   = '#7AA7FF'
@@ -115,7 +115,7 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Comment   = { fg = lagoon, gui = 'bold,italic' },
+  Comment   = { fg = dead_grey },
   Constant  = { fg = blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = fg_light, gui = 'bold' },
