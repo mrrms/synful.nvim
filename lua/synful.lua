@@ -324,4 +324,4 @@ vim.g.terminal_color_15         = white
 vim.g.terminal_color_background = dead_grey
 vim.g.terminal_color_foreground = fg_light
 
-vim.api.nvim_set(0, "@keyword.return", { link = "@repeat"})
+vim.api.nvim_set(0, "@keyword.return.javascript", { link = "Return" })
