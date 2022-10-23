@@ -253,7 +253,7 @@ local lang_syntax = {
   jsDestructuringBraces = { fg = death },
   jsObjectBraces        = { fg = death },
   jsObjectKey           = { fg = pale_blue },
-  jsObjectShorthandProp = { fg = fg_light },
+  jsObjectShorthandProp = { fg = lagoon },
   jsNull                = { fg = purple },
   NvimInternalError     = { fg = rouge },
 
