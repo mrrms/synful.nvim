@@ -231,6 +231,7 @@ local lang_syntax = {
   jsFuncName            = { fg = pink, gui = 'bold' },
   jsImport              = { fg = lagoon },
   jsFrom                = { fg = blue, gui = 'italic' },
+  jsParen               = { fg = lagoon },
   jsStorageClass        = { fg = lagoon },
   jsAsyncKeyword        = { fg = blue, gui = 'italic' },
   jsForAwait            = { fg = blue, gui = 'italic' },
