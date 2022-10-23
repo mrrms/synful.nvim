@@ -187,7 +187,7 @@ local lang_syntax = {
   luaFunc           = { fg = blue },
   luaFuncCall       = { fg = blue },
   luaTableBlock     = { fg = death },
-  luaFunctionBlock  = { fg = bold_light, gui = 'bold' },
+  luaFunctionBlock  = { fg = death },
   luaFuncName       = { fg = blue },
   luaBuiltIn        = { fg = blue },
   luaLocal          = { fg = green, gui = 'bold' },
