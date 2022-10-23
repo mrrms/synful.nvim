@@ -179,7 +179,7 @@ local lang_syntax = {
   --> lua.vim
   luaTable     = { fg = death },
   luaBraces    = { fg = death },
-  luaParen    = { fg = death },
+  luaParen     = { fg = death },
   luaIn        = { fg = blue, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
 
