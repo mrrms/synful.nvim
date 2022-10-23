@@ -6,10 +6,11 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
+--> in that case, this is what a comment can look like
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
-local death       = '#444460'
+local death       = '#444465'
 local lagoon      = '#6070C1'
 local blue        = '#7989FF'
 local pale_blue   = '#7AA7FF'
