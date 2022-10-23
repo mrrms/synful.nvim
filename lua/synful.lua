@@ -57,7 +57,7 @@ local editor_syntax = {
   PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
   Search       = { fg = white, bg = lagoon },
-  SpecialKey   = { bg = rouge },
+  SpecialKey   = { fg = lagoon },
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
   SpellLocal   = { gui = 'underline', sp = orange },
