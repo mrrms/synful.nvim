@@ -179,13 +179,14 @@ local lang_syntax = {
   --> lua.vim
   luaTable     = { fg = death },
   luaBraces    = { fg = death },
+  luaParen    = { fg = death },
   luaIn        = { fg = blue, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
 
   --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
   luaFuncCall       = { fg = blue },
-  luaTableBlock     = { fg = bold_light },
+  luaTableBlock     = { fg = death },
   luaFunctionBlock  = { fg = bold_light, gui = 'bold' },
   luaFuncName       = { fg = blue },
   luaBuiltIn        = { fg = blue },
