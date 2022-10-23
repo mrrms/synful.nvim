@@ -9,7 +9,7 @@ end
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
-local dead_grey   = '#444460'
+local death       = '#444460'
 local lagoon      = '#6070C1'
 local blue        = '#7989FF'
 local pale_blue   = '#7AA7FF'
@@ -47,16 +47,16 @@ local editor_syntax = {
   SignColumn   = { fg = yellow },
   IncSearch    = { bg = purple, fg = bruise },
   Substitute   = { bg = blue, fg = bruise },
-  LineNr       = { fg = dead_grey },
+  LineNr       = { fg = grey },
   MatchParen   = { fg = red, gui = 'bold' },
   Normal       = { fg = fg_light },
   NormalFloat  = { bg = zero_dark },
   Pmenu        = { fg = fg, bg = zero_dark },
-  PmenuSel     = { fg = fg_light, bg = dead_grey },
+  PmenuSel     = { fg = fg_light, bg = grey },
   PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
   Search       = { fg = white, bg = lagoon },
-  SpecialKey   = { bg = dead_grey },
+  SpecialKey   = { bg = grey },
   SpellBad     = { gui = 'underline', sp = red },
   SpellCap     = { gui = 'underline', sp = yellow },
   SpellLocal   = { gui = 'underline', sp = orange },
@@ -65,16 +65,16 @@ local editor_syntax = {
   TabLineFill  = { bg = bruise, fg = fg_light },
   TabLineSel   = { fg = zero_dark, gui = 'bold', bg = blue },
   Title        = { fg = fg_light },
-  Visual       = { fg = white, bg = dead_grey },
-  VisualNOS    = { fg = white, bg = dead_grey },
+  Visual       = { fg = white, bg = grey },
+  VisualNOS    = { fg = white, bg = grey },
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
-  FloatBorder  = { fg = dead_grey },
+  FloatBorder  = { fg = grey },
   constructor  = { fg = grey },
   Builtin      = { fg = fg_light },
   Return       = { fg = green, gui = 'bold' },
 
-  gitcommitComment        = { fg = dead_grey, gui = 'italic' },
+  gitcommitComment        = { fg = death, gui = 'italic' },
   gitcommitUntracked      = { fg = fg_dark, gui = 'italic' },
   gitcommitDiscarded      = { fg = fg_dark, gui = 'italic' },
   gitcommitSelected       = { fg = fg_dark, gui = 'italic' },
@@ -115,7 +115,7 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Comment   = { fg = dead_grey, gui = 'bold,italic' },
+  Comment   = { fg = death, gui = 'bold,italic' },
   Constant  = { fg = blue },
   String    = { fg = light_green, gui = 'italic' },
   Character = { fg = fg_light, gui = 'bold' },
@@ -143,11 +143,11 @@ local code_syntax = {
   Structure    = { fg = yellow },
   Typedef      = { fg = yellow },
   Special      = { fg = lagoon },
-  SpecialChar    = { fg = dead_grey },
+  SpecialChar    = { fg = death },
   Tag            = { fg = orange },
   SpecialComment = { fg = fg_dark, gui = 'bold' },
   Debug          = {},
-  Delimiter      = { fg = dead_grey },
+  Delimiter      = { fg = death },
   Ignore     = {},
   Underlined = { gui = 'underline' },
   Error      = { fg = red },
@@ -176,15 +176,15 @@ end
 local lang_syntax = {
   xmlEndTag    = { fg = blue, gui = 'italic' },
   --> lua.vim
-  luaTable     = { fg = dead_grey },
-  luaBraces    = { fg = dead_grey },
+  luaTable     = { fg = death },
+  luaBraces    = { fg = death },
   luaIn        = { fg = blue, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
 
   --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = blue },
   luaFuncCall       = { fg = blue },
-  luaTableBlock     = { fg = dead_grey },
+  luaTableBlock     = { fg = bold_light },
   luaFunctionBlock  = { fg = bold_light, gui = 'bold' },
   luaFuncName       = { fg = blue },
   luaBuiltIn        = { fg = blue },
@@ -192,7 +192,7 @@ local lang_syntax = {
   luaSpecialValue   = { fg = purple },
   luaStatement      = { fg = green, gui = 'bold' },
   luaFunction       = { fg = blue, gui = 'italic' },
-  luaSymbolOperator = { fg = dead_grey },
+  luaSymbolOperator = { fg = death },
   luaConstant       = { fg = orange },
 
   --> zsh.vim
@@ -226,38 +226,38 @@ local lang_syntax = {
   rustTypedef     = { fg = orange },
 
   --> javascript polyglot (pangloss/vim-javascript)
-  jsFunction            = { fg = blue, gui = 'italic' },
+  jsFunction            = { fg = lagoon },
   jsFuncName            = { fg = pink, gui = 'bold' },
   jsImport              = { fg = lagoon },
   jsFrom                = { fg = blue, gui = 'italic' },
   jsStorageClass        = { fg = lagoon },
   jsAsyncKeyword        = { fg = blue, gui = 'italic' },
   jsForAwait            = { fg = blue, gui = 'italic' },
-  jsArrowFunction       = { fg = dead_grey },
+  jsArrowFunction       = { fg = death },
   jsReturn              = { fg = green, gui = 'bold' },
   jsFuncBlock           = { fg = lagoon, gui = 'bold' },
-  jsParens              = { fg = dead_grey },
+  jsParens              = { fg = death },
   jsFuncCall            = { fg = bold_light, 'bold' },
-  jsFuncBraces          = { fg = dead_grey },
-  jsExport              = { fg = blue, gui = 'italic' },
+  jsFuncBraces          = { fg = death },
+  jsExport              = { fg = lagoon },
   jsGlobalObjects       = { fg = green },
   jsxTagName            = { fg = blue, gui = 'bold' },
   jsxComponentName      = { fg = blue },
   jsxAttrib             = { fg = pale_blue },
-  jsxBraces             = { fg = dead_grey },
+  jsxBraces             = { fg = death },
   jsTemplateBraces      = { fg = red },
-  jsFuncParens          = { fg = dead_grey },
-  jsModuleBraces        = { fg = dead_grey },
-  jsDestructuringBraces = { fg = dead_grey },
-  jsObjectBraces        = { fg = dead_grey },
+  jsFuncParens          = { fg = death },
+  jsModuleBraces        = { fg = death },
+  jsDestructuringBraces = { fg = death },
+  jsObjectBraces        = { fg = death },
   jsObjectKey           = { fg = pale_blue },
   jsObjectShorthandProp = { fg = fg_light },
   jsNull                = { fg = purple },
   NvimInternalError     = { fg = rouge },
 
-  TelescopeBorder = { fg = dead_grey },
+  TelescopeBorder = { fg = death },
 
-  CmpCompletionBorder = { fg = dead_grey },
+  CmpCompletionBorder = { fg = death },
   CmpItemAbbrMatch = { fg = pale_blue },
   CmpItemAbbrMatchFuzzy = { fg = pale_blue },
   CmpItemKindFunction = { fg = purple },
@@ -275,7 +275,7 @@ local lang_syntax = {
 
   typescriptAsyncFuncKeyword  = { fg = blue, gui = 'italic' },
   typescriptCall              = { fg = fg_light },
-  typescriptBraces            = { fg = dead_grey },
+  typescriptBraces            = { fg = death },
   typescriptTemplateSB        = { fg = blue },
   typescriptTry               = { fg = blue, gui = 'italic' },
   typescriptExceptions        = { fg = blue, gui = 'italic' },
@@ -289,8 +289,8 @@ local lang_syntax = {
   typescriptStringMethod      = { fg = blue },
   typescriptTypeReference     = { fg = yellow },
   typescriptObjectLabel       = { fg = red },
-  typescriptParens            = { fg = dead_grey },
-  typescriptTypeBrackets      = { fg = dead_grey },
+  typescriptParens            = { fg = death },
+  typescriptTypeBrackets      = { fg = death },
   typescriptXHRMethod         = { fg = blue },
   typescriptResponseProp      = { fg = blue },
   typescriptBOMLocationMethod = { fg = blue },
@@ -324,7 +324,7 @@ vim.g.terminal_color_12         = blue
 vim.g.terminal_color_13         = purple
 vim.g.terminal_color_14         = blue
 vim.g.terminal_color_15         = white
-vim.g.terminal_color_background = dead_grey
+vim.g.terminal_color_background = death
 vim.g.terminal_color_foreground = fg_light
 
 vim.api.nvim_set(0, "@keyword.return.javascript", { link = "Return" })
