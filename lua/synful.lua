@@ -243,7 +243,7 @@ local lang_syntax = {
   jsFuncCall            = { fg = bold_light, gui = 'bold' },
   jsFuncBraces          = { fg = death },
   jsExport              = { fg = lagoon },
-  jsGlobalObjects       = { fg = green },
+  jsGlobalObjects       = { fg = lagoon },
   jsxTagName            = { fg = blue, gui = 'bold' },
   jsxComponentName      = { fg = blue },
   jsxAttrib             = { fg = pale_blue },
@@ -265,6 +265,9 @@ local lang_syntax = {
   jsNoise               = { fg = death },
   jsFuncArgs            = { fg = light_green, gui ='italic'},
   jsTemplateString      = { fg = fg_light, gui = 'italic' },
+  jsObjectSeparator     = { fg = death },
+  jsObjectValue         = { fg = bold_light, gui = 'bold' },
+  jsObjectObjectProp    = { fg = purple, gui = 'italic' },
 
   NvimInternalError     = { fg = rouge },
 
