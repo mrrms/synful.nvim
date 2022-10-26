@@ -265,7 +265,7 @@ local lang_syntax = {
   jsNoise               = { fg = death },
   jsFuncArgs            = { fg = pale_blue },
   jsFuncArgsCommas      = { fg = death },
-  jsTemplateString      = { fg = fg_dark, gui = 'bold,italic' },
+  jsTemplateString      = { fg = death, gui = 'bold,italic' },
   jsObjectSeparator     = { fg = death },
   jsObjectValue         = { fg = bold_light, gui = 'bold' },
   jsObjectObjectProp    = { fg = purple, gui = 'italic' },
