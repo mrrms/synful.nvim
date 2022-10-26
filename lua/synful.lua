@@ -195,7 +195,7 @@ local lang_syntax = {
   luaStatement      = { fg = green, gui = 'bold' },
   luaFunction       = { fg = blue, gui = 'italic' },
   luaSymbolOperator = { fg = death },
-  luaConstant       = { fg = orange },
+  luaConstant       = { fg = purple },
 
   --> zsh.vim
   zshTodo            = code_syntax.Todo,
@@ -263,7 +263,7 @@ local lang_syntax = {
   jsTernaryOperator     = { fg = purple },
   jsObjectColon         = { fg = death },
   jsNoise               = { fg = death },
-  jsFuncArgs            = { fg = light_green, gui ='italic'},
+  jsFuncArgs            = { fg = death },
   jsTemplateString      = { fg = fg_dark, gui = 'italic' },
   jsObjectSeparator     = { fg = death },
   jsObjectValue         = { fg = bold_light, gui = 'bold' },
