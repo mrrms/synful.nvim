@@ -298,7 +298,7 @@ local lang_syntax = {
   tsxCloseString              = { fg = death },
   tsxEqual                    = { fg = death },
   tsxTag                      = { fg = death },
-  tsxTagName                  = { fg = lagoon },
+  tsxTagName                  = { fg = lagoon, gui = 'bold' },
   txsRegion                   = { fg = death },
   typescriptArrayMethod       = { fg = blue },
   typescriptArrowFunc         = { fg = death },
@@ -316,7 +316,7 @@ local lang_syntax = {
   typescriptExport            = { fg = lagoon, gui = 'bold' },
   typescriptFuncKeyword       = { fg = lagoon, gui = 'bold' },
   typescriptHeadersMethod     = { fg = blue },
-  typescriptIdentifierName    = { fg = bold_light, gui = 'bold' },
+  typescriptIdentifierName    = { fg = fg, gui = 'italic' },
   typescriptImport            = { fg = lagoon, gui = 'bold' },
   typescriptObjectColon       = { fg = death },
   typescriptObjectLabel       = { fg = pale_blue },
@@ -337,6 +337,10 @@ local lang_syntax = {
   typescriptDestructureVariable = { fg = bold_light },
   typescriptBOMWindowProp       = { fg = blue, gui = 'bold' },
   typescriptArray             = { fg = death },
+  tsxCloseTag                 = { fg = death },
+  tsxRegion                   = { fg = death },
+  typescriptTernary           = { fg = yellow },
+  typescriptTernaryOp         = { fg = yellow },
 }
 
 for group, styles in pairs(lang_syntax) do
