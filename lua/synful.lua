@@ -132,7 +132,7 @@ local code_syntax = {
   Conditional = { fg = blue, gui = 'italic' },
   Label       = { fg = lagoon },
   Exception   = { fg = blue, gui = 'italic' },
-  Operator    = { fg = death },
+  Operator    = { fg = lagoon, gui = 'bold' },
   keyword     = { fg = blue, gui = 'bold' },
   Include   = { fg = blue, bold = 'bold' },
   Define    = { fg = blue },
