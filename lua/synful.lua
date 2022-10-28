@@ -229,7 +229,7 @@ local lang_syntax = {
 
   --> javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = lagoon },
-  jsFuncName            = { fg = pink, gui = 'bold' },
+  jsFuncName            = { fg = bold_light, gui = 'bold' },
   jsImport              = { fg = lagoon },
   jsFrom                = { fg = blue, gui = 'italic' },
   jsParen               = { fg = pale_blue },
