@@ -6,11 +6,10 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
---> in that case, this is what a comment looks like
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local bruise      = '#2A293D'
-local death       = '#333360'
+local death       = '#444480'
 local lagoon      = '#6070C1'
 local blue        = '#7989FF'
 local pale_blue   = '#7AA7FF'
@@ -366,5 +365,3 @@ vim.g.terminal_color_14         = blue
 vim.g.terminal_color_15         = white
 vim.g.terminal_color_background = death
 vim.g.terminal_color_foreground = fg_light
-
-vim.api.nvim_set(0, "@keyword.return.javascript", { link = "Return" })
