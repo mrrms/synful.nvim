@@ -8,8 +8,9 @@ end
 
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
-local bruise      = '#2A293D'
+local bruise      = '#3D3D5D'
 local death       = '#444480'
+local navy        = '#445599'
 local lagoon      = '#6070C1'
 local blue        = '#7989FF'
 local pale_blue   = '#7AA7FF'
@@ -52,7 +53,7 @@ local editor_syntax = {
   Normal       = { fg = fg_light },
   NormalFloat  = { bg = zero_dark },
   Pmenu        = { fg = fg, bg = zero_dark },
-  PmenuSel     = { bg = death },
+  PmenuSel     = { bg = navy },
   PmenuSbar    = { fg = fg },
   PmenuThumb   = { fg = bruise },
   Search       = { fg = white, bg = lagoon },
@@ -235,11 +236,13 @@ local lang_syntax = {
 
   --> javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = lagoon },
-  jsFuncName            = { fg = bold_light, gui = 'bold' },
   jsImport              = { fg = lagoon },
+  jsStorageClass        = { fg = lagoon },
+  jsExport              = { fg = lagoon },
+  jsGlobalObjects       = { fg = lagoon, gui = 'bold' },
+  jsFuncName            = { fg = bold_light, gui = 'bold' },
   jsFrom                = { fg = blue, gui = 'italic' },
   jsParen               = { fg = pale_blue },
-  jsStorageClass        = { fg = lagoon },
   jsAsyncKeyword        = { fg = blue, gui = 'italic' },
   jsForAwait            = { fg = blue, gui = 'italic' },
   jsArrowFunction       = { fg = death },
@@ -248,8 +251,6 @@ local lang_syntax = {
   jsParens              = { fg = death },
   jsFuncCall            = { fg = bold_light, gui = 'bold' },
   jsFuncBraces          = { fg = death },
-  jsExport              = { fg = lagoon },
-  jsGlobalObjects       = { fg = lagoon, gui = 'bold' },
   jsxTagName            = { fg = blue, gui = 'bold' },
   jsxComponentName      = { fg = blue },
   jsxAttrib             = { fg = pale_blue },
@@ -297,7 +298,7 @@ local lang_syntax = {
   tsxCloseString              = { fg = death },
   tsxEqual                    = { fg = death },
   tsxTag                      = { fg = death },
-  tsxTagName                  = { fg = lagoon, gui = 'bold' },
+  tsxTagName                  = { fg = navy, gui = 'bold' },
   txsRegion                   = { fg = death },
   typescriptArrayMethod       = { fg = blue },
   typescriptArrowFunc         = { fg = death },
@@ -312,11 +313,11 @@ local lang_syntax = {
   typescriptDOMWindowProp     = { fg = blue },
   typescriptDotNotation       = { fg = rouge },
   typescriptExceptions        = { fg = blue, gui = 'italic' },
-  typescriptExport            = { fg = lagoon, gui = 'bold' },
-  typescriptFuncKeyword       = { fg = lagoon, gui = 'bold' },
+  typescriptExport            = { fg = navy, gui = 'bold' },
+  typescriptFuncKeyword       = { fg = navy, gui = 'bold' },
   typescriptHeadersMethod     = { fg = blue },
   typescriptIdentifierName    = { fg = fg, gui = 'italic' },
-  typescriptImport            = { fg = lagoon, gui = 'bold' },
+  typescriptImport            = { fg = navy, gui = 'bold' },
   typescriptObjectColon       = { fg = death },
   typescriptObjectLabel       = { fg = pale_blue },
   typescriptObjectLiteral     = { fg = fg, gui = 'italic' },
@@ -329,9 +330,10 @@ local lang_syntax = {
   typescriptStringMethod      = { fg = blue },
   typescriptTemplateSB        = { fg = blue },
   typescriptTry               = { fg = blue, gui = 'italic' },
+  typescriptTemplate          = { fg = bruise, gui = 'italic' },
   typescriptTypeBrackets      = { fg = death },
   typescriptTypeReference     = { fg = yellow },
-  typescriptVariable          = { fg = lagoon },
+  typescriptVariable          = { fg = navy },
   typescriptXHRMethod         = { fg = blue },
   typescriptDestructureVariable = { fg = bold_light },
   typescriptBOMWindowProp       = { fg = blue, gui = 'bold' },
