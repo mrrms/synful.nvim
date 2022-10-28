@@ -254,7 +254,7 @@ local lang_syntax = {
   jsDestructuringBraces = { fg = death },
   jsObjectBraces        = { fg = death },
   jsObjectKey           = { fg = pale_blue },
-  jsObjectShorthandProp = { fg = lagoon },
+  jsObjectShorthandProp = { fg = pale_blue },
   jsNull                = { fg = purple },
   jsModuleComma         = { fg = death },
   jsObject              = { fg = death },
