@@ -339,8 +339,8 @@ local lang_syntax = {
   typescriptArray             = { fg = death },
   tsxCloseTag                 = { fg = death },
   tsxRegion                   = { fg = death },
-  typescriptTernary           = { fg = yellow },
-  typescriptTernaryOp         = { fg = yellow },
+  typescriptTernary           = { fg = orange },
+  typescriptTernaryOp         = { fg = orange },
 }
 
 for group, styles in pairs(lang_syntax) do
