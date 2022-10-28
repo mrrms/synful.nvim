@@ -243,7 +243,7 @@ local lang_syntax = {
   jsFuncCall            = { fg = bold_light, gui = 'bold' },
   jsFuncBraces          = { fg = death },
   jsExport              = { fg = lagoon },
-  jsGlobalObjects       = { fg = lagoon },
+  jsGlobalObjects       = { fg = lagoon, gui = 'bold' },
   jsxTagName            = { fg = blue, gui = 'bold' },
   jsxComponentName      = { fg = blue },
   jsxAttrib             = { fg = pale_blue },
