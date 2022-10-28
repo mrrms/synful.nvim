@@ -320,7 +320,7 @@ local lang_syntax = {
   typescriptImport            = { fg = lagoon, gui = 'bold' },
   typescriptObjectColon       = { fg = death },
   typescriptObjectLabel       = { fg = pale_blue },
-  typescriptObjectLiteral     = { fg = pale_blue, gui = 'bold' },
+  typescriptObjectLiteral     = { fg = fg, gui = 'italic' },
   typescriptOperator          = { fg = blue, gui = 'italic' },
   typescriptParens            = { fg = death },
   typescriptProp              = { fg = pale_blue },
