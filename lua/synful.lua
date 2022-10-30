@@ -139,7 +139,7 @@ local code_syntax = {
   Noise               = { fg = pink },
   Number              = { fg = purple },
   NvimInternalError   = { fg = rouge },
-  Operator            = { fg = death },
+  Operator            = { fg = pale_blue },
   PreCondit           = { fg = yellow },
   PreProc             = { fg = yellow },
   Repeat              = { fg = green, gui = 'bold' },
