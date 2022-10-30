@@ -8,9 +8,9 @@ end
 
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
+local navy        = '#445599'
 local bruise      = '#3D3D5D'
 local death       = '#444480'
-local navy        = '#445599'
 local lagoon      = '#6070C1'
 local pale_blue   = '#7AA7FF'
 local fg_dark     = '#676E96'
@@ -320,7 +320,7 @@ local lang_syntax = {
   typescriptExport            = { fg = navy, gui = 'bold' },
   typescriptFuncKeyword       = { fg = navy, gui = 'bold' },
   typescriptHeadersMethod     = { fg = lagoon },
-  typescriptIdentifierName    = { fg = fg },
+  typescriptIdentifierName    = { fg = navy },
   typescriptImport            = { fg = navy, gui = 'bold' },
   typescriptObjectColon       = { fg = death },
   typescriptObjectLabel       = { fg = pale_blue },
@@ -338,11 +338,12 @@ local lang_syntax = {
   typescriptTernaryOp         = { fg = rouge },
   typescriptTry               = { fg = lagoon, gui = 'italic' },
   typescriptTypeBrackets      = { fg = death },
-  typescriptTypeReference     = { fg = yellow },
   typescriptUnaryOp           = { fg = rouge },
   typescriptBinaryOp          = { fg = rouge },
   typescriptVariable          = { fg = navy },
   typescriptXHRMethod         = { fg = lagoon },
+  typescriptTypeReference     = { fg = navy },
+  typescriptTypeCase          = { fg = navy },
 }
 
 for group, styles in pairs(lang_syntax) do
