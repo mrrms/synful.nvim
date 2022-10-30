@@ -20,7 +20,7 @@ local pink        = '#AF749C'
 local red         = '#B8042E'
 local rouge       = '#883344'
 local green       = '#5F875F'
-local light_green = '#96C0C0'
+local pale_green  = '#96C0C0'
 local yellow      = '#F2DCD3'
 local orange      = '#DB9280'
 local bold_light  = '#A8B4F6'
@@ -35,7 +35,7 @@ local editor_syntax = {
   Directory    = { fg = lagoon, gui = 'bold' },
   variable     = { fg = fg },
   field        = { fg = fg },
-  DiffAdd      = { fg = light_green },
+  DiffAdd      = { fg = pale_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = lagoon },
@@ -146,9 +146,9 @@ local code_syntax = {
   Special             = { fg = lagoon },
   SpecialChar         = { fg = death },
   SpecialComment      = { fg = fg_dark, gui = 'bold' },
-  Statement           = { fg = light_green, gui = 'italic' },
+  Statement           = { fg = pale_green, gui = 'italic' },
   StorageClass        = { fg = purple, gui = 'italic' },
-  String              = { fg = light_green, gui = 'italic' },
+  String              = { fg = pale_green, gui = 'italic' },
   Structure           = { fg = yellow },
   Tag                 = { fg = orange },
   TelescopeBorder     = { fg = death },
@@ -281,7 +281,7 @@ local lang_syntax = {
   CmpItemAbbrMatchFuzzy = { fg = pale_blue },
   CmpItemKindFunction = { fg = purple },
   CmpItemKindMethod = {fg = purple },
-  CmpItemKindVariable = { fg = light_green },
+  CmpItemKindVariable = { fg = pale_green },
   CmpItemKindKeyword = { fg= yellow },
   CmpItemKindColor = { fg = bold_light },
   CmpItemKindConstant = { fg = lagoon },
@@ -308,7 +308,7 @@ local lang_syntax = {
   typescriptAsyncFuncKeyword  = { fg = lagoon, gui = 'italic' },
   typescriptBOM               = { fg = bold_light },
   typescriptBOMLocationMethod = { fg = lagoon },
-  typescriptBOMWindowProp     = { fg = light_green },
+  typescriptBOMWindowProp     = { fg = pale_green },
   typescriptBlock             = { fg = bold_light },
   typescriptBraces            = { fg = death },
   typescriptCall              = { fg = fg_light },
@@ -342,7 +342,7 @@ local lang_syntax = {
   typescriptBinaryOp          = { fg = rouge },
   typescriptVariable          = { fg = navy },
   typescriptXHRMethod         = { fg = lagoon },
-  typescriptTypeReference     = { fg = navy },
+  typescriptTypeReference     = { fg = pale_green, gui = 'bold' },
   typescriptTypeCase          = { fg = navy },
 }
 
@@ -353,7 +353,7 @@ end
 --> Setting Neovim Terminal Color
 vim.g.terminal_color_0          = zero_dark
 vim.g.terminal_color_1          = red
-vim.g.terminal_color_2          = light_green
+vim.g.terminal_color_2          = pale_green
 vim.g.terminal_color_3          = yellow
 vim.g.terminal_color_4          = lagoon
 vim.g.terminal_color_5          = purple
@@ -361,7 +361,7 @@ vim.g.terminal_color_6          = lagoon
 vim.g.terminal_color_7          = fg
 vim.g.terminal_color_8          = grey
 vim.g.terminal_color_9          = red
-vim.g.terminal_color_10         = light_green
+vim.g.terminal_color_10         = pale_green
 vim.g.terminal_color_11         = orange
 vim.g.terminal_color_12         = lagoon
 vim.g.terminal_color_13         = purple
