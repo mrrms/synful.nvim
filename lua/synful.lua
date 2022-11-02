@@ -340,7 +340,7 @@ local lang_syntax = {
   typescriptTypeBrackets      = { fg = death },
   typescriptUnaryOp           = { fg = rouge },
   typescriptBinaryOp          = { fg = rouge },
-  typescriptVariable          = { fg = navy },
+  typescriptVariable          = { fg = lagoon },
   typescriptXHRMethod         = { fg = lagoon },
   typescriptTypeReference     = { fg = pale_green, gui = 'bold' },
   typescriptTypeCase          = { fg = navy },
