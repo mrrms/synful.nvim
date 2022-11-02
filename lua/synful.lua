@@ -153,7 +153,7 @@ local code_syntax = {
   Tag                 = { fg = orange },
   TelescopeBorder     = { fg = death },
   Todo                = { fg = pale_blue, gui = 'bold' },
-  Type                = { fg = pale_green, gui='italic' },
+  Type                = { fg = pale_green, gui='bold' },
   Typedef             = { fg = yellow },
   Underlined          = { gui = 'underline' },
   htmlEndTag          = { fg = lagoon },
