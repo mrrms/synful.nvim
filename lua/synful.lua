@@ -9,7 +9,7 @@ end
 local zero_dark   = '#0F1521'
 local deep_blue   = '#151D2D'
 local navy        = '#445599'
-local bruise      = '#3D3D5D'
+local bruise      = '#444466'
 local death       = '#444480'
 local lagoon      = '#6070C1'
 local pale_blue   = '#7AA7FF'
