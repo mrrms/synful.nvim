@@ -218,6 +218,7 @@ local lang_syntax = {
   zshFunction        = { fg = yellow, gui = 'italic' },
   zshSubst           = { fg = yellow },
   zshSubstDelim      = { fg = lagoon },
+  shStatement        = { fg = pale_blue, gui='bold' },
 
   --> rust polyglot (rust.vim)
   rustKeyword     = { fg = orange },
