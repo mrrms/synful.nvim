@@ -187,6 +187,7 @@ local lang_syntax = {
   luaTable   = { fg = death },
   luaBraces  = { fg = death },
   luaParen   = { fg = death },
+  luaParens  = { fg = death },
   luaIn      = { fg = lagoon, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
 
