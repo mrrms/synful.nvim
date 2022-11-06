@@ -6,27 +6,27 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local zero_dark   = '#0F1521'
-local deep_blue   = '#151D2D'
-local navy        = '#445599'
-local bruise      = '#404065'
-local death       = '#505075'
-local lagoon      = '#6070C1'
-local pale_blue   = '#7AA7FF'
-local fg_dark     = '#676E96'
-local grey        = '#8585AA'
-local purple      = '#BB91ED'
-local pink        = '#AF749C'
-local red         = '#B8042E'
-local rouge       = '#883344'
-local green       = '#5F875F'
-local pale_green  = '#96C0C0'
-local yellow      = '#F2DCD3'
-local orange      = '#DB9280'
-local bold_light  = '#A8B4F6'
-local white       = '#C0C0FC'
-local fg          = '#B5B5E3'
-local fg_light    = '#DEDEFF'
+local zero_dark  = '#0F1521'
+local deep_blue  = '#151D2D'
+local navy       = '#445599'
+local bruise     = '#404065'
+local death      = '#505075'
+local lagoon     = '#6070C1'
+local pale_blue  = '#7AA7FF'
+local fg_dark    = '#676E96'
+local grey       = '#8585AA'
+local purple     = '#BB91ED'
+local pink       = '#AF749C'
+local red        = '#B8042E'
+local rouge      = '#883344'
+local green      = '#5F875F'
+local pale_green = '#96C0C0'
+local yellow     = '#F2DCD3'
+local orange     = '#DB9280'
+local bold_light = '#A8B4F6'
+local white      = '#C0C0FC'
+local fg         = '#B5B5E3'
+local fg_light   = '#DEDEFF'
 
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
@@ -115,50 +115,50 @@ end
 
 --> Vim Default Code Syntax
 local code_syntax = {
-  Boolean             = { fg = purple },
-  Character           = { fg = fg_light, gui = 'bold' },
-  Command             = { fg = lagoon },
-  Comment             = { fg = death, gui = 'bold,italic' },
-  Conditional         = { fg = navy },
-  Constant            = { fg = lagoon },
-  Debug               = { fg = red },
-  Define              = { fg = lagoon },
-  Delimiter           = { fg = death },
-  Error               = { fg = red },
-  Exception           = { fg = lagoon, gui = 'italic' },
-  Function            = { fg = bold_light, gui = 'bold' },
-  Field               = { fg = fg },
-  Float               = { fg = purple },
-  Identifier          = { fg = bold_light },
-  Ignore              = { fg = yellow },
-  Include             = { fg = lagoon, bold = 'bold' },
-  KeywordFunction     = { fg = lagoon },
-  KeywordReturn       = { fg = green, gui = 'italic' },
-  Label               = { fg = lagoon },
-  Macro               = { fg = purple },
-  Noise               = { fg = pink },
-  Number              = { fg = purple },
-  NvimInternalError   = { fg = rouge },
-  Operator            = { fg = pale_blue },
-  PreCondit           = { fg = yellow },
-  PreProc             = { fg = yellow },
-  Repeat              = { fg = green, gui = 'bold' },
-  Special             = { fg = lagoon },
-  SpecialChar         = { fg = death },
-  SpecialComment      = { fg = fg_dark, gui = 'bold' },
-  Statement           = { fg = pale_green, gui = 'italic' },
-  StorageClass        = { fg = purple, gui = 'italic' },
-  String              = { fg = pale_green, gui = 'italic' },
-  Structure           = { fg = yellow },
-  Tag                 = { fg = orange },
-  TelescopeBorder     = { fg = death },
-  Todo                = { fg = pale_blue, gui = 'bold' },
-  Type                = { fg = pale_green, gui='bold' },
-  Typedef             = { fg = yellow },
-  Underlined          = { gui = 'underline' },
-  htmlEndTag          = { fg = lagoon },
-  htmlTag             = { fg = lagoon },
-  keyword             = { fg = lagoon, gui = 'bold' },
+  Boolean           = { fg = purple },
+  Character         = { fg = fg_light, gui = 'bold' },
+  Command           = { fg = lagoon },
+  Comment           = { fg = death, gui = 'bold,italic' },
+  Conditional       = { fg = navy },
+  Constant          = { fg = lagoon },
+  Debug             = { fg = red },
+  Define            = { fg = lagoon },
+  Delimiter         = { fg = death },
+  Error             = { fg = red },
+  Exception         = { fg = lagoon, gui = 'italic' },
+  Function          = { fg = bold_light, gui = 'bold' },
+  Field             = { fg = fg },
+  Float             = { fg = purple },
+  Identifier        = { fg = bold_light },
+  Ignore            = { fg = yellow },
+  Include           = { fg = lagoon, bold = 'bold' },
+  KeywordFunction   = { fg = lagoon },
+  KeywordReturn     = { fg = green, gui = 'italic' },
+  Label             = { fg = lagoon },
+  Macro             = { fg = purple },
+  Noise             = { fg = pink },
+  Number            = { fg = purple },
+  NvimInternalError = { fg = rouge },
+  Operator          = { fg = pale_blue },
+  PreCondit         = { fg = yellow },
+  PreProc           = { fg = yellow },
+  Repeat            = { fg = green, gui = 'bold' },
+  Special           = { fg = lagoon },
+  SpecialChar       = { fg = death },
+  SpecialComment    = { fg = fg_dark, gui = 'bold' },
+  Statement         = { fg = pale_green, gui = 'italic' },
+  StorageClass      = { fg = purple, gui = 'italic' },
+  String            = { fg = pale_green, gui = 'italic' },
+  Structure         = { fg = yellow },
+  Tag               = { fg = orange },
+  TelescopeBorder   = { fg = death },
+  Todo              = { fg = pale_blue, gui = 'bold' },
+  Type              = { fg = pale_green, gui = 'bold' },
+  Typedef           = { fg = yellow },
+  Underlined        = { gui = 'underline' },
+  htmlEndTag        = { fg = lagoon },
+  htmlTag           = { fg = lagoon },
+  keyword           = { fg = lagoon, gui = 'bold' },
 }
 
 for group, styles in pairs(code_syntax) do
@@ -181,18 +181,19 @@ end
 
 --> Syntax Plugin And Language Highlight Groups
 local lang_syntax = {
-  xmlEndTag    = { fg = lagoon, gui = 'italic' },
+  xmlEndTag = { fg = lagoon, gui = 'italic' },
+
   --> lua.vim
-  luaTable     = { fg = death },
-  luaBraces    = { fg = death },
-  luaParen     = { fg = death },
-  luaIn        = { fg = lagoon, gui = 'italic' },
+  luaTable   = { fg = death },
+  luaBraces  = { fg = death },
+  luaParen   = { fg = death },
+  luaIn      = { fg = lagoon, gui = 'italic' },
   luaKeyword = { fg = green, gui = 'bold' },
 
   --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = lagoon },
   luaFuncCall       = { fg = lagoon },
-  luaTableBlock     = { fg = death },
+  luaTableBlock     = { fg = pale_blue },
   luaFunctionBlock  = { fg = death },
   luaFuncName       = { fg = lagoon },
   luaBuiltIn        = { fg = lagoon },
@@ -218,7 +219,7 @@ local lang_syntax = {
   zshFunction        = { fg = yellow, gui = 'italic' },
   zshSubst           = { fg = yellow },
   zshSubstDelim      = { fg = lagoon },
-  shStatement        = { fg = pale_blue, gui='bold' },
+  shStatement        = { fg = pale_blue, gui = 'bold' },
 
   --> rust polyglot (rust.vim)
   rustKeyword     = { fg = orange },
@@ -281,9 +282,9 @@ local lang_syntax = {
   CmpItemAbbrMatch = { fg = pale_blue },
   CmpItemAbbrMatchFuzzy = { fg = pale_blue },
   CmpItemKindFunction = { fg = purple },
-  CmpItemKindMethod = {fg = purple },
+  CmpItemKindMethod = { fg = purple },
   CmpItemKindVariable = { fg = pale_green },
-  CmpItemKindKeyword = { fg= yellow },
+  CmpItemKindKeyword = { fg = yellow },
   CmpItemKindColor = { fg = bold_light },
   CmpItemKindConstant = { fg = lagoon },
   CmpItemKindDefault = { fg = lagoon },
@@ -293,58 +294,58 @@ local lang_syntax = {
   CmpItemKindProperty = { fg = purple },
   CmpItemMenu = { fg = pink, gui = 'bold,italic' },
 
-  tsxAttrib                   = { fg = pale_blue },
-  tsxCloseString              = { fg = death },
-  tsxCloseTag                 = { fg = death },
-  tsxEqual                    = { fg = death },
-  tsxRegion                   = { fg = death },
-  tsxTag                      = { fg = death },
-  tsxTagName                  = { fg = navy, gui = 'bold' },
-  txsRegion                   = { fg = death },
-  typescriptArray             = { fg = death },
-  typescriptArrayMethod       = { fg = lagoon },
-  typescriptArrowFunc         = { fg = death },
-  typescriptArrowFuncArg      = { fg = fg_light },
-  typescriptAssign            = { fg = death },
-  typescriptAsyncFuncKeyword  = { fg = lagoon, gui = 'italic' },
-  typescriptBOM               = { fg = bold_light },
-  typescriptBOMLocationMethod = { fg = lagoon },
-  typescriptBOMWindowProp     = { fg = pale_green },
-  typescriptBlock             = { fg = bold_light },
-  typescriptBraces            = { fg = death },
-  typescriptCall              = { fg = fg_light },
-  typescriptDOMDocProp        = { fg = lagoon },
-  typescriptDOMWindowProp     = { fg = lagoon },
+  tsxAttrib                     = { fg = pale_blue },
+  tsxCloseString                = { fg = death },
+  tsxCloseTag                   = { fg = death },
+  tsxEqual                      = { fg = death },
+  tsxRegion                     = { fg = death },
+  tsxTag                        = { fg = death },
+  tsxTagName                    = { fg = navy, gui = 'bold' },
+  txsRegion                     = { fg = death },
+  typescriptArray               = { fg = death },
+  typescriptArrayMethod         = { fg = lagoon },
+  typescriptArrowFunc           = { fg = death },
+  typescriptArrowFuncArg        = { fg = fg_light },
+  typescriptAssign              = { fg = death },
+  typescriptAsyncFuncKeyword    = { fg = lagoon, gui = 'italic' },
+  typescriptBOM                 = { fg = bold_light },
+  typescriptBOMLocationMethod   = { fg = lagoon },
+  typescriptBOMWindowProp       = { fg = pale_green },
+  typescriptBlock               = { fg = bold_light },
+  typescriptBraces              = { fg = death },
+  typescriptCall                = { fg = fg_light },
+  typescriptDOMDocProp          = { fg = lagoon },
+  typescriptDOMWindowProp       = { fg = lagoon },
   typescriptDestructureVariable = { fg = bold_light },
-  typescriptDotNotation       = { fg = rouge },
-  typescriptExceptions        = { fg = lagoon },
-  typescriptExport            = { fg = navy, gui = 'bold' },
-  typescriptFuncKeyword       = { fg = navy, gui = 'bold' },
-  typescriptHeadersMethod     = { fg = lagoon },
-  typescriptIdentifierName    = { fg = navy },
-  typescriptImport            = { fg = navy, gui = 'bold' },
-  typescriptObjectColon       = { fg = death },
-  typescriptObjectLabel       = { fg = pale_blue },
-  typescriptObjectLiteral     = { fg = fg },
-  typescriptOperator          = { fg = lagoon },
-  typescriptParens            = { fg = death },
-  typescriptProp              = { fg = pale_blue },
-  typescriptProperty          = { fg = death },
-  typescriptResponseProp      = { fg = lagoon },
-  typescriptStatementKeyword  = { fg = green, gui = 'bold' },
-  typescriptStringMethod      = { fg = lagoon },
-  typescriptTemplate          = { fg = bruise, gui = 'italic' },
-  typescriptTemplateSB        = { fg = lagoon },
-  typescriptTernary           = { fg = rouge },
-  typescriptTernaryOp         = { fg = rouge },
-  typescriptTry               = { fg = lagoon, gui = 'italic' },
-  typescriptTypeBrackets      = { fg = death },
-  typescriptUnaryOp           = { fg = rouge },
-  typescriptBinaryOp          = { fg = rouge },
-  typescriptVariable          = { fg = lagoon },
-  typescriptXHRMethod         = { fg = lagoon },
-  typescriptTypeReference     = { fg = pale_green, gui = 'bold' },
-  typescriptTypeCase          = { fg = navy },
+  typescriptDotNotation         = { fg = rouge },
+  typescriptExceptions          = { fg = lagoon },
+  typescriptExport              = { fg = navy, gui = 'bold' },
+  typescriptFuncKeyword         = { fg = navy, gui = 'bold' },
+  typescriptHeadersMethod       = { fg = lagoon },
+  typescriptIdentifierName      = { fg = navy },
+  typescriptImport              = { fg = navy, gui = 'bold' },
+  typescriptObjectColon         = { fg = death },
+  typescriptObjectLabel         = { fg = pale_blue },
+  typescriptObjectLiteral       = { fg = fg },
+  typescriptOperator            = { fg = lagoon },
+  typescriptParens              = { fg = death },
+  typescriptProp                = { fg = pale_blue },
+  typescriptProperty            = { fg = death },
+  typescriptResponseProp        = { fg = lagoon },
+  typescriptStatementKeyword    = { fg = green, gui = 'bold' },
+  typescriptStringMethod        = { fg = lagoon },
+  typescriptTemplate            = { fg = bruise, gui = 'italic' },
+  typescriptTemplateSB          = { fg = lagoon },
+  typescriptTernary             = { fg = rouge },
+  typescriptTernaryOp           = { fg = rouge },
+  typescriptTry                 = { fg = lagoon, gui = 'italic' },
+  typescriptTypeBrackets        = { fg = death },
+  typescriptUnaryOp             = { fg = rouge },
+  typescriptBinaryOp            = { fg = rouge },
+  typescriptVariable            = { fg = lagoon },
+  typescriptXHRMethod           = { fg = lagoon },
+  typescriptTypeReference       = { fg = pale_green, gui = 'bold' },
+  typescriptTypeCase            = { fg = navy },
 }
 
 for group, styles in pairs(lang_syntax) do
