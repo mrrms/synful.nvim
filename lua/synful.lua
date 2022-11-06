@@ -189,6 +189,7 @@ local lang_syntax = {
   luaParen   = { fg = death },
   luaParens  = { fg = death },
   luaIn      = { fg = lagoon, gui = 'italic' },
+  luaComma   = { fg = death },
   luaKeyword = { fg = green, gui = 'bold' },
 
   --> lua polyglot (tbastos/vim-lua)
