@@ -203,6 +203,7 @@ local lang_syntax = {
   luaBuiltIn        = { fg = lagoon },
   luaLocal          = { fg = green, gui = 'bold' },
   luaSpecialValue   = { fg = lagoon, gui = 'bold' },
+  luaStringLongTag  = { fg = death, gui = 'bold' },
   luaStatement      = { fg = green, gui = 'bold' },
   luaFunction       = { fg = lagoon, gui = 'italic' },
   luaSymbolOperator = { fg = death },
