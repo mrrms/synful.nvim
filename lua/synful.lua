@@ -194,6 +194,7 @@ local lang_syntax = {
   --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = lagoon },
   luaFuncCall       = { fg = lagoon },
+  luaFuncParens     = { fg = death },
   luaTableBlock     = { fg = pale_blue },
   luaFunctionBlock  = { fg = death },
   luaFuncName       = { fg = lagoon },
