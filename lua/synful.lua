@@ -281,6 +281,8 @@ local lang_syntax = {
   jsObjectValue         = { fg = bold_light, gui = 'bold' },
   jsObjectObjectProp    = { fg = purple, gui = 'italic' },
 
+  jsonQuote = { fg = navy },
+
   CmpCompletionBorder = { fg = death },
   CmpItemAbbrMatch = { fg = pale_blue },
   CmpItemAbbrMatchFuzzy = { fg = pale_blue },
