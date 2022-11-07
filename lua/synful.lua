@@ -237,7 +237,7 @@ local lang_syntax = {
   rustStorage     = { fg = orange },
   rustModPath     = { fg = fg_light },
   rustEnumVariant = { fg = fg_light },
-  rustStructure   = { fg = orange },
+  rustStructure   = { fg = green, gui = 'bold' },
   rustTypedef     = { fg = orange },
 
   --> javascript polyglot (pangloss/vim-javascript)
@@ -329,7 +329,7 @@ local lang_syntax = {
   typescriptExport              = { fg = navy, gui = 'bold' },
   typescriptFuncKeyword         = { fg = navy, gui = 'bold' },
   typescriptHeadersMethod       = { fg = lagoon },
-  typescriptIdentifierName      = { fg = navy },
+  typescriptIdentifierName      = { fg = pale_blue },
   typescriptImport              = { fg = navy, gui = 'bold' },
   typescriptObjectColon         = { fg = death },
   typescriptObjectLabel         = { fg = pale_blue },
