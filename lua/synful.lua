@@ -312,6 +312,8 @@ local lang_syntax = {
   tsxTagName                    = { fg = navy, gui = 'bold' },
   txsRegion                     = { fg = death },
   typescriptArray               = { fg = death },
+  typescriptEnum                = { fg = navy },
+  typescriptEnumKeyword         = { fg = navy },
   typescriptArrayMethod         = { fg = lagoon },
   typescriptArrowFunc           = { fg = death },
   typescriptArrowFuncArg        = { fg = white },
