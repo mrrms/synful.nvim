@@ -153,7 +153,7 @@ local code_syntax = {
   Type               = { fg = pale_green, gui = 'bold' },
   Typedef            = { fg = yellow },
   Underlined         = { gui = 'underline' },
-  htmlEndTag         = { fg = lagoon },
+  htmlEndTag         = { fg = death },
   htmlTag            = { fg = death },
   htmlHead           = { fg = lagoon },
   htmlTagN           = { fg = navy },
