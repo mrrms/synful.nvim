@@ -322,7 +322,7 @@ local lang_syntax = {
   typescriptBOM                 = { fg = freeze },
   typescriptBOMLocationMethod   = { fg = lagoon },
   typescriptBOMWindowProp       = { fg = pale_green },
-  typescriptBlock               = { fg = freeze },
+  typescriptBlock               = { fg = death },
   typescriptBraces              = { fg = death },
   typescriptCall                = { fg = white },
   typescriptDOMDocProp          = { fg = lagoon },
