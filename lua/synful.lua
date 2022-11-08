@@ -313,7 +313,7 @@ local lang_syntax = {
   txsRegion                     = { fg = death },
   typescriptArray               = { fg = death },
   typescriptEnum                = { fg = navy },
-  typescriptEnumKeyword         = { fg = navy },
+  typescriptEnumKeyword         = { fg = icicle },
   typescriptArrayMethod         = { fg = lagoon },
   typescriptArrowFunc           = { fg = death },
   typescriptArrowFuncArg        = { fg = white },
