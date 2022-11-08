@@ -346,7 +346,7 @@ local lang_syntax = {
   typescriptResponseProp        = { fg = lagoon },
   typescriptStatementKeyword    = { fg = green, gui = 'bold' },
   typescriptStringMethod        = { fg = lagoon },
-  typescriptTemplate            = { fg = death, gui = 'italic' },
+  typescriptTemplate            = { fg = yellow, gui = 'italic' },
   typescriptTemplateSB          = { fg = lagoon },
   typescriptTernary             = { fg = rouge },
   typescriptTernaryOp           = { fg = rouge },
