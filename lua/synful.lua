@@ -307,7 +307,7 @@ local lang_syntax = {
   tsxCloseString                = { fg = death },
   tsxCloseTag                   = { fg = death },
   tsxEqual                      = { fg = death },
-  tsxRegion                     = { fg = death },
+  tsxRegion                     = { fg = icicle },
   tsxTag                        = { fg = death },
   tsxTagName                    = { fg = navy, gui = 'bold' },
   txsRegion                     = { fg = death },
