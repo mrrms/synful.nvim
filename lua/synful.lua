@@ -141,7 +141,7 @@ local code_syntax = {
   PreProc            = { fg = yellow },
   Repeat             = { fg = green, gui = 'bold' },
   Special            = { fg = lagoon },
-  SpecialChar        = { fg = death },
+  SpecialChar        = { fg = rouge },
   SpecialComment     = { fg = death, gui = 'bold' },
   Statement          = { fg = pale_green, gui = 'italic' },
   StorageClass       = { fg = purple, gui = 'italic' },
