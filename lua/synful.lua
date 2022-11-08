@@ -8,76 +8,73 @@ end
 
 local zero_dark  = '#0F1521'
 local deep_blue  = '#151D2D'
+local death      = '#454565'
 local navy       = '#445599'
-local bruise     = '#404065'
-local death      = '#505075'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
-local fg_dark    = '#676E96'
 local grey       = '#8585AA'
 local purple     = '#BB91ED'
 local pink       = '#AF749C'
 local red        = '#B8042E'
 local rouge      = '#883344'
-local green      = '#5F875F'
-local pale_green = '#96C0C0'
 local yellow     = '#F2DCD3'
 local orange     = '#DB9280'
-local bold_light = '#A8B4F6'
-local white      = '#C0C0FC'
-local fg         = '#B5B5E3'
-local fg_light   = '#DEDEFF'
+local green      = '#5F875F'
+local pale_green = '#96C0C0'
+local freeze     = '#A8B4F6'
+local icicle     = '#C0C0FC'
+local white      = '#DEDEFF'
 
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
   CursorLine   = { bg = deep_blue },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = lagoon, gui = 'bold' },
-  variable     = { fg = fg },
-  field        = { fg = fg },
+  variable     = { fg = freeze },
+  field        = { fg = freeze },
   DiffAdd      = { fg = pale_green },
   DiffChange   = { fg = yellow },
   DiffDelete   = { fg = red },
   DiffText     = { fg = lagoon },
   ErrorMsg     = { fg = rouge },
   EndOfBuffer  = { fg = zero_dark, bg = zero_dark },
-  VertSplit    = { bg = zero_dark, fg = bruise },
-  Folded       = { fg = fg_dark, gui = 'italic' },
+  VertSplit    = { bg = zero_dark, fg = death },
+  Folded       = { fg = death, gui = 'italic' },
   FoldColumn   = { fg = yellow },
   SignColumn   = { fg = yellow },
-  IncSearch    = { bg = purple, fg = bruise },
-  Substitute   = { bg = lagoon, fg = bruise },
+  IncSearch    = { bg = purple, fg = death },
+  Substitute   = { bg = lagoon, fg = death },
   LineNr       = { fg = death },
   MatchParen   = { fg = red, gui = 'bold' },
-  Normal       = { fg = fg_light },
+  Normal       = { fg = white },
   NormalFloat  = { bg = zero_dark },
-  Pmenu        = { fg = fg, bg = zero_dark },
+  Pmenu        = { fg = freeze, bg = zero_dark },
   PmenuSel     = { bg = navy },
-  PmenuSbar    = { fg = fg },
-  PmenuThumb   = { fg = bruise },
-  Search       = { fg = white, bg = lagoon },
+  PmenuSbar    = { fg = freeze },
+  PmenuThumb   = { fg = death },
+  Search       = { fg = icicle, bg = lagoon },
   SpecialKey   = { fg = lagoon },
   SpellBad     = { gui = 'underline', sp = red },
   SpellRare    = { gui = 'underline', sp = lagoon },
   SpellCap     = { gui = 'underline', sp = yellow },
   SpellLocal   = { gui = 'underline', sp = orange },
-  TabLine      = { bg = bruise, fg = fg_light },
-  TabLineFill  = { bg = bruise, fg = fg_light },
+  TabLine      = { bg = death, fg = white },
+  TabLineFill  = { bg = death, fg = white },
   TabLineSel   = { fg = zero_dark, gui = 'bold', bg = lagoon },
-  Title        = { fg = fg_light },
-  Visual       = { fg = white, bg = death },
-  VisualNOS    = { fg = white, bg = rouge },
+  Title        = { fg = white },
+  Visual       = { fg = icicle, bg = death },
+  VisualNOS    = { fg = icicle, bg = rouge },
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
   FloatBorder  = { fg = death },
-  constructor  = { fg = bold_light },
-  Builtin      = { fg = fg_light },
+  constructor  = { fg = freeze },
+  Builtin      = { fg = white },
   Return       = { fg = green, gui = 'bold' },
 
   gitcommitComment        = { fg = death, gui = 'italic' },
-  gitcommitUntracked      = { fg = fg_dark, gui = 'italic' },
-  gitcommitDiscarded      = { fg = fg_dark, gui = 'italic' },
-  gitcommitSelected       = { fg = fg_dark, gui = 'italic' },
+  gitcommitUntracked      = { fg = death, gui = 'italic' },
+  gitcommitDiscarded      = { fg = death, gui = 'italic' },
+  gitcommitSelected       = { fg = death, gui = 'italic' },
   gitcommitBranch         = { fg = purple },
   gitcommitNoBranch       = { fg = purple },
   gitcommitDiscardedType  = { fg = red },
@@ -91,7 +88,7 @@ local editor_syntax = {
   gitcommitSelectedArrow  = { fg = green },
   gitcommitUnmergedFile   = { fg = yellow },
   gitcommitUnmergedArrow  = { fg = yellow },
-  gitcommitSummary        = { fg = fg_light },
+  gitcommitSummary        = { fg = white },
   gitcommitOnBranch       = {},
   gitcommitHeader         = {},
   gitcommitFile           = {},
@@ -116,7 +113,7 @@ end
 --> Vim Default Code Syntax
 local code_syntax = {
   Boolean            = { fg = purple },
-  Character          = { fg = fg_light, gui = 'bold' },
+  Character          = { fg = white, gui = 'bold' },
   Command            = { fg = lagoon },
   Comment            = { fg = death, gui = 'bold,italic' },
   Conditional        = { fg = navy },
@@ -126,10 +123,10 @@ local code_syntax = {
   Delimiter          = { fg = death },
   Error              = { fg = red },
   Exception          = { fg = lagoon, gui = 'italic' },
-  Function           = { fg = bold_light, gui = 'bold' },
-  Field              = { fg = fg },
+  Function           = { fg = freeze, gui = 'bold' },
+  Field              = { fg = freeze },
   Float              = { fg = purple },
-  Identifier         = { fg = bold_light },
+  Identifier         = { fg = freeze },
   Ignore             = { fg = yellow },
   Include            = { fg = lagoon, bold = 'bold' },
   KeywordFunction    = { fg = lagoon },
@@ -145,7 +142,7 @@ local code_syntax = {
   Repeat             = { fg = green, gui = 'bold' },
   Special            = { fg = lagoon },
   SpecialChar        = { fg = death },
-  SpecialComment     = { fg = fg_dark, gui = 'bold' },
+  SpecialComment     = { fg = death, gui = 'bold' },
   Statement          = { fg = pale_green, gui = 'italic' },
   StorageClass       = { fg = purple, gui = 'italic' },
   String             = { fg = pale_green, gui = 'italic' },
@@ -157,7 +154,7 @@ local code_syntax = {
   Typedef            = { fg = yellow },
   Underlined         = { gui = 'underline' },
   htmlEndTag         = { fg = lagoon },
-  htmlTag            = { fg = lagoon },
+  htmlTag            = { fg = death },
   htmlHead           = { fg = lagoon },
   htmlTagN           = { fg = navy },
   htmlTagName        = { fg = navy },
@@ -204,7 +201,7 @@ local lang_syntax = {
   luaFuncArgsComma  = { fg = death },
   luaTableBlock     = { fg = pale_blue },
   luaFunctionBlock  = { fg = death },
-  luaFuncName       = { fg = bold_light, gui = 'bold' },
+  luaFuncName       = { fg = freeze, gui = 'bold' },
   luaBuiltIn        = { fg = lagoon },
   luaLocal          = { fg = green, gui = 'bold' },
   luaSpecialValue   = { fg = lagoon, gui = 'bold' },
@@ -235,13 +232,13 @@ local lang_syntax = {
   rustKeyword     = { fg = orange },
   rustFuncCall    = { fg = lagoon },
   rustModPathSep  = { fg = lagoon },
-  rustIdentifier  = { fg = fg_light },
-  rustFuncName    = { fg = bold_light, gui = 'bold' },
+  rustIdentifier  = { fg = white },
+  rustFuncName    = { fg = freeze, gui = 'bold' },
   rustSigil       = { fg = lagoon },
   rustMacro       = { fg = lagoon },
   rustStorage     = { fg = orange },
-  rustModPath     = { fg = fg_light },
-  rustEnumVariant = { fg = fg_light },
+  rustModPath     = { fg = white },
+  rustEnumVariant = { fg = white },
   rustStructure   = { fg = green, gui = 'bold' },
   rustTypedef     = { fg = orange },
 
@@ -251,7 +248,7 @@ local lang_syntax = {
   jsStorageClass        = { fg = lagoon },
   jsExport              = { fg = lagoon },
   jsGlobalObjects       = { fg = lagoon, gui = 'bold' },
-  jsFuncName            = { fg = bold_light, gui = 'bold' },
+  jsFuncName            = { fg = freeze, gui = 'bold' },
   jsFrom                = { fg = lagoon, gui = 'italic' },
   jsParen               = { fg = pale_blue },
   jsAsyncKeyword        = { fg = lagoon, gui = 'italic' },
@@ -260,7 +257,7 @@ local lang_syntax = {
   jsReturn              = { fg = green, gui = 'bold' },
   jsFuncBlock           = { fg = pale_blue, gui = 'bold' },
   jsParens              = { fg = death },
-  jsFuncCall            = { fg = bold_light, gui = 'bold' },
+  jsFuncCall            = { fg = freeze, gui = 'bold' },
   jsFuncBraces          = { fg = death },
   jsxTagName            = { fg = lagoon, gui = 'bold' },
   jsxComponentName      = { fg = lagoon },
@@ -285,7 +282,7 @@ local lang_syntax = {
   jsFuncArgsCommas      = { fg = death },
   jsTemplateString      = { fg = death, gui = 'bold,italic' },
   jsObjectSeparator     = { fg = death },
-  jsObjectValue         = { fg = bold_light, gui = 'bold' },
+  jsObjectValue         = { fg = freeze, gui = 'bold' },
   jsObjectObjectProp    = { fg = purple, gui = 'italic' },
 
   jsonQuote = { fg = navy },
@@ -297,12 +294,12 @@ local lang_syntax = {
   CmpItemKindMethod = { fg = purple },
   CmpItemKindVariable = { fg = pale_green },
   CmpItemKindKeyword = { fg = yellow },
-  CmpItemKindColor = { fg = bold_light },
+  CmpItemKindColor = { fg = freeze },
   CmpItemKindConstant = { fg = lagoon },
   CmpItemKindDefault = { fg = lagoon },
   CmpItemKindFolder = { fg = green, gui = 'bold' },
   CmpItemKindMatchFuzzy = { fg = red },
-  CmpItemKindOperator = { fg = bold_light },
+  CmpItemKindOperator = { fg = freeze },
   CmpItemKindProperty = { fg = purple },
   CmpItemMenu = { fg = pink, gui = 'bold,italic' },
 
@@ -317,18 +314,18 @@ local lang_syntax = {
   typescriptArray               = { fg = death },
   typescriptArrayMethod         = { fg = lagoon },
   typescriptArrowFunc           = { fg = death },
-  typescriptArrowFuncArg        = { fg = fg_light },
+  typescriptArrowFuncArg        = { fg = white },
   typescriptAssign              = { fg = death },
   typescriptAsyncFuncKeyword    = { fg = lagoon, gui = 'italic' },
-  typescriptBOM                 = { fg = bold_light },
+  typescriptBOM                 = { fg = freeze },
   typescriptBOMLocationMethod   = { fg = lagoon },
   typescriptBOMWindowProp       = { fg = pale_green },
-  typescriptBlock               = { fg = bold_light },
+  typescriptBlock               = { fg = freeze },
   typescriptBraces              = { fg = death },
-  typescriptCall                = { fg = fg_light },
+  typescriptCall                = { fg = white },
   typescriptDOMDocProp          = { fg = lagoon },
   typescriptDOMWindowProp       = { fg = lagoon },
-  typescriptDestructureVariable = { fg = bold_light },
+  typescriptDestructureVariable = { fg = freeze },
   typescriptDotNotation         = { fg = rouge },
   typescriptExceptions          = { fg = lagoon },
   typescriptExport              = { fg = navy, gui = 'bold' },
@@ -338,7 +335,7 @@ local lang_syntax = {
   typescriptImport              = { fg = navy, gui = 'bold' },
   typescriptObjectColon         = { fg = death },
   typescriptObjectLabel         = { fg = pale_blue },
-  typescriptObjectLiteral       = { fg = fg },
+  typescriptObjectLiteral       = { fg = freeze },
   typescriptOperator            = { fg = lagoon },
   typescriptParens              = { fg = death },
   typescriptProp                = { fg = pale_blue },
@@ -346,7 +343,7 @@ local lang_syntax = {
   typescriptResponseProp        = { fg = lagoon },
   typescriptStatementKeyword    = { fg = green, gui = 'bold' },
   typescriptStringMethod        = { fg = lagoon },
-  typescriptTemplate            = { fg = bruise, gui = 'italic' },
+  typescriptTemplate            = { fg = death, gui = 'italic' },
   typescriptTemplateSB          = { fg = lagoon },
   typescriptTernary             = { fg = rouge },
   typescriptTernaryOp           = { fg = rouge },
@@ -372,7 +369,7 @@ vim.g.terminal_color_3          = yellow
 vim.g.terminal_color_4          = lagoon
 vim.g.terminal_color_5          = purple
 vim.g.terminal_color_6          = lagoon
-vim.g.terminal_color_7          = fg
+vim.g.terminal_color_7          = white
 vim.g.terminal_color_8          = grey
 vim.g.terminal_color_9          = red
 vim.g.terminal_color_10         = pale_green
@@ -380,6 +377,6 @@ vim.g.terminal_color_11         = orange
 vim.g.terminal_color_12         = lagoon
 vim.g.terminal_color_13         = purple
 vim.g.terminal_color_14         = lagoon
-vim.g.terminal_color_15         = white
+vim.g.terminal_color_15         = icicle
 vim.g.terminal_color_background = death
-vim.g.terminal_color_foreground = fg_light
+vim.g.terminal_color_foreground = white
