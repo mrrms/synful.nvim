@@ -48,7 +48,7 @@ local editor_syntax = {
   MatchParen   = { fg = red, gui = 'bold' },
   Normal       = { fg = white },
   NormalFloat  = { bg = zero_dark },
-  Pmenu        = { fg = freeze, bg = 'none' },
+  Pmenu        = { fg = freeze },
   PmenuSel     = { bg = navy },
   PmenuSbar    = { fg = freeze },
   PmenuThumb   = { fg = death },
