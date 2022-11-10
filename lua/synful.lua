@@ -349,7 +349,7 @@ local lang_syntax = {
   typescriptStringMethod        = { fg = lagoon },
   typescriptTemplate            = { fg = yellow, gui = 'italic' },
   typescriptTemplateSB          = { fg = lagoon },
-  typescriptTernary             = { fg = rouge },
+  typescriptTernary             = { fg = green, gui = 'bold' },
   typescriptTernaryOp           = { fg = rouge },
   typescriptTry                 = { fg = lagoon, gui = 'italic' },
   typescriptTypeBrackets        = { fg = death },
