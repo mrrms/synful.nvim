@@ -310,6 +310,7 @@ local lang_syntax = {
   tsxRegion                     = { fg = icicle },
   tsxTag                        = { fg = death },
   tsxTagName                    = { fg = navy, gui = 'bold' },
+  tsxIntrinsicTagName           = { fg = navy, gui = 'bold' },
   txsRegion                     = { fg = death },
   typescriptArray               = { fg = pale_blue },
   typescriptEnum                = { fg = icicle },
