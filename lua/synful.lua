@@ -311,7 +311,7 @@ local lang_syntax = {
   tsxTag                        = { fg = death },
   tsxTagName                    = { fg = navy, gui = 'bold' },
   txsRegion                     = { fg = death },
-  typescriptArray               = { fg = death },
+  typescriptArray               = { fg = pale_blue },
   typescriptEnum                = { fg = icicle },
   typescriptEnumKeyword         = { fg = lagoon },
   typescriptArrayMethod         = { fg = lagoon },
@@ -333,7 +333,6 @@ local lang_syntax = {
   typescriptExport              = { fg = navy, gui = 'bold' },
   typescriptFuncKeyword         = { fg = navy, gui = 'bold' },
   typescriptHeadersMethod       = { fg = lagoon },
-  typescriptIdentifierName      = { fg = pale_blue },
   typescriptImport              = { fg = navy, gui = 'bold' },
   typescriptObjectColon         = { fg = death },
   typescriptObjectLabel         = { fg = pale_blue },
@@ -359,6 +358,7 @@ local lang_syntax = {
   typescriptXHRMethod           = { fg = lagoon },
   typescriptTypeReference       = { fg = pale_green, gui = 'bold' },
   typescriptTypeCase            = { fg = navy },
+  typescriptIdentifierName      = { fg = pale_blue },
 }
 
 for group, styles in pairs(lang_syntax) do
