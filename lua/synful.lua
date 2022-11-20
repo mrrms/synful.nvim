@@ -46,7 +46,7 @@ local editor_syntax = {
   Substitute   = { bg = lagoon, fg = death },
   LineNr       = { fg = death },
   MatchParen   = { fg = red, gui = 'bold' },
-  Normal       = { fg = white },
+  Normal       = { fg = freeze },
   NormalFloat  = { bg = zero_dark },
   Pmenu        = { fg = freeze, bg = zero_dark },
   PmenuSel     = { bg = navy },
