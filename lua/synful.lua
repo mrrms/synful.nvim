@@ -320,6 +320,7 @@ local lang_syntax = {
   typescriptArrayMethod         = { fg = lagoon },
   typescriptArrowFunc           = { fg = death },
   typescriptArrowFuncArg        = { fg = white },
+  typescriptFuncTypeArrow       = { fg = death },
   typescriptAssign              = { fg = death },
   typescriptAsyncFuncKeyword    = { fg = lagoon, gui = 'italic' },
   typescriptBOM                 = { fg = freeze },
