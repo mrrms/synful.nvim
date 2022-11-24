@@ -15,7 +15,7 @@ local pale_blue  = '#7AA7FF'
 local grey       = '#8585AA'
 local purple     = '#BB91ED'
 local pink       = '#AF749C'
-local red        = '#B8042E'
+local red        = '#994455'
 local rouge      = '#883344'
 local yellow     = '#F2DCD3'
 local orange     = '#DB9280'
@@ -161,14 +161,14 @@ local code_syntax = {
   htmlSpecialTagName         = { fg = navy },
   htmlArg                    = { fg = pale_blue },
   keyword                    = { fg = lagoon, gui = 'bold' },
-  DiagnosticVirtualTextError = { fg = 'rouge', gui = 'italic' },
-  DiagnosticVirtualTextInfo  = { fg = 'yellow', gui = 'italic' },
-  DiagnosticVirtualTextWarn  = { fg = 'pale_green', gui = 'italic' },
-  DiagnosticVirtualTextHint  = { fg = 'orange', gui = 'italic' },
-  DiagnosticUnderlineError   = { fg = 'red', gui = 'italic' },
-  DiagnosticUnderlineWarn    = { fg = 'orange', gui = 'italic' },
-  DiagnosticUnderlineInfo    = { fg = 'yellow', gui = 'italic' },
-  DiagnosticUnderlineHint    = { fg = 'orange', gui = 'italic' },
+  DiagnosticVirtualTextError = { fg = 'red' },
+  DiagnosticVirtualTextInfo  = { fg = 'pale_blue' },
+  DiagnosticVirtualTextWarn  = { fg = 'yellow' },
+  DiagnosticVirtualTextHint  = { fg = 'pale_green' },
+  DiagnosticUnderlineError   = { fg = 'red' },
+  DiagnosticUnderlineWarn    = { fg = 'yelloe' },
+  DiagnosticUnderlineInfo    = { fg = 'pale_blue' },
+  DiagnosticUnderlineHint    = { fg = 'pale_green' },
 }
 
 for group, styles in pairs(code_syntax) do
