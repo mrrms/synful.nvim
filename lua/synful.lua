@@ -51,7 +51,7 @@ local editor_syntax = {
   Pmenu        = { fg = freeze, bg = zero_dark },
   PmenuSel     = { bg = navy },
   PmenuSbar    = { fg = freeze },
-  PmenuThumb   = { fg = death },
+  PmenuThumb   = { fg = navy },
   Search       = { fg = icicle, bg = lagoon },
   SpecialKey   = { fg = lagoon },
   SpellBad     = { gui = 'underline', sp = red },
