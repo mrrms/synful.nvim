@@ -27,7 +27,7 @@ local white      = '#DEDEFF'
 
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
-  CursorLine   = { bg = deep_blue },
+  CursorLine   = { bg = zero_dark },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = lagoon, gui = 'bold' },
   variable     = { fg = freeze },
