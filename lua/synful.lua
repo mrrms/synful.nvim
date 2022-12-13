@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 local zero_dark  = '#090B12'
-local deep_blue  = '#110C13'
+local deep_blue  = '#111119'
 local death      = '#404060'
 local navy       = '#445599'
 local lagoon     = '#6070C1'
@@ -62,7 +62,7 @@ local editor_syntax = {
   TabLineFill  = { bg = death, fg = white },
   TabLineSel   = { fg = zero_dark, gui = 'bold', bg = lagoon },
   Title        = { fg = white },
-  Visual       = { fg = icicle, bg = death },
+  Visual       = { fg = icicle, bg = navy },
   VisualNOS    = { fg = icicle, bg = rouge },
   WarningMsg   = { fg = yellow, gui = 'italic' },
   Whitespace   = { fg = pale_blue },
