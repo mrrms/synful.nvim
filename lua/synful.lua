@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 local zero_dark  = '#090B12'
-local deep_blue  = '#151D2D'
+local deep_blue  = '#110C13'
 local death      = '#404060'
 local navy       = '#445599'
 local lagoon     = '#6070C1'
@@ -27,7 +27,7 @@ local white      = '#DEDEFF'
 
 local editor_syntax = {
   Cursor       = { fg = zero_dark, bg = red },
-  CursorLine   = { bg = zero_dark },
+  CursorLine   = { bg = deep_blue },
   CursorLineNr = { fg = pale_blue },
   Directory    = { fg = lagoon, gui = 'bold' },
   variable     = { fg = freeze },
