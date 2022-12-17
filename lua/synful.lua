@@ -15,8 +15,8 @@ local pale_blue  = '#7AA7FF'
 local grey       = '#8585AA'
 local purple     = '#BB91ED'
 local pink       = '#AF749C'
-local red        = '#994455'
-local rouge      = '#883355'
+local red        = '#883344'
+local rouge      = '#553333'
 local yellow     = '#F2DCD3'
 local orange     = '#DB9280'
 local green      = '#5F875F'
@@ -36,7 +36,7 @@ local editor_syntax = {
   DiffChange              = { fg = yellow },
   DiffDelete              = { fg = red },
   DiffText                = { fg = lagoon },
-  ErrorMsg                = { fg = rouge },
+  ErrorMsg                = { fg = red, bg = rouge },
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
   VertSplit               = { bg = zero_dark, fg = death },
   Folded                  = { fg = death, gui = 'italic' },
@@ -134,7 +134,7 @@ local code_syntax = {
   Macro              = { fg = purple },
   Noise              = { fg = pink },
   Number             = { fg = purple },
-  NvimInternalError  = { fg = rouge },
+  NvimInternalError  = { fg = red, bg = rouge },
   Operator           = { fg = pale_blue },
   PreCondit          = { fg = yellow },
   PreProc            = { fg = yellow },
@@ -160,20 +160,21 @@ local code_syntax = {
   htmlSpecialTagName = { fg = navy },
   htmlArg            = { fg = pale_blue },
   keyword            = { fg = lagoon, gui = 'bold' },
-  DiagnosticWarn     = { fg = orange, bg = 'death', gui = 'italic' },
-  DiagnosticInfo     = { fg = pale_blue, bg = 'death', gui = 'bold' },
-  DiagnosticHint     = { fg = yellow, bg = 'death', gui = 'bold' },
 
-  DiagnosticError            = { fg = rouge, bg = death, gui = 'bold' },
-  DiagnosticUnderlineError   = { fg = rouge, bg = death },
-  DiagnosticVirtualTextError = { fg = rouge, bg = death },
+  DiagnosticWarn  = { fg = yellow, bg = orange, gui = 'italic' },
+  DiagnosticInfo  = { fg = pale_blue, bg = navy, gui = 'bold' },
+  DiagnosticHint  = { fg = freeze, bg = lagoon, gui = 'bold' },
+  DiagnosticError = { fg = red, bg = rouge, gui = 'bold' },
 
-  DiagnosticUnderlineWarn   = { fg = yellow, bg = 'death' },
-  DiagnosticUnderlineInfo   = { fg = pale_blue, bg = 'death' },
-  DiagnosticUnderlineHint   = { fg = pale_green, bg = 'death' },
-  DiagnosticVirtualTextInfo = { fg = pale_blue, bg = 'death' },
-  DiagnosticVirtualTextWarn = { fg = yellow, bg = 'death' },
-  DiagnosticVirtualTextHint = { fg = pale_green, bg = 'death' },
+  DiagnosticVirtualTextInfo = { fg = pale_blue, bg = navy },
+  DiagnosticVirtualTextWarn = { fg = yellow, bg = orange },
+  DiagnosticVirtualTextHint = { fg = freeze, bg = lagoon },
+  DiagnosticVirtualTextError = { fg = red, bg = rouge },
+
+  DiagnosticUnderlineError = { fg = red, bg = rouge },
+  DiagnosticUnderlineWarn  = { fg = yellow, bg = orange },
+  DiagnosticUnderlineInfo  = { fg = pale_blue, bg = navy },
+  DiagnosticUnderlineHint  = { fg = freeze, bg = lagoon },
 }
 
 for group, styles in pairs(code_syntax) do
