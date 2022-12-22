@@ -197,13 +197,14 @@ local lang_syntax = {
   xmlEndTag = { fg = lagoon, gui = 'italic' },
 
   --> lua.vim
-  luaTable   = { fg = death },
-  luaBraces  = { fg = death },
-  luaParen   = { fg = death },
-  luaParens  = { fg = death },
-  luaIn      = { fg = lagoon, gui = 'italic' },
-  luaComma   = { fg = death },
-  luaKeyword = { fg = green, gui = 'bold' },
+  luaTable    = { fg = death },
+  luaBraces   = { fg = death },
+  luaParen    = { fg = death },
+  luaParens   = { fg = death },
+  luaIn       = { fg = lagoon, gui = 'italic' },
+  luaComma    = { fg = death },
+  luaKeyword  = { fg = green, gui = 'bold' },
+  FidgetTitle = { fg = pale_blue, bg = zero_dark },
 
   --> lua polyglot (tbastos/vim-lua)
   luaFunc           = { fg = lagoon },
