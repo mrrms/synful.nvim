@@ -8,7 +8,7 @@ end
 
 local zero_dark  = '#090B12'
 local deep_blue  = '#111119'
-local death      = '#404060'
+local death      = '#505075'
 local navy       = '#445599'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
