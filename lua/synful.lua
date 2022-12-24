@@ -271,6 +271,10 @@ local lang_syntax = {
   rustTrait               = { fg = navy, gui = 'bold' },
   rustTypedef             = { fg = rouge },
 
+  --> mutt & email
+  muttrcSetStrAssignment = { fg = death },
+
+
   --> javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = lagoon },
   jsImport              = { fg = lagoon },
