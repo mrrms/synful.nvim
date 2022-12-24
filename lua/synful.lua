@@ -256,7 +256,7 @@ local lang_syntax = {
   rustMacro               = { fg = green, gui = 'bold' },
   rustModPath             = { fg = green, gui = 'bold' },
   rustModPathSep          = { fg = death },
-  rustOperator            = { fg = navy, gui = 'bold' },
+  rustOperator            = { fg = death },
   rustSelf                = { fg = rouge },
   rustSigil               = { fg = rouge },
   rustStorage             = { fg = lagoon, gui = 'bold' },
