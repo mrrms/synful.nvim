@@ -6,6 +6,7 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
+--> this would be a comment
 local zero_dark  = '#090B12'
 local deep_blue  = '#111119'
 local death      = '#505075'
@@ -243,18 +244,18 @@ local lang_syntax = {
   shVar              = { fg = pale_blue, gui = 'italic' },
 
   --> rust polyglot (rust.vim)
-  rustKeyword     = { fg = orange },
+  rustKeyword     = { fg = lagoon },
   rustFuncCall    = { fg = lagoon },
-  rustModPathSep  = { fg = lagoon },
-  rustIdentifier  = { fg = white },
+  rustModPathSep  = { fg = pale_blue },
+  rustIdentifier  = { fg = freeze },
   rustFuncName    = { fg = freeze, gui = 'bold' },
-  rustSigil       = { fg = lagoon },
-  rustMacro       = { fg = lagoon },
-  rustStorage     = { fg = orange },
-  rustModPath     = { fg = white },
-  rustEnumVariant = { fg = white },
+  rustSigil       = { fg = rouge },
+  rustMacro       = { fg = green, gui = 'bold' },
+  rustStorage     = { fg = purple, gui = 'bold' },
+  rustModPath     = { fg = pale_blue },
+  rustEnumVariant = { fg = icicle },
   rustStructure   = { fg = green, gui = 'bold' },
-  rustTypedef     = { fg = orange },
+  rustTypedef     = { fg = yellow },
 
   --> javascript polyglot (pangloss/vim-javascript)
   jsFunction            = { fg = lagoon },
