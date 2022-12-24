@@ -225,7 +225,7 @@ local lang_syntax = {
 
   --> tmux
   tmuxFormatString = { fg = pale_blue, gui = 'italic' },
-  tmuxOptions      = { fg = grey },
+  tmuxOptions      = { fg = freeze },
   tmuxAssignment   = { fg = death },
   tmuxFlags        = { fg = rouge },
 
@@ -258,6 +258,7 @@ local lang_syntax = {
   rustKeyword             = { fg = yellow, gui = 'bold' },
   rustConditional         = { fg = yellow, gui = 'bold' },
   rustFuncName            = { fg = freeze, gui = 'bold' },
+  rustCharacter           = { fg = rouge },
   rustIdentifier          = { fg = freeze },
   rustMacro               = { fg = green, gui = 'bold' },
   rustModPath             = { fg = green, gui = 'bold' },
