@@ -223,9 +223,15 @@ local lang_syntax = {
   luaSymbolOperator = { fg = death },
   luaConstant       = { fg = purple },
 
+  --> tmux
+  tmuxFormatString = { fg = pale_blue, gui = 'italic' },
+  tmuxOptions      = { fg = grey, gui = 'bold' },
+  tmuxAssignment   = { fg = death },
+  tmuxFlags        = { fg = orange },
+
   --> zsh.vim
   zshTodo            = code_syntax.Todo,
-  zshComment         = code_syntax.Comment,
+  zslhComment        = code_syntax.Comment,
   zshPreProc         = code_syntax.PreProc,
   zshString          = code_syntax.String,
   zshStringDelimiter = { fg = lagoon },
