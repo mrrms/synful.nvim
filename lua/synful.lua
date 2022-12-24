@@ -225,9 +225,9 @@ local lang_syntax = {
 
   --> tmux
   tmuxFormatString = { fg = pale_blue, gui = 'italic' },
-  tmuxOptions      = { fg = grey, gui = 'bold' },
+  tmuxOptions      = { fg = grey },
   tmuxAssignment   = { fg = death },
-  tmuxFlags        = { fg = orange },
+  tmuxFlags        = { fg = rouge },
 
   --> zsh.vim
   zshTodo            = code_syntax.Todo,
