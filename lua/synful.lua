@@ -272,7 +272,7 @@ local lang_syntax = {
   rustTypedef             = { fg = rouge },
 
   --> mutt & email
-  muttrcSetStrAssignment = { fg = death },
+  muttrcSetStrAssignment = { fg = rouge },
 
 
   --> javascript polyglot (pangloss/vim-javascript)
