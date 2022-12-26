@@ -49,7 +49,7 @@ local editor_syntax = {
   MatchParen              = { fg = red, gui = 'bold' },
   Normal                  = { fg = freeze, bg = 'none' },
   NormalFloat             = { bg = 'none' },
-  Pmenu                   = { fg = freeze, bg = pale_blue },
+  Pmenu                   = { fg = freeze, bg = zero_dark },
   PmenuSel                = { bg = navy },
   PmenuSbar               = { fg = freeze },
   PmenuThumb              = { fg = navy },
