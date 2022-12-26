@@ -212,7 +212,7 @@ local lang_syntax = {
   luaFuncParens     = { fg = death },
   luaFuncArgsComma  = { fg = death },
   luaTableBlock     = { fg = pale_blue },
-  luaFunctionBlock  = { fg = death },
+  luaFunctionBlock  = { fg = navy },
   luaFuncName       = { fg = freeze, gui = 'bold' },
   luaBuiltIn        = { fg = lagoon },
   luaLocal          = { fg = green, gui = 'bold' },
