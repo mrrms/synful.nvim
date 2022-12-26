@@ -20,7 +20,7 @@ local red        = '#994455'
 local rouge      = '#883355'
 local yellow     = '#DEC79B'
 local orange     = '#DB9280'
-local green      = '#5F875F'
+local green      = '#708a67' --> #5F875F
 local pale_green = '#96C0C0'
 local freeze     = '#A8B4F6'
 local icicle     = '#C0C0FC'
@@ -203,7 +203,7 @@ local lang_syntax = {
   luaConstant       = { fg = purple },
   luaFunc           = { fg = lagoon },
   luaFuncArgsComma  = { fg = death },
-  luaFuncCall       = { fg = lagoon },
+  luaFuncCall       = { fg = lagoon, gui = 'bold' },
   luaFuncName       = { fg = freeze, gui = 'bold' },
   luaFuncParens     = { fg = death },
   luaFunction       = { fg = lagoon, gui = 'italic' },
