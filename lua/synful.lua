@@ -196,33 +196,32 @@ end
 local lang_syntax = {
   xmlEndTag = { fg = lagoon, gui = 'italic' },
 
-  --> lua.vim
-  luaTable    = { fg = death },
-  luaBraces   = { fg = death },
-  luaParen    = { fg = death },
-  luaParens   = { fg = death },
-  luaIn       = { fg = lagoon, gui = 'italic' },
-  luaComma    = { fg = death },
-  luaKeyword  = { fg = green, gui = 'bold' },
-  FidgetTitle = { fg = pale_blue, bg = zero_dark },
-
   --> lua polyglot (tbastos/vim-lua)
-  luaFunc           = { fg = lagoon },
-  luaFuncCall       = { fg = lagoon },
-  luaFuncParens     = { fg = death },
-  luaFuncArgsComma  = { fg = death },
-  luaTableBlock     = { fg = pale_blue },
-  luaFunctionBlock  = { fg = navy, gui = 'bold' },
-  luaFuncName       = { fg = freeze, gui = 'bold' },
+  luaBraces         = { fg = death },
   luaBuiltIn        = { fg = lagoon },
-  luaLocal          = { fg = green, gui = 'bold' },
-  luaSpecialValue   = { fg = lagoon, gui = 'bold' },
-  luaStringLongTag  = { fg = death, gui = 'bold' },
-  luaStatement      = { fg = green, gui = 'bold' },
-  luaFunction       = { fg = lagoon, gui = 'italic' },
-  luaString         = { fg = 'pale_green' },
-  luaSymbolOperator = { fg = death },
+  luaComma          = { fg = death },
   luaConstant       = { fg = purple },
+  luaFunc           = { fg = lagoon },
+  luaFuncArgsComma  = { fg = death },
+  luaFuncCall       = { fg = lagoon },
+  luaFuncName       = { fg = freeze, gui = 'bold' },
+  luaFuncParens     = { fg = death },
+  luaFunction       = { fg = lagoon, gui = 'italic' },
+  luaFunctionBlock  = { fg = navy, gui = 'bold' },
+  luaIn             = { fg = lagoon, gui = 'italic' },
+  luaKeyword        = { fg = green, gui = 'bold' },
+  luaLocal          = { fg = green, gui = 'bold' },
+  luaParen          = { fg = death },
+  luaParens         = { fg = death },
+  luaSpecialValue   = { fg = lagoon, gui = 'bold' },
+  luaStatement      = { fg = green, gui = 'bold' },
+  luaString         = { fg = 'pale_green', gui = 'none' },
+  luaStringLongTag  = { fg = death, gui = 'bold' },
+  luaSymbolOperator = { fg = death },
+  luaTable          = { fg = death },
+  luaTableBlock     = { fg = pale_blue },
+
+  FidgetTitle = { fg = pale_blue, bg = zero_dark },
 
   --> tmux
   tmuxFormatString = { fg = pale_blue, gui = 'italic' },
@@ -230,7 +229,7 @@ local lang_syntax = {
   tmuxAssignment   = { fg = death },
   tmuxFlags        = { fg = rouge },
 
-  --> zsh.vim
+  --> zsh
   zshTodo            = code_syntax.Todo,
   zslhComment        = code_syntax.Comment,
   zshPreProc         = code_syntax.PreProc,
