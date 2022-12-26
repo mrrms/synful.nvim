@@ -215,7 +215,7 @@ local lang_syntax = {
   luaParens         = { fg = death },
   luaSpecialValue   = { fg = lagoon, gui = 'bold' },
   luaStatement      = { fg = green, gui = 'bold' },
-  luaString         = { fg = 'pale_green', gui = 'none' },
+  luaString         = { fg = pale_green, gui = 'none' },
   luaStringLongTag  = { fg = death, gui = 'bold' },
   luaSymbolOperator = { fg = death },
   luaTable          = { fg = death },
