@@ -26,17 +26,9 @@ local freeze     = '#A8B4F6'
 local icicle     = '#C0C0FC'
 local white      = '#DEDEFF'
 
--- Pmenu
--- Normal
--- Search
--- PmenuSel
--- CursorLine
--- FloatBorder
--- CmpCompletionBorder
-
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = red },
-  CursorLine              = { bg = 'none' }, --> deep_blue
+  CursorLine              = { bg = deep_blue },
   CursorLineNr            = { fg = pale_blue },
   Directory               = { fg = lagoon, gui = 'bold' },
   variable                = { fg = freeze },
@@ -55,13 +47,13 @@ local editor_syntax = {
   Substitute              = { bg = lagoon, fg = death },
   LineNr                  = { fg = death },
   MatchParen              = { fg = red, gui = 'bold' },
-  Normal                  = { fg = freeze }, --> bg = 'none'
+  Normal                  = { fg = freeze, bg = 'none' },
   NormalFloat             = { bg = 'none' },
-  Pmenu                   = { fg = freeze }, --> bg = zero_dark
-  PmenuSel                = { bg = lagoon },
+  Pmenu                   = { fg = freeze, bg = zero_dark },
+  PmenuSel                = { bg = navy },
   PmenuSbar               = { fg = freeze },
   PmenuThumb              = { fg = navy },
-  Search                  = { fg = icicle }, --> bg = lagoon
+  Search                  = { fg = icicle, bg = lagoon },
   SpecialKey              = { fg = lagoon },
   SpellBad                = { fg = red, gui = 'bold' },
   SpellRare               = { fg = lagoon, gui = 'bold' },
@@ -76,6 +68,8 @@ local editor_syntax = {
   WarningMsg              = { fg = yellow, gui = 'italic' },
   Whitespace              = { fg = pale_blue },
   FloatBorder             = { fg = death },
+  FloatShadow             = { bg = "NONE" },
+  FloatShadowThrough      = { bg = "NONE" },
   constructor             = { fg = freeze },
   Builtin                 = { fg = white },
   Return                  = { fg = green, gui = 'bold' },
@@ -342,7 +336,7 @@ local lang_syntax = {
   CmpItemKindMatchFuzzy = { fg = red },
   CmpItemKindOperator   = { fg = freeze },
   CmpItemKindProperty   = { fg = purple },
-  CmpItemMenu           = { fg = pink, gui = 'bold,italic' },
+  CmpItemMenu           = { fg = pink, bg = 'none', gui = 'bold,italic' },
 
   tsxAttrib                     = { fg = pale_blue },
   tsxCloseString                = { fg = death },
