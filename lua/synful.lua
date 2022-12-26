@@ -7,28 +7,28 @@ local function highlight(group, styles)
 end
 
 --> this would be a comment
-local zero_dark  = '#090B12'
-local deep_blue  = '#111119'
-local death      = '#505075'
-local navy       = '#445599'
-local lagoon     = '#6070C1'
-local pale_blue  = '#7AA7FF'
-local grey       = '#8585AA'
-local purple     = '#BB91ED'
-local pink       = '#AF749C'
-local red        = '#994455'
-local rouge      = '#883355'
-local yellow     = '#DEC79B'
-local orange     = '#DB9280'
-local green      = '#708a67' --> #5F875F
-local pale_green = '#96C0C0'
-local freeze     = '#A8B4F6'
-local icicle     = '#C0C0FC'
-local white      = '#DEDEFF'
-
+local zero_dark     = '#090B12'
+local deep_blue     = '#111119'
+local death         = '#505075'
+local navy          = '#445599'
+local lagoon        = '#6070C1'
+local pale_blue     = '#7AA7FF'
+local grey          = '#8585AA'
+local purple        = '#BB91ED'
+local pink          = '#AF749C'
+local red           = '#994455'
+local rouge         = '#883355'
+local yellow        = '#DEC79B'
+local orange        = '#DB9280'
+local green         = '#5F875F'
+local pale_green    = '#96C0C0'
+local freeze        = '#A8B4F6'
+local icicle        = '#C0C0FC'
+local white         = '#DEDEFF'
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = red },
   CursorLine              = { bg = deep_blue },
+  ColorColumn             = { fg = "NONE", bg = "NONE" },
   CursorLineNr            = { fg = pale_blue },
   Directory               = { fg = lagoon, gui = 'bold' },
   variable                = { fg = freeze },
