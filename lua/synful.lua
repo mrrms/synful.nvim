@@ -11,6 +11,7 @@ local zero_dark     = '#090B12'
 local deep_blue     = '#111119'
 local death         = '#505075'
 local navy          = '#445599'
+local deep          = '#252545'
 local lagoon        = '#6070C1'
 local pale_blue     = '#7AA7FF'
 local grey          = '#8585AA'
@@ -39,18 +40,18 @@ local editor_syntax = {
   DiffText                = { fg = lagoon },
   ErrorMsg                = { fg = rouge },
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
-  VertSplit               = { bg = zero_dark, fg = death },
+  VertSplit               = { fg = death, bg = zero_dark },
   Folded                  = { fg = death, gui = 'italic' },
   FoldColumn              = { fg = yellow },
   SignColumn              = { fg = yellow },
-  IncSearch               = { bg = purple, fg = death },
-  Substitute              = { bg = lagoon, fg = death },
+  IncSearch               = { fg = death, bg = purple, },
+  Substitute              = { fg = freeze, bg = rouge, },
   LineNr                  = { fg = death },
   MatchParen              = { fg = red, gui = 'bold' },
   Normal                  = { fg = freeze, bg = 'none' },
   NormalFloat             = { bg = 'none' },
   Pmenu                   = { fg = freeze, bg = zero_dark },
-  PmenuSel                = { bg = navy },
+  PmenuSel                = { bg = deep },
   PmenuSbar               = { fg = freeze },
   PmenuThumb              = { fg = navy },
   Search                  = { fg = icicle, bg = lagoon },
