@@ -10,10 +10,10 @@ end
 local zero_dark     = '#000000' -- #090B12
 local deep_blue     = '#111119'
 local death         = '#505075'
+local pale_blue     = '#7AA7FF'
+local lagoon        = '#6070C1'
 local navy          = '#445599'
 local deep          = '#353565'
-local lagoon        = '#6070C1'
-local pale_blue     = '#7AA7FF'
 local grey          = '#8585AA'
 local purple        = '#BB91ED'
 local pink          = '#AF749C'
@@ -51,10 +51,10 @@ local editor_syntax = {
   Normal                  = { fg = freeze, bg = zero_dark },
   NormalFloat             = { bg = zero_dark },
   Pmenu                   = { fg = freeze, bg = zero_dark },
-  PmenuSel                = { bg = deep },
+  PmenuSel                = { bg = navy },
   PmenuSbar               = { fg = freeze },
   PmenuThumb              = { fg = navy },
-  Search                  = { fg = icicle, bg = deep },
+  Search                  = { fg = icicle, bg = navy },
   SpecialKey              = { fg = lagoon },
   SpellBad                = { fg = red, gui = 'bold' },
   SpellRare               = { fg = lagoon, gui = 'bold' },
@@ -62,9 +62,9 @@ local editor_syntax = {
   SpellLocal              = { fg = orange, gui = 'bold' },
   TabLine                 = { bg = death, fg = white },
   TabLineFill             = { bg = death, fg = white },
-  TabLineSel              = { fg = zero_dark, gui = 'bold', bg = deep },
+  TabLineSel              = { fg = zero_dark, gui = 'bold', bg = navy },
   Title                   = { fg = white },
-  Visual                  = { fg = icicle, bg = deep },
+  Visual                  = { fg = icicle, bg = navy },
   VisualNOS               = { fg = icicle, bg = rouge },
   WarningMsg              = { fg = yellow, gui = 'italic' },
   Whitespace              = { fg = pale_blue },
