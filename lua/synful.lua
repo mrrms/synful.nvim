@@ -233,7 +233,7 @@ local lang_syntax = {
   tmuxFlags          = { fg = rouge },
   --> zsh
   shDo               = { fg = rouge },
-  shStatement        = { fg = pale_blue, gui = 'bold' },
+  shStatement        = { fg = freeze },
   shTestOpr          = { fg = rouge },
   shVar              = { fg = pale_blue, gui = 'italic' },
   shVarAssign        = { fg = death },
