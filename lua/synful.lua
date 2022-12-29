@@ -243,6 +243,7 @@ local lang_syntax = {
   zshKeyword         = code_syntax.Function,
   zshCommands        = { fg = lagoon },
   zshOptStart        = { fg = lagoon, gui = 'italic' },
+  zshDeref           = { fg = rouge },
   zshOption          = { fg = lagoon, gui = 'italic' },
   zshFunction        = { fg = yellow, gui = 'italic' },
   zshSubst           = { fg = yellow },
