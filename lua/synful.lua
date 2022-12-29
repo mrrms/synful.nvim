@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 --> this would be a comment
-local zero_dark     = '#090B12'
+local zero_dark     = '#000000'
 local deep_blue     = '#111119'
 local death         = '#505075'
 local pale_blue     = '#7AA7FF'
