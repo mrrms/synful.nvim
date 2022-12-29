@@ -7,12 +7,12 @@ local function highlight(group, styles)
 end
 
 --> this would be a comment
-local zero_dark     = '#000000' -- #090B12
+local zero_dark     = '#000000' --> #090B12
 local deep_blue     = '#111119'
 local death         = '#505075'
 local pale_blue     = '#7AA7FF'
 local lagoon        = '#6070C1'
-local navy          = '#445599'
+local navy          = '#405080'
 local deep          = '#353565'
 local grey          = '#8585AA'
 local purple        = '#BB91ED'
@@ -254,8 +254,8 @@ local lang_syntax = {
   --> rust polyglot (rust.vim)
   rustAssert              = { fg = rouge },
   rustBoxPlacementBalance = { fg = rouge },
-  rustEnumVariant         = { fg = icicle },
   rustFoldBraces          = { fg = death },
+  rustEnumVariant         = { fg = icicle },
   rustFuncCall            = { fg = icicle },
   rustRepeat              = { fg = lagoon, gui = 'bold' },
   rustKeyword             = { fg = lagoon, gui = 'bold' },
