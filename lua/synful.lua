@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 --> this would be a comment
-local zero_dark     = '#000000' --> #090B12
+local zero_dark     = '#090B12'
 local deep_blue     = '#111119'
 local death         = '#505075'
 local pale_blue     = '#7AA7FF'
@@ -227,30 +227,31 @@ local lang_syntax = {
   FidgetTitle = { fg = pale_blue, bg = zero_dark },
 
   --> tmux
-  tmuxFormatString = { fg = pale_blue, gui = 'italic' },
-  tmuxOptions      = { fg = freeze },
-  tmuxAssignment   = { fg = death },
-  tmuxFlags        = { fg = rouge },
-
+  tmuxFormatString   = { fg = pale_blue, gui = 'italic' },
+  tmuxOptions        = { fg = freeze },
+  tmuxAssignment     = { fg = death },
+  tmuxFlags          = { fg = rouge },
   --> zsh
-  zshTodo            = code_syntax.Todo,
-  zslhComment        = code_syntax.Comment,
+  shDo               = { fg = rouge },
+  shStatement        = { fg = pale_blue, gui = 'bold' },
+  shTestOpr          = { fg = rouge },
+  shVar              = { fg = pale_blue, gui = 'italic' },
+  shVarAssign        = { fg = death },
+  zshCommands        = { fg = lagoon },
+  zshDeref           = { fg = rouge },
+  zshFunction        = { fg = yellow, gui = 'italic' },
+  zshKeyword         = code_syntax.Function,
+  zshNumber          = code_syntax.Number,
+  zshOptStart        = { fg = lagoon, gui = 'italic' },
+  zshOption          = { fg = lagoon, gui = 'italic' },
   zshPreProc         = code_syntax.PreProc,
+  zshPrecommand      = { fg = lagoon },
   zshString          = code_syntax.String,
   zshStringDelimiter = { fg = lagoon },
-  zshPrecommand      = { fg = lagoon },
-  zshNumber          = code_syntax.Number,
-  zshKeyword         = code_syntax.Function,
-  zshCommands        = { fg = lagoon },
-  zshOptStart        = { fg = lagoon, gui = 'italic' },
-  zshDeref           = { fg = rouge },
-  zshOption          = { fg = lagoon, gui = 'italic' },
-  zshFunction        = { fg = yellow, gui = 'italic' },
   zshSubst           = { fg = yellow },
   zshSubstDelim      = { fg = lagoon },
-  shStatement        = { fg = pale_blue, gui = 'bold' },
-  shVarAssign        = { fg = death },
-  shVar              = { fg = pale_blue, gui = 'italic' },
+  zshTodo            = code_syntax.Todo,
+  zslhComment        = code_syntax.Comment,
 
   --> rust polyglot (rust.vim)
   rustAssert              = { fg = rouge },
