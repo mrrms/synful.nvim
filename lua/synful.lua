@@ -7,25 +7,26 @@ local function highlight(group, styles)
 end
 
 --> this would be a comment
-local zero_dark     = '#000000'
-local deep_blue     = '#111119'
-local death         = '#505075'
-local pale_blue     = '#7AA7FF'
-local lagoon        = '#6070C1'
-local navy          = '#405080'
-local deep          = '#353565'
-local grey          = '#8585AA'
-local purple        = '#BB91ED'
-local pink          = '#AF749C'
-local red           = '#994455'
-local rouge         = '#883355'
-local yellow        = '#DEC79B'
-local orange        = '#DB9280'
-local green         = '#5F875F'
-local pale_green    = '#96C0C0'
-local freeze        = '#A8B4F6'
-local icicle        = '#C0C0FC'
-local white         = '#DEDEFF'
+local zero_dark  = '#090B12'
+local deep_blue  = '#111119'
+local death      = '#505075'
+local pale_blue  = '#7AA7FF'
+local lagoon     = '#6070C1'
+local navy       = '#405080'
+local deep       = '#453565'
+local grey       = '#8585AA'
+local purple     = '#BB91ED'
+local pink       = '#AF749C'
+local red        = '#994455'
+local rouge      = '#883355'
+local yellow     = '#DEC79B'
+local orange     = '#DB9280'
+local green      = '#5F875F'
+local pale_green = '#96C0C0'
+local freeze     = '#A8B4F6'
+local icicle     = '#C0C0FC'
+local white      = '#DEDEFF'
+
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = red },
   CursorLine              = { bg = deep_blue },
@@ -51,7 +52,7 @@ local editor_syntax = {
   Normal                  = { fg = freeze, bg = zero_dark },
   NormalFloat             = { bg = zero_dark },
   Pmenu                   = { fg = freeze, bg = zero_dark },
-  PmenuSel                = { bg = navy },
+  PmenuSel                = { bg = deep },
   PmenuSbar               = { fg = freeze },
   PmenuThumb              = { fg = navy },
   Search                  = { fg = icicle, bg = navy },
@@ -62,7 +63,7 @@ local editor_syntax = {
   SpellLocal              = { fg = orange, gui = 'bold' },
   TabLine                 = { bg = death, fg = white },
   TabLineFill             = { bg = death, fg = white },
-  TabLineSel              = { fg = zero_dark, gui = 'bold', bg = navy },
+  TabLineSel              = { fg = zero_dark, gui = 'bold', bg = deep },
   Title                   = { fg = white },
   Visual                  = { fg = icicle, bg = navy },
   VisualNOS               = { fg = icicle, bg = rouge },
@@ -233,7 +234,7 @@ local lang_syntax = {
   tmuxFlags          = { fg = rouge },
   --> zsh
   shDo               = { fg = rouge },
-  shStatement        = { fg = freeze },
+  shStatement        = { fg = navy, gui = 'bold' },
   shTestOpr          = { fg = rouge },
   shVar              = { fg = pale_blue, gui = 'italic' },
   shVarAssign        = { fg = death },
