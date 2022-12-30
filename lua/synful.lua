@@ -13,7 +13,7 @@ local death      = '#505075'
 local pale_blue  = '#7AA7FF'
 local lagoon     = '#6070C1'
 local navy       = '#405080'
-local deep       = '#453565'
+local deep       = '#354585'
 local grey       = '#8585AA'
 local purple     = '#BB91ED'
 local pink       = '#AF749C'
@@ -28,33 +28,42 @@ local icicle     = '#C0C0FC'
 local white      = '#DEDEFF'
 
 local editor_syntax = {
-  Cursor                  = { fg = zero_dark, bg = red },
-  CursorLine              = { bg = deep_blue },
-  ColorColumn             = { fg = "NONE", bg = "NONE" },
-  CursorLineNr            = { fg = pale_blue },
-  Directory               = { fg = lagoon, gui = 'bold' },
-  variable                = { fg = freeze },
-  field                   = { fg = freeze },
-  DiffAdd                 = { fg = pale_green },
-  DiffChange              = { fg = yellow },
-  DiffDelete              = { fg = red },
-  DiffText                = { fg = lagoon },
-  ErrorMsg                = { fg = rouge },
-  EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
-  VertSplit               = { fg = death, bg = zero_dark },
-  Folded                  = { fg = death, gui = 'italic' },
-  FoldColumn              = { fg = yellow },
-  SignColumn              = { fg = yellow },
-  IncSearch               = { fg = death, bg = purple, },
-  Substitute              = { fg = freeze, bg = rouge, },
-  LineNr                  = { fg = death },
-  MatchParen              = { fg = red, gui = 'bold' },
-  Normal                  = { fg = freeze, bg = zero_dark },
-  NormalFloat             = { bg = zero_dark },
-  Pmenu                   = { fg = freeze, bg = zero_dark },
-  PmenuSel                = { bg = deep },
-  PmenuSbar               = { fg = freeze },
-  PmenuThumb              = { fg = navy },
+  Cursor       = { fg = zero_dark, bg = red },
+  CursorLine   = { bg = deep_blue },
+  ColorColumn  = { fg = "NONE", bg = "NONE" },
+  CursorLineNr = { fg = pale_blue },
+  Directory    = { fg = lagoon, gui = 'bold' },
+  variable     = { fg = freeze },
+  field        = { fg = freeze },
+  DiffAdd      = { fg = pale_green },
+  DiffChange   = { fg = yellow },
+  DiffDelete   = { fg = red },
+  DiffText     = { fg = lagoon },
+  ErrorMsg     = { fg = rouge },
+  EndOfBuffer  = { fg = zero_dark, bg = zero_dark },
+  VertSplit    = { fg = death, bg = zero_dark },
+  Folded       = { fg = death, gui = 'italic' },
+  FoldColumn   = { fg = yellow },
+  SignColumn   = { fg = yellow },
+  IncSearch    = { fg = death, bg = purple, },
+  Substitute   = { fg = freeze, bg = rouge, },
+  LineNr       = { fg = death },
+  MatchParen   = { fg = red, gui = 'bold' },
+  Normal       = { fg = freeze, bg = zero_dark },
+  NormalFloat  = { bg = zero_dark },
+
+  Pmenu      = { fg = freeze, bg = zero_dark },
+  PmenuSel   = { fg = freeze, bg = deep, gui = 'bold' },
+  PmenuSbar  = { fg = freeze },
+  PmenuThumb = { fg = rouge },
+
+  --reverse
+  --color=fg:#A8B4F6,bg:#000000,hl:#AF749C
+  --color=fg+:#d6d5ed,bg+:#354585,hl+:#BB91ED
+  --color=info:#676E96,prompt:#232333,pointer:#5F875F
+  --color=marker:#2A293D,spinner:#BB91ED,header:#2A293D
+  --color=gutter:#000000,border:#2A293D
+
   Search                  = { fg = icicle, bg = navy },
   SpecialKey              = { fg = lagoon },
   SpellBad                = { fg = red, gui = 'bold' },
