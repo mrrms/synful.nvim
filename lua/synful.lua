@@ -22,10 +22,9 @@ local yellow     = '#DEC79B'
 local orange     = '#DB9280'
 local green      = '#5F875F'
 local pale_green = '#96C0C0'
-local freeze     = '#cad3f5'
+local freeze     = '#A8B4F6'
 local icicle     = '#C0C0FC'
 local white      = '#DEDEFF'
--- #A8B4F6
 
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = rouge },
