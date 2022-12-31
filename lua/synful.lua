@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 local zero_dark  = '#000000'
-local deep_blue  = '#151519'
+local deep_blue  = '#090B12'
 local death      = '#505075'
 local pale_blue  = '#7AA7FF'
 local lagoon     = '#6070C1'
@@ -51,7 +51,7 @@ local editor_syntax = {
   Normal                  = { fg = freeze, bg = zero_dark },
   NormalFloat             = { bg = zero_dark },
   Pmenu                   = { fg = freeze, bg = zero_dark },
-  PmenuSel                = { fg = freeze, bg = '#090B12', gui = 'bold' },
+  PmenuSel                = { fg = freeze, bg = deep_blue, gui = 'bold' },
   PmenuSbar               = { fg = freeze },
   PmenuThumb              = { fg = rouge },
   TabLine                 = { fg = freeze, bg = rouge },
