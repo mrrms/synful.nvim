@@ -7,7 +7,7 @@ local function highlight(group, styles)
 end
 
 local zero_dark  = '#1E1E2E'
-local deep_blue  = '#121224'
+local deep_blue  = '#12121C'
 local death      = '#505075'
 local pale_blue  = '#7AA7FF'
 local lagoon     = '#6070C1'
