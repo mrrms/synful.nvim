@@ -41,7 +41,7 @@ local editor_syntax = {
   ErrorMsg                = { fg = rouge },
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
   VertSplit               = { fg = death, bg = zero_dark },
-  Folded                  = { fg = death, gui = 'bold,italic' },
+  Folded                  = { fg = death, gui = 'italic' },
   FoldColumn              = { fg = yellow },
   SignColumn              = { fg = yellow },
   IncSearch               = { fg = death, bg = magenta },
