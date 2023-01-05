@@ -71,7 +71,7 @@ local editor_syntax = {
   FloatBorder             = { fg = deep },
   FloatShadow             = { bg = "NONE" },
   FloatShadowThrough      = { bg = "NONE" },
-  constructor             = { fg = freeze, gui = 'bold' },
+  constructor             = { fg = deep, gui = 'bold' },
   Builtin                 = { fg = white },
   Return                  = { fg = green, gui = 'bold' },
   gitcommitComment        = { fg = death, gui = 'italic' },
