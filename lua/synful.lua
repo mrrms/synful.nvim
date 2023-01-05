@@ -68,7 +68,7 @@ local editor_syntax = {
   VisualNOS               = { fg = icicle, bg = rouge },
   WarningMsg              = { fg = yellow, gui = 'italic' },
   Whitespace              = { fg = pale_blue },
-  FloatBorder             = { fg = deep },
+  FloatBorder             = { fg = deep_blue },
   FloatShadow             = { bg = "NONE" },
   FloatShadowThrough      = { bg = "NONE" },
   constructor             = { fg = freeze, gui = 'bold' },
