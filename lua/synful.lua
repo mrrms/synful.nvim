@@ -155,6 +155,7 @@ local code_syntax = {
   TelescopeSelectionCaret    = { fg = rouge, bg = deep_blue, gui = 'bold' },
   TelescopeMatching          = editor_syntax.MatchParen,
   TelescopePreviewMatch      = editor_syntax.MatchParen,
+  TelescopePromptTitle       = { fg = rouge },
   LspSagaRenameMatch         = editor_syntax.MatchParen,
   Todo                       = { fg = pale_blue, gui = 'bold' },
   Type                       = { fg = pale_green, gui = 'bold' },
