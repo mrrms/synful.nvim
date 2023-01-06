@@ -153,7 +153,7 @@ local code_syntax = {
   TelescopeBorder            = editor_syntax.FloatBorder,
   TelescopeSelection         = editor_syntax.PmenuSel,
   TelescopeSelectionCaret    = { fg = rouge, bg = deep_blue, gui = 'bold' },
-  TelescopeMatching          = editor_syntax.MatchParen,
+  TelescopeMatching          = { fg = magenta, gui = 'bold' },
   TelescopePreviewMatch      = editor_syntax.MatchParen,
   TelescopePromptTitle       = { fg = pale_blue },
   TelescopePromptPrefix      = { fg = rouge },
