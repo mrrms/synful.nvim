@@ -12,7 +12,7 @@ local death      = '#505075'
 local pale_blue  = '#7AA7FF'
 local lagoon     = '#6070C1'
 local navy       = '#405080'
-local deep       = '#333363'
+local deep       = '#333350'
 local grey       = '#8585AA'
 local magenta    = '#BB91ED'
 local pink       = '#AF749C'
@@ -68,7 +68,7 @@ local editor_syntax = {
   VisualNOS               = { fg = icicle, bg = rouge },
   WarningMsg              = { fg = yellow, gui = 'italic' },
   Whitespace              = { fg = pale_blue },
-  FloatBorder             = { fg = deep_blue },
+  FloatBorder             = { fg = deep },
   FloatShadow             = { bg = "NONE" },
   FloatShadowThrough      = { bg = "NONE" },
   constructor             = { fg = freeze, gui = 'bold' },
