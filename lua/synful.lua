@@ -355,6 +355,7 @@ local lang_syntax = {
   tsxEqual                      = editor_syntax.LineNr,
   tsxRegion                     = editor_syntax.field,
   tsxTag                        = editor_syntax.LineNr,
+  tsxString                     = editor_syntax.DiffAdd,
   tsxTagName                    = editor_syntax.DiffText,
   tsxIntrinsicTagName           = editor_syntax.htmlTagN,
   txsRegion                     = editor_syntax.LineNr,
