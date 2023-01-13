@@ -26,6 +26,33 @@ local freeze     = '#A8B4F6'
 local icicle     = '#C0C0FC'
 local white      = '#DEDEFF'
 
+local color_palette = {
+  rosewater = "#F5E0DC",
+  flamingo = "#F2CDCD",
+  pink = "#F5C2E7",
+  mauve = "#CBA6F7",
+  red = "#F38BA8",
+  maroon = "#EBA0AC",
+  peach = "#FAB387",
+  yellow = "#F9E2AF",
+  green = "#A6E3A1",
+  teal = "#94E2D5",
+  sky = "#89DCEB",
+  blue = "#90C1FB",
+  sapphire = "#74C7EC",
+  lavender = "#B4BEFE",
+  text = "#C6D0F5",
+  overlay2 = "#AEB7D9",
+  overlay1 = "#969DBC",
+  overlay0 = "#7E84A0",
+  surface2 = "#666A83",
+  surface1 = "#4E5167",
+  surface0 = "#36374A",
+  base2 = "#1E1E2E",
+  base1 = "#12121C",
+  base0 = "#07070A",
+}
+
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = rouge },
   CursorLine              = { bg = deep_blue },
@@ -182,6 +209,7 @@ local code_syntax = {
   DiagnosticVirtualTextInfo  = { fg = pale_blue, gui = 'italic' },
   DiagnosticVirtualTextWarn  = { fg = orange, gui = 'italic' },
   DiagnosticVirtualTextHint  = { fg = yellow, gui = 'italic' },
+  NotifyBackground = { bg = navy }
 }
 
 for group, styles in pairs(code_syntax) do
@@ -433,30 +461,3 @@ vim.g.terminal_color_14         = lagoon
 vim.g.terminal_color_15         = icicle
 vim.g.terminal_color_background = death
 vim.g.terminal_color_foreground = white
-
-local color_palette = {
-  rosewater = "#F5E0DC",
-  flamingo = "#F2CDCD",
-  pink = "#F5C2E7",
-  mauve = "#CBA6F7",
-  red = "#F38BA8",
-  maroon = "#EBA0AC",
-  peach = "#FAB387",
-  yellow = "#F9E2AF",
-  green = "#A6E3A1",
-  teal = "#94E2D5",
-  sky = "#89DCEB",
-  blue = "#90C1FB",
-  sapphire = "#74C7EC",
-  lavender = "#B4BEFE",
-  text = "#C6D0F5",
-  overlay2 = "#AEB7D9",
-  overlay1 = "#969DBC",
-  overlay0 = "#7E84A0",
-  surface2 = "#666A83",
-  surface1 = "#4E5167",
-  surface0 = "#36374A",
-  base2 = "#1E1E2E",
-  base1 = "#12121C",
-  base0 = "#07070A",
-}
