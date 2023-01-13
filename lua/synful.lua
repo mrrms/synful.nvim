@@ -390,7 +390,7 @@ local lang_syntax = {
   CmpItemKindFolder             = editor_syntax.Return,
   CmpItemKindOperator           = editor_syntax.variable,
   CmpItemKindProperty           = editor_syntax.gitcommitBranch,
-  CmpItemMenu                   = { fg = pink, bg = 'none', gui = 'bold,italic' },
+  CmpItemMenu                   = { fg = pale_blue, bg = 'none' },
   CmpItemAbbrMatchDefault       = editor_syntax.gitcommitBranch,
   CmpItemAbbrMatch              = editor_syntax.gitcommitBranch,
   CmpItemAbbrMatchFuzzy         = editor_syntax.gitcommitBranch,
