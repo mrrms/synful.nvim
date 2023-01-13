@@ -209,7 +209,6 @@ local code_syntax = {
   DiagnosticVirtualTextInfo  = { fg = pale_blue, gui = 'italic' },
   DiagnosticVirtualTextWarn  = { fg = orange, gui = 'italic' },
   DiagnosticVirtualTextHint  = { fg = yellow, gui = 'italic' },
-  NotifyBackground = { bg = navy }
 }
 
 for group, styles in pairs(code_syntax) do
