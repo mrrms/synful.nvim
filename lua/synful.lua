@@ -354,6 +354,7 @@ local lang_syntax = {
   jsFuncCall            = editor_syntax.constructor,
   jsFuncBraces          = editor_syntax.LineNr,
   jsxTagName            = editor_syntax.Directory,
+  jsxEqual              = editor_syntax.LineNr,
   jsxComponentName      = editor_syntax.DiffText,
   jsxAttrib             = editor_syntax.CursorLineNr,
   jsxBraces             = editor_syntax.LineNr,
