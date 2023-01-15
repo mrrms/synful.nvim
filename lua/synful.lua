@@ -6,7 +6,9 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local zero_dark  = '#15151F'
+-- #15151F
+
+local zero_dark  = '#000000'
 local deep_blue  = '#1C1C31'
 local death      = '#505075'
 local pale_blue  = '#7AA7FF'
@@ -217,32 +219,32 @@ end
 
 --> Plugin Highlight Groups
 local plugin_syntax = {
-  GitGutterAdd = editor_syntax.gitcommitUnmerged,
-  GitGutterChange = editor_syntax.CursorLineNr,
-  GitGutterDelete = editor_syntax.DiffDelete,
+  GitGutterAdd          = editor_syntax.gitcommitUnmerged,
+  GitGutterChange       = editor_syntax.CursorLineNr,
+  GitGutterDelete       = editor_syntax.DiffDelete,
   GitGutterChangeDelete = { fg = orange },
-  diffAdded = editor_syntax.gitcommitUnmerged,
-  diffRemoved = editor_syntax.DiffDelete,
-  NotifyERRORBorder = { fg = '#8A1F1F' },
-  NotifyWARNBorder = { fg = '#79491D' },
-  NotifyINFOBorder = { fg = '#4F6752' },
-  NotifyDEBUGBorder = { fg = '#8B8B8B' },
-  NotifyTRACEBorder = { fg = '#4F3552' },
-  NotifyERRORIcon = { fg = '#F70067' },
-  NotifyWARNIcon = { fg = '#F79000' },
-  NotifyINFOIcon = { fg = '#A9FF68' },
-  NotifyDEBUGIcon = { fg = '#8B8B8B' },
-  NotifyTRACEIcon = { fg = '#D484FF' },
-  NotifyERRORTitle = { fg = '#F70067' },
-  NotifyWARNTitle = { fg = '#F79000' },
-  NotifyINFOTitle = { fg = '#A9FF68' },
-  NotifyDEBUGTitle = { fg = '#8B8B8B' },
-  NotifyTRACETitle = { fg = '#D484FF' },
-  NotifyERRORBody = editor_syntax.Normal,
-  NotifyWARNBody  = editor_syntax.Normal,
-  NotifyINFOBody  = editor_syntax.Normal,
-  NotifyDEBUGBody = editor_syntax.Normal,
-  NotifyTRACEBody = editor_syntax.Normal,
+  diffAdded             = editor_syntax.gitcommitUnmerged,
+  diffRemoved           = editor_syntax.DiffDelete,
+  NotifyERRORBorder     = { fg = '#8A1F1F' },
+  NotifyWARNBorder      = { fg = '#79491D' },
+  NotifyINFOBorder      = { fg = '#4F6752' },
+  NotifyDEBUGBorder     = { fg = '#8B8B8B' },
+  NotifyTRACEBorder     = { fg = '#4F3552' },
+  NotifyERRORIcon       = { fg = '#F70067' },
+  NotifyWARNIcon        = { fg = '#F79000' },
+  NotifyINFOIcon        = { fg = '#A9FF68' },
+  NotifyDEBUGIcon       = { fg = '#8B8B8B' },
+  NotifyTRACEIcon       = { fg = '#D484FF' },
+  NotifyERRORTitle      = { fg = '#F70067' },
+  NotifyWARNTitle       = { fg = '#F79000' },
+  NotifyINFOTitle       = { fg = '#A9FF68' },
+  NotifyDEBUGTitle      = { fg = '#8B8B8B' },
+  NotifyTRACETitle      = { fg = '#D484FF' },
+  NotifyERRORBody       = editor_syntax.Normal,
+  NotifyWARNBody        = editor_syntax.Normal,
+  NotifyINFOBody        = editor_syntax.Normal,
+  NotifyDEBUGBody       = editor_syntax.Normal,
+  NotifyTRACEBody       = editor_syntax.Normal,
 }
 
 for group, styles in pairs(plugin_syntax) do
