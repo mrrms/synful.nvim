@@ -6,9 +6,7 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
--- #15151F
-
-local zero_dark  = '#1E1E2E'
+local zero_dark  = '#1A1D26'
 local deep_blue  = '#1C1C31'
 local death      = '#505075'
 local pale_blue  = '#7AA7FF'
