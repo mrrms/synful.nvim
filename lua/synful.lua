@@ -8,7 +8,7 @@ end
 
 -- #15151F
 
-local zero_dark  = '#000000'
+local zero_dark  = '#2e303a'
 local deep_blue  = '#1C1C31'
 local death      = '#505075'
 local pale_blue  = '#7AA7FF'
