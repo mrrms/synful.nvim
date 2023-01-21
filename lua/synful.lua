@@ -149,7 +149,7 @@ local code_syntax = {
   Special                    = editor_syntax.DiffText,
   SpecialChar                = editor_syntax.ErrorMsg,
   SpecialComment             = { fg = colors.death, gui = 'bold' },
-  Statement                  = { fg = colors.pale_green, gui = 'italic' },
+  Statement                  = { fg = colors.freeze, gui = 'bold' },
   StorageClass               = { fg = colors.magenta, gui = 'italic' },
   String                     = { fg = colors.pale_green, gui = 'italic' },
   Structure                  = editor_syntax.DiffChange,
