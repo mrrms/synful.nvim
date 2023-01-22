@@ -8,13 +8,12 @@ end
 
 local zero_dark  = '#1A1D26'
 local deep_blue  = '#1F222E'
-local death      = '#505075'
-local pale_blue  = '#7AA7FF'
-local lagoon     = '#6070C1'
-local navy       = '#405080'
 local deep       = '#333355'
+local death      = '#505075'
+local navy       = '#405080'
+local lagoon     = '#6070C1'
+local pale_blue  = '#7AA7FF'
 local mauve      = '#4F3552'
-local grey       = '#8585AA'
 local magenta    = '#CBA6F7'
 local red        = '#994455'
 local rouge      = '#883355'
@@ -23,6 +22,7 @@ local orange     = '#DB9280'
 local clover     = '#4F6752'
 local green      = '#5F875F'
 local pale_green = '#96C0C0'
+local grey       = '#8585AA'
 local freeze     = '#A8B4F6'
 
 local editor_syntax = {
@@ -43,7 +43,7 @@ local editor_syntax = {
   Folded                  = { fg = death, gui = 'bold,italic' },
   FoldColumn              = { fg = yellow },
   SignColumn              = { fg = yellow },
-  IncSearch               = { fg = death, bg = mauve },
+  IncSearch               = { fg = death, bg = rouge },
   Substitute              = { fg = freeze, bg = rouge },
   LineNr                  = { fg = death },
   MatchParen              = { fg = red, gui = 'bold' },
@@ -472,22 +472,3 @@ local lang_syntax = {
 for group, styles in pairs(lang_syntax) do
   highlight(group, styles)
 end
-
-vim.g.terminal_color_0          = zero_dark
-vim.g.terminal_color_1          = red
-vim.g.terminal_color_2          = pale_green
-vim.g.terminal_color_3          = yellow
-vim.g.terminal_color_4          = lagoon
-vim.g.terminal_color_5          = magenta
-vim.g.terminal_color_6          = lagoon
-vim.g.terminal_color_7          = freeze
-vim.g.terminal_color_8          = grey
-vim.g.terminal_color_9          = red
-vim.g.terminal_color_10         = pale_green
-vim.g.terminal_color_11         = orange
-vim.g.terminal_color_12         = lagoon
-vim.g.terminal_color_13         = magenta
-vim.g.terminal_color_14         = lagoon
-vim.g.terminal_color_15         = freeze
-vim.g.terminal_color_background = death
-vim.g.terminal_color_foreground = freeze
