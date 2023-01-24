@@ -415,7 +415,7 @@ local lang_syntax = {
   typescriptXHRMethod           = editor_syntax.DiffText,
   typescriptTypeReference       = editor_syntax.Type,
   typescriptTypeCase            = { fg = navy },
-  typescriptIdentifierName      = editor_syntax.LineNr,
+  typescriptIdentifierName      = editor_syntax.Whitespace,
   TitleString                   = { bg = freeze, fg = zero_dark, gui = 'bold' },
   TitleSymbol                   = { bg = zero_dark, fg = freeze },
   TitleIcon                     = { bg = freeze, fg = red },
