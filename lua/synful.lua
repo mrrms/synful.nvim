@@ -23,7 +23,7 @@ local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#96C0C0'
 local grey       = '#8585AA'
-local freeze     = '#8d96c2'
+local freeze     = '#96a1d4'
 
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = rouge },
