@@ -135,7 +135,7 @@ local code_syntax = {
   Label                      = editor_syntax.DiffText,
   Macro                      = editor_syntax.gitcommitBranch,
   Noise                      = { fg = rouge },
-  Number                     = { fg = magenta },
+  Number                     = { fg = magenta, gui = 'bold' },
   NvimInternalError          = editor_syntax.ErrorMsg,
   Operator                   = editor_syntax.DiffChange,
   PreCondit                  = editor_syntax.DiffChange,
@@ -235,7 +235,7 @@ local lang_syntax = {
   luaFunctionBlock              = editor_syntax.htmlTagN,
   luaIn                         = { fg = lagoon, gui = 'bold' },
   luaKeyword                    = editor_syntax.Return,
-  luaLocal                      = editor_syntax.Return,
+  luaLocal                      = { fg = green, gui = 'bold' },
   luaParen                      = editor_syntax.LineNr,
   luaParens                     = editor_syntax.LineNr,
   luaSpecialValue               = editor_syntax.Directory,
@@ -327,18 +327,18 @@ local lang_syntax = {
   jsModuleBraces                = editor_syntax.LineNr,
   jsDestructuringBraces         = editor_syntax.LineNr,
   jsObjectBraces                = editor_syntax.LineNr,
-  jsObjectKey                   = editor_syntax.LineNr,
   jsObjectShorthandProp         = editor_syntax.LineNr,
-  jsNull                        = editor_syntax.gitcommitBranch,
   jsModuleComma                 = editor_syntax.LineNr,
   jsObject                      = editor_syntax.LineNr,
   jsBrackets                    = editor_syntax.LineNr,
-  jsTernaryIf                   = editor_syntax.gitcommitBranch,
-  jsTernaryOperator             = editor_syntax.gitcommitBranch,
   jsObjectColon                 = editor_syntax.LineNr,
   jsNoise                       = editor_syntax.LineNr,
   jsFuncArgs                    = editor_syntax.LineNr,
   jsFuncArgsCommas              = editor_syntax.LineNr,
+  jsObjectKey                   = editor_syntax.Whitespace,
+  jsNull                        = editor_syntax.gitcommitBranch,
+  jsTernaryIf                   = editor_syntax.gitcommitBranch,
+  jsTernaryOperator             = editor_syntax.gitcommitBranch,
   jsTemplateString              = editor_syntax.Comment,
   jsObjectSeparator             = editor_syntax.LineNr,
   jsObjectValue                 = editor_syntax.constructor,
@@ -386,13 +386,14 @@ local lang_syntax = {
   typescriptBlock               = editor_syntax.field,
   typescriptBraces              = editor_syntax.LineNr,
   typescriptCall                = editor_syntax.Title,
+  typescriptFuncImpl            = editor_syntax.LineNr,
   typescriptDOMDocProp          = editor_syntax.DiffText,
   typescriptDOMWindowProp       = editor_syntax.DiffText,
   typescriptDestructureVariable = editor_syntax.variable,
   typescriptDotNotation         = editor_syntax.ErrorMsg,
   typescriptExceptions          = editor_syntax.DiffText,
   typescriptExport              = editor_syntax.htmlTagN,
-  typescriptFuncKeyword         = editor_syntax.htmlTagN,
+  typescriptFuncKeyword         = editor_syntax.Special,
   typescriptHeadersMethod       = editor_syntax.DiffText,
   typescriptImport              = editor_syntax.htmlTagN,
   typescriptObjectColon         = editor_syntax.LineNr,
@@ -420,7 +421,7 @@ local lang_syntax = {
   typescriptXHRMethod           = editor_syntax.DiffText,
   typescriptTypeReference       = editor_syntax.Type,
   typescriptTypeCase            = { fg = navy },
-  typescriptIdentifierName      = editor_syntax.Whitespace,
+  typescriptIdentifierName      = { fg = freeze, gui = 'bold' },
   TitleString                   = { bg = freeze, fg = zero_dark, gui = 'bold' },
   TitleSymbol                   = { bg = zero_dark, fg = freeze },
   TitleIcon                     = { bg = freeze, fg = red },
@@ -476,6 +477,26 @@ local lang_syntax = {
   TerminalBorder                = editor_syntax.FloatBorder,
   TerminalNormal                = editor_syntax.FloatBorder,
 }
+
+--> Setting global colors
+vim.g.color_0          = zero_dark
+vim.g.color_1          = red
+vim.g.color_2          = pale_green
+vim.g.color_3          = yellow
+vim.g.color_4          = lagoon
+vim.g.color_5          = magenta
+vim.g.color_6          = lagoon
+vim.g.color_7          = freeze
+vim.g.color_8          = grey
+vim.g.color_9          = red
+vim.g.color_10         = pale_green
+vim.g.color_11         = orange
+vim.g.color_12         = lagoon
+vim.g.color_13         = magenta
+vim.g.color_14         = lagoon
+vim.g.color_15         = freeze
+vim.g.color_background = death
+vim.g.color_foreground = freeze
 
 for group, styles in pairs(lang_syntax) do
   highlight(group, styles)
