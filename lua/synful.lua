@@ -479,24 +479,22 @@ local lang_syntax = {
 }
 
 --> Setting global colors
-vim.g.color_0          = zero_dark
-vim.g.color_1          = red
-vim.g.color_2          = pale_green
-vim.g.color_3          = yellow
-vim.g.color_4          = lagoon
-vim.g.color_5          = magenta
-vim.g.color_6          = lagoon
-vim.g.color_7          = freeze
-vim.g.color_8          = grey
-vim.g.color_9          = red
-vim.g.color_10         = pale_green
-vim.g.color_11         = orange
-vim.g.color_12         = lagoon
-vim.g.color_13         = magenta
-vim.g.color_14         = lagoon
-vim.g.color_15         = freeze
-vim.g.color_background = death
-vim.g.color_foreground = freeze
+vim.g.color_0  = zero_dark
+vim.g.color_1  = rouge
+vim.g.color_2  = green
+vim.g.color_3  = yellow
+vim.g.color_4  = lagoon
+vim.g.color_5  = magenta
+vim.g.color_6  = death
+vim.g.color_7  = freeze
+vim.g.color_8  = lagoon
+vim.g.color_9  = red
+vim.g.color_10 = pale_green
+vim.g.color_11 = orange
+vim.g.color_12 = navy
+vim.g.color_13 = deep
+vim.g.color_14 = pale_blue
+vim.g.color_15 = freeze
 
 for group, styles in pairs(lang_syntax) do
   highlight(group, styles)
