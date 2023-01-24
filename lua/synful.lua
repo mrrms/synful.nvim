@@ -23,7 +23,7 @@ local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#96C0C0'
 local grey       = '#8585AA'
-local freeze     = '#96a1d4'
+local freeze     = '#8d96c2'
 
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = rouge },
@@ -478,14 +478,6 @@ local lang_syntax = {
   TerminalNormal                = editor_syntax.FloatBorder,
 }
 
-vim.g.colour = {
-  zero_dark = zero_dark,
-  rouge = rouge,
-  green = green,
-  yellow = yellow,
-  blue = lagoon,
-}
-
 --> Setting global colors
 vim.g.color_0  = zero_dark
 vim.g.color_1  = rouge
@@ -500,7 +492,7 @@ vim.g.color_9  = red
 vim.g.color_10 = pale_green
 vim.g.color_11 = orange
 vim.g.color_12 = navy
-vim.g.color_13 = deep
+vim.g.color_13 = deep_blue
 vim.g.color_14 = pale_blue
 vim.g.color_15 = freeze
 
