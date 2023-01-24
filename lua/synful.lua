@@ -478,6 +478,13 @@ local lang_syntax = {
   TerminalNormal                = editor_syntax.FloatBorder,
 }
 
+vim.g.colour   = {
+  zero_dark = zero_dark,
+  rouge = rouge,
+  green = green,
+  yellow = yellow,
+  blue = lagoon,
+}
 --> Setting global colors
 vim.g.color_0  = zero_dark
 vim.g.color_1  = rouge
