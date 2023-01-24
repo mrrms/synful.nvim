@@ -315,6 +315,7 @@ local lang_syntax = {
   jsFuncBraces                  = editor_syntax.LineNr,
   jsxTagName                    = editor_syntax.Directory,
   jsxEqual                      = editor_syntax.LineNr,
+  jsxExpressionBlock            = editor_syntax.Whitespace,
   jsxOpenPunct                  = editor_syntax.LineNr,
   jsxOpenTag                    = editor_syntax.LineNr,
   jsxComponentName              = editor_syntax.Directory,
