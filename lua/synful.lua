@@ -72,7 +72,7 @@ local editor_syntax = {
   FloatShadowThrough      = { bg = "NONE" },
   constructor             = { fg = freeze, gui = 'bold' },
   Builtin                 = { fg = freeze },
-  Return                  = { fg = clover, gui = 'bold,italic' },
+  Return                  = { fg = clover, gui = 'bold' },
   gitcommitComment        = { fg = death, gui = 'italic' },
   gitcommitUntracked      = { fg = death, gui = 'italic' },
   gitcommitDiscarded      = { fg = death, gui = 'italic' },
