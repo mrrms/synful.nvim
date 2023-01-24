@@ -13,8 +13,8 @@ local death      = '#505075'
 local navy       = '#405080'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
-local mauve      = '#4F3552'
 local magenta    = '#CBA6F7'
+local mauve      = '#734a80'
 local red        = '#994455'
 local rouge      = '#883355'
 local yellow     = '#F2CDCD'
@@ -135,7 +135,7 @@ local code_syntax = {
   Label                      = editor_syntax.DiffText,
   Macro                      = editor_syntax.gitcommitBranch,
   Noise                      = { fg = rouge },
-  Number                     = editor_syntax.gitcommitBranch,
+  Number                     = { fg = mauve },
   NvimInternalError          = editor_syntax.ErrorMsg,
   Operator                   = editor_syntax.DiffChange,
   PreCondit                  = editor_syntax.DiffChange,
