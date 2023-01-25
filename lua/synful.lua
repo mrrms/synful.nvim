@@ -137,7 +137,7 @@ local code_syntax = {
   Noise                      = { fg = rouge },
   Number                     = { fg = magenta, gui = 'bold' },
   NvimInternalError          = editor_syntax.ErrorMsg,
-  Operator                   = editor_syntax.DiffChange,
+  Operator                   = { fg = yellow },
   PreCondit                  = editor_syntax.DiffChange,
   PreProc                    = editor_syntax.DiffChange,
   Repeat                     = editor_syntax.Return,
