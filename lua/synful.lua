@@ -315,7 +315,7 @@ local lang_syntax = {
   jsFuncCall                    = editor_syntax.constructor,
   jsFuncBraces                  = editor_syntax.LineNr,
   jsxTag                        = { fg = death },
-  jsxExpressionBlock            = { fg = death },
+  jsxExpressionBlock            = { fg = grey },
   jsxTagName                    = editor_syntax.Directory,
   jsxEqual                      = editor_syntax.LineNr,
   jsxOpenPunct                  = editor_syntax.LineNr,
