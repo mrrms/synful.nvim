@@ -14,8 +14,7 @@ local navy       = '#405080'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
 local magenta    = '#CBA6F7'
-local mauve      = '#734a80'
-local red        = '#994455'
+local mauve      = '#875368'
 local rouge      = '#883355'
 local yellow     = '#F2CDCD'
 local orange     = '#DB9280'
@@ -23,7 +22,7 @@ local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#96C0C0'
 local grey       = '#8585AA'
-local freeze     = '#9fa7cf'
+local freeze     = '#9FA7CF'
 
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = rouge },
@@ -35,7 +34,7 @@ local editor_syntax = {
   field                   = { fg = freeze },
   DiffAdd                 = { fg = pale_green },
   DiffChange              = { fg = death },
-  DiffDelete              = { fg = red },
+  DiffDelete              = { fg = rouge },
   DiffText                = { fg = lagoon, gui = 'bold' },
   ErrorMsg                = { fg = rouge },
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
@@ -46,7 +45,7 @@ local editor_syntax = {
   IncSearch               = { fg = magenta, bg = lagoon, gui = 'bold' },
   Substitute              = { fg = freeze, bg = rouge },
   LineNr                  = { fg = death },
-  MatchParen              = { fg = red, gui = 'bold' },
+  MatchParen              = { fg = rouge, gui = 'bold' },
   Normal                  = { fg = freeze, bg = zero_dark },
   NormalFloat             = { bg = zero_dark },
   Pmenu                   = { fg = freeze, bg = zero_dark },
@@ -58,7 +57,7 @@ local editor_syntax = {
   TabLineSel              = { fg = zero_dark, bg = deep_blue, gui = 'bold' },
   Search                  = { fg = freeze, bg = navy },
   SpecialKey              = { fg = lagoon },
-  SpellBad                = { fg = red, gui = 'bold' },
+  SpellBad                = { fg = rouge, gui = 'bold' },
   SpellRare               = { fg = lagoon, gui = 'bold' },
   SpellCap                = { fg = yellow, gui = 'bold' },
   SpellLocal              = { fg = orange, gui = 'bold' },
@@ -79,10 +78,10 @@ local editor_syntax = {
   gitcommitSelected       = { fg = death, gui = 'italic' },
   gitcommitBranch         = { fg = magenta, gui = 'bold' },
   gitcommitNoBranch       = { fg = magenta },
-  gitcommitDiscardedType  = { fg = red },
-  gitcommitDiscardedFile  = { fg = red },
-  gitcommitDiscardedArrow = { fg = red },
-  gitcommitOverflow       = { fg = red },
+  gitcommitDiscardedType  = { fg = rouge },
+  gitcommitDiscardedFile  = { fg = rouge },
+  gitcommitDiscardedArrow = { fg = rouge },
+  gitcommitOverflow       = { fg = rouge },
   gitcommitUntrackedFile  = { fg = lagoon },
   gitcommitUnmerged       = { fg = green },
   gitcommitSelectedFile   = { fg = green },
@@ -111,13 +110,12 @@ for group, styles in pairs(editor_syntax) do
   highlight(group, styles)
 end
 
---> Vim Default Code Syntax
 local code_syntax = {
-  Boolean                    = editor_syntax.gitcommitBranch,
+  Boolean                    = { fg = mauve },
   Character                  = editor_syntax.constructor,
   Command                    = editor_syntax.DiffText,
   Comment                    = editor_syntax.Folded,
-  Conditional                = editor_syntax.Return,
+  Conditional                = { fg = lagoon, gui = 'bold' },
   Constant                   = editor_syntax.DiffText,
   Debug                      = editor_syntax.DiffDelete,
   Define                     = editor_syntax.DiffText,
@@ -133,7 +131,7 @@ local code_syntax = {
   KeywordFunction            = editor_syntax.DiffText,
   KeywordReturn              = { fg = green, gui = 'italic' },
   Label                      = editor_syntax.DiffText,
-  Macro                      = editor_syntax.gitcommitBranch,
+  Macro                      = { fg = lagoon, gui = 'NONE' },
   Noise                      = { fg = rouge },
   Number                     = { fg = magenta, gui = 'bold' },
   NvimInternalError          = editor_syntax.ErrorMsg,
@@ -151,7 +149,7 @@ local code_syntax = {
   Tag                        = { fg = orange },
   TelescopeBorder            = editor_syntax.FloatBorder,
   TelescopeSelection         = editor_syntax.PmenuSel,
-  TelescopeSelectionCaret    = { fg = lagoon, bg = deep_blue, gui = 'bold' },
+  TelescopeSelectionCaret    = { fg = rouge, bg = deep_blue, gui = 'bold' },
   TelescopeMatching          = { fg = magenta, gui = 'bold' },
   TelescopePreviewMatch      = editor_syntax.MatchParen,
   TelescopePromptTitle       = { fg = navy },
@@ -346,6 +344,8 @@ local lang_syntax = {
   jsObjectValue                 = editor_syntax.constructor,
   jsObjectObjectProp            = editor_syntax.gitcommitBranch,
   jsonQuote                     = { fg = navy },
+  jsoncBraces                   = { fg = death },
+  jsoncBoolean                  = { fg = mauve },
   CmpCompletionBorder           = editor_syntax.FloatBorder,
   CmpItemKindFunction           = editor_syntax.gitcommitBranch,
   CmpItemKindMethod             = editor_syntax.gitcommitBranch,
@@ -425,10 +425,10 @@ local lang_syntax = {
   typescriptIdentifierName      = { fg = freeze, gui = 'bold' },
   TitleString                   = { bg = freeze, fg = zero_dark, gui = 'bold' },
   TitleSymbol                   = { bg = zero_dark, fg = freeze },
-  TitleIcon                     = { bg = freeze, fg = red },
+  TitleIcon                     = { bg = freeze, fg = rouge },
   SagaBorder                    = editor_syntax.FloatBorder,
-  SagaExpand                    = { fg = red },
-  SagaCollapse                  = { fg = red },
+  SagaExpand                    = { fg = rouge },
+  SagaCollapse                  = { fg = rouge },
   SagaBeacon                    = { bg = magenta },
   ActionPreviewTitle            = { fg = mauve, bg = zero_dark },
   CodeActionText                = { fg = yellow },
@@ -439,13 +439,13 @@ local lang_syntax = {
   FinderType                    = { fg = mauve },
   FinderSpinnerTitle            = { fg = magenta, gui = 'bold' },
   FinderSpinner                 = { fg = magenta, gui = 'bold' },
-  FinderVirtText                = { fg = red },
+  FinderVirtText                = { fg = rouge },
   RenameNormal                  = { fg = orange, bg = zero_dark },
   DiagnosticSource              = { fg = grey },
   DiagnosticPos                 = { fg = grey },
   DiagnosticWord                = { fg = freeze },
   CallHierarchyIcon             = { fg = mauve },
-  CallHierarchyTitle            = { fg = red },
+  CallHierarchyTitle            = { fg = rouge },
   SagaShadow                    = { bg = zero_dark },
   OutlineIndent                 = { fg = magenta },
   LspSagaLightBulb              = editor_syntax.DiagnosticHint,
