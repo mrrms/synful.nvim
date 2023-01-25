@@ -229,6 +229,7 @@ local lang_syntax = {
   luaFunc                       = editor_syntax.DiffText,
   luaFuncArgsComma              = editor_syntax.LineNr,
   luaFuncCall                   = editor_syntax.Directory,
+  mkdNonListItemBlock           = editor_syntax.Folded,
   luaFuncName                   = editor_syntax.constructor,
   luaFuncParens                 = editor_syntax.LineNr,
   luaFunction                   = { fg = lagoon, gui = 'bold' },
@@ -477,24 +478,6 @@ local lang_syntax = {
   TerminalBorder                = editor_syntax.FloatBorder,
   TerminalNormal                = editor_syntax.FloatBorder,
 }
-
---> Setting global colors
-vim.g.color_0  = zero_dark
-vim.g.color_1  = rouge
-vim.g.color_2  = green
-vim.g.color_3  = yellow
-vim.g.color_4  = lagoon
-vim.g.color_5  = magenta
-vim.g.color_6  = death
-vim.g.color_7  = freeze
-vim.g.color_8  = lagoon
-vim.g.color_9  = red
-vim.g.color_10 = pale_green
-vim.g.color_11 = orange
-vim.g.color_12 = navy
-vim.g.color_13 = deep_blue
-vim.g.color_14 = pale_blue
-vim.g.color_15 = freeze
 
 for group, styles in pairs(lang_syntax) do
   highlight(group, styles)
