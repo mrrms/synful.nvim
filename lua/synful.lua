@@ -20,7 +20,7 @@ local yellow     = '#F2CDCD'
 local orange     = '#DB9280'
 local clover     = '#597a69'
 local green      = '#5F875F'
-local pale_green = '#96C0C0'
+local pale_green = '#89b0b1'
 local grey       = '#8585AA'
 local freeze     = '#9FA7CF'
 
