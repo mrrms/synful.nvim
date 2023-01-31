@@ -231,7 +231,7 @@ local lang_syntax = {
   luaFuncName                   = editor_syntax.constructor,
   luaFuncParens                 = editor_syntax.LineNr,
   luaFunction                   = { fg = lagoon, gui = 'bold' },
-  luaFunctionBlock              = editor_syntax.htmlTagN,
+  luaFunctionBlock              = { fg = lagoon, gui = 'bold' },
   luaIn                         = { fg = lagoon, gui = 'bold' },
   luaKeyword                    = editor_syntax.Return,
   luaLocal                      = { fg = green, gui = 'bold' },
