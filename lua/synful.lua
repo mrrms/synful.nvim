@@ -6,7 +6,7 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
-local zero_dark  = '#1A1D26'
+local zero_dark  = '#131017'
 local deep_blue  = '#1F222E'
 local deep       = '#303040'
 local death      = '#505075'
@@ -367,7 +367,7 @@ local lang_syntax = {
   tsxCloseString                = editor_syntax.LineNr,
   tsxCloseTag                   = editor_syntax.LineNr,
   tsxEqual                      = editor_syntax.LineNr,
-  tsxRegion                     = editor_syntax.field,
+  tsxRegion                     = { fg = freeze },
   tsxTag                        = editor_syntax.LineNr,
   tsxString                     = editor_syntax.DiffAdd,
   tsxTagName                    = editor_syntax.DiffText,
@@ -404,7 +404,7 @@ local lang_syntax = {
   typescriptTypeAnnotation      = editor_syntax.LineNr,
   typescriptOperator            = editor_syntax.DiffText,
   typescriptParens              = editor_syntax.LineNr,
-  typescriptParenExp            = editor_syntax.LineNr,
+  typescriptParenExp            = { fg = freeze, gui = 'bold' },
   typescriptProp                = { fg = pale_blue },
   typescriptProperty            = editor_syntax.LineNr,
   typescriptResponseProp        = editor_syntax.DiffText,
@@ -422,7 +422,9 @@ local lang_syntax = {
   typescriptXHRMethod           = editor_syntax.DiffText,
   typescriptTypeReference       = editor_syntax.Type,
   typescriptTypeCase            = { fg = navy },
+  tsxEscJs                      = { fg = freeze },
   typescriptIdentifierName      = { fg = freeze, gui = 'bold' },
+
 }
 
 for group, styles in pairs(lang_syntax) do
