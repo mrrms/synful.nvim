@@ -386,7 +386,7 @@ local lang_syntax = {
   typescriptBOM                  = editor_syntax.variable,
   typescriptBOMLocationMethod    = editor_syntax.DiffText,
   typescriptBOMWindowProp        = editor_syntax.DiffAdd,
-  typescriptBlock                = { fg = polar, gui = 'bold' },
+  typescriptBlock                = { fg = polar, gui = 'none' },
   typescriptBraces               = editor_syntax.LineNr,
   typescriptFuncImpl             = editor_syntax.LineNr,
   typescriptDOMDocProp           = editor_syntax.DiffText,
