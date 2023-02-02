@@ -51,7 +51,7 @@ local editor_syntax = {
   Pmenu                   = { fg = freeze, bg = zero_dark },
   PmenuSel                = { fg = pale_blue, bg = deep_blue, gui = 'bold' },
   PmenuSbar               = { fg = freeze },
-  PmenuThumb              = { fg = rouge },
+  PmenuThumb              = { fg = rouge, bg = rouge },
   TabLine                 = { fg = freeze, bg = rouge },
   TabLineFill             = { fg = freeze, bg = death },
   TabLineSel              = { fg = zero_dark, bg = deep_blue, gui = 'bold' },
