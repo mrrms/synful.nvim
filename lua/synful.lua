@@ -25,7 +25,7 @@ local grey       = '#676E96' --> #8585AA
 local polar      = '#9FA7CF'
 
 local editor_syntax = {
-  Cursor                  = { fg = zero_dark, bg = rouge },
+  Cursor                  = { fg = polar, bg = rouge },
   CursorLine              = { bg = deep_blue },
   ColorColumn             = { fg = "NONE", bg = "NONE" },
   CursorLineNr            = { fg = pale_blue, bg = deep_blue },
