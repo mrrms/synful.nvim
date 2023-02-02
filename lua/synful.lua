@@ -423,8 +423,10 @@ local lang_syntax = {
   typescriptTypeReference       = editor_syntax.Type,
   typescriptTypeCase            = { fg = navy },
   tsxEscJs                      = { fg = freeze },
-  typescriptIdentifierName      = { fg = freeze, gui = 'bold' },
-
+  typescriptIdentifierName      = { fg = freeze },
+  muttrcAliasEncEmail           = { fg = death },
+  muttrcEmail                   = { fg = clover },
+  markdownValid                 = { fg = death, gui = 'bold,italic' }
 }
 
 for group, styles in pairs(lang_syntax) do
