@@ -14,7 +14,7 @@ local navy       = '#405080'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
 local magenta    = '#CBA6F7'
-local mauve      = '#AF325B'
+local mauve      = '#723B4D'
 local rouge      = '#883355'
 local yellow     = '#F2CDCD'
 local orange     = '#DB9280'
@@ -62,7 +62,7 @@ local editor_syntax = {
   SpellCap                = { fg = yellow, gui = 'bold' },
   SpellLocal              = { fg = orange, gui = 'bold' },
   Title                   = { fg = polar },
-  Visual                  = { fg = polar, bg = deep },
+  Visual                  = { fg = polar, bg = navy },
   VisualNOS               = { fg = polar, bg = rouge },
   WarningMsg              = { fg = yellow, gui = 'none' },
   Whitespace              = { fg = pale_blue },
@@ -111,7 +111,7 @@ for group, styles in pairs(editor_syntax) do
 end
 
 local code_syntax = {
-  Boolean                    = { fg = mauve, gui = 'italic' },
+  Boolean                    = { fg = mauve, gui = 'none' },
   Character                  = editor_syntax.constructor,
   Command                    = editor_syntax.DiffText,
   Comment                    = editor_syntax.Folded,
@@ -375,6 +375,7 @@ local lang_syntax = {
   tsxIntrinsicTagName            = editor_syntax.htmlTagN,
   txsRegion                      = editor_syntax.LineNr,
   typescriptArray                = { fg = polar },
+  typescriptNull                 = { fg = magenta, gui = 'bold' },
   typescriptFuncCallArg          = { fg = polar, gui = 'bold' },
   typescriptEnum                 = editor_syntax.field,
   typescriptEnumKeyword          = editor_syntax.DiffText,
