@@ -7,9 +7,9 @@ local function highlight(group, styles)
 end
 
 local zero_dark  = '#111119'
-local deep_blue  = '#1F222E'
+local deep_blue  = '#1E202D'
 local deep       = '#303040'
-local death      = '#3D466C' -- #505075
+local death      = '#3D466C' --> #505075
 local navy       = '#405080'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
@@ -21,8 +21,8 @@ local orange     = '#DB9280'
 local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#9EBFBF'
-local grey       = '#676E96' -- #8585AA
-local freeze     = '#9FA7CF'
+local grey       = '#676E96' --> #8585AA
+local polar      = '#9FA7CF'
 
 local editor_syntax = {
   Cursor                  = { fg = zero_dark, bg = rouge },
@@ -30,8 +30,8 @@ local editor_syntax = {
   ColorColumn             = { fg = "NONE", bg = "NONE" },
   CursorLineNr            = { fg = pale_blue, bg = deep_blue },
   Directory               = { fg = navy, gui = 'bold' },
-  variable                = { fg = freeze },
-  field                   = { fg = freeze },
+  variable                = { fg = polar },
+  field                   = { fg = polar },
   DiffAdd                 = { fg = pale_green },
   DiffChange              = { fg = death },
   DiffDelete              = { fg = rouge },
@@ -43,34 +43,34 @@ local editor_syntax = {
   FoldColumn              = { fg = yellow },
   SignColumn              = { fg = yellow },
   IncSearch               = { fg = magenta, bg = lagoon, gui = 'bold' },
-  Substitute              = { fg = freeze, bg = rouge },
+  Substitute              = { fg = polar, bg = rouge },
   LineNr                  = { fg = death },
   MatchParen              = { fg = rouge, gui = 'bold' },
-  Normal                  = { fg = freeze, bg = zero_dark },
+  Normal                  = { fg = polar, bg = zero_dark },
   NormalFloat             = { bg = zero_dark },
-  Pmenu                   = { fg = freeze, bg = zero_dark },
+  Pmenu                   = { fg = polar, bg = zero_dark },
   PmenuSel                = { fg = pale_blue, bg = deep_blue, gui = 'bold' },
-  PmenuSbar               = { fg = freeze },
+  PmenuSbar               = { fg = polar },
   PmenuThumb              = { fg = rouge, bg = rouge },
-  TabLine                 = { fg = freeze, bg = rouge },
-  TabLineFill             = { fg = freeze, bg = death },
+  TabLine                 = { fg = polar, bg = rouge },
+  TabLineFill             = { fg = polar, bg = death },
   TabLineSel              = { fg = zero_dark, bg = deep_blue, gui = 'bold' },
-  Search                  = { fg = freeze, bg = navy },
+  Search                  = { fg = polar, bg = navy },
   SpecialKey              = { fg = lagoon },
   SpellBad                = { fg = rouge, gui = 'bold' },
   SpellRare               = { fg = lagoon, gui = 'bold' },
   SpellCap                = { fg = yellow, gui = 'bold' },
   SpellLocal              = { fg = orange, gui = 'bold' },
-  Title                   = { fg = freeze },
-  Visual                  = { fg = freeze, bg = deep },
-  VisualNOS               = { fg = freeze, bg = rouge },
+  Title                   = { fg = polar },
+  Visual                  = { fg = polar, bg = deep },
+  VisualNOS               = { fg = polar, bg = rouge },
   WarningMsg              = { fg = yellow, gui = 'none' },
   Whitespace              = { fg = pale_blue },
   FloatBorder             = { fg = deep },
   FloatShadow             = { bg = "NONE" },
   FloatShadowThrough      = { bg = "NONE" },
-  constructor             = { fg = freeze, gui = 'bold' },
-  Builtin                 = { fg = freeze },
+  constructor             = { fg = polar, gui = 'bold' },
+  Builtin                 = { fg = polar },
   Return                  = { fg = clover, gui = 'bold' },
   gitcommitComment        = { fg = death, gui = 'none' },
   gitcommitUntracked      = { fg = death, gui = 'none' },
@@ -89,7 +89,7 @@ local editor_syntax = {
   gitcommitSelectedArrow  = { fg = green },
   gitcommitUnmergedFile   = { fg = yellow },
   gitcommitUnmergedArrow  = { fg = yellow },
-  gitcommitSummary        = { fg = freeze },
+  gitcommitSummary        = { fg = polar },
   gitcommitOnBranch       = {},
   gitcommitHeader         = {},
   gitcommitFile           = {},
@@ -115,7 +115,7 @@ local code_syntax = {
   Character                  = editor_syntax.constructor,
   Command                    = editor_syntax.DiffText,
   Comment                    = editor_syntax.Folded,
-  Conditional                = { fg = lagoon, gui = 'bold' },
+  Conditional                = { fg = lagoon },
   Constant                   = editor_syntax.DiffText,
   Debug                      = editor_syntax.DiffDelete,
   Define                     = editor_syntax.DiffText,
@@ -145,7 +145,7 @@ local code_syntax = {
   Statement                  = { fg = lagoon, gui = 'bold' },
   StorageClass               = { fg = rouge, gui = 'none' },
   String                     = { fg = pale_green, gui = 'italic' },
-  Structure                  = { fg = clover, gui = 'bold' },
+  Structure                  = { fg = polar, gui = 'none' },
   Tag                        = { fg = orange },
   TelescopeBorder            = editor_syntax.FloatBorder,
   TelescopeSelection         = editor_syntax.PmenuSel,
@@ -230,11 +230,11 @@ local lang_syntax = {
   mkdNonListItemBlock            = editor_syntax.Folded,
   luaFuncName                    = editor_syntax.constructor,
   luaFuncParens                  = editor_syntax.LineNr,
-  luaFunction                    = { fg = lagoon, gui = 'bold' },
+  luaFunction                    = { fg = lagoon, gui = 'none' },
   luaFunctionBlock               = { fg = lagoon, gui = 'bold' },
   luaIn                          = { fg = lagoon, gui = 'bold' },
   luaKeyword                     = editor_syntax.Return,
-  luaLocal                       = { fg = green, gui = 'bold' },
+  luaLocal                       = { fg = green, gui = 'none' },
   luaParen                       = editor_syntax.LineNr,
   luaParens                      = editor_syntax.LineNr,
   luaSpecialValue                = editor_syntax.Directory,
@@ -367,7 +367,7 @@ local lang_syntax = {
   tsxCloseString                 = editor_syntax.LineNr,
   tsxCloseTag                    = editor_syntax.LineNr,
   tsxEqual                       = editor_syntax.LineNr,
-  tsxRegion                      = { fg = freeze },
+  tsxRegion                      = { fg = polar },
   tsxTag                         = editor_syntax.LineNr,
   tsxString                      = editor_syntax.DiffAdd,
   tsxTagName                     = { fg = navy, gui = 'bold' },
@@ -386,7 +386,7 @@ local lang_syntax = {
   typescriptBOM                  = editor_syntax.variable,
   typescriptBOMLocationMethod    = editor_syntax.DiffText,
   typescriptBOMWindowProp        = editor_syntax.DiffAdd,
-  typescriptBlock                = { fg = freeze, gui = 'bold' },
+  typescriptBlock                = { fg = polar, gui = 'bold' },
   typescriptBraces               = editor_syntax.LineNr,
   typescriptFuncImpl             = editor_syntax.LineNr,
   typescriptDOMDocProp           = editor_syntax.DiffText,
@@ -405,7 +405,7 @@ local lang_syntax = {
   typescriptTypeAnnotation       = editor_syntax.LineNr,
   typescriptOperator             = { fg = clover, gui = 'bold' },
   typescriptParens               = editor_syntax.LineNr,
-  typescriptParenExp             = { fg = freeze, gui = 'bold' },
+  typescriptParenExp             = { fg = polar, gui = 'bold' },
   typescriptProp                 = { fg = pale_blue },
   typescriptProperty             = editor_syntax.LineNr,
   typescriptResponseProp         = editor_syntax.DiffText,
@@ -424,12 +424,12 @@ local lang_syntax = {
   typescriptXHRMethod            = editor_syntax.DiffText,
   typescriptTypeReference        = { fg = clover, gui = 'bold' },
   typescriptTypeCase             = { fg = navy },
-  typescriptIdentifierName       = { fg = freeze },
+  typescriptIdentifierName       = { fg = polar, gui = 'none' },
   muttrcAliasEncEmail            = { fg = death },
   muttrcEmail                    = { fg = clover },
   markdownValid                  = { fg = death, gui = 'bold,italic' },
   muttrcAliasKey                 = { fg = mauve, gui = 'bold' },
-  muttrcAliasNameNoParens        = { fg = freeze, gui = 'bold' }
+  muttrcAliasNameNoParens        = { fg = polar, gui = 'bold' }
 }
 
 for group, styles in pairs(lang_syntax) do
