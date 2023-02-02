@@ -35,7 +35,7 @@ local editor_syntax = {
   DiffAdd                 = { fg = pale_green },
   DiffChange              = { fg = death },
   DiffDelete              = { fg = rouge },
-  DiffText                = { fg = lagoon, gui = 'bold' },
+  DiffText                = { fg = navy, gui = 'bold' },
   ErrorMsg                = { fg = rouge },
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
   VertSplit               = { fg = death, bg = zero_dark },
