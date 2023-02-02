@@ -426,7 +426,9 @@ local lang_syntax = {
   typescriptIdentifierName      = { fg = freeze },
   muttrcAliasEncEmail           = { fg = death },
   muttrcEmail                   = { fg = clover },
-  markdownValid                 = { fg = death, gui = 'bold,italic' }
+  markdownValid                 = { fg = death, gui = 'bold,italic' },
+  muttrcAliasKey                = { fg = mauve, gui = 'bold' },
+  muttrcAliasNameNoParens       = { fg = freeze, gui = 'bold' }
 }
 
 for group, styles in pairs(lang_syntax) do
