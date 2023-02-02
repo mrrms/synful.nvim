@@ -139,7 +139,7 @@ local code_syntax = {
   PreCondit                  = editor_syntax.DiffChange,
   PreProc                    = { fg = grey },
   Repeat                     = editor_syntax.Return,
-  Special                    = editor_syntax.DiffText,
+  Special                    = { fg = lagoon, gui = 'none' },
   SpecialChar                = editor_syntax.ErrorMsg,
   SpecialComment             = { fg = death, gui = 'bold' },
   Statement                  = { fg = lagoon, gui = 'bold' },
