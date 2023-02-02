@@ -9,7 +9,7 @@ end
 local zero_dark  = '#111119'
 local deep_blue  = '#1F222E'
 local deep       = '#303040'
-local death      = '#505075'
+local death      = '#3D466C' -- #505075
 local navy       = '#405080'
 local lagoon     = '#6070C1'
 local pale_blue  = '#7AA7FF'
@@ -21,7 +21,7 @@ local orange     = '#DB9280'
 local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#9EBFBF'
-local grey       = '#8585AA'
+local grey       = '#676E96' -- #8585AA
 local freeze     = '#9FA7CF'
 
 local editor_syntax = {
