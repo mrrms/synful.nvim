@@ -414,7 +414,7 @@ local lang_syntax = {
   typescriptResponseProp         = editor_syntax.DiffText,
   typescriptStatementKeyword     = editor_syntax.Return,
   typescriptStringMethod         = editor_syntax.DiffText,
-  typescriptTemplate             = editor_syntax.Folded,
+  typescriptTemplate             = { fg = grey, gui = 'italic' },
   typescriptTemplateSubstitution = { fg = pale_blue, gui = 'italic' },
   typescriptTemplateSB           = editor_syntax.DiffText,
   typescriptTernary              = editor_syntax.Return,
