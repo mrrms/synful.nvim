@@ -22,7 +22,7 @@ local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#9EBFBF'
 local grey       = '#676E96' --> #8585AA
-local polar      = '#6E7694' --> #9FA7CF
+local polar      = '#8992B4' --> #9FA7CF
 
 local editor_syntax = {
   Cursor                  = { fg = polar, bg = rouge },
