@@ -40,7 +40,7 @@ local editor_syntax = {
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
   VertSplit               = { fg = death, bg = zero_dark },
   Folded                  = { fg = death, gui = 'bold,italic' },
-  FoldColumn              = { fg = yellow },
+  FoldColumn              = { fg = mauve },
   SignColumn              = { fg = yellow },
   IncSearch               = { fg = magenta, bg = lagoon, gui = 'bold' },
   Substitute              = { fg = polar, bg = rouge },
