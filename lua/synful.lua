@@ -21,7 +21,7 @@ local orange     = '#DB9280'
 local clover     = '#597a69'
 local green      = '#5F875F'
 local pale_green = '#9EBFBF'
-local grey       = '#676E96' --> #8585AA
+local grey       = '#676E96'
 local polar      = '#9FA7CF'
 
 local editor_syntax = {
@@ -39,7 +39,7 @@ local editor_syntax = {
   ErrorMsg                = { fg = rouge },
   EndOfBuffer             = { fg = zero_dark, bg = zero_dark },
   VertSplit               = { fg = death, bg = zero_dark },
-  Folded                  = { fg = death, gui = 'bold,italic' },
+  Folded                  = { fg = mauve, gui = 'italic' },
   FoldColumn              = { fg = mauve },
   SignColumn              = { fg = yellow },
   IncSearch               = { fg = magenta, bg = lagoon, gui = 'bold' },
