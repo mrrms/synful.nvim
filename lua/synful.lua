@@ -114,7 +114,7 @@ local code_syntax = {
   Boolean                    = { fg = mauve, gui = 'none' },
   Character                  = editor_syntax.constructor,
   Command                    = editor_syntax.DiffText,
-  Comment                    = editor_syntax.Folded,
+  Comment                    = { fg = death, gui = 'bold,italic' },
   Conditional                = { fg = lagoon },
   Constant                   = editor_syntax.DiffText,
   Debug                      = editor_syntax.DiffDelete,
