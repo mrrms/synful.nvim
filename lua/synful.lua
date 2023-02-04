@@ -432,7 +432,9 @@ local lang_syntax = {
   muttrcEmail                    = { fg = clover },
   markdownValid                  = { fg = death, gui = 'bold,italic' },
   muttrcAliasKey                 = { fg = mauve, gui = 'bold' },
-  muttrcAliasNameNoParens        = { fg = polar, gui = 'bold' }
+  muttrcAliasNameNoParens        = { fg = polar, gui = 'bold' },
+  mailHeader                     = { fg = rouge, gui = 'none' },
+  mailHeaderKey                  = { fg = mauve, gui = 'bold' }
 }
 
 for group, styles in pairs(lang_syntax) do
