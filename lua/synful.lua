@@ -6,6 +6,8 @@ local function highlight(group, styles)
   vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
+-- vim.api.nvim_set_hl(0, 'Normal', { fg = '#bebeef', bg = '#232333' })
+
 vim.g.space = '#111119'
 vim.g.raven = '#1E202D'
 vim.g.metal = '#3B4267'
@@ -441,5 +443,3 @@ local lang_syntax = {
 for group, styles in pairs(lang_syntax) do
   highlight(group, styles)
 end
-
-vim.api.nvim_set_hl(0, 'Normal', { fg = '#bebeef', bg = '#232333' })
