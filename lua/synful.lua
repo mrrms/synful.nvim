@@ -248,7 +248,7 @@ local lang_syntax = {
   tmuxOptions                    = editor_syntax.variable,
   tmuxAssignment                 = editor_syntax.LineNr,
   tmuxFlags                      = editor_syntax.ErrorMsg,
-  tmuxVariableExtension          = { fg = vim.g.rouge },
+  tmuxVariableExtension          = { fg = vim.g.amber },
   shDo                           = editor_syntax.ErrorMsg,
   shQuote                        = { fg = vim.g.amber },
   shStatement                    = editor_syntax.htmlTagN,
@@ -370,8 +370,10 @@ local lang_syntax = {
   tsxRegion                      = { fg = vim.g.pearl, gui = 'none' },
   tsxTag                         = editor_syntax.LineNr,
   tsxString                      = editor_syntax.DiffAdd,
-  tsxTagName                     = { fg = vim.g.royal, gui = 'bold' },
+  tsxTagName                     = { fg = vim.g.steel, gui = 'bold' },
+  tsxCloseTagName                = { fg = vim.g.steel, gui = 'bold' },
   tsxIntrinsicTagName            = editor_syntax.htmlTagN,
+  tsxCloseComponentName          = { fg = vim.g.steel, gui = 'bold' },
   txsRegion                      = editor_syntax.LineNr,
   typescriptArray                = { fg = vim.g.pearl },
   typescriptNull                 = { fg = vim.g.ultra, gui = 'bold' },
@@ -439,3 +441,5 @@ local lang_syntax = {
 for group, styles in pairs(lang_syntax) do
   highlight(group, styles)
 end
+
+vim.api.nvim_set_hl(0, 'Normal', { fg = '#bebeef', bg = '#232333' })
