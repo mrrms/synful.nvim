@@ -1,11 +1,11 @@
 local function highlight(group, hl)
   vim.api.nvim_set_hl(0, group, {
-    fg = hl.fg,
-    bg = hl.bg,
-    sp = hl.sp,
-    bold = hl.bold,
     link = hl.link,
-    italic = hl.italic
+    fg = hl.fg or 'none',
+    bg = hl.bg or 'none',
+    sp = hl.sp or 'none',
+    bold = hl.bold or false,
+    italic = hl.italic or false
   })
 end
 
@@ -25,6 +25,7 @@ vim.g.olive = '#5F875F'
 vim.g.paris = '#9EBFBF'
 vim.g.slate = '#676E96'
 vim.g.pearl = '#9FA7CF'
+
 
 local editor_syntax = {
   Cursor                  = { fg = vim.g.pearl, bg = vim.g.rouge },
@@ -113,7 +114,7 @@ for group, hl in pairs(editor_syntax) do
 end
 
 local code_syntax = {
-  Boolean                    = { fg = vim.g.mauve, gui = 'none' },
+  Boolean                    = { fg = vim.g.mauve },
   Character                  = { link = 'constructor' },
   Command                    = { link = 'DiffText' },
   Comment                    = { fg = vim.g.metal, gui = 'bold,italic' },
