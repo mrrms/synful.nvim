@@ -1,14 +1,3 @@
-local function highlight(group, hl)
-  vim.api.nvim_set_hl(0, group, {
-    link = hl.link,
-    fg = hl.fg or 'none',
-    bg = hl.bg or 'none',
-    sp = hl.sp or 'none',
-    bold = hl.bold or false,
-    italic = hl.italic or false
-  })
-end
-
 vim.g.space = '#111119'
 vim.g.raven = '#1E202D'
 vim.g.metal = '#3B4267'
@@ -26,13 +15,23 @@ vim.g.paris = '#9EBFBF'
 vim.g.slate = '#676E96'
 vim.g.pearl = '#9FA7CF'
 
+local function hue(group, sugar)
+  vim.api.nvim_set_hl(0, group, sugar)
+end
+
+hue('Directory', { fg = vim.g.steel, bold = true })
+hue('Normal', { fg = vim.g.pearl, bg = vim.g.space })
+hue('LineNr', { fg = vim.g.metal })
+hue('CursorLineNr', { fg = vim.g.capri, bg = vim.g.raven })
+hue('Cursor', { fg = vim.g.pearl, bg = vim.g.rouge })
+hue('ColorColumn', { fg = "none", bg = "none" })
+
+for group, hl in pairs(editor_syntax) do
+  hue(group, hl)
+end
 
 local editor_syntax = {
-  Cursor                  = { fg = vim.g.pearl, bg = vim.g.rouge },
   CursorLine              = { bg = vim.g.raven },
-  ColorColumn             = { fg = "NONE", bg = "NONE" },
-  CursorLineNr            = { fg = vim.g.capri, bg = vim.g.raven },
-  Directory               = { fg = vim.g.steel, bold = true },
   variable                = { fg = vim.g.pearl },
   field                   = { fg = vim.g.pearl },
   DiffAdd                 = { fg = vim.g.paris },
@@ -47,9 +46,7 @@ local editor_syntax = {
   SignColumn              = { fg = vim.g.peach },
   IncSearch               = { fg = vim.g.ultra, bg = vim.g.royal, bold = true },
   Substitute              = { fg = vim.g.pearl, bg = vim.g.rouge },
-  LineNr                  = { fg = vim.g.metal },
   MatchParen              = { fg = vim.g.rouge, bold = true },
-  Normal                  = { fg = vim.g.pearl, bg = vim.g.space },
   NormalFloat             = { fg = vim.g.slate, bg = vim.g.space, },
   Pmenu                   = { fg = vim.g.pearl, bg = vim.g.space },
   PmenuSel                = { fg = vim.g.capri, bg = vim.g.raven, bold = true },
