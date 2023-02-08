@@ -15,19 +15,14 @@ vim.g.paris = '#9EBFBF'
 vim.g.slate = '#676E96'
 vim.g.pearl = '#9FA7CF'
 
-local function hue(group, sugar)
-  vim.api.nvim_set_hl(0, group, sugar)
-end
-
-hue('Directory', { fg = vim.g.steel, bold = true })
-hue('Normal', { fg = vim.g.pearl, bg = vim.g.space })
-hue('LineNr', { fg = vim.g.metal })
-hue('CursorLineNr', { fg = vim.g.capri, bg = vim.g.raven })
-hue('CursorLine', { bg = vim.g.raven })
-hue('Cursor', { fg = vim.g.pearl, bg = vim.g.rouge })
-hue('ColorColumn', { fg = "none", bg = "none" })
-
 local editor_syntax = {
+  LineNr                  = { fg = vim.g.metal },
+  CursorLineNr            = { fg = vim.g.capri, bg = vim.g.raven },
+  CursorLine              = { bg = vim.g.raven },
+  Cursor                  = { fg = vim.g.pearl, bg = vim.g.rouge },
+  ColorColumn             = { fg = "none", bg = "none" },
+  Normal                  = { fg = vim.g.pearl, bg = vim.g.space },
+  Directory               = { fg = vim.g.steel, bold = true },
   variable                = { fg = vim.g.pearl },
   field                   = { fg = vim.g.pearl },
   DiffAdd                 = { fg = vim.g.paris },
@@ -103,9 +98,9 @@ local editor_syntax = {
 }
 
 for group, hl in pairs(editor_syntax) do
-  local item = tostring(group)
-  hue(item, hl)
+  vim.api.nvim_set_hl(0, tostring(group), hl)
 end
+
 
 local code_syntax = {
   Boolean                    = { fg = vim.g.mauve },
@@ -178,10 +173,8 @@ local code_syntax = {
 }
 
 for group, hl in pairs(code_syntax) do
-  local item = tostring(group)
-  hue(item, hl)
+  vim.api.nvim_set_hl(0, tostring(group), hl)
 end
-
 
 --> Plugin Highlight Groups
 local plugin_syntax = {
@@ -211,11 +204,44 @@ local plugin_syntax = {
   NotifyINFOBody        = { link = 'Normal' },
   NotifyDEBUGBody       = { link = 'Normal' },
   NotifyTRACEBody       = { link = 'Normal' },
+  FidgetTitle                    = { fg = vim.g.capri, bg = vim.g.space },
+  tmuxFormatString               = { fg = vim.g.capri, gui = 'none' },
+  tmuxOptions                    = { link = 'variable' },
+  tmuxAssignment                 = { link = 'LineNr' },
+  tmuxFlags                      = { link = 'ErrorMsg' },
+  tmuxVariableExtension          = { fg = vim.g.amber },
+  muttrcSetStrAssignment         = { link = 'ErrorMsg' },
+  CmpCompletionBorder            = { link = 'FloatBorder' },
+  CmpItemKindFunction            = { link = 'gitcommitBranch' },
+  CmpItemKindMethod              = { link = 'gitcommitBranch' },
+  CmpItemKindVariable            = { link = 'DiffAdd' },
+  CmpItemKindKeyword             = { link = 'DiffChange' },
+  CmpItemKindColor               = { link = 'variable' },
+  CmpItemKindConstant            = { link = 'DiffText' },
+  CmpItemKindDefault             = { link = 'DiffText' },
+  CmpItemKindFolder              = { link = 'Return' },
+  CmpItemKindOperator            = { link = 'variable' },
+  CmpItemKindProperty            = { link = 'gitcommitBranch' },
+  CmpItemMenu                    = { fg = vim.g.capri, bg = 'none' },
+  CmpItemAbbrMatchDefault        = { link = 'gitcommitBranch' },
+  CmpItemAbbrMatch               = { link = 'gitcommitBranch' },
+  CmpItemAbbrMatchFuzzy          = { link = 'gitcommitBranch' },
+  CmpItemKindMatchFuzzy          = { link = 'gitcommitBranch' },
+  CmpItemAbbrMatchFuzzyDefault   = { link = 'gitcommitBranch' },
+  muttrcAliasEncEmail            = { fg = vim.g.metal },
+  muttrcEmail                    = { fg = vim.g.bazil },
+  markdownValid                  = { fg = vim.g.metal, gui = 'bold,italic' },
+  muttrcAliasKey                 = { fg = vim.g.mauve, bold = true },
+  muttrcAliasNameNoParens        = { fg = vim.g.pearl, bold = true },
+  WhichKey                       = { fg = vim.g.rouge, gui = 'none' },
+  WhichKeyGroup                  = { fg = vim.g.royal, bold = true },
+  WhichKeySeparator              = { fg = vim.g.metal },
+  WhichKeyDesc                   = { fg = vim.g.pearl, gui = 'none' },
+  WhichKeyValue                  = { fg = vim.g.amber, italic = true },
 }
 
 for group, hl in pairs(plugin_syntax) do
-  local item = tostring(group)
-  hue(item, hl)
+  vim.api.nvim_set_hl(0, tostring(group), hl)
 end
 
 local lang_syntax = {
@@ -244,12 +270,6 @@ local lang_syntax = {
   luaSymbolOperator              = { link = 'LineNr' },
   luaTable                       = { link = 'LineNr' },
   luaTableBlock                  = { link = 'LineNr' },
-  FidgetTitle                    = { fg = vim.g.capri, bg = vim.g.space },
-  tmuxFormatString               = { fg = vim.g.capri, gui = 'none' },
-  tmuxOptions                    = { link = 'variable' },
-  tmuxAssignment                 = { link = 'LineNr' },
-  tmuxFlags                      = { link = 'ErrorMsg' },
-  tmuxVariableExtension          = { fg = vim.g.amber },
   shDo                           = { link = 'ErrorMsg' },
   shQuote                        = { fg = vim.g.amber },
   shStatement                    = { link = 'htmlTagN' },
@@ -296,7 +316,6 @@ local lang_syntax = {
   rustStructure                  = { link = 'Return' },
   rustTrait                      = { link = 'htmlTagN' },
   rustTypedef                    = { link = 'ErrorMsg' },
-  muttrcSetStrAssignment         = { link = 'ErrorMsg' },
   jsFunction                     = { link = 'DiffText' },
   jsImport                       = { link = 'DiffText' },
   jsStorageClass                 = { link = 'DiffText' },
@@ -347,23 +366,6 @@ local lang_syntax = {
   jsonQuote                      = { fg = vim.g.royal },
   jsoncBraces                    = { fg = vim.g.metal },
   jsoncBoolean                   = { fg = vim.g.mauve },
-  CmpCompletionBorder            = { link = 'FloatBorder' },
-  CmpItemKindFunction            = { link = 'gitcommitBranch' },
-  CmpItemKindMethod              = { link = 'gitcommitBranch' },
-  CmpItemKindVariable            = { link = 'DiffAdd' },
-  CmpItemKindKeyword             = { link = 'DiffChange' },
-  CmpItemKindColor               = { link = 'variable' },
-  CmpItemKindConstant            = { link = 'DiffText' },
-  CmpItemKindDefault             = { link = 'DiffText' },
-  CmpItemKindFolder              = { link = 'Return' },
-  CmpItemKindOperator            = { link = 'variable' },
-  CmpItemKindProperty            = { link = 'gitcommitBranch' },
-  CmpItemMenu                    = { fg = vim.g.capri, bg = 'none' },
-  CmpItemAbbrMatchDefault        = { link = 'gitcommitBranch' },
-  CmpItemAbbrMatch               = { link = 'gitcommitBranch' },
-  CmpItemAbbrMatchFuzzy          = { link = 'gitcommitBranch' },
-  CmpItemKindMatchFuzzy          = { link = 'gitcommitBranch' },
-  CmpItemAbbrMatchFuzzyDefault   = { link = 'gitcommitBranch' },
   tsxAttrib                      = { fg = vim.g.capri },
   tsxCloseString                 = { link = 'LineNr' },
   tsxCloseTag                    = { link = 'LineNr' },
@@ -430,21 +432,10 @@ local lang_syntax = {
   typescriptTypeReference        = { fg = vim.g.bazil, bold = true },
   typescriptTypeCase             = { fg = vim.g.royal },
   typescriptIdentifierName       = { fg = vim.g.pearl, gui = 'none' },
-  muttrcAliasEncEmail            = { fg = vim.g.metal },
-  muttrcEmail                    = { fg = vim.g.bazil },
-  markdownValid                  = { fg = vim.g.metal, gui = 'bold,italic' },
-  muttrcAliasKey                 = { fg = vim.g.mauve, bold = true },
-  muttrcAliasNameNoParens        = { fg = vim.g.pearl, bold = true },
   mailHeader                     = { fg = vim.g.rouge, gui = 'none' },
   mailHeaderKey                  = { fg = vim.g.rouge, gui = 'none' },
-  WhichKey                       = { fg = vim.g.rouge, gui = 'none' },
-  WhichKeyGroup                  = { fg = vim.g.royal, bold = true },
-  WhichKeySeparator              = { fg = vim.g.metal },
-  WhichKeyDesc                   = { fg = vim.g.pearl, gui = 'none' },
-  WhichKeyValue                  = { fg = vim.g.amber, italic = true },
 }
 
 for group, hl in pairs(lang_syntax) do
-  local item = tostring(group)
-  hue(item, hl)
+  vim.api.nvim_set_hl(0, tostring(group), hl)
 end
