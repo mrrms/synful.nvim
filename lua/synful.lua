@@ -1,12 +1,13 @@
-local function highlight(group, styles)
-  local gui = styles.gui and 'gui=' .. styles.gui or 'gui=NONE'
-  local sp = styles.sp and 'guisp=' .. styles.sp or 'guisp=NONE'
-  local fg = styles.fg and 'guifg=' .. styles.fg or 'guifg=NONE'
-  local bg = styles.bg and 'guibg=' .. styles.bg or 'guibg=NONE'
-  vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
+local function highlight(group, hl)
+  -- local gui = hl.gui and 'gui=' .. hl.gui or 'gui=NONE'
+  -- local sp = hl.sp and 'guisp=' .. hl.sp or 'guisp=NONE'
+  -- local fg = hl.fg and 'guifg=' .. hl.fg or 'guifg=NONE'
+  -- local bg = hl.bg and 'guibg=' .. hl.bg or 'guibg=NONE'
+  vim.api.nvim_set_hl(0, group, { fg = hl.fg, bg = hl.bg, sp = hl.sp, bold = hl.bold, italic = hl.italic })
+  -- vim.api.nvim_command('highlight ' .. group .. ' ' .. gui .. ' ' .. sp .. ' ' .. fg .. ' ' .. bg)
 end
 
--- vim.api.nvim_set_hl(0, 'Normal', { fg = '#bebeef', bg = '#232333' })
+-- (0, 'Normal', { fg = '#bebeef', bg = '#232333' })
 
 vim.g.space = '#111119'
 vim.g.raven = '#1E202D'
@@ -30,7 +31,7 @@ local editor_syntax = {
   CursorLine              = { bg = vim.g.raven },
   ColorColumn             = { fg = "NONE", bg = "NONE" },
   CursorLineNr            = { fg = vim.g.capri, bg = vim.g.raven },
-  Directory               = { fg = vim.g.steel, gui = 'bold' },
+  Directory               = { fg = vim.g.steel, bold = true },
   variable                = { fg = vim.g.pearl },
   field                   = { fg = vim.g.pearl },
   DiffAdd                 = { fg = vim.g.paris },
@@ -40,28 +41,28 @@ local editor_syntax = {
   ErrorMsg                = { fg = vim.g.rouge },
   EndOfBuffer             = { fg = vim.g.space, bg = vim.g.space },
   VertSplit               = { fg = vim.g.metal, bg = vim.g.space },
-  Folded                  = { fg = vim.g.mauve, gui = 'italic' },
+  Folded                  = { fg = vim.g.mauve, italic = true },
   FoldColumn              = { fg = vim.g.mauve },
   SignColumn              = { fg = vim.g.peach },
-  IncSearch               = { fg = vim.g.ultra, bg = vim.g.royal, gui = 'bold' },
+  IncSearch               = { fg = vim.g.ultra, bg = vim.g.royal, bold = true },
   Substitute              = { fg = vim.g.pearl, bg = vim.g.rouge },
   LineNr                  = { fg = vim.g.metal },
-  MatchParen              = { fg = vim.g.rouge, gui = 'bold' },
+  MatchParen              = { fg = vim.g.rouge, bold = true },
   Normal                  = { fg = vim.g.pearl, bg = vim.g.space },
-  NormalFloat             = { bg = vim.g.space, fg = vim.g.paris },
+  NormalFloat             = { fg = vim.g.slate, bg = vim.g.space, },
   Pmenu                   = { fg = vim.g.pearl, bg = vim.g.space },
-  PmenuSel                = { fg = vim.g.capri, bg = vim.g.raven, gui = 'bold' },
+  PmenuSel                = { fg = vim.g.capri, bg = vim.g.raven, bold = true },
   PmenuSbar               = { fg = vim.g.pearl },
   PmenuThumb              = { fg = vim.g.rouge, bg = vim.g.rouge },
   TabLine                 = { fg = vim.g.pearl, bg = vim.g.rouge },
   TabLineFill             = { fg = vim.g.pearl, bg = vim.g.metal },
-  TabLineSel              = { fg = vim.g.space, bg = vim.g.raven, gui = 'bold' },
+  TabLineSel              = { fg = vim.g.space, bg = vim.g.raven, bold = true },
   Search                  = { fg = vim.g.pearl, bg = vim.g.royal },
   SpecialKey              = { fg = vim.g.royal },
-  SpellBad                = { fg = vim.g.rouge, gui = 'bold' },
-  SpellRare               = { fg = vim.g.royal, gui = 'bold' },
-  SpellCap                = { fg = vim.g.peach, gui = 'bold' },
-  SpellLocal              = { fg = vim.g.amber, gui = 'bold' },
+  SpellBad                = { fg = vim.g.rouge, bold = true },
+  SpellRare               = { fg = vim.g.royal, bold = true },
+  SpellCap                = { fg = vim.g.peach, bold = true },
+  SpellLocal              = { fg = vim.g.amber, bold = true },
   Title                   = { fg = vim.g.pearl },
   Visual                  = { fg = vim.g.pearl, bg = vim.g.royal },
   VisualNOS               = { fg = vim.g.pearl, bg = vim.g.rouge },
@@ -70,14 +71,14 @@ local editor_syntax = {
   FloatBorder             = { fg = vim.g.raven },
   FloatShadow             = { bg = "NONE" },
   FloatShadowThrough      = { bg = "NONE" },
-  constructor             = { fg = vim.g.pearl, gui = 'bold' },
+  constructor             = { fg = vim.g.pearl, bold = true },
   Builtin                 = { fg = vim.g.pearl },
-  Return                  = { fg = vim.g.bazil, gui = 'bold' },
+  Return                  = { fg = vim.g.bazil, bold = true },
   gitcommitComment        = { fg = vim.g.metal, gui = 'none' },
   gitcommitUntracked      = { fg = vim.g.metal, gui = 'none' },
   gitcommitDiscarded      = { fg = vim.g.metal, gui = 'none' },
   gitcommitSelected       = { fg = vim.g.metal, gui = 'none' },
-  gitcommitBranch         = { fg = vim.g.ultra, gui = 'bold' },
+  gitcommitBranch         = { fg = vim.g.ultra, bold = true },
   gitcommitNoBranch       = { fg = vim.g.ultra },
   gitcommitDiscardedType  = { fg = vim.g.rouge },
   gitcommitDiscardedFile  = { fg = vim.g.rouge },
@@ -107,8 +108,8 @@ local editor_syntax = {
   WildMenu                = {}
 }
 
-for group, styles in pairs(editor_syntax) do
-  highlight(group, styles)
+for group, hl in pairs(editor_syntax) do
+  highlight(group, hl)
 end
 
 local code_syntax = {
@@ -122,19 +123,19 @@ local code_syntax = {
   Define                     = editor_syntax.DiffText,
   Delimiter                  = editor_syntax.LineNr,
   Error                      = editor_syntax.ErrorMsg,
-  Exception                  = { fg = vim.g.royal, gui = 'bold' },
+  Exception                  = { fg = vim.g.royal, bold = true },
   Function                   = editor_syntax.constructor,
   Field                      = editor_syntax.variable,
   Float                      = editor_syntax.gitcommitBranch,
   Identifier                 = editor_syntax.variable,
   Ignore                     = editor_syntax.DiffChange,
-  Include                    = { fg = vim.g.royal, gui = 'bold' },
+  Include                    = { fg = vim.g.royal, bold = true },
   KeywordFunction            = editor_syntax.DiffText,
-  KeywordReturn              = { fg = vim.g.olive, gui = 'italic' },
+  KeywordReturn              = { fg = vim.g.olive, italic = true },
   Label                      = editor_syntax.DiffText,
   Macro                      = { fg = vim.g.royal, gui = 'NONE' },
   Noise                      = { fg = vim.g.rouge },
-  Number                     = { fg = vim.g.ultra, gui = 'bold' },
+  Number                     = { fg = vim.g.ultra, bold = true },
   NvimInternalError          = editor_syntax.ErrorMsg,
   Operator                   = { fg = vim.g.peach },
   PreCondit                  = editor_syntax.DiffChange,
@@ -142,37 +143,37 @@ local code_syntax = {
   Repeat                     = editor_syntax.Return,
   Special                    = { fg = vim.g.royal, gui = 'none' },
   SpecialChar                = editor_syntax.ErrorMsg,
-  SpecialComment             = { fg = vim.g.metal, gui = 'bold' },
-  Statement                  = { fg = vim.g.royal, gui = 'bold' },
+  SpecialComment             = { fg = vim.g.metal, bold = true },
+  Statement                  = { fg = vim.g.royal, bold = true },
   StorageClass               = { fg = vim.g.rouge, gui = 'none' },
-  String                     = { fg = vim.g.paris, gui = 'italic' },
+  String                     = { fg = vim.g.paris, italic = true },
   Structure                  = { fg = vim.g.pearl, gui = 'none' },
   Tag                        = { fg = vim.g.amber },
   TelescopeBorder            = editor_syntax.FloatBorder,
   TelescopeSelection         = editor_syntax.PmenuSel,
-  TelescopeSelectionCaret    = { fg = vim.g.rouge, bg = vim.g.raven, gui = 'bold' },
-  TelescopeMatching          = { fg = vim.g.ultra, gui = 'bold' },
+  TelescopeSelectionCaret    = { fg = vim.g.rouge, bg = vim.g.raven, bold = true },
+  TelescopeMatching          = { fg = vim.g.ultra, bold = true },
   TelescopePreviewMatch      = editor_syntax.MatchParen,
   TelescopePromptTitle       = { fg = vim.g.royal },
   TelescopePromptPrefix      = { fg = vim.g.rouge },
-  Todo                       = { fg = vim.g.capri, gui = 'bold' },
-  Type                       = { fg = vim.g.paris, gui = 'bold' },
+  Todo                       = { fg = vim.g.capri, bold = true },
+  Type                       = { fg = vim.g.paris, bold = true },
   Typedef                    = editor_syntax.DiffChange,
   Underlined                 = { gui = 'underline' },
   htmlEndTag                 = editor_syntax.LineNr,
   htmlTag                    = editor_syntax.LineNr,
   htmlHead                   = editor_syntax.DiffText,
-  htmlTagN                   = { fg = vim.g.royal, gui = 'bold' },
-  htmlTagName                = { fg = vim.g.royal, gui = 'bold' },
+  htmlTagN                   = { fg = vim.g.royal, bold = true },
+  htmlTagName                = { fg = vim.g.royal, bold = true },
   htmlSpecialTagName         = { fg = vim.g.royal },
   htmlArg                    = editor_syntax.LineNr,
   keyword                    = editor_syntax.Directory,
   DiagnosticWarn             = { fg = vim.g.amber, gui = 'none' },
   DiagnosticInfo             = { fg = vim.g.capri, gui = 'none' },
-  DiagnosticHint             = { fg = vim.g.peach, gui = 'bold' },
-  DiagnosticError            = { fg = vim.g.rouge, gui = 'bold' },
-  DiagnosticUnderlineError   = { fg = vim.g.rouge, gui = 'bold' },
-  DiagnosticVirtualTextError = { fg = vim.g.rouge, gui = 'bold' },
+  DiagnosticHint             = { fg = vim.g.peach, bold = true },
+  DiagnosticError            = { fg = vim.g.rouge, bold = true },
+  DiagnosticUnderlineError   = { fg = vim.g.rouge, bold = true },
+  DiagnosticVirtualTextError = { fg = vim.g.rouge, bold = true },
   DiagnosticUnderlineWarn    = { fg = vim.g.amber, gui = 'none' },
   DiagnosticUnderlineInfo    = { fg = vim.g.capri, gui = 'none' },
   DiagnosticUnderlineHint    = { fg = vim.g.peach, gui = 'none' },
@@ -181,8 +182,8 @@ local code_syntax = {
   DiagnosticVirtualTextHint  = { fg = vim.g.peach, gui = 'none' },
 }
 
-for group, styles in pairs(code_syntax) do
-  highlight(group, styles)
+for group, hl in pairs(code_syntax) do
+  highlight(group, hl)
 end
 
 --> Plugin Highlight Groups
@@ -215,12 +216,12 @@ local plugin_syntax = {
   NotifyTRACEBody       = editor_syntax.Normal,
 }
 
-for group, styles in pairs(plugin_syntax) do
-  highlight(group, styles)
+for group, hl in pairs(plugin_syntax) do
+  highlight(group, hl)
 end
 
 local lang_syntax = {
-  xmlEndTag                      = { fg = vim.g.royal, gui = 'bold' },
+  xmlEndTag                      = { fg = vim.g.royal, bold = true },
   luaBraces                      = editor_syntax.LineNr,
   luaBuiltIn                     = editor_syntax.DiffText,
   luaComma                       = editor_syntax.LineNr,
@@ -232,16 +233,16 @@ local lang_syntax = {
   luaFuncName                    = editor_syntax.constructor,
   luaFuncParens                  = editor_syntax.LineNr,
   luaFunction                    = { fg = vim.g.royal, gui = 'none' },
-  luaFunctionBlock               = { fg = vim.g.royal, gui = 'bold' },
-  luaIn                          = { fg = vim.g.royal, gui = 'bold' },
+  luaFunctionBlock               = { fg = vim.g.royal, bold = true },
+  luaIn                          = { fg = vim.g.royal, bold = true },
   luaKeyword                     = editor_syntax.Return,
-  luaLocal                       = { fg = vim.g.olive, gui = 'bold' },
+  luaLocal                       = { fg = vim.g.olive, bold = true },
   luaParen                       = editor_syntax.LineNr,
   luaParens                      = editor_syntax.LineNr,
   luaSpecialValue                = editor_syntax.Directory,
   luaStatement                   = editor_syntax.Return,
   luaString                      = code_syntax.String,
-  luaStringLongTag               = { fg = vim.g.metal, gui = 'bold' },
+  luaStringLongTag               = { fg = vim.g.metal, bold = true },
   luaSymbolOperator              = editor_syntax.LineNr,
   luaTable                       = editor_syntax.LineNr,
   luaTableBlock                  = editor_syntax.LineNr,
@@ -256,14 +257,14 @@ local lang_syntax = {
   shStatement                    = editor_syntax.htmlTagN,
   shTestOpr                      = editor_syntax.ErrorMsg,
   shVar                          = { fg = vim.g.capri, gui = 'none' },
-  shEcho                         = { fg = vim.g.paris, gui = 'italic' },
+  shEcho                         = { fg = vim.g.paris, italic = true },
   shVarAssign                    = editor_syntax.LineNr,
   zshCommands                    = editor_syntax.DiffText,
   zshFunction                    = editor_syntax.WarningMsg,
   zshKeyword                     = code_syntax.Function,
   zshNumber                      = code_syntax.Number,
-  zshOptStart                    = { fg = vim.g.royal, gui = 'bold' },
-  zshOption                      = { fg = vim.g.royal, gui = 'bold' },
+  zshOptStart                    = { fg = vim.g.royal, bold = true },
+  zshOption                      = { fg = vim.g.royal, bold = true },
   zshPreProc                     = code_syntax.PreProc,
   zshPrecommand                  = editor_syntax.DiffText,
   zshString                      = code_syntax.String,
@@ -304,13 +305,13 @@ local lang_syntax = {
   jsExport                       = editor_syntax.DiffText,
   jsGlobalObjects                = editor_syntax.Directory,
   jsFuncName                     = editor_syntax.constructor,
-  jsFrom                         = { fg = vim.g.royal, gui = 'bold' },
+  jsFrom                         = { fg = vim.g.royal, bold = true },
   jsParen                        = editor_syntax.LineNr,
-  jsAsyncKeyword                 = { fg = vim.g.royal, gui = 'bold' },
-  jsForAwait                     = { fg = vim.g.royal, gui = 'bold' },
+  jsAsyncKeyword                 = { fg = vim.g.royal, bold = true },
+  jsForAwait                     = { fg = vim.g.royal, bold = true },
   jsArrowFunction                = editor_syntax.LineNr,
   jsReturn                       = editor_syntax.Return,
-  jsFuncBlock                    = { fg = vim.g.capri, gui = 'bold' },
+  jsFuncBlock                    = { fg = vim.g.capri, bold = true },
   jsParens                       = editor_syntax.LineNr,
   jsFuncCall                     = editor_syntax.constructor,
   jsFuncBraces                   = editor_syntax.LineNr,
@@ -372,14 +373,14 @@ local lang_syntax = {
   tsxRegion                      = { fg = vim.g.pearl, gui = 'none' },
   tsxTag                         = editor_syntax.LineNr,
   tsxString                      = editor_syntax.DiffAdd,
-  tsxTagName                     = { fg = vim.g.steel, gui = 'bold' },
-  tsxCloseTagName                = { fg = vim.g.steel, gui = 'bold' },
+  tsxTagName                     = { fg = vim.g.steel, bold = true },
+  tsxCloseTagName                = { fg = vim.g.steel, bold = true },
   tsxIntrinsicTagName            = editor_syntax.htmlTagN,
-  tsxCloseComponentName          = { fg = vim.g.steel, gui = 'bold' },
+  tsxCloseComponentName          = { fg = vim.g.steel, bold = true },
   txsRegion                      = editor_syntax.LineNr,
   typescriptArray                = { fg = vim.g.pearl },
-  typescriptNull                 = { fg = vim.g.ultra, gui = 'bold' },
-  typescriptFuncCallArg          = { fg = vim.g.pearl, gui = 'bold' },
+  typescriptNull                 = { fg = vim.g.ultra, bold = true },
+  typescriptFuncCallArg          = { fg = vim.g.pearl, bold = true },
   typescriptEnum                 = editor_syntax.field,
   typescriptEnumKeyword          = editor_syntax.DiffText,
   typescriptArrowFunc            = editor_syntax.LineNr,
@@ -408,17 +409,17 @@ local lang_syntax = {
   typescriptObjectLiteral        = editor_syntax.LineNr,
   tsxEscJs                       = { fg = vim.g.pearl, gui = 'none' },
   typescriptTypeAnnotation       = editor_syntax.LineNr,
-  typescriptOperator             = { fg = vim.g.bazil, gui = 'bold' },
+  typescriptOperator             = { fg = vim.g.bazil, bold = true },
   typescriptParens               = editor_syntax.LineNr,
   typescriptParenExp             = { fg = vim.g.pearl, gui = 'none' },
   typescriptProp                 = { fg = vim.g.capri },
-  typescriptArrayMethod          = { fg = vim.g.royal, gui = 'bold' },
+  typescriptArrayMethod          = { fg = vim.g.royal, bold = true },
   typescriptProperty             = editor_syntax.LineNr,
   typescriptResponseProp         = editor_syntax.DiffText,
   typescriptStatementKeyword     = editor_syntax.Return,
   typescriptStringMethod         = editor_syntax.DiffText,
-  typescriptTemplate             = { fg = vim.g.slate, gui = 'italic' },
-  typescriptTemplateSubstitution = { fg = vim.g.capri, gui = 'italic' },
+  typescriptTemplate             = { fg = vim.g.slate, italic = true },
+  typescriptTemplateSubstitution = { fg = vim.g.capri, italic = true },
   typescriptTemplateSB           = editor_syntax.DiffText,
   typescriptTernary              = editor_syntax.Return,
   typescriptTernaryOp            = { fg = vim.g.amber },
@@ -428,23 +429,23 @@ local lang_syntax = {
   typescriptBinaryOp             = { fg = vim.g.amber },
   typescriptVariable             = editor_syntax.DiffText,
   typescriptXHRMethod            = editor_syntax.DiffText,
-  typescriptTypeReference        = { fg = vim.g.bazil, gui = 'bold' },
+  typescriptTypeReference        = { fg = vim.g.bazil, bold = true },
   typescriptTypeCase             = { fg = vim.g.royal },
   typescriptIdentifierName       = { fg = vim.g.pearl, gui = 'none' },
   muttrcAliasEncEmail            = { fg = vim.g.metal },
   muttrcEmail                    = { fg = vim.g.bazil },
   markdownValid                  = { fg = vim.g.metal, gui = 'bold,italic' },
-  muttrcAliasKey                 = { fg = vim.g.mauve, gui = 'bold' },
-  muttrcAliasNameNoParens        = { fg = vim.g.pearl, gui = 'bold' },
+  muttrcAliasKey                 = { fg = vim.g.mauve, bold = true },
+  muttrcAliasNameNoParens        = { fg = vim.g.pearl, bold = true },
   mailHeader                     = { fg = vim.g.rouge, gui = 'none' },
   mailHeaderKey                  = { fg = vim.g.rouge, gui = 'none' },
   WhichKey                       = { fg = vim.g.rouge, gui = 'none' },
-  WhichKeyGroup                  = { fg = vim.g.royal, gui = 'bold' },
+  WhichKeyGroup                  = { fg = vim.g.royal, bold = true },
   WhichKeySeparator              = { fg = vim.g.metal },
   WhichKeyDesc                   = { fg = vim.g.pearl, gui = 'none' },
-  WhichKeyValue                  = { fg = vim.g.amber, gui = 'italic' },
+  WhichKeyValue                  = { fg = vim.g.amber, italic = true },
 }
 
-for group, styles in pairs(lang_syntax) do
-  highlight(group, styles)
+for group, hl in pairs(lang_syntax) do
+  highlight(group, hl)
 end
