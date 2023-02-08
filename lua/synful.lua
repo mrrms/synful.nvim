@@ -1,4 +1,5 @@
 local hue = require 'synful.colour'
+
 local editor_syntax = {
   LineNr                  = { fg = hue.metal },
   CursorLineNr            = { fg = hue.capri, bg = vim.g.raven },
@@ -82,10 +83,8 @@ local editor_syntax = {
 }
 
 for group, hl in pairs(editor_syntax) do
-  local biff = tostring(group)
-  vim.api.nvim_set_hl(0, biff, hl)
+  vim.api.nvim_set_hl(0, tostring(group), hl)
 end
-
 
 local code_syntax = {
   Boolean                    = { fg = hue.mauve },
