@@ -178,8 +178,10 @@ local code_syntax = {
 }
 
 for group, hl in pairs(code_syntax) do
-  highlight(group, hl)
+  local item = tostring(group)
+  hue(item, hl)
 end
+
 
 --> Plugin Highlight Groups
 local plugin_syntax = {
@@ -212,7 +214,8 @@ local plugin_syntax = {
 }
 
 for group, hl in pairs(plugin_syntax) do
-  highlight(group, hl)
+  local item = tostring(group)
+  hue(item, hl)
 end
 
 local lang_syntax = {
@@ -442,5 +445,6 @@ local lang_syntax = {
 }
 
 for group, hl in pairs(lang_syntax) do
-  highlight(group, hl)
+  local item = tostring(group)
+  hue(item, hl)
 end
