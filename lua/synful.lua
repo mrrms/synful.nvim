@@ -30,7 +30,7 @@ local editor_syntax = {
   CursorLine              = { bg = vim.g.raven },
   ColorColumn             = { fg = "NONE", bg = "NONE" },
   CursorLineNr            = { fg = vim.g.capri, bg = vim.g.raven },
-  Directory               = { fg = vim.g.royal, gui = 'bold' },
+  Directory               = { fg = vim.g.steel, gui = 'bold' },
   variable                = { fg = vim.g.pearl },
   field                   = { fg = vim.g.pearl },
   DiffAdd                 = { fg = vim.g.paris },
@@ -48,7 +48,7 @@ local editor_syntax = {
   LineNr                  = { fg = vim.g.metal },
   MatchParen              = { fg = vim.g.rouge, gui = 'bold' },
   Normal                  = { fg = vim.g.pearl, bg = vim.g.space },
-  NormalFloat             = { bg = vim.g.space },
+  NormalFloat             = { bg = vim.g.space, fg = vim.g.paris },
   Pmenu                   = { fg = vim.g.pearl, bg = vim.g.space },
   PmenuSel                = { fg = vim.g.capri, bg = vim.g.raven, gui = 'bold' },
   PmenuSbar               = { fg = vim.g.pearl },
@@ -437,7 +437,12 @@ local lang_syntax = {
   muttrcAliasKey                 = { fg = vim.g.mauve, gui = 'bold' },
   muttrcAliasNameNoParens        = { fg = vim.g.pearl, gui = 'bold' },
   mailHeader                     = { fg = vim.g.rouge, gui = 'none' },
-  mailHeaderKey                  = { fg = vim.g.rouge, gui = 'none' }
+  mailHeaderKey                  = { fg = vim.g.rouge, gui = 'none' },
+  WhichKey                       = { fg = vim.g.rouge, gui = 'none' },
+  WhichKeyGroup                  = { fg = vim.g.royal, gui = 'bold' },
+  WhichKeySeparator              = { fg = vim.g.metal },
+  WhichKeyDesc                   = { fg = vim.g.pearl, gui = 'none' },
+  WhichKeyValue                  = { fg = vim.g.amber, gui = 'italic' },
 }
 
 for group, styles in pairs(lang_syntax) do
