@@ -1,4 +1,4 @@
-hi clear
+hi=clear
 syntax reset
 set t_Co=256
 
