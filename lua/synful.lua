@@ -23,6 +23,7 @@ hue('Directory', { fg = vim.g.steel, bold = true })
 hue('Normal', { fg = vim.g.pearl, bg = vim.g.space })
 hue('LineNr', { fg = vim.g.metal })
 hue('CursorLineNr', { fg = vim.g.capri, bg = vim.g.raven })
+hue('CursorLine', { bg = vim.g.raven })
 hue('Cursor', { fg = vim.g.pearl, bg = vim.g.rouge })
 hue('ColorColumn', { fg = "none", bg = "none" })
 
@@ -31,7 +32,6 @@ for group, hl in pairs(editor_syntax) do
 end
 
 local editor_syntax = {
-  CursorLine              = { bg = vim.g.raven },
   variable                = { fg = vim.g.pearl },
   field                   = { fg = vim.g.pearl },
   DiffAdd                 = { fg = vim.g.paris },
