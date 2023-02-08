@@ -1,20 +1,3 @@
-vim.g.space = '#111119'
-vim.g.raven = '#1E202D'
-vim.g.metal = '#3B4267'
-vim.g.steel = '#405080'
-vim.g.royal = '#6070C1'
-vim.g.capri = '#7AA7FF'
-vim.g.ultra = '#CBA6F7'
-vim.g.mauve = '#734a80'
-vim.g.rouge = '#A94064'
-vim.g.peach = '#FFCDCD'
-vim.g.amber = '#DB9280'
-vim.g.bazil = '#597a69'
-vim.g.olive = '#5F875F'
-vim.g.paris = '#9EBFBF'
-vim.g.slate = '#676E96'
-vim.g.pearl = '#9FA7CF'
-
 local editor_syntax = {
   LineNr                  = { fg = vim.g.metal },
   CursorLineNr            = { fg = vim.g.capri, bg = vim.g.raven },
@@ -98,8 +81,7 @@ local editor_syntax = {
 }
 
 for group, hl in pairs(editor_syntax) do
-  local item = tostring(group)
-  vim.api.nvim_set_hl(0, item, hl)
+  vim.api.nvim_set_hl(0, tostring(group), hl)
 end
 
 
