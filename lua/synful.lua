@@ -27,10 +27,6 @@ hue('CursorLine', { bg = vim.g.raven })
 hue('Cursor', { fg = vim.g.pearl, bg = vim.g.rouge })
 hue('ColorColumn', { fg = "none", bg = "none" })
 
-for group, hl in pairs(editor_syntax) do
-  hue(group, hl)
-end
-
 local editor_syntax = {
   variable                = { fg = vim.g.pearl },
   field                   = { fg = vim.g.pearl },
@@ -107,7 +103,8 @@ local editor_syntax = {
 }
 
 for group, hl in pairs(editor_syntax) do
-  highlight(group, hl)
+  local item = tostring(group)
+  hue(item, hl)
 end
 
 local code_syntax = {
