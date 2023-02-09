@@ -6,8 +6,6 @@ return {
 
     vim.g.colors_name = 'synful'
 
-    vim.api.nvim_command 'colorscheme synful'
-
     for group, styles in pairs(groups) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
     end
