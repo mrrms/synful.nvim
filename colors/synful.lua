@@ -1,1 +1,1 @@
-require 'synful'._Load()
+require 'synful'.load()
