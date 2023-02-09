@@ -1,0 +1,1 @@
+require 'synful'._Load()
