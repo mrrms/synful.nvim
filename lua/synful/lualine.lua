@@ -15,3 +15,4 @@ return {
     c = { fg = colour.pearl, bg = colour.rouge },
   }
 }
+require('lualine').setup { options = { theme = synful } }
