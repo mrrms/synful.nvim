@@ -1,6 +1,6 @@
 local colour = require 'synful.colour'
 
-return {
+local synful = {
   normal = {
     a = { fg = colour.steel, bg = colour.raven, gui = 'bold' },
     b = { fg = colour.ultra, bg = colour.metal, gui = 'bold' },
@@ -15,4 +15,5 @@ return {
     c = { fg = colour.pearl, bg = colour.rouge },
   }
 }
+
 require('lualine').setup { options = { theme = synful } }
