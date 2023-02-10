@@ -16,4 +16,8 @@ local synful = {
   }
 }
 
-require('lualine').setup { options = { theme = synful } }
+require('lualine').setup {
+  options = {
+    theme = synful
+  }
+}

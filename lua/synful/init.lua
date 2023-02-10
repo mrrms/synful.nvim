@@ -1,4 +1,5 @@
 local groups = require 'synful.groups'
+require 'synful.lualine'
 
 return {
   load = function()
