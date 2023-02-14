@@ -277,7 +277,7 @@ return {
   txsRegion                      = { link = 'LineNr' },
   typescriptArrowFunc            = { link = 'LineNr' },
   typescriptAssign               = { link = 'LineNr' },
-  typescriptBlock                = { link = 'LineNr' },
+  typescriptBlock                = { link = 'Title' },
   typescriptBraces               = { link = 'LineNr' },
   typescriptFuncComma            = { link = 'LineNr' },
   typescriptFuncImpl             = { link = 'LineNr' },
