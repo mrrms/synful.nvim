@@ -14,6 +14,7 @@ return {
   PreProc                        = { fg = colour.metal, bold = true },
   Include                        = { fg = colour.royal, bold = true },
   MatchParen                     = { fg = colour.rouge, bold = true },
+tsxJsBlock
   Number                         = { fg = colour.ultra, bold = true },
   Return                         = { fg = colour.bazil, bold = true },
   keyword                        = { fg = colour.steel, bold = true },
@@ -220,7 +221,6 @@ return {
   zshNumber                      = { link = 'Number' },
   CmpItemAbbrMatch               = { link = 'Number' },
   CmpItemKindKeyword             = { link = 'LineNr' },
-  tsxJsBlock                     = { link = 'LineNr' },
   Delimiter                      = { link = 'LineNr' },
   DiffChange                     = { link = 'LineNr' },
   GitGutterChange                = { link = 'LineNr' },
@@ -348,6 +348,7 @@ return {
   NotifyDEBUGIcon                = { link = 'PreProc' },
   NotifyDEBUGTitle               = { link = 'PreProc' },
   jsxExpressionBlock             = { link = 'PreProc' },
+  tsxJsBlock                     = { link = 'PreProc' },
   typescriptTemplate             = { link = 'PreProc' },
   zshPreProc                     = { link = 'PreProc' },
   CursorLineNr                   = { link = 'PmenuSel' },
