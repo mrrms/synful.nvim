@@ -14,7 +14,6 @@ return {
   PreProc                        = { fg = colour.metal, bold = true },
   Include                        = { fg = colour.royal, bold = true },
   MatchParen                     = { fg = colour.rouge, bold = true },
-tsxJsBlock
   Number                         = { fg = colour.ultra, bold = true },
   Return                         = { fg = colour.bazil, bold = true },
   keyword                        = { fg = colour.steel, bold = true },
