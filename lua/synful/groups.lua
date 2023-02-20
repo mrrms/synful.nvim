@@ -11,7 +11,7 @@ return {
   Tag                            = { fg = colour.amber },
   Title                          = { fg = colour.pearl },
   Todo                           = { fg = colour.capri },
-  PreProc                        = { fg = colour.metal, bold = true },
+  PreProc                        = { fg = colour.metal },
   Include                        = { fg = colour.royal, bold = true },
   MatchParen                     = { fg = colour.rouge, bold = true },
   Number                         = { fg = colour.ultra, bold = true },
