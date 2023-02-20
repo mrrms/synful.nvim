@@ -355,6 +355,7 @@ return {
   TelescopeSelection             = { link = 'PmenuSel' },
   TelescopeSelectionCaret        = { link = 'PmenuSel' },
   DiagnosticHint                 = { link = 'Operator' },
+  typescriptCall                 = { link = 'Operator' },
   typescriptIdentifierName       = { link = 'Operator' },
   DiagnosticUnderlineHint        = { link = 'Operator' },
   DiagnosticVirtualTextHint      = { link = 'Operator' },
