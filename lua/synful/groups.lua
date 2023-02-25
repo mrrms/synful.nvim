@@ -45,7 +45,7 @@ return {
   NotifyWARNIcon                 = { link = 'Tag' },
   NotifyWARNTitle                = { link = 'Tag' },
   SpellLocal                     = { link = 'Tag' },
-  shDerefSimple                  = { link = 'Tag' },
+  shDerefSimple                  = { link = 'Todo' },
   shQuote                        = { link = 'Todo' },
   tmuxVariableExtension          = { link = 'Tag' },
   typescriptBinaryOp             = { link = 'Tag' },
