@@ -13,7 +13,7 @@ return {
   Todo                           = { fg = colour.capri },
   PreProc                        = { fg = colour.metal },
   Operator                       = { fg = colour.peach },
-  Cursor                         = { fg = colour.slate },
+  Cursor                         = { fg = colour.pearl },
   Number                         = { fg = colour.ultra, bold = true },
   Include                        = { fg = colour.royal, bold = true },
   MatchParen                     = { fg = colour.rouge, bold = true },
