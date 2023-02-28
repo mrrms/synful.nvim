@@ -2,11 +2,11 @@ local colour = require 'synful.colour'
 
 return {
   Boolean                        = { fg = colour.mauve },
+  Noise                          = { fg = colour.mauve },
   CursorLine                     = { bg = colour.raven },
   FloatBorder                    = { fg = colour.raven },
   LineNr                         = { fg = colour.metal },
   Macro                          = { fg = colour.royal },
-  Noise                          = { fg = colour.rouge },
   NormalFloat                    = { bg = colour.space },
   Tag                            = { fg = colour.amber },
   Title                          = { fg = colour.pearl },
