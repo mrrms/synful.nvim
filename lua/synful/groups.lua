@@ -29,7 +29,7 @@ return {
   PmenuThumb                     = { fg = colour.metal, bg = colour.space },
   Visual                         = { fg = colour.ultra, bg = colour.metal },
   Comment                        = { fg = colour.metal, bold = true, italic = true },
-  IncSearch                      = { fg = colour.ultra, bg = colour.steel, bold = true },
+  IncSearch                      = { fg = colour.ultra, bg = colour.steel, bold = true, italic = false },
   PmenuSel                       = { fg = colour.capri, bg = colour.raven, bold = true },
   Underlined                     = { underline = true },
   FloatShadow                    = { bg = "NONE" },
