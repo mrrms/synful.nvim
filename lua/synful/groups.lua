@@ -9,7 +9,7 @@ return {
   NormalFloat                    = { bg = colour.space },
   Tag                            = { fg = colour.amber },
   Title                          = { fg = colour.pearl },
-  PreProc                        = { fg = colour.metal },
+  PreProc                        = { fg = colour.slate },
   Operator                       = { fg = colour.peach },
   Cursor                         = { fg = colour.pearl },
   Todo                           = { fg = colour.capri },
