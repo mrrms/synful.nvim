@@ -25,7 +25,7 @@ return {
   String                         = { fg = colour.paris, italic = true },
   StatusLineNC                   = { fg = colour.space, bg = colour.space },
   EndOfBuffer                    = { fg = colour.space, bg = colour.space },
-  Normal                         = { fg = colour.pearl, bg = colour.space },
+  Normal                         = { fg = colour.metal, bg = colour.space },
   PmenuThumb                     = { fg = colour.metal, bg = colour.space },
   Visual                         = { fg = colour.ultra, bg = colour.metal },
   Comment                        = { fg = colour.metal, bold = true, italic = true },
