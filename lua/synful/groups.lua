@@ -1,7 +1,7 @@
 local colour = require 'synful.colour'
 
 return {
-  Noise                          = { fg = colour.rouge },
+  Noise                          = { fg = colour.mauve },
   CursorLine                     = { bg = colour.raven },
   FloatBorder                    = { fg = colour.raven },
   LineNr                         = { fg = colour.metal },
@@ -80,6 +80,10 @@ return {
   cssAttrRegion                  = { link = 'Todo' },
   Character                      = { link = 'Title' },
   cssDefinition                  = { link = 'Title' },
+  cssBackgroundProp              = { link = 'TItle' },
+  cssBoxProp                     = { link = 'TItle' },
+  cssPageProp                    = { link = 'TItle' },
+  cssTransformProp               = { link = 'TItle' },
   typescriptBlock                = { link = 'Title' },
   CmpItemKindColor               = { link = 'Title' },
   CmpItemKindOperator            = { link = 'Title' },
@@ -243,7 +247,7 @@ return {
   NotifyDEBUGTitle               = { link = 'LineNr' },
   PreCondit                      = { link = 'LineNr' },
   SpecialComment                 = { link = 'LineNr' },
-  cssNoise                       = { link = 'Noise' },
+  cssNoise                       = { link = 'LineNr' },
   Typedef                        = { link = 'LineNr' },
   gitcommitComment               = { link = 'LineNr' },
   gitcommitDiscarded             = { link = 'LineNr' },
