@@ -1,6 +1,6 @@
 return {
   space = '#111119',
-  raven = '#1E202D',
+  raven = '#282A38',
   metal = '#4F5576',
   steel = '#405080',
   royal = '#6070C1',
