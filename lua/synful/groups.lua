@@ -37,6 +37,7 @@ return {
   NonText                        = { fg = "NONE", bg = "NONE" },
   FloatShadow                    = { bg = "NONE" },
   FloatShadowThrough             = { bg = "NONE" },
+  Conceal                        = { link = "Macro" },
   variable                       = { link = 'Title' },
   typescriptDefault              = { link = 'Return' },
   Character                      = { link = 'Title' },
