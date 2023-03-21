@@ -32,7 +32,7 @@ return {
   Normal                         = { fg = colour.pearl, bg = colour.space },
   PmenuThumb                     = { fg = colour.metal, bg = colour.space },
   Visual                         = { fg = colour.ultra, bg = colour.metal },
-  IncSearch                      = { fg = colour.ultra, bg = colour.steel, bold = true },
+  IncSearch                      = { fg = colour.ultra, bg = colour.rouge, bold = true },
   PmenuSel                       = { fg = colour.capri, bg = colour.raven, bold = true },
   Underlined                     = { underline = true },
   Bold                           = { bold = true },
