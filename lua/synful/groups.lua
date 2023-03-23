@@ -163,6 +163,7 @@ return {
   WhichKeySeparator                   = { link = 'Include' },
   Whitespace                          = { link = 'Todo' },
   constructor                         = { link = 'Title' },
+  cssVendor                           = { link = 'Character' },
   cssAttrRegion                       = { link = 'Todo' },
   cssBackgroundProp                   = { link = 'PreProc' },
   cssBorderProp                       = { link = 'PreProc' },
