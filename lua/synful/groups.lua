@@ -344,7 +344,7 @@ return {
   tsxAttrib                           = { link = 'Todo' },
   tsxCloseComponentName               = { link = 'Keyword' },
   tsxCloseString                      = { link = 'LineNr' },
-  tsxCloseTag                         = { link = 'Keyword' },
+  tsxCloseTag                         = { link = 'LineNr' },
   tsxCloseTagName                     = { link = 'Keyword' },
   tsxEqual                            = { link = 'LineNr' },
   tsxEscJs                            = { link = 'Title' },
