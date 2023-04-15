@@ -1,6 +1,6 @@
-local colour = require 'synful.colour'
+local colour = require('synful.colour')
 
-require('lualine').setup {
+require('lualine').setup({
   options = {
     theme = {
       normal = {
@@ -8,14 +8,14 @@ require('lualine').setup {
         b = { fg = colour.ultra, bg = colour.metal, gui = 'bold' },
         c = { fg = colour.metal, bg = colour.space },
       },
-      insert = { a = { fg = colour.pearl, bg = colour.metal, gui = 'bold' } },
-      replace = { a = { fg = colour.steel, bg = colour.pearl, gui = 'bold' } },
-      visual = { a = { fg = colour.pearl, bg = colour.mauve, gui = 'bold' } },
+      insert = { b = { fg = colour.pearl, bg = colour.metal, gui = 'bold' } },
+      replace = { b = { fg = colour.steel, bg = colour.pearl, gui = 'bold' } },
+      visual = { b = { fg = colour.pearl, bg = colour.mauve, gui = 'bold' } },
       inactive = {
         a = { fg = colour.pearl, bg = colour.rouge },
         b = { fg = colour.pearl, bg = colour.rouge },
         c = { fg = colour.pearl, bg = colour.rouge },
-      }
-    }
-  }
-}
+      },
+    },
+  },
+})
