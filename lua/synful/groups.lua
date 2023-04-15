@@ -156,7 +156,7 @@ return {
   TelescopeSelectionCaret = { link = 'PmenuSel' },
   Type = { link = 'String' },
   Typedef = { link = 'LineNr' },
-  VertSplit = { link = 'PmenuThumb' },
+  VertSplit = { link = 'NonText' },
   VisualNOS = { link = 'Title' },
   WarningMsg = { link = 'Operator' },
   WhichKeyGroup = { link = 'Include' },
