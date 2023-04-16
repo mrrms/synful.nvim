@@ -1,10 +1,13 @@
-local groups = require 'synful.groups'
+local groups = require('synful.groups')
+local lsp_groups = require('synful.lsp-groups')
 
-require 'synful.lualine'
+require('synful.lualine')
 
 return {
   load = function()
-    if vim.g.colors_name then vim.api.nvim_command 'hi clear' end
+    if vim.g.colors_name then
+      vim.api.nvim_command('hi clear')
+    end
 
     vim.g.colors_name = 'synful'
 
@@ -12,5 +15,8 @@ return {
       vim.api.nvim_set_hl(0, tostring(group), styles)
     end
 
-  end
+    for group, styles in pairs(lsp_groups) do
+      vim.api.nvim_set_hl(0, group, styles)
+    end
+  end,
 }
