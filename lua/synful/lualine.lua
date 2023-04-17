@@ -6,22 +6,16 @@ require('lualine').setup({
       normal = {
         a = { fg = colour.pearl, bg = colour.raven, gui = 'bold' },
         b = { fg = colour.slate, bg = colour.steel, gui = 'bold' },
-        c = { fg = colour.steel, bg = colour.space },
+        c = { fg = colour.raven, bg = colour.space },
       },
       insert = {
-        a = { fg = colour.pearl, bg = colour.raven, gui = 'bold' },
-        b = { fg = colour.slate, bg = colour.steel, gui = 'bold' },
-        c = { fg = colour.steel, bg = colour.space },
+        a = { fg = colour.slate, bg = colour.bazil, gui = 'bold' },
       },
       replace = {
-        a = { fg = colour.pearl, bg = colour.raven, gui = 'bold' },
-        b = { fg = colour.steel, bg = colour.steel, gui = 'bold' },
-        c = { fg = colour.steel, bg = colour.space },
+        a = { fg = colour.pearl, bg = colour.rouge, gui = 'bold' },
       },
       visual = {
-        a = { fg = colour.pearl, bg = colour.raven, gui = 'bold' },
-        b = { fg = colour.slate, bg = colour.steel, gui = 'bold' },
-        c = { fg = colour.steel, bg = colour.space },
+        a = { fg = colour.pearl, bg = colour.royal, gui = 'bold' },
       },
       inactive = {
         a = { fg = colour.pearl, bg = colour.rouge },
