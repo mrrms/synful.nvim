@@ -455,7 +455,7 @@ return {
   ['@lsp.type.typeParameter'] = { link = 'Noise' },
   ['@lsp.type.enum'] = { fg = colour.amber },
   ['@lsp.type.type'] = { fg = colour.mauve },
-  ['@lsp.type.function'] = { fg = colour.rouge },
-  ['@lsp.type.variable'] = { link = colour.royal },
+  ['@lsp.type.function'] = { link = 'Macro' },
+  ['@lsp.type.variable'] = { fg = colour.royal },
   ['@lsp.type.struct'] = { fg = colour.peach },
 }
