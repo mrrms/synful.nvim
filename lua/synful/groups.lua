@@ -4,7 +4,7 @@ return {
   Noise = { fg = colour.mauve },
   CursorLine = { bg = "NONE" },
   FloatBorder = { fg = colour.raven },
-  CursorLineNr = { fg = colour.bazil, bg = colour.space },
+  CursorLineNr = { fg = colour.bazil, bg = colour.space, bold = true },
   LineNr = { fg = colour.metal },
   Macro = { fg = colour.royal },
   NormalFloat = { bg = colour.raven },
