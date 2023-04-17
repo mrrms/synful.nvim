@@ -13,6 +13,5 @@ return {
     for group, styles in pairs(groups) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
     end
-
   end
 }

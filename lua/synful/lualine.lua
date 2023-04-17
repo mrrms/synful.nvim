@@ -4,13 +4,25 @@ require('lualine').setup({
   options = {
     theme = {
       normal = {
-        a = { fg = colour.steel, bg = colour.raven, gui = 'bold' },
-        b = { fg = colour.ultra, bg = colour.metal, gui = 'bold' },
-        c = { fg = colour.metal, bg = colour.space },
+        a = { fg = colour.pearl, bg = colour.space, gui = 'bold' },
+        b = { fg = colour.metal, bg = colour.space, gui = 'bold' },
+        c = { fg = colour.steel, bg = colour.space, gui = 'italic' },
       },
-      insert = { b = { fg = colour.pearl, bg = colour.metal, gui = 'bold' } },
-      replace = { b = { fg = colour.steel, bg = colour.pearl, gui = 'bold' } },
-      visual = { b = { fg = colour.pearl, bg = colour.mauve, gui = 'bold' } },
+      insert = {
+        a = { fg = colour.pearl, bg = colour.space, gui = 'bold' },
+        b = { fg = colour.pearl, bg = colour.metal, gui = 'bold' },
+        c = { fg = colour.steel, bg = colour.space, gui = 'italic' },
+      },
+      replace = {
+        a = { fg = colour.pearl, bg = colour.space, gui = 'bold' },
+        b = { fg = colour.steel, bg = colour.pearl, gui = 'bold' },
+        c = { fg = colour.steel, bg = colour.space, gui = 'italic' },
+      },
+      visual = {
+        a = { fg = colour.pearl, bg = colour.space, gui = 'bold' },
+        b = { fg = colour.pearl, bg = colour.mauve, gui = 'bold' },
+        c = { fg = colour.steel, bg = colour.space, gui = 'italic' },
+      },
       inactive = {
         a = { fg = colour.pearl, bg = colour.rouge },
         b = { fg = colour.pearl, bg = colour.rouge },

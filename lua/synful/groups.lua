@@ -2,7 +2,7 @@ local colour = require('synful.colour')
 
 return {
   Noise = { fg = colour.mauve },
-  CursorLine = { bg = colour.raven },
+  CursorLine = { bg = "NONE" },
   FloatBorder = { fg = colour.raven },
   LineNr = { fg = colour.metal },
   Macro = { fg = colour.royal },
@@ -298,6 +298,7 @@ return {
   mailHeader = { link = 'Noise' },
   mailHeaderKey = { link = 'Noise' },
   markdownValid = { link = 'LineNr' },
+  markdownH1 = { link = 'Keyword' },
   mkdNonListItemBlock = { link = 'Noise' },
   muttrcAliasEncEmail = { link = 'LineNr' },
   muttrcAliasKey = { link = 'Noise' },
