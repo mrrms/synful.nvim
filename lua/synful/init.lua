@@ -13,10 +13,6 @@ return {
     for group, styles in pairs(groups) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
     end
-  end,
-}
 
--- for group, styles in pairs(lsp_groups) do
---   vim.api.nvim_set_hl(0, group, styles)
--- end
--- local lsp_groups = require('synful.lsp-groups')
+  end
+}
