@@ -4,9 +4,9 @@ require('lualine').setup({
   options = {
     theme = {
       normal = {
-        a = { fg = colour.steel, bg = colour.ultra, gui = 'bold' },
-        b = { fg = colour.ultra, bg = colour.bazil, gui = 'bold' },
-        c = { fg = colour.metal, bg = colour.olive },
+        a = { fg = colour.steel, bg = colour.raven, gui = 'bold' },
+        b = { fg = colour.ultra, bg = colour.metal, gui = 'bold' },
+        c = { fg = colour.metal, bg = colour.space },
       },
       insert = { b = { fg = colour.pearl, bg = colour.metal, gui = 'bold' } },
       replace = { b = { fg = colour.steel, bg = colour.pearl, gui = 'bold' } },
