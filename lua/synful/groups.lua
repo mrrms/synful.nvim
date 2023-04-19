@@ -39,6 +39,7 @@ return {
   VertSplit = { fg = 'NONE', bg = 'NONE' },
   Underlined = { underline = true },
   CodeiumSuggestion = { fg = colour.slate },
+  JavascriptStringT = { link = 'Comment' },
   Bold = { bold = true },
   Italic = { italic = true },
   LazyNormal = { link = 'pmenu' },
