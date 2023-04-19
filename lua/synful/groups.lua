@@ -38,6 +38,7 @@ return {
   PmenuSel = { fg = colour.capri, bg = colour.raven, bold = true },
   VertSplit = { fg = 'NONE', bg = 'NONE' },
   Underlined = { underline = true },
+  CodeiumSuggestion = { fg = colour.slate },
   Bold = { bold = true },
   Italic = { italic = true },
   LazyNormal = { link = 'pmenu' },
