@@ -2,7 +2,7 @@ local colour = require('synful.colour')
 
 return {
   Noise = { fg = colour.mauve },
-  CursorLine = { bg = "NONE" },
+  CursorLine = { fg = colour.bazil, bg = colour.space },
   FloatBorder = { fg = colour.raven },
   CursorLineNr = { fg = colour.bazil, bg = colour.space, bold = true },
   LineNr = { fg = colour.metal },
