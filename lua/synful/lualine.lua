@@ -9,10 +9,10 @@ require('lualine').setup({
         c = { fg = colour.raven, bg = colour.space },
       },
       insert = {
-        a = { fg = colour.space, bg = colour.bazil, gui = 'bold' },
+        a = { fg = colour.paris, bg = colour.bazil, gui = 'bold' },
       },
       visual = {
-        a = { fg = colour.space, bg = colour.mauve, gui = 'bold' },
+        a = { fg = colour.ultra, bg = colour.mauve, gui = 'bold' },
       },
       replace = {
         a = { fg = colour.space, bg = colour.rouge, gui = 'bold' },
