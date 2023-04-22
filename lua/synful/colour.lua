@@ -14,5 +14,5 @@ return {
   olive = '#5F875F',
   paris = '#9EBFBF',
   slate = '#676E96', -->#8088b0
-  pearl = '#A8B4F6'  -->#9FA7CF
+  pearl = '#9FA7CF', -->#A8B4F6
 }
