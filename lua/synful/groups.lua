@@ -1,11 +1,13 @@
 local colour = require('synful.colour')
 
+CursorLine:PmenuSel,Search:None
 return {
   FloatShadow                         = { bg = 'NONE' },
   VertSplit                           = { fg = 'NONE', bg = 'NONE' },
   Bold                                = { bold = true },
   Italic                              = { italic = true },
   Underlined                          = { underline = true },
+  muttrcColor                         = { fg = colour.bazil },
   Todo                                = { fg = colour.capri },
   shDoubleQuote                       = { fg = colour.capri, italic = true },
   Conceal                             = { fg = colour.paris },
@@ -23,7 +25,7 @@ return {
   PmenuThumb                          = { fg = colour.metal, bg = colour.space },
   EndOfBuffer                         = { fg = colour.space, bg = colour.space },
   CursorLineNr                        = { fg = colour.bazil, bg = colour.space, bold = true },
-  PmenuSel                            = { fg = colour.capri, bg = colour.raven, bold = true },
+  PmenuSel                            = { fg = colour.capri, bg = colour.space, bold = true },
   Comment                             = { fg = colour.metal, italic = true, bold = true },
   PreProc                             = { fg = colour.slate },
   mailSubject                         = { fg = colour.slate, bold = true },
@@ -417,7 +419,6 @@ return {
   vimVar                              = { link = 'Todo' },
   zshDeref                            = { link = 'Todo' },
   zshTodo                             = { link = 'Todo' },
-  muttrcColor                         = { link = 'Todo' },
   muttrcColorRXPat                    = { link = 'Noise' },
   Search                              = { link = 'Visual' },
   TabLineFill                         = { link = 'Visual' },
@@ -429,7 +430,7 @@ return {
   jsxTagName                          = { link = 'keyword' },
   luaFuncCall                         = { link = 'keyword' },
   typescriptTry                       = { link = 'keyword' },
-  LazyNormal                          = { link = 'pmenu' },
+  LazyNormal                          = { link = 'Pmenu' },
   CodeiumSuggestion                   = { link = 'PreProc' },
   cssBackgroundProp                   = { link = 'PreProc' },
   cssBorderProp                       = { link = 'PreProc' },
@@ -458,5 +459,4 @@ return {
   gitcommitUnmergedFile               = { link = 'Cursor' },
   zshFunction                         = { link = 'Cursor' },
   typescriptFuncName                  = { link = 'Cursor' },
-  NormalFloat                         = { link = 'CursorLine' },
 }
