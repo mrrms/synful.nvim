@@ -4,6 +4,7 @@ return {
   CursorLine                          = { bg = colour.space },
   LineNr                              = { fg = colour.metal },
   CursorLineNr                        = { fg = colour.bazil, bg = colour.space, bold = true },
+  muttrcColor                         = { fg = colour.bazil, bold = true },
   CmpItemKindKeyword                  = { link = 'LineNr' },
   Delimiter                           = { link = 'LineNr' },
   DiffChange                          = { link = 'LineNr' },
