@@ -23,6 +23,8 @@ return {
   htmlArg                             = { link = 'Todo' },
   htmlEndTag                          = { link = 'LineNr' },
   htmlTag                             = { link = 'Todo' },
+  markdownLinkText                    = { link = 'Todo' },
+  markdownLinkTextDelimiter           = { link = 'LineNr' },
   jsArrowFunction                     = { link = 'LineNr' },
   jsBrackets                          = { link = 'LineNr' },
   jsDestructuringBraces               = { link = 'LineNr' },
