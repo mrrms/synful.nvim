@@ -15,7 +15,7 @@ return {
   Title                               = { fg = colour.pearl },
   Todo                                = { fg = colour.capri },
   NonText                             = { fg = 'NONE', bg = 'NONE' },
-  NormalFloat                         = { fg = 'NONE', bg = 'NONE' },
+  NormalFloat                         = { fg = colour.mauve, bg = 'NONE' },
   Cursor                              = { fg = colour.pearl, bold = true },
   Include                             = { fg = colour.royal, bold = true },
   MatchParen                          = { fg = colour.rouge, bold = true },
