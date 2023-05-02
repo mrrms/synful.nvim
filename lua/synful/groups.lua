@@ -1,6 +1,5 @@
 local colour = require('synful.colour')
 
--- 'Search:None',
 return {
   Bold                                = { bold = true },
   Italic                              = { italic = true },
@@ -9,7 +8,7 @@ return {
   PreProc                             = { fg = colour.slate },
   Conceal                             = { fg = colour.paris },
   CursorLine                          = { bg = colour.space },
-  FloatBorder                         = { fg = colour.raven, bg = colour.space },
+  FloatBorder                         = { fg = colour.space },
   LineNr                              = { fg = colour.metal },
   Macro                               = { fg = colour.royal },
   Noise                               = { fg = colour.mauve },
