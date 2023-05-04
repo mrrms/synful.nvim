@@ -301,6 +301,7 @@ return {
   NotifyWARNBody                      = { link = 'Normal' },
   Pmenu                               = { link = 'Normal' },
   zshNumber                           = { link = 'Number' },
+  javaScriptNumber                    = { link = 'Number' },
   DiagnosticHint                      = { link = 'Operator' },
   DiagnosticUnderlineHint             = { link = 'Operator' },
   DiagnosticVirtualTextHint           = { link = 'Operator' },
