@@ -168,7 +168,6 @@ return {
   jsxCloseString                      = { link = 'LineNr' },
   jsxCloseTag                         = { link = 'LineNr' },
   jsxEqual                            = { link = 'LineNr' },
-  jsxExpressionBlock                  = { link = 'LineNr' },
   jsxOpenPunct                        = { link = 'LineNr' },
   jsxOpenTag                          = { link = 'LineNr' },
   jsxTag                              = { link = 'LineNr' },
