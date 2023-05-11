@@ -391,7 +391,7 @@ return {
   tmuxVariableExtension               = { link = 'Tag' },
   typescriptBinaryOp                  = { link = 'Tag' },
   typescriptTernaryOp                 = { link = 'Tag' },
-  typescriptUnaryOp                   = { link = 'Tag' },
+  typescriptUnaryOp                   = { link = 'noise' },
   zshShortDeref                       = { link = 'Tag' },
   zshSubstDelim                       = { link = 'Tag' },
   variable                            = { link = 'Title' },
