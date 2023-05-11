@@ -87,6 +87,7 @@ return {
   typescriptTemplate                  = { link = 'Comment' },
   zslhComment                         = { link = 'Comment' },
   Operator                            = { link = 'LineNr' },
+  jsxExpressionBlock                  = { link = 'Normal' },
   typescriptFuncName                  = { link = 'Cursor' },
   typescriptFuncCallArg               = { link = 'Cursor' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
