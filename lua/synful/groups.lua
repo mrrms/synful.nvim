@@ -321,7 +321,7 @@ return {
   NotifyINFOBody                      = { link = 'Normal' },
   NotifyTRACEBody                     = { link = 'Normal' },
   NotifyWARNBody                      = { link = 'Normal' },
-  Pmenu                               = { link = 'Normal' },
+  Pmenu                               = { link = 'NormalFloat' },
   zshNumber                           = { link = 'Number' },
   javaScriptNumber                    = { link = 'Number' },
   DiagnosticHint                      = { link = 'Operator' },
