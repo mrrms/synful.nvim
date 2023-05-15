@@ -60,7 +60,7 @@ return {
   Comment                             = { fg = colour.metal, italic = true, bold = true },
   CursorLineNr                        = { fg = colour.bazil, bg = colour.space, bold = true },
   IncSearch                           = { fg = colour.metal, bg = colour.ultra, bold = true },
-  PmenuSel                            = { fg = colour.capri, bg = colour.raven, bold = true },
+  PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
   jsoncBoolean                        = { link = 'Boolean' },
   shVar                               = { link = 'Boolean' },
   typescriptCall                      = { link = 'Boolean' },
