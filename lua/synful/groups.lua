@@ -59,6 +59,7 @@ return {
   Visual                              = { fg = colour.ultra, bg = colour.metal },
   Comment                             = { fg = colour.metal, italic = true, bold = true },
   CursorLineNr                        = { fg = colour.bazil, bg = colour.space, bold = true },
+  jsOperatorKeyword                   = { fg = colour.bazil, italic = true, bold = true },
   IncSearch                           = { fg = colour.metal, bg = colour.ultra, bold = true },
   PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
   jsoncBoolean                        = { link = 'Boolean' },
@@ -123,7 +124,7 @@ return {
   tsxCloseComponentName               = { link = 'Keyword' },
   tsxCloseTagName                     = { link = 'Keyword' },
   tsxTagName                          = { link = 'Keyword' },
-  typescriptExceptions                = { link = 'Keyword' },
+  typescriptExceptions                = { link = 'cssTagName' },
   GitGutterAdd                        = { link = 'KeywordReturn' },
   diffAdded                           = { link = 'KeywordReturn' },
   gitcommitSelectedArrow              = { link = 'KeywordReturn' },
@@ -475,6 +476,6 @@ return {
   jsxComponentName                    = { link = 'keyword' },
   jsxTagName                          = { link = 'keyword' },
   luaFuncCall                         = { link = 'keyword' },
-  typescriptTry                       = { link = 'keyword' },
+  typescriptTry                       = { link = 'cssTagName' },
   LazyNormal                          = { link = 'pmenu' }
 }
