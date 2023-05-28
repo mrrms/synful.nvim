@@ -57,7 +57,7 @@ return {
   PmenuThumb                          = { fg = colour.mauve, bg = colour.space },
   StatusLineNC                        = { fg = colour.space, bg = colour.space },
   Visual                              = { fg = colour.pearl, bg = colour.royal, bold = true },
-  Search                              = { fg = colour.pearl, bg = colour.ultra, bold = true },
+  Search                              = { fg = colour.ultra, bg = colour.mauve, bold = true },
   Comment                             = { fg = colour.metal, italic = true, bold = true },
   CursorLineNr                        = { fg = colour.bazil, bg = colour.space, bold = true },
   jsOperatorKeyword                   = { fg = colour.bazil, italic = true, bold = true },
