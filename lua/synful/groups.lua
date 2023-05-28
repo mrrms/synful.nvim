@@ -91,7 +91,7 @@ return {
   gitcommitComment                    = { link = 'Comment' },
   typescriptTemplate                  = { link = 'Comment' },
   zslhComment                         = { link = 'Comment' },
-  jsxExpressionBlock                  = { link = 'Operator' },
+  jsxExpressionBlock                  = { link = 'Todo' },
   typescriptFuncName                  = { link = 'Cursor' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
   shDerefSimple                       = { link = 'Todo' },
