@@ -57,7 +57,7 @@ return {
   Normal                              = { fg = colour.pearl, bg = colour.space },
   PmenuThumb                          = { fg = colour.mauve, bg = colour.space },
   StatusLineNC                        = { fg = colour.space, bg = colour.space },
-  Visual                              = { fg = colour.pearl, bg = colour.royal, bold = true },
+  Visual                              = { fg = colour.capri, bg = colour.steel, bold = true },
   Search                              = { fg = colour.ultra, bg = colour.mauve, bold = true },
   Comment                             = { fg = colour.metal, italic = true, bold = true },
   CursorLineNr                        = { fg = colour.bazil, bg = colour.space, bold = true },
