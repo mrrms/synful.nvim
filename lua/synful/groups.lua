@@ -47,7 +47,7 @@ return {
   keyword                             = { fg = colour.steel, bold = true },
   luaLocal                            = { fg = colour.olive, bold = true },
   mailSubject                         = { fg = colour.slate, bold = true },
-  Boolean                             = { fg = colour.mauve },
+  Boolean                             = { fg = colour.mauve, bold = true },
   KeywordReturn                       = { fg = colour.olive, italic = true },
   String                              = { fg = colour.paris, italic = true },
   Tag                                 = { fg = colour.amber, italic = true },
