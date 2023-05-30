@@ -1,6 +1,5 @@
 local colour = require('synful.colour')
 
-
 -- resolves semantic highlighting for lsp servers
 local links = {
   ['@lsp.type.namespace'] = '@namespace',
@@ -48,7 +47,7 @@ return {
   keyword                             = { fg = colour.steel, bold = true },
   luaLocal                            = { fg = colour.olive, bold = true },
   mailSubject                         = { fg = colour.slate, bold = true },
-  Boolean                             = { fg = colour.mauve, italic = true },
+  Boolean                             = { fg = colour.mauve },
   KeywordReturn                       = { fg = colour.olive, italic = true },
   String                              = { fg = colour.paris, italic = true },
   Tag                                 = { fg = colour.amber, italic = true },
