@@ -294,7 +294,7 @@ return {
   jsxComponentName                    = { link = 'keyword' },
   jsxEqual                            = { link = 'Operator' },
   jsxEscJs                            = { link = 'Title' },
-  jsxExpressionBlock                  = { link = 'Todo' },
+  jsxExpressionBlock                  = { link = 'Normal' },
   jsxJsBlock                          = { link = 'Noise' },
   jsxOpenPunct                        = { link = 'Operator' },
   jsxOpenTag                          = { link = 'Operator' },
