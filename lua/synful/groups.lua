@@ -401,7 +401,7 @@ return {
   typescriptBlock                     = { link = 'mailSubject' },
   typescriptBraces                    = { link = 'Operator' },
   typescriptCall                      = { link = 'Noise' },
-  typescriptConditionalParen          = { link = 'Return' },
+  typescriptConditionalParen          = { link = 'Title' },
   typescriptDOMDocProp                = { link = 'Character' },
   typescriptDOMWindowProp             = { link = 'Character' },
   typescriptDefault                   = { link = 'Return' },
