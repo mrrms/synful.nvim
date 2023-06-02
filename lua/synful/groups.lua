@@ -427,7 +427,7 @@ return {
   typescriptNull                      = { link = 'Noise' },
   typescriptObjectColon               = { link = 'Operator' },
   typescriptObjectLabel               = { link = 'Todo' },
-  typescriptObjectLiteral             = { link = 'Title' },
+  typescriptObjectLiteral             = { link = 'LineNr' },
   typescriptOperator                  = { link = 'Return' },
   typescriptParenExp                  = { link = 'Title' },
   typescriptParens                    = { link = 'Operator' },
