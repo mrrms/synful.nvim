@@ -278,7 +278,7 @@ return {
   jsReturn                            = { link = 'Return' },
   jsStorageClass                      = { link = 'Macro' },
   jsTemplateBraces                    = { link = 'Noise' },
-  jsTemplateString                    = { link = 'FloatBorder' },
+  jsTemplateString                    = { link = 'LineNr' },
   jsTernaryIf                         = { link = 'Noise' },
   jsTernaryOperator                   = { link = 'Noise' },
   jsonQuote                           = { link = 'Macro' },
