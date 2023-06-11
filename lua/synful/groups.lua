@@ -53,7 +53,7 @@ return {
   Tag                                 = { fg = colour.amber, italic = true },
   shDoubleQuote                       = { fg = colour.paris, italic = true },
   EndOfBuffer                         = { fg = colour.space, bg = colour.space },
-  Normal                              = { fg = colour.pearl, bg = colour.space },
+  Normal                              = { fg = colour.pearl },
   PmenuThumb                          = { fg = colour.mauve, bg = colour.space },
   StatusLineNC                        = { fg = colour.space, bg = colour.space },
   Visual                              = { fg = colour.capri, bg = colour.steel, bold = true },
