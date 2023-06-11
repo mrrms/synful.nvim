@@ -31,7 +31,7 @@ return {
   Conceal                             = { fg = colour.paris },
   CursorLine                          = { bg = colour.space },
   FloatBorder                         = { fg = colour.raven },
-  LineNr                              = { fg = colour.metal },
+  LineNr                              = { fg = colour.raven },
   Operator                            = { fg = colour.metal },
   Macro                               = { fg = colour.royal },
   Noise                               = { fg = colour.mauve },
