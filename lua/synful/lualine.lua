@@ -6,7 +6,7 @@ require('lualine').setup({
       normal = {
         a = { fg = colour.pearl, bg = colour.raven, gui = 'bold' },
         b = { fg = colour.slate, bg = colour.steel, gui = 'bold' },
-        c = { fg = colour.raven, bg = colour.space },
+        c = { fg = colour.steel, bg = colour.space },
       },
       insert = {
         a = { fg = colour.paris, bg = colour.bazil, gui = 'bold' },
