@@ -437,7 +437,7 @@ return {
   typescriptResponseProp              = { link = 'Character' },
   typescriptStatementKeyword          = { link = 'Return' },
   typescriptStringMethod              = { link = 'Macro' },
-  typescriptTemplate                  = { link = 'Title' },
+  typescriptTemplate                  = { link = 'Macro' },
   typescriptTemplateSB                = { link = 'Macro' },
   typescriptTemplateSubstitution      = { link = 'Todo' },
   typescriptTernary                   = { link = 'Todo' },
