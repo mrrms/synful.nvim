@@ -8,11 +8,13 @@ return {
   ultra = '#CBA6F7',
   mauve = '#734a80',
   rouge = '#A94064',
-  blush = '#630f2c',
-  peach = '#FFCDCD',
   amber = '#DB9280',
+  blush = '#24030e',
+  peach = '#FFCDCD',
+  orang = '#36130b',
   bazil = '#597a69',
   olive = '#5F875F',
+  green = '#0f2424',
   paris = '#9EBFBF',
   slate = '#676E96', -->#8088b0
   pearl = '#9FA7CF', -->#A8B4F6
