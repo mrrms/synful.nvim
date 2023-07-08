@@ -20,8 +20,3 @@ return {
   stone = '#323750', 
   pearl = '#9FA7CF', -->#A8B4F6
 }
-
-blush
-green
-raven
-orang
