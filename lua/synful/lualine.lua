@@ -4,23 +4,23 @@ require('lualine').setup({
   options = {
     theme = {
       normal = {
-        a = { fg = colour.pearl, bg = colour.raven, gui = 'bold' },
-        b = { fg = colour.slate, bg = colour.steel, gui = 'bold' },
-        c = { fg = colour.steel, bg = colour.space },
+        a = { fg = colour.pearl, bg = 'NONE', gui = 'bold' },
+        b = { fg = colour.slate, bg = 'NONE', gui = 'bold' },
+        c = { fg = colour.steel, bg = 'NONE' },
       },
       insert = {
-        a = { fg = colour.paris, bg = colour.bazil, gui = 'bold' },
+        a = { fg = colour.paris, bg = 'NONE', gui = 'bold' },
       },
       visual = {
-        a = { fg = colour.ultra, bg = colour.mauve, gui = 'bold' },
+        a = { fg = colour.ultra, bg = 'NONE', gui = 'bold' },
       },
       replace = {
-        a = { fg = colour.space, bg = colour.rouge, gui = 'bold' },
+        a = { fg = colour.space, bg = 'NONE', gui = 'bold' },
       },
       inactive = {
-        a = { fg = colour.pearl, bg = colour.rouge },
-        b = { fg = colour.slate, bg = colour.rouge },
-        c = { fg = colour.pearl, bg = colour.rouge },
+        a = { fg = colour.pearl, bg = 'NONE' },
+        b = { fg = colour.slate, bg = 'NONE' },
+        c = { fg = colour.pearl, bg = 'NONE' },
       },
     },
   },
