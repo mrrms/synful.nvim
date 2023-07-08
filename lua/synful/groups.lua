@@ -29,6 +29,7 @@ return {
   Character                           = { fg = colour.ultra },
   PreProc                             = { fg = colour.slate },
   Conceal                             = { fg = colour.paris },
+  CursorLine                          = { bg = 'NONE' },
   FloatBorder                         = { fg = colour.raven },
   LineNr                              = { fg = colour.raven },
   Operator                            = { fg = colour.metal },
