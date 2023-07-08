@@ -60,7 +60,7 @@ return {
   Search                              = { fg = colour.ultra, bg = colour.mauve, bold = true },
   CursorLineNr                        = { fg = colour.bazil, bold = true },
   PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
-  Comment                             = { fg = colour.metal, italic = true, bold = true },
+  Comment                             = { fg = colour.metal, italic = true },
   jsOperatorKeyword                   = { fg = colour.bazil, italic = true, bold = true },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
   CmpItemAbbrMatch                    = { link = 'Noise' },
