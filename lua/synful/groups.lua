@@ -37,7 +37,7 @@ return {
   Noise                               = { fg = colour.mauve },
   Title                               = { fg = colour.pearl },
   Todo                                = { fg = colour.capri },
-  NonText                             = { fg = 'NONE', bg = 'NONE' },
+  NonText                             = { fg = 'NONE', bg = colour.space },
   NormalFloat                         = { fg = colour.pearl, bg = colour.space },
   Cursor                              = { fg = colour.pearl, bold = true },
   Include                             = { fg = colour.royal, bold = true },
