@@ -17,5 +17,5 @@ return {
   green = '#0f2424',
   paris = '#9EBFBF',
   slate = '#676E96', -->#8088b0
-  pearl = '#787889', -->#A8B4F6
+  pearl = '#9FA7CF', -->#A8B4F6
 }
