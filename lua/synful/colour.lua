@@ -8,6 +8,7 @@ return {
   ultra = '#CBA6F7',
   mauve = '#734a80',
   rouge = '#A94064',
+  blush = '#630f2c',
   peach = '#FFCDCD',
   amber = '#DB9280',
   bazil = '#597a69',
