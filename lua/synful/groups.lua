@@ -58,7 +58,7 @@ return {
   StatusLineNC                        = { fg = colour.space, bg = colour.space },
   Visual                              = { fg = colour.capri, bg = colour.steel, bold = true },
   Search                              = { fg = colour.ultra, bg = colour.mauve, bold = true },
-  CursorLineNr                        = { fg = colour.bazil, bg = colour.raven, bold = true },
+  CursorLineNr                        = { fg = colour.bazil, bg = 'NONE', bold = true },
   PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
   Comment                             = { fg = colour.metal, italic = true, bold = true },
   jsOperatorKeyword                   = { fg = colour.bazil, italic = true, bold = true },
