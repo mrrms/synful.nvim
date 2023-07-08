@@ -87,7 +87,7 @@ return {
   Debug                               = { link = 'Noise' },
   Define                              = { link = 'Macro' },
   Delimiter                           = { link = 'Operator' },
-  DiagnosticError                     = { fg = colour.rouge, bg = colour.steel underline = true },
+  DiagnosticError                     = { fg = colour.rouge, bg = colour.steel, underline = true },
   DiagnosticHint                      = { link = 'Operator' },
   DiagnosticInfo                      = { link = 'Todo' },
   DiagnosticUnderlineError            = { link = 'Noise' },
