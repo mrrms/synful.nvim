@@ -11,7 +11,7 @@ return {
   amber = '#DB9280',
   blush = '#2F1D23',
   peach = '#FFCDCD',
-  orang = '#342420',
+  orang = '#25201E',
   bazil = '#597a69',
   olive = '#5F875F',
   green = '#2D3D3D',
