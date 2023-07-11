@@ -14,8 +14,8 @@ return {
   orang = '#25201E',
   bazil = '#597a69',
   olive = '#5F875F',
-  green = '#2D3D3D',
   paris = '#9EBFBF',
+  green = '#2D3D3D',
   slate = '#676E96', -->#8088b0
   stone = '#323750',
   pearl = '#9FA7CF', -->#A8B4F6
