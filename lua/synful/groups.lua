@@ -35,7 +35,7 @@ return {
   LineNr                              = { fg = colour.stone },
   Operator                            = { fg = colour.amber, bold = true },
   Macro                               = { fg = colour.steel, bold = true },
-  Noise                               = { fg = colour.mauve, italic = true },
+  Noise                               = { fg = colour.mauve },
   Title                               = { fg = colour.pearl },
   Todo                                = { fg = colour.capri },
   NonText                             = { fg = 'NONE', bg = 'NONE' },
