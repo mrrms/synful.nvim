@@ -290,6 +290,7 @@ return {
   jsxCloseComponentName               = { link = 'Macro' },
   jsxClosePunct                       = { link = 'LineNr' },
   jsxCloseString                      = { link = 'LineNr' },
+  jsxDot                              = { link = 'Noise' },
   jsxCloseTag                         = { link = 'LineNr' },
   jsxCloseTagName                     = { link = 'Macro' },
   jsxComponentName                    = { link = 'Macro' },
