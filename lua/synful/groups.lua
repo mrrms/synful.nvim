@@ -68,7 +68,7 @@ return {
   CmpItemAbbrMatchFuzzyDefault        = { link = 'Todo' },
   CmpItemKindColor                    = { link = 'Title' },
   luaLocal                            = { link = 'Return' },
-  luaOperator                         = { link = 'Operator' },
+  luaOperator                         = { link = 'cssTagName' },
   CmpItemKindConstant                 = { link = 'Macro' },
   CmpItemKindDefault                  = { link = 'Macro' },
   CmpItemKindFolder                   = { link = 'Return' },
