@@ -398,7 +398,7 @@ return {
   typescriptBOMLocationMethod         = { link = 'Macro' },
   typescriptBOMWindowProp             = { link = 'Character' },
   typescriptBinaryOp                  = { link = 'Tag' },
-  typescriptBlock                     = { link = 'mailSubject' },
+  typescriptBlock                     = { link = 'Normal' },
   typescriptBraces                    = { link = 'Operator' },
   typescriptCall                      = { link = 'Todo' },
   typescriptConditionalParen          = { link = 'Title' },
