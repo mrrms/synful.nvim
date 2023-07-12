@@ -33,7 +33,7 @@ return {
   CursorLine                          = { bg = 'NONE' },
   FloatBorder                         = { fg = colour.raven },
   LineNr                              = { fg = colour.raven },
-  Operator                            = { fg = colour.metal },
+  Operator                            = { fg = colour.amber, bold = true },
   Macro                               = { fg = colour.steel, bold = true },
   Noise                               = { fg = colour.mauve, italic = true },
   Title                               = { fg = colour.pearl },
