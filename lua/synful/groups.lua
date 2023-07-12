@@ -89,7 +89,7 @@ return {
   Define                              = { link = 'Macro' },
   Delimiter                           = { link = 'LineNr' },
   DiagnosticError                     = { link = 'Noise' },
-  DiagnosticHint                      = { link = 'LineNr' },
+  DiagnosticHint                      = { link = 'Character' },
   DiagnosticInfo                      = { link = 'Todo' },
   DiagnosticUnderlineError            = { fg = colour.rouge, undercurl = true },
   DiagnosticUnderlineHint             = { fg = colour.bazil, undercurl = true },
