@@ -62,6 +62,7 @@ return {
   WildMenu                            = { fg = colour.rouge, bg = colour.capri },
   Comment                             = { fg = colour.metal, italic = true },
   jsOperatorKeyword                   = { fg = colour.bazil, italic = true, bold = true },
+  typescriptBOMWindowMethod           = { link = 'jsOperatorKeyword' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
   CmpItemAbbrMatch                    = { link = 'Noise' },
   CmpItemAbbrMatchDefault             = { link = 'Todo' },
