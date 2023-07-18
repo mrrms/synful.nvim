@@ -296,7 +296,7 @@ return {
   jsxDot                              = { link = 'Noise' },
   jsxCloseTag                         = { link = 'luaBraces' },
   jsxCloseTagName                     = { link = 'Macro' },
-  jsxComponentName                    = { link = 'Macro' },
+  jsxComponentName                    = { link = 'Keyword' },
   jsxEqual                            = { link = 'luaBraces' },
   jsxEscJs                            = { link = 'Title' },
   jsxExpressionBlock                  = { link = 'Normal' },
