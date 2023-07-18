@@ -1,6 +1,6 @@
 local colour = require('synful.colour')
 
--- resolves semantic highlighting for lsp servers
+--> resolves semantic highlighting for lsp servers
 local links = {
   ['@lsp.type.namespace'] = '@namespace',
   ['@lsp.type.type'] = '@type',
@@ -34,7 +34,7 @@ return {
   FloatBorder                         = { fg = colour.raven },
   LineNr                              = { fg = colour.stone },
   Operator                            = { fg = colour.amber, bold = true },
-  Macro                               = { fg = colour.steel },
+  Macro                               = { fg = colour.royal },
   Noise                               = { fg = colour.mauve },
   Title                               = { fg = colour.pearl },
   Todo                                = { fg = colour.capri },
