@@ -400,6 +400,7 @@ return {
   typescriptAssign                    = { link = 'luaBraces' },
   typescriptAsyncFuncKeyword          = { link = 'Noise' },
   typescriptBOM                       = { link = 'Title' },
+  typescriptEndColumns                = { link = 'luaBraces' },
   typescriptBOMHistoryProp            = { link = 'Character' },
   typescriptBOMLocationMethod         = { link = 'Macro' },
   typescriptBOMWindowProp             = { link = 'Character' },
