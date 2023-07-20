@@ -51,7 +51,7 @@ return {
   keyword                             = { fg = colour.steel, bold = true },
   KeywordReturn                       = { fg = colour.olive, italic = true },
   String                              = { fg = colour.paris, italic = true },
-  Tag                                 = { fg = colour.amber, italic = true },
+  Tag                                 = { fg = colour.amber },
   EndOfBuffer                         = { fg = colour.space, bg = 'NONE' },
   Normal                              = { fg = colour.pearl },
   PmenuThumb                          = { fg = colour.mauve, bg = 'NONE' },
