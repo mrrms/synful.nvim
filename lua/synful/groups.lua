@@ -62,7 +62,7 @@ return {
   PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
   WildMenu                            = { fg = colour.rouge, bg = colour.capri },
   Comment                             = { fg = colour.metal, bold = true, italic = true },
-  jsOperatorKeyword                   = { fg = colour.bazil, italic = true, bold = true },
+  jsOperatorKeyword                   = { fg = colour.bazil, bold = true },
   typescriptBOMWindowMethod           = { link = 'jsOperatorKeyword' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
   CmpItemAbbrMatch                    = { link = 'Noise' },
