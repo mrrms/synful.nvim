@@ -50,7 +50,7 @@ return {
   Boolean                             = { fg = colour.mauve, bold = true },
   keyword                             = { fg = colour.steel, bold = true },
   KeywordReturn                       = { fg = colour.olive, italic = true },
-  String                              = { fg = colour.paris },
+  String                              = { fg = colour.paris, italic = true },
   Tag                                 = { fg = colour.amber, italic = true },
   EndOfBuffer                         = { fg = colour.space, bg = 'NONE' },
   Normal                              = { fg = colour.pearl },
