@@ -131,7 +131,7 @@ return {
   LazyDimmed                          = { link = 'Tag' },
   LazyNormal                          = { link = 'pmenu' },
   LazyProp                            = { link = 'Character' },
-  NotifyBackground                    = { bg = 'NONE' },
+  NotifyBackground                    = { bg = '#111119' },
   NotifyDEBUGBody                     = { link = 'Normal' },
   NotifyDEBUGBorder                   = { link = 'FloatBorder' },
   NotifyDEBUGIcon                     = { link = 'luaBraces' },
