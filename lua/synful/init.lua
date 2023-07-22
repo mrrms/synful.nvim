@@ -3,7 +3,7 @@ local groups = require('synful.groups')
 
 require('synful.lualine')
 -- not sure why nvim_set_hl will not work with harpoon.
-require('synful.harpoon')
+-- require('synful.harpoon')
 
 return {
   load = function()

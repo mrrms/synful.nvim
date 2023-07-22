@@ -173,7 +173,7 @@ return {
   Structure                           = { link = 'Title' },
   Substitute                          = { link = 'Title' },
   TabLine                             = { link = 'LineNr' },
-  TabLineSel                          = { link = 'Normal' },
+  TabLineSel                          = { link = 'mailSubject' },
   TabLineFill                         = { link = 'Normal' },
   TelescopeBorder                     = { link = 'FloatBorder' },
   TelescopeMatching                   = { link = 'Todo' },
