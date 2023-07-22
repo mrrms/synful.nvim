@@ -173,7 +173,7 @@ return {
   Structure                           = { link = 'Title' },
   Substitute                          = { link = 'Title' },
   TabLine                             = { link = 'LineNr' },
-  TabLineSel                          = { link = 'LineNr' },
+  TabLineSel                          = { fg = colour.royal, bg = colour.raven, bold = true },
   TabLineFill                         = { fg = colour.pearl },
   TelescopeBorder                     = { link = 'FloatBorder' },
   TelescopeMatching                   = { link = 'Todo' },
