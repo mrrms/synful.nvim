@@ -15,7 +15,7 @@ return {
       vim.api.nvim_set_hl(0, tostring(group), styles)
     end
 
-    for group, styles in pairs(groups) do
+    for group, styles in pairs(harpoon) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
     end
   end
