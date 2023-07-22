@@ -11,8 +11,8 @@ return {
 
     vim.g.colors_name = 'synful'
 
-    for group, styles in pairs(harpoon) do
-      vim.api.nvim_set_hl(0, tostring(group), styles)
+    for biff, styles in pairs(harpoon) do
+      vim.api.nvim_set_hl(0, tostring(biff), styles)
     end
 
     for group, styles in pairs(groups) do
