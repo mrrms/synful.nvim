@@ -12,7 +12,11 @@ return {
 
     for group, styles in pairs(groups) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
-      vim.api.nvim_command("redraw")
     end
   end
 }
+
+vim.cmd('highlight! link HarpoonInactive LineNr')
+vim.cmd('highlight! link HarpoonActive mailSubject')
+vim.cmd('highlight! link HarpoonNumberActive EndOfBuffer')
+vim.cmd('highlight! link HarpoonNumberInactive EndOfBuffer')
