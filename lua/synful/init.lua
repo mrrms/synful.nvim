@@ -1,6 +1,7 @@
 local groups = require('synful.groups')
 
 require('synful.lualine')
+require('synful.harpoon')
 
 return {
   load = function()

@@ -173,7 +173,6 @@ return {
   Structure                           = { link = 'Title' },
   Substitute                          = { link = 'Title' },
   TabLine                             = { link = 'Title' },
-  TabLineFill                         = { link = 'Visual' },
   TabLineSel                          = { link = 'PmenuSel' },
   TelescopeBorder                     = { link = 'FloatBorder' },
   TelescopeMatching                   = { link = 'Todo' },
