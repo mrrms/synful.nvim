@@ -485,8 +485,4 @@ return {
   zshSubstDelim                       = { link = 'Tag' },
   zshTodo                             = { link = 'Todo' },
   zslhComment                         = { link = 'Comment' },
-  HarpoonActive                       = { fg = colour.slate, bold = true },
-  HarpoonInactive                     = { fg = colour.stone, bg = 'NONE' },
-  HarpoonNumberActive                 = { fg = colour.space, bg = 'NONE' },
-  HarpoonNumberInactive               = { fg = colour.space, bg = 'NONE' },
 }
