@@ -1,7 +1,7 @@
 local groups = require('synful.groups')
+local harpoon = require('synful.harpoon')
 
 require('synful.lualine')
-require('synful.harpoon')
 
 return {
   load = function()
@@ -13,6 +13,10 @@ return {
 
     for group, styles in pairs(groups) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
+    end
+
+    for harp, styles in pairs(harpoon) do
+      vim.api.nvim_set_hl(0, tostring(harp), styles)
     end
   end
 }
