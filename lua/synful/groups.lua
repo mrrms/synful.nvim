@@ -172,8 +172,6 @@ return {
   StorageClass                        = { link = 'Noise' },
   Structure                           = { link = 'Title' },
   Substitute                          = { link = 'Title' },
-  TabLine                             = { link = 'Title' },
-  TabLineSel                          = { link = 'PmenuSel' },
   TelescopeBorder                     = { link = 'FloatBorder' },
   TelescopeMatching                   = { link = 'Todo' },
   TelescopePreviewMatch               = { link = 'MatchParen' },

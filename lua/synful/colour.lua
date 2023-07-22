@@ -18,5 +18,5 @@ return {
   green = '#2D3D3D',
   slate = '#676E96', -->#8088b0
   stone = '#323750',
-  pearl = '#c7d8f5', -->#A8B4F6
+  pearl = '#9FA7CF', -->#A8B4F6
 }
