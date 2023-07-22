@@ -1,10 +1,10 @@
+local harpoon = pcall(require, 'harpoon')
+if (not harpoon) then return end
+
 local colour = require('synful.colour')
 
 return {
-  TabLine               = { fg = colour.stone, bg = 'NONE' },
-  TabLineSel            = { fg = colour.amber, bg = 'NONE', bold = true },
-  TabLineFill           = { fg = colour.pearl },
-  HarpoonActive         = { fg = colour.amber, bg = 'NONE', bold = true },
+  HarpoonActive         = { fg = colour.slate, bold = true },
   HarpoonInactive       = { fg = colour.stone },
   HarpoonNumberActive   = { fg = colour.space, bg = 'NONE' },
   HarpoonNumberInactive = { fg = colour.space, bg = 'NONE' },
