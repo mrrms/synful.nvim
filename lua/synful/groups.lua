@@ -489,4 +489,8 @@ return {
   LeapLabelPrimary                    = { link = 'Operator' },
   LeapLabelSecondary                  = { link = 'Operator' },
   LeapLabelSelected                   = { link = 'Search' },
+  HarpoonActive                       = { fg = colour.slate, bold = true },
+  HarpoonInactive                     = { fg = colour.stone },
+  HarpoonNumberActive                 = { link = 'NonText' },
+  HarpoonNumberInactive               = { link = 'NonText' },
 }
