@@ -1,6 +1,9 @@
+local status, lualine = pcall(require, 'lualine')
+if (not status) then return end
+
 local colour = require('synful.colour')
 
-require('lualine').setup({
+lualine.setup({
   options = {
     theme = {
       normal = {
