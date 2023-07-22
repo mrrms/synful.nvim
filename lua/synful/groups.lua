@@ -488,5 +488,4 @@ return {
   LeapLabelPrimary                    = { link = 'Operator' },
   LeapLabelSecondary                  = { link = 'Operator' },
   LeapLabelSelected                   = { link = 'Search' },
-  -- LeapBackdrop                        = { link = 'Normal' },
 }

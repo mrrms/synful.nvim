@@ -1,6 +1,3 @@
-local harpoon = pcall(require, 'harpoon')
-if (not harpoon) then return end
-
 local colour = require('synful.colour')
 
 return {
