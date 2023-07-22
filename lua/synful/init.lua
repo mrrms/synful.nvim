@@ -1,4 +1,3 @@
-local harpoon = require('synful.harpoon')
 local groups = require('synful.groups')
 
 require('synful.lualine')
@@ -11,12 +10,9 @@ return {
 
     vim.g.colors_name = 'synful'
 
-    for biff, styles in pairs(harpoon) do
-      vim.api.nvim_set_hl(0, tostring(biff), styles)
-    end
-
     for group, styles in pairs(groups) do
       vim.api.nvim_set_hl(0, tostring(group), styles)
+      vim.api.nvim_command("redraw")
     end
   end
 }
