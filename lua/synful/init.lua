@@ -15,8 +15,3 @@ return {
     end
   end
 }
-
-vim.cmd('highlight! link HarpoonInactive LineNr')
-vim.cmd('highlight! link HarpoonActive mailSubject')
-vim.cmd('highlight! link HarpoonNumberActive EndOfBuffer')
-vim.cmd('highlight! link HarpoonNumberInactive EndOfBuffer')

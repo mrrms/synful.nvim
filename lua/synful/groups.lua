@@ -175,10 +175,6 @@ return {
   TabLine                             = { link = 'LineNr' },
   TabLineSel                          = { link = 'Normal' },
   TabLineFill                         = { link = 'Normal' },
-  HarpoonActive                       = { link = 'mailSubject' },
-  HarpoonInactive                     = { link = 'LineNr' },
-  HarpoonNumberActive                 = { link = 'EndOfBuffer' },
-  HarpoonNumberInactive               = { link = 'EndOfBuffer' },
   TelescopeBorder                     = { link = 'FloatBorder' },
   TelescopeMatching                   = { link = 'Todo' },
   TelescopePreviewMatch               = { link = 'MatchParen' },
@@ -490,3 +486,8 @@ return {
   zshTodo                             = { link = 'Todo' },
   zslhComment                         = { link = 'Comment' },
 }
+
+vim.cmd('highlight! link HarpoonInactive LineNr')
+vim.cmd('highlight! link HarpoonActive mailSubject')
+vim.cmd('highlight! link HarpoonNumberActive EndOfBuffer')
+vim.cmd('highlight! link HarpoonNumberInactive EndOfBuffer')
