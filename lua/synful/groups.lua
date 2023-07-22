@@ -172,7 +172,7 @@ return {
   StorageClass                        = { link = 'Noise' },
   Structure                           = { link = 'Title' },
   Substitute                          = { link = 'Title' },
-  TabLine                             = { link = 'LineNr' },
+  TabLine                             = { link = 'luaBraces' },
   TabLineSel                          = { link = 'mailSubject' },
   TabLineFill                         = { link = 'Normal' },
   TelescopeBorder                     = { link = 'FloatBorder' },
