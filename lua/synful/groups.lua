@@ -131,7 +131,6 @@ return {
   LazyDimmed                          = { link = 'Tag' },
   LazyNormal                          = { link = 'pmenu' },
   LazyProp                            = { link = 'Character' },
-  NotifyBackground                    = { bg = '#111119' },
   NotifyDEBUGBody                     = { link = 'Normal' },
   NotifyDEBUGBorder                   = { link = 'FloatBorder' },
   NotifyDEBUGIcon                     = { link = 'luaBraces' },
@@ -485,4 +484,8 @@ return {
   zshSubstDelim                       = { link = 'Tag' },
   zshTodo                             = { link = 'Todo' },
   zslhComment                         = { link = 'Comment' },
+  LeapMatch                           = { link = 'Operator' },
+  LeapLabelPrimary                    = { link = 'Operator' },
+  LeapLabelSecondary                  = { link = 'Operator' },
+  LeapLabelSelected                   = { link = 'Search' },
 }
