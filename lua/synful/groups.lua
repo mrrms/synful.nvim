@@ -420,7 +420,7 @@ return {
   typescriptExceptions                = { link = 'cssTagName' },
   typescriptExport                    = { link = 'Include' },
   typescriptFileReaderProp            = { link = 'Character' },
-  typescriptFuncCallArg               = { link = 'Todo' },
+  typescriptFuncCallArg               = { link = 'Keyword' },
   typescriptFuncComma                 = { link = 'luaBraces' },
   typescriptFuncImpl                  = { link = 'luaBraces' },
   typescriptFuncKeyword               = { link = 'Macro' },
