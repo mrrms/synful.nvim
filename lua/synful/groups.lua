@@ -321,7 +321,7 @@ return {
   luaIn                               = { link = 'Include' },
   luaKeyword                          = { link = 'Return' },
   luaNoise                            = { link = 'Noise' },
-  luaParen                            = { link = 'luaBraces' },
+  luaParen                            = { link = 'LineNr' },
   luaParens                           = { link = 'luaBraces' },
   luaSpecialValue                     = { link = 'Include' },
   luaStatement                        = { link = 'Return' },
