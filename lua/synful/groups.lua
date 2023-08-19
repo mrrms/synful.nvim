@@ -44,7 +44,7 @@ return {
   Cursor                              = { fg = colour.pearl, bold = true },
   Include                             = { fg = colour.royal, bold = true },
   Return                              = { fg = colour.bazil, bold = true },
-  MatchParen                          = { fg = colour.rouge, bold = true },
+  MatchParen                          = { fg = colour.rouge, bold = true, underline = true },
   cssTagName                          = { fg = colour.mauve, bold = true },
   mailSubject                         = { fg = colour.slate, bold = true },
   Boolean                             = { fg = colour.mauve, bold = true },
