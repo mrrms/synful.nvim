@@ -476,7 +476,7 @@ return {
   zshNumber                           = { link = 'Number' },
   zshOptStart                         = { link = 'Include' },
   zshOption                           = { link = 'Include' },
-  zshParentheses                      = { link = 'luaBraces' },
+  zshParentheses                      = { link = 'LineNr' },
   zshPrecommand                       = { link = 'Macro' },
   zshRedirect                         = { link = 'Todo' },
   zshShortDeref                       = { link = 'Tag' },
