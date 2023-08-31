@@ -383,7 +383,7 @@ return {
   tsxAttrib                           = { link = 'Todo' },
   tsxCloseComponentName               = { link = 'Keyword' },
   tsxCloseString                      = { link = 'luaBraces' },
-  tsxCloseTag                         = { link = 'luaBraces' },
+  tsxCloseTag                         = { link = 'Keyword' },
   tsxCloseTagName                     = { link = 'Keyword' },
   tsxEqual                            = { link = 'luaBraces' },
   tsxEscJs                            = { link = 'Title' },
