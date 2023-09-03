@@ -62,7 +62,7 @@ return {
   CursorLineNr                        = { fg = colour.bazil, bg = 'NONE', bold = true },
   PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
   WildMenu                            = { fg = colour.rouge, bg = colour.capri },
-  Comment                             = { fg = colour.metal, bold = true, italic = true },
+  Comment                             = { fg = colour.metal, italic = true },
   jsOperatorKeyword                   = { fg = colour.bazil, bold = true },
   typescriptBOMWindowMethod           = { link = 'jsOperatorKeyword' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
