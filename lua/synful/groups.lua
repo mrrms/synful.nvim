@@ -64,6 +64,7 @@ return {
   WildMenu                            = { fg = colour.rouge, bg = colour.capri },
   Comment                             = { fg = colour.metal, italic = true },
   jsOperatorKeyword                   = { fg = colour.bazil, bold = true },
+  rubyStringDelimeter                 = { link = 'String' },
   typescriptBOMWindowMethod           = { link = 'jsOperatorKeyword' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
   CmpItemAbbrMatch                    = { link = 'Noise' },
