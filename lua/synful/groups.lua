@@ -58,7 +58,7 @@ return {
   PmenuThumb                          = { fg = colour.mauve, bg = 'NONE' },
   StatusLineNC                        = { fg = colour.space, bg = 'NONE' },
   Visual                              = { fg = colour.capri, bg = colour.steel, bold = true },
-  Search                              = { fg = colour.ultra, bg = colour.mauve, bold = true },
+  Search                              = { fg = colour.steel, bg = colour.capri, bold = true },
   CursorLineNr                        = { fg = colour.bazil, bg = 'NONE', bold = true },
   PmenuSel                            = { fg = colour.slate, bg = colour.raven, bold = true },
   WildMenu                            = { fg = colour.rouge, bg = colour.capri },
