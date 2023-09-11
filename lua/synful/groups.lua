@@ -492,5 +492,5 @@ return {
   LeapLabelPrimary                    = { link = 'MatchParen' },
   LeapLabelSecondary                  = { link = 'Operator' },
   LeapLabelSelected                   = { link = 'Search' },
-  shWrapLineOperator                  = { link = 'Operator' },
+  shWrapLineOperator                  = { link = 'Number' },
 }
