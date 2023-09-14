@@ -22,6 +22,7 @@ for newgroup, oldgroup in pairs(links) do
   vim.api.nvim_set_hl(0, newgroup, { link = oldgroup, default = true })
 end
 
+
 return {
   Bold                                = { bold = true },
   Italic                              = { italic = true },
@@ -381,6 +382,7 @@ return {
   tmuxFormatString                    = { link = 'Todo' },
   tmuxOptions                         = { link = 'Title' },
   tmuxVariableExtension               = { link = 'Todo' },
+  tmuxVariableExpansion               = { link = 'Return' },
   tsxAttrib                           = { link = 'Todo' },
   tsxCloseComponentName               = { link = 'Keyword' },
   tsxCloseString                      = { link = 'luaBraces' },
