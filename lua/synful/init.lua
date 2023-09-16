@@ -1,10 +1,13 @@
 local groups = require('synful.groups')
--- local harpoon = require('synful.harpoon')
+local harpoon = require('synful.harpoon')
 
 require('synful.lualine')
 
--- not sure why nvim_set_hl will not work with harpoon.
-local harpoon = require('synful.harpoon')
+function _Highlight(o)
+  for group, styles in pairs(o) do
+    vim.api.nvim_set_hl(0, tostring(group), styles)
+  end
+end
 
 return {
   load = function()
@@ -14,12 +17,7 @@ return {
 
     vim.g.colors_name = 'synful'
 
-    for group, styles in pairs(groups) do
-      vim.api.nvim_set_hl(0, tostring(group), styles)
-    end
-
-    for group, styles in pairs(harpoon) do
-      vim.api.nvim_set_hl(0, tostring(group), styles)
-    end
+    _Highlight(groups)
+    _Highlight(harpoon)
   end
 }
