@@ -1,3 +1,5 @@
+local M = {}
+
 local groups = require('synful.groups')
 local harpoon = require('synful.harpoon')
 
@@ -9,14 +11,15 @@ function _Highlight(opts)
   end
 end
 
-_Highlight(groups)
-_Highlight(harpoon)
-
-return {
-  load = function()
-    if vim.g.colors_name then
-      vim.api.nvim_command('hi clear')
-    end
-    vim.g.colors_name = 'synful'
+function M.load()
+  if vim.g.colors_name then
+    vim.api.nvim_command('hi clear')
   end
-}
+
+  vim.g.colors_name = 'synful'
+
+  _Highlight(groups)
+  _Highlight(harpoon)
+end
+
+return M
