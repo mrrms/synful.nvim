@@ -1,5 +1,5 @@
 return {
-  space = '#111119',
+  space = '#090915', -- #111119
   raven = '#212131',
   metal = '#3e435c',
   steel = '#405080',
@@ -18,5 +18,5 @@ return {
   green = '#2D3D3D',
   slate = '#676E96', --> #8088b0
   stone = '#323750',
-  pearl = '#747a99', --> #9FA7CF #A8B4F6
+  pearl = '#9FA7CF', --> #9FA7CF #A8B4F6
 }
