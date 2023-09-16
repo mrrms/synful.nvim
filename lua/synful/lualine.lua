@@ -3,27 +3,22 @@ if (not status) then return end
 
 local colour = require('synful.colour')
 
+--stylua: ignore
 lualine.setup({
   options = {
     theme = {
       normal = {
-        a = { fg = colour.pearl, bg = colour.mauve, gui = 'bold' },
-        b = { fg = colour.slate, bg = colour.metal, gui = 'bold' },
-        c = { fg = colour.steel, bg = 'NONE' },
+        a = { fg = colour.pearl, bg = colour.olive },
+        b = { fg = colour.pearl, bg = colour.metal },
+        c = { fg = colour.pearl, bg = colour.space },
       },
-      insert = {
-        a = { fg = colour.paris, bg = 'NONE', gui = 'bold' },
-      },
-      visual = {
-        a = { fg = colour.ultra, bg = 'NONE', gui = 'bold' },
-      },
-      replace = {
-        a = { fg = colour.space, bg = 'NONE', gui = 'bold' },
-      },
+      insert = { a = { fg = colour.pearl, bg = colour.olive }, },
+      visual = { a = { fg = colour.pearl, bg = colour.capri }, },
+      replace = { a = { fg = colour.pearl, bg = colour.mauve }, },
       inactive = {
-        a = { fg = colour.pearl, bg = 'NONE' },
-        b = { fg = colour.slate, bg = 'NONE' },
-        c = { fg = colour.pearl, bg = 'NONE' },
+        a = { fg = colour.pearl, bg = colour.space },
+        b = { fg = colour.pearl, bg = colour.space },
+        c = { fg = colour.space, bg = colour.space },
       },
     },
   },
