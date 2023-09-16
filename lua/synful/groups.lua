@@ -15,7 +15,8 @@ local links = {
   ['@lsp.type.function'] = '@function',
   ['@lsp.type.method'] = '@method',
   ['@lsp.type.macro'] = '@macro',
-  ['@lsp.type.decorator'] = '@function'
+  ['@lsp.type.decorator'] = '@function',
+  ['@text.literal.vimdoc'] = '@function'
 }
 
 for newgroup, oldgroup in pairs(links) do
