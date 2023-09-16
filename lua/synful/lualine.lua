@@ -8,13 +8,15 @@ lualine.setup({
   options = {
     theme = {
       normal = {
-        a = { fg = colour.pearl, bg = colour.olive },
-        b = { fg = colour.pearl, bg = colour.metal },
-        c = { fg = colour.pearl, bg = colour.space },
+        a = { fg = colour.pearl, bg = colour.royal },
+        b = { fg = colour.slate, bg = colour.stone },
+        c = { fg = colour.stone, bg = colour.space },
       },
-      insert = { a = { fg = colour.pearl, bg = colour.olive }, },
-      visual = { a = { fg = colour.pearl, bg = colour.capri }, },
-      replace = { a = { fg = colour.pearl, bg = colour.mauve }, },
+      insert = {
+        a = { fg = colour.green, bg = colour.paris, gui = 'bold' },
+      },
+      visual = { a = { fg = colour.metal, bg = colour.capri, gui = 'bold' }, },
+      replace = { a = { fg = colour.pearl, bg = colour.mauve, gui = 'bold' }, },
       inactive = {
         a = { fg = colour.pearl, bg = colour.space },
         b = { fg = colour.pearl, bg = colour.space },
