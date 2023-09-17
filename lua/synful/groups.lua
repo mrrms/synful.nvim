@@ -75,7 +75,7 @@ return {
   DiffDelete                          = { link = 'Noise' },
   DiffText                            = { link = 'Macro' },
   Directory                           = { link = 'keyword' },
-  EndOfBuffer                         = { fg = colour.space, bg = 'NONE' },
+  EndOfBuffer                         = { link = 'StatusLineNC' },
   Error                               = { link = 'Noise' },
   ErrorMsg                            = { link = 'Noise' },
   Exception                           = { link = 'Include' },

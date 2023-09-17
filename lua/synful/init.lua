@@ -1,5 +1,5 @@
 local groups = require('synful.groups')
-local harpoon = require('synful.harpoon')
+-- local harpoon = require('synful.harpoon')
 
 require('synful.lualine')
 
