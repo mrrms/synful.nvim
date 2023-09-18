@@ -23,7 +23,6 @@ for newgroup, oldgroup in pairs(links) do
   vim.api.nvim_set_hl(0, newgroup, { link = oldgroup, default = true })
 end
 
-
 return {
   Bold                                = { bold = true },
   Boolean                             = { fg = colour.mauve, bold = true },
@@ -186,6 +185,7 @@ return {
   WildMenu                            = { fg = colour.rouge, bg = colour.capri },
   constructor                         = { link = 'PreProc' },
   cssAttrRegion                       = { link = 'Todo' },
+  cssInteractProp                     = { link = 'PreProc' },
   cssBackgroundProp                   = { link = 'PreProc' },
   cssBorderProp                       = { link = 'PreProc' },
   cssBoxProp                          = { link = 'PreProc' },
