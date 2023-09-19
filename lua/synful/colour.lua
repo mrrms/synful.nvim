@@ -5,7 +5,7 @@ return {
   blush = '#2F1D23',
   green = '#2D3D3D',
   stone = '#323750',
-  metal = '#4B3553', -- #3e435c
+  metal = '#30344A',
   steel = '#405080',
   royal = '#6070C1',
   capri = '#7AA7FF',
