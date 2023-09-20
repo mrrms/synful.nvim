@@ -161,7 +161,7 @@ return {
   String                              = { fg = colour.paris, italic = true },
   Structure                           = { link = 'Title' },
   Substitute                          = { link = 'Title' },
-  TabLine                             = { fg = '#000000' },
+  TabLine                             = { link = 'luaBraces' },
   TabLineFill                         = { link = 'Normal' },
   TabLineSel                          = { link = 'mailSubject' },
   Tag                                 = { fg = colour.amber },
