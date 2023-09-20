@@ -163,7 +163,7 @@ return {
   Substitute                          = { link = 'Title' },
   TabLine                             = { link = 'luaBraces' },
   TabLineFill                         = { link = 'Normal' },
-  TabLineSel                          = { link = 'mailSubject' },
+  TabLineSel                          = { fg = '#000000' },
   Tag                                 = { fg = colour.amber },
   TelescopeBorder                     = { link = 'FloatBorder' },
   TelescopeMatching                   = { link = 'Todo' },
