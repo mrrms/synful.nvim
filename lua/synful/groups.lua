@@ -60,6 +60,7 @@ return {
   DiagnosticError                     = { link = 'Noise' },
   DiagnosticHint                      = { link = 'Character' },
   DiagnosticInfo                      = { link = 'Todo' },
+  DiagnosticUnnecessary               = { fg = colour.ultra, bold = true, undercurl = true },
   DiagnosticUnderlineError            = { fg = colour.rouge, undercurl = true },
   DiagnosticUnderlineHint             = { fg = colour.bazil, undercurl = true },
   DiagnosticUnderlineInfo             = { fg = colour.pearl, undercurl = true },

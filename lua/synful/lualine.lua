@@ -3,14 +3,13 @@ if (not status) then return end
 
 local colour = require('synful.colour')
 
---stylua: ignore
 lualine.setup({
   options = {
     theme = {
       normal = {
-        a = { fg = colour.royal, bg = colour.steel },
-        b = { fg = colour.slate, bg = colour.stone },
-        c = { fg = colour.stone, bg = colour.space },
+        a = { fg = colour.royal, bg = '#131329', gui = 'bold' },
+        b = { fg = colour.slate, bg = '#000000' },
+        c = { fg = '#191733', bg = colour.space, gui = 'italic' },
       },
       insert = { a = { fg = colour.paris, bg = colour.olive, gui = 'bold' } },
       visual = { a = { fg = colour.metal, bg = colour.capri, gui = 'bold' }, },
