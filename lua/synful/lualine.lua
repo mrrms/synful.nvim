@@ -9,7 +9,7 @@ lualine.setup({
       normal = {
         a = { fg = colour.royal, bg = '#131329', gui = 'bold' },
         b = { fg = colour.slate, bg = '#000000' },
-        c = { fg = '#191733', bg = colour.space, gui = 'italic' },
+        c = { fg = '#444466', bg = colour.space },
       },
       insert = { a = { fg = colour.paris, bg = colour.olive, gui = 'bold' } },
       visual = { a = { fg = colour.metal, bg = colour.capri, gui = 'bold' }, },
