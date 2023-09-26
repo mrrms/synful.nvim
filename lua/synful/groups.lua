@@ -47,7 +47,7 @@ return {
   CodeiumSuggestion                   = { link = 'PreProc' },
   ColorColumn                         = { link = 'NonText' },
   Command                             = { link = 'Macro' },
-  Comment                             = { fg = colour.metal, italic = true, bold = true },
+  Comment                             = { fg = colour.metal, italic = true },
   Conceal                             = { fg = colour.paris },
   Conditional                         = { link = 'Macro' },
   Constant                            = { link = 'Macro' },
