@@ -478,7 +478,7 @@ return {
   NotifyWARNBorder                    = { link = 'FloatBorder' },
   Pmenu                               = { link = 'NormalFloat' },
   TabLineSel                          = { link = 'mailSubject' },
-  TelescopeBorder                     = { link = 'FloatBorder' },
+  TelescopeBorder                     = { fg = 'NONE', bg = 'NONE' },
   EndOfBuffer                         = { link = 'StatusLineNC' },
   GitGutterAdd                        = { link = 'KeywordReturn' },
   diffAdded                           = { link = 'KeywordReturn' },
