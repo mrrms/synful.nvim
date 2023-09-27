@@ -497,4 +497,6 @@ return {
   zshSubstDelim                       = { link = 'Tag' },
   zshTodo                             = { link = 'Todo' },
   zslhComment                         = { link = 'Comment' },
+  typescriptArrowFuncDef              = { link = 'luaBraces' },
+  typescriptDefaultParam              = { link = 'luaBraces' },
 }
