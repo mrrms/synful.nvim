@@ -85,7 +85,7 @@ return {
   FloatShadow                         = { link = 'NonText' },
   FloatShadowThrough                  = { link = 'NonText' },
   FoldColumn                          = { link = 'Noise' },
-  Folded                              = { link = 'Comment', bold = true },
+  Folded                              = { link = 'Comment', bold = true, italic = true },
   Function                            = { fg = colour.pearl, bold = true },
   GitGutterAdd                        = { link = 'KeywordReturn' },
   GitGutterChange                     = { link = 'luaBraces' },
