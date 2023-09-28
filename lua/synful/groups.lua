@@ -414,7 +414,7 @@ return {
   typescriptBOMWindowMethod           = { link = 'jsOperatorKeyword' },
   typescriptBOMWindowProp             = { link = 'Character' },
   typescriptBinaryOp                  = { link = 'Tag' },
-  typescriptBlock                     = { link = 'LineNr' },
+  typescriptBlock                     = { link = 'Cursor' },
   typescriptBraces                    = { link = 'luaBraces' },
   typescriptCall                      = { link = 'Todo' },
   typescriptConditional               = { link = 'Keyword' },
