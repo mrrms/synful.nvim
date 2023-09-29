@@ -346,6 +346,7 @@ return {
   muttrcAliasEncEmail                 = { link = 'luaBraces' },
   muttrcAliasKey                      = { link = 'Noise' },
   muttrcAliasNameNoParens             = { link = 'Title' },
+  muttrcColorLine                     = { link = 'Return' },
   muttrcColor                         = { link = 'Return' },
   muttrcEmail                         = { link = 'Return' },
   muttrcSetStrAssignment              = { link = 'Noise' },
