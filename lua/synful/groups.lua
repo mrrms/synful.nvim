@@ -282,7 +282,7 @@ return {
   jsReturn                            = { link = 'Return' },
   jsStorageClass                      = { link = 'Macro' },
   jsTemplateBraces                    = { link = 'Noise' },
-  jsTemplateString                    = { link = 'luaBraces' },
+  jsTemplateString                    = { link = 'PreProc' },
   jsTernaryIf                         = { link = 'Noise' },
   jsTernaryOperator                   = { link = 'Noise' },
   jsonQuote                           = { link = 'Macro' },
