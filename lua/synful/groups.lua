@@ -145,7 +145,7 @@ return {
   PreProc                             = { fg = colour.slate },
   Repeat                              = { link = 'Return' },
   Return                              = { fg = colour.bazil, bold = true },
-  Search                              = { fg = colour.ultra, bg = colour.steel, bold = true },
+  Search                              = { fg = colour.capri, bg = colour.steel, bold = true },
   SignColumn                          = { link = 'luaBraces' },
   Special                             = { link = 'Macro' },
   SpecialChar                         = { link = 'Noise' },
