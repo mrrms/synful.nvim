@@ -63,7 +63,7 @@ return {
   CursorLine                          = { bg = 'NONE' },
   Italic                              = { italic = true },
   Underlined                          = { underline = true },
-  Folded                              = { fg = colour.capri, underline = true },
+  Folded                              = { fg = colour.stone, italic = true },
   Character                           = { link = 'Boolean' },
   CmpCompletionBorder                 = { link = 'FloatBorder' },
   CmpItemAbbrMatch                    = { link = 'Boolean' },
