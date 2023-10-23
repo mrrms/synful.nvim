@@ -1,6 +1,6 @@
 return {
   space = '#000000', -- #111119
-  raven = '#212131',
+  raven = '#232333',
   orang = '#25201E',
   blush = '#2F1D23',
   green = '#2D3D3D',
