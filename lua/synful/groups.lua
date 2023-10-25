@@ -37,7 +37,7 @@ return {
   Normal                              = { fg = colour.pearl },
   Tag                                 = { fg = colour.amber },
   Todo                                = { fg = colour.capri },
-  FloatBorder                         = { fg = 'NONE', bg = 'NONE' },
+  FloatBorder                         = { fg = colour.space, bg = 'NONE' },
   NonText                             = { fg = 'NONE', bg = 'NONE' },
   DiagnosticUnnecessary               = { fg = colour.ultra, bold = true },
   Function                            = { fg = colour.pearl, bold = true },
