@@ -1,5 +1,5 @@
 return {
-  space = '#000000', -- #111119
+  space = '#111119',
   raven = '#232333',
   orang = '#25201E',
   blush = '#2F1D23',
