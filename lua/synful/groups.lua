@@ -41,7 +41,7 @@ return {
   NonText                             = { fg = 'NONE', bg = 'NONE' },
   DiagnosticUnnecessary               = { fg = colour.ultra, bold = true },
   Function                            = { fg = colour.pearl, bold = true },
-  NormalFloat                         = { fg = colour.pearl, bg = colour.raven },
+  NormalFloat                         = { fg = colour.pearl, bg = 'NONE' },
   PmenuThumb                          = { fg = colour.mauve, bg = 'NONE' },
   Return                              = { fg = colour.bazil, bold = true },
   StatusLineNC                        = { fg = colour.space, bg = 'NONE' },
