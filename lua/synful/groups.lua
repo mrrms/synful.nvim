@@ -284,7 +284,7 @@ return {
   jsReturn                            = { link = 'Return' },
   jsStorageClass                      = { link = 'Macro' },
   jsTemplateBraces                    = { link = 'Boolean' },
-  jsTemplateString                    = { link = 'Normal' },
+  jsTemplateString                    = { link = 'Comment' },
   jsTernaryIf                         = { link = 'Boolean' },
   jsTernaryOperator                   = { link = 'Boolean' },
   jsonQuote                           = { link = 'Macro' },
