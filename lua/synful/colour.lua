@@ -4,7 +4,7 @@ return {
   orang = '#25201E',
   blush = '#2F1D23',
   green = '#2D3D3D',
-  stone = '#323750',
+  stone = '#424869',
   steel = '#455585',
   royal = '#6070C1',
   capri = '#7AA7FF',
