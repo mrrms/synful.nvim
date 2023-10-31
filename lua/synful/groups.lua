@@ -496,4 +496,9 @@ return {
   zshSubstDelim = { link = 'Tag' },
   zshTodo = { link = 'Todo' },
   zslhComment = { link = 'Comment' },
+  LeapMatch = { link = 'MatchParen' },
+  LeapBackdrop = { link = 'PmenuSel' },
+  LeapLabelPrimary = { link = 'MatchParen' },
+  LeapLabelSelected = { link = 'Search' },
+  LeapLabelSecondary = { link = 'Tag' }
 }
