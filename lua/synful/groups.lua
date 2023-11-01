@@ -32,7 +32,7 @@ return {
   Conceal = { fg = colour.paris },
   FloatBorder = { fg = colour.raven },
   KeywordReturn = { fg = colour.olive },
-  LineNr = { fg = colour.raven },
+  LineNr = { fg = colour.metal },
   Macro = { fg = colour.royal },
   Normal = { fg = colour.pearl },
   Tag = { fg = colour.amber },
