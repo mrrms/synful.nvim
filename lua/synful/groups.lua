@@ -63,7 +63,7 @@ return {
   MatchParen = { fg = colour.rouge, bold = true, underline = true },
   PmenuSel = { fg = colour.slate, bg = colour.raven, bold = true },
   Visual = { fg = colour.capri, bg = colour.steel, bold = true },
-  Search = { fg = colour.ultra, bg = colour.mauve, bold = true },
+  Search = { fg = colour.steel, bg = colour.capri, bold = true },
   Character = { link = 'Boolean' },
   CmpCompletionBorder = { link = 'FloatBorder' },
   CmpItemAbbrMatch = { link = 'Boolean' },
