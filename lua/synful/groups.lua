@@ -497,7 +497,7 @@ return {
   zshTodo = { link = 'Todo' },
   zslhComment = { link = 'Comment' },
   LeapMatch = { link = 'MatchParen' },
-  LeapBackdrop = { fg = colour.bazil, bg = 'None', underline = true },
+  LeapBackdrop = { fg = colour.pearl, undercurl = true },
   LeapLabelPrimary = { link = 'MatchParen' },
   LeapLabelSelected = { link = 'Search' },
   LeapLabelSecondary = { link = 'Tag' }
