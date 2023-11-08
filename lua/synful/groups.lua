@@ -46,7 +46,7 @@ return {
   Return = { fg = colour.bazil, bold = true },
   StatusLineNC = { fg = colour.space, bg = 'NONE' },
   keyword = { fg = colour.steel, bold = true },
-  mailSubject = { fg = colour.slate, italic = true },
+  mailSubject = { fg = colour.slate, bold = true },
   Comment = { fg = colour.metal, italic = true },
   Folded = { fg = colour.stone, italic = true },
   String = { fg = colour.paris, italic = true },
