@@ -185,6 +185,7 @@ return {
   constructor = { link = 'Normal' },
   cssIdentifier = { link = 'Todo' },
   cssAttrRegion = { link = 'Todo' },
+  cssAtKeyword = { link = 'Tag' },
   cssBackgroundProp = { link = 'Normal' },
   cssBorderProp = { link = 'Normal' },
   cssBoxProp = { link = 'Normal' },
