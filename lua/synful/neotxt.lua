@@ -4,8 +4,8 @@ local autocmd = function(pattern, opts)
   vim.api.nvim_create_autocmd(pattern, opts)
 end
 
--- set the cmdline height to zero
-autocmd('FileType', {
+-- create an autocmd that uses vim notify when a .txt file is opened
+autocmd('BufEnter', {
   pattern = '*.txt',
   callback = function()
     vim.notify('We have a .txt file here!')
