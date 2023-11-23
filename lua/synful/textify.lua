@@ -15,12 +15,10 @@ local textify = {
   textifyTag = { pattern = '@.*', group = 'Tag' },
   textifyMacro = { pattern = '#.*', group = 'Macro' },
   textifyNumber = { pattern = '\\d+', group = 'Number' },
-  textifyTrue = { pattern = 'true', group = 'Boolean' },
-  textifyFalse = { pattern = 'false', group = 'Boolean' },
   textifyFunction = { pattern = 'function', group = 'Macro' },
   textifyReturn = { pattern = 'return', group = 'Return' },
   textifyCost = { pattern = 'const', group = 'Keyword' },
-  textifyLocal = { pattern = 'local', group = 'luaLocal' },
+  textifyLocal = { pattern = 'local', group = 'Keyword' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
 }
 
