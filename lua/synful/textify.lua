@@ -12,12 +12,13 @@ local textify = {
   textifyItalic = { pattern = '_.*_', group = 'Italic' },
   textifyComment = { pattern = '•.*$', group = 'Comment' },
   textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
-  textifyMacro = { pattern = '#.*', group = 'Macro' },
+  textifyTag = { pattern = '@.*', group = 'Tag' },
+  textifyMacro = { pattern = '^#.*', group = 'Macro' },
   textifyNumber = { pattern = '\\d+', group = 'Number' },
   textifyFunction = { pattern = 'function', group = 'Macro' },
   textifyReturn = { pattern = 'return', group = 'Return' },
   textifyCost = { pattern = 'const', group = 'Keyword' },
-  textifyLocal = { pattern = 'local', group = 'Keyword' },
+  textifyLocal = { pattern = 'local', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
 }
 
