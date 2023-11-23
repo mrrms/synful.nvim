@@ -17,7 +17,7 @@ local textify = {
   textifyNumber = { pattern = '\\d+', group = 'Number' },
   textifyTrue = { pattern = 'true', group = 'Boolean' },
   textifyFalse = { pattern = 'false', group = 'Boolean' },
-  textifyString = { pattern = '"[^"]*"', group = 'String' },
+  textifyString = { pattern = "'[^']*'", group = 'String' },
   textifyFunction = { pattern = 'function', group = 'Macro' },
   textifyReturn = { pattern = 'return', group = 'Return' },
   textifyCost = { pattern = 'const', group = 'Keyword' },
@@ -45,3 +45,11 @@ _Autocmd('TextChanged', {
     vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
   end
 })
+
+ called at BufEnter Autocommands for "*.txt":0: Vim(syntax):E402: Garbage after pattern: ""[^"]*""
+stack traceback:
+        [C]: in function 'nvim_exec2'
+        vim/_editor.lua: in function 'cmd'
+        ...local/share/nvim/lazy/synful.nvim/lua/synful/textify.lua:33: in function <...local/share/nvi
+m/lazy/synful.nvim/lua/synful/textify.lua:31>
+
