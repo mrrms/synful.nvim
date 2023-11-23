@@ -25,11 +25,13 @@ local textify = {
 }
 
 autocmd('BufEnter', {
+  group = rms,
+  -- all text files
   pattern = '*.txt',
   callback = function()
     for k, v in pairs(textify) do
       vim.cmd('syntax match ' .. k .. ' "' .. v.pattern .. '"')
       vim.cmd('highlight link ' .. k .. ' ' .. v.group)
     end
-  end,
+  end
 })
