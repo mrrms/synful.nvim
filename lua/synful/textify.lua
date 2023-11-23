@@ -24,17 +24,6 @@ local textify = {
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
 }
 
--- whenever the text is changed, remove the underscores and asterisks from the
--- text that are used to syntax match for the groups
-autocmd('TextChanged', {
-  pattern = '*.txt',
-  callback = function()
-    vim.cmd(':%s/_//g')
-    vim.cmd(':%s/*//g')
-  end,
-})
-
--- create an autocmd that uses vim notify when a .txt file is opened
 autocmd('BufEnter', {
   pattern = '*.txt',
   callback = function()
