@@ -1,6 +1,6 @@
 local rms = vim.api.nvim_create_augroup('rms', { clear = true })
 
-local autocmd = function(pattern, opts)
+function _Autocmd(pattern, opts)
   opts.group = rms
   vim.api.nvim_create_autocmd(pattern, opts)
 end
@@ -24,9 +24,7 @@ local textify = {
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
 }
 
-autocmd('BufEnter', {
-  group = rms,
-  -- all text files
+_Autocmd('BufEnter', {
   pattern = '*.txt',
   callback = function()
     for k, v in pairs(textify) do
@@ -36,20 +34,14 @@ autocmd('BufEnter', {
   end
 })
 
-autocmd('TextChanged', {
-  group = rms,
+_Autocmd('TextChanged', {
   pattern = '*.txt',
   callback = function()
     local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
     for i, line in ipairs(lines) do
-      -- Remove underscores && asterisks
-      line = line:gsub('_', '')
-      line = line:gsub('*', '')
-      -- Set the modified line back to the buffer
+      line = line:gsub('[_*]', '')
       lines[i] = line
     end
-
-    -- Set all modified lines back to the buffer
     vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
   end
 })
