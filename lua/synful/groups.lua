@@ -187,6 +187,7 @@ return {
   cssAttrRegion = { link = 'Todo' },
   cssAtKeyword = { link = 'Tag' },
   cssBackgroundProp = { link = 'Normal' },
+  luaDocTag = { link = 'Macro' },
   cssBorderProp = { link = 'Normal' },
   cssBoxProp = { link = 'Normal' },
   cssBraces = { link = 'LineNr' },
