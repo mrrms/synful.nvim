@@ -11,14 +11,14 @@ local textify = {
   textifyBold = { pattern = '\\*.*\\*', group = 'Bold' },
   textifyItalic = { pattern = '_.*_', group = 'Italic' },
   textifyComment = { pattern = '•.*$', group = 'Comment' },
-  textifyBullet = { pattern = '•', group = 'Todo' },
   textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
   textifyTag = { pattern = '@.*', group = 'Tag' },
   textifyMacro = { pattern = '#.*', group = 'Macro' },
-  textifyNumber = { pattern = '#.*', group = 'Number' },
-  textifyBoolean = { pattern = 'true', group = 'Boolean' },
+  textifyNumber = { pattern = '\\d+', group = 'Number' },
+  textifyTrue = { pattern = 'true', group = 'Boolean' },
+  textifyFalse = { pattern = 'false', group = 'Boolean' },
   textifyString = { pattern = '"[^"]*"', group = 'String' },
-  textifyFunction = { pattern = 'function', group = 'Function' },
+  textifyFunction = { pattern = 'function', group = 'Macro' },
   textifyReturn = { pattern = 'return', group = 'Return' },
   textifyCost = { pattern = 'const', group = 'Keyword' },
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
@@ -33,5 +33,23 @@ autocmd('BufEnter', {
       vim.cmd('syntax match ' .. k .. ' "' .. v.pattern .. '"')
       vim.cmd('highlight link ' .. k .. ' ' .. v.group)
     end
+  end
+})
+
+autocmd('TextChanged', {
+  group = rms,
+  pattern = '*.txt',
+  callback = function()
+    local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+    for i, line in ipairs(lines) do
+      -- Remove underscores && asterisks
+      line = line:gsub('_', '')
+      line = line:gsub('*', '')
+      -- Set the modified line back to the buffer
+      lines[i] = line
+    end
+
+    -- Set all modified lines back to the buffer
+    vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
   end
 })
