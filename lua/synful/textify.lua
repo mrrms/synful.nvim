@@ -12,7 +12,6 @@ local textify = {
   textifyItalic = { pattern = '_.*_', group = 'Italic' },
   textifyComment = { pattern = '•.*$', group = 'Comment' },
   textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
-  textifyTag = { pattern = '@.*', group = 'Tag' },
   textifyMacro = { pattern = '#.*', group = 'Macro' },
   textifyNumber = { pattern = '\\d+', group = 'Number' },
   textifyFunction = { pattern = 'function', group = 'Macro' },
