@@ -27,18 +27,6 @@ local textify = {
   -- textifyTag = { pattern = '@.*', group = 'Tag' },
 }
 
-_Autocmd({ 'TextChanged', 'TextChangedI' }, {
-  group = rms,
-  pattern = '*.txt',
-  callback = function()
-    local line = vim.api.nvim_get_current_line()
-    local newLine = line:gsub('^:([^:]+):$', '-----------\n-- %1 --\n-----------')
-    if newLine ~= line then
-      vim.api.nvim_set_current_line(newLine)
-    end
-  end
-})
-
 _Autocmd('BufEnter', {
   pattern = '*.txt',
   callback = function()
