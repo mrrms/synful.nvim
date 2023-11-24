@@ -15,16 +15,28 @@ local textify = {
   textifyFalse = { pattern = 'false', group = 'Boolean' },
   textifyKeyword = { pattern = 'keyword', group = 'Keyword' },
   textifyMacro = { pattern = '^#.*', group = 'Macro' },
-  textifyNumber = { pattern = '\\d+', group = 'Number' },
   textifyFunction = { pattern = 'function', group = 'Macro' },
   textifyReturn = { pattern = 'return', group = 'Return' },
   textifyCost = { pattern = 'const', group = 'Keyword' },
   textifyLet = { pattern = 'let', group = 'Keyword' },
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
+  textifyNumber = { pattern = '\\%([0-9]\\+\\|[0-9]\\+\\.[0-9]\\+\\)', group = 'Number' },
   -- textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
   -- textifyTag = { pattern = '@.*', group = 'Tag' },
 }
+
+_Autocmd({ 'TextChanged', 'TextChangedI' }, {
+  group = rms,
+  pattern = '*.txt',
+  callback = function()
+    local line = vim.fn.getline('.')
+    local newLine = line:gsub('^:([^:]+):$', '-----------\n-- %1 --\n-----------')
+    if newLine ~= line then
+      vim.fn.setline('.', newLine)
+    end
+  end
+})
 
 _Autocmd('BufEnter', {
   pattern = '*.txt',
