@@ -30,10 +30,10 @@ _Autocmd({ 'TextChanged', 'TextChangedI' }, {
   group = rms,
   pattern = '*.txt',
   callback = function()
-    local line = vim.fn.getline('.')
-    local newLine = line:gsub('^:([^:]+):$', '-----------\n-- %1 --\n-----------')
+    local line = vim.api.nvim_get_current_line()
+    local newLine = line:gsub('^:([^:]+):$', '-----------\r-- %1 --\r-----------')
     if newLine ~= line then
-      vim.fn.setline('.', newLine)
+      vim.api.nvim_set_current_line(newLine)
     end
   end
 })
