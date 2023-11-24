@@ -31,7 +31,7 @@ _Autocmd({ 'TextChanged', 'TextChangedI' }, {
   pattern = '*.txt',
   callback = function()
     local line = vim.api.nvim_get_current_line()
-    local newLine = line:gsub('^:([^:]+):$', '-----------\r-- %1 --\r-----------')
+    local newLine = line:gsub('^:([^:]+):$', '-----------\r\n-- %1 --\r\n-----------')
     if newLine ~= line then
       vim.api.nvim_set_current_line(newLine)
     end
