@@ -14,7 +14,6 @@ local textify = {
   textifyTrue = { pattern = 'true', group = 'Boolean' },
   textifyFalse = { pattern = 'false', group = 'Boolean' },
   textifyKeyword = { pattern = 'keyword', group = 'Keyword' },
-  textifyTag = { pattern = '@.*', group = 'Tag' },
   textifyMacro = { pattern = '^#.*', group = 'Macro' },
   textifyNumber = { pattern = '\\d+', group = 'Number' },
   textifyFunction = { pattern = 'function', group = 'Macro' },
@@ -24,6 +23,7 @@ local textify = {
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
   -- textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
+  -- textifyTag = { pattern = '@.*', group = 'Tag' },
 }
 
 _Autocmd('BufEnter', {
