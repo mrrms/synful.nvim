@@ -21,7 +21,7 @@ local textify = {
   textifyLet = { pattern = 'let', group = 'Keyword' },
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
-  textifyTemplateString = { pattern = "'[^`]*`", group = 'Tag' },
+  textifyTemplateString = { pattern = "'[^']*`", group = 'Tag' },
   textifyNumber = { pattern = '\\%([0-9]\\+\\|[0-9]\\+\\.[0-9]\\+\\)', group = 'Number' },
   -- textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
   -- textifyTag = { pattern = '@.*', group = 'Tag' },
@@ -32,7 +32,7 @@ _Autocmd({ 'TextChanged', 'TextChangedI' }, {
   pattern = '*.txt',
   callback = function()
     local line = vim.api.nvim_get_current_line()
-    local newLine = line:gsub('^:([^:]+):$', '-----------\r\n-- %1 --\r\n-----------')
+    local newLine = line:gsub('^:([^:]+):$', '-----------\n-- %1 --\n-----------')
     if newLine ~= line then
       vim.api.nvim_set_current_line(newLine)
     end
