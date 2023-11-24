@@ -7,20 +7,16 @@ end
 
 local textify = {
   textifyTodo = { pattern = 'TODO', group = 'Todo' },
-  textifyDone = { pattern = 'DONE', group = 'Keyword' },
   textifyBold = { pattern = '\\*.*\\*', group = 'Bold' },
   textifyItalic = { pattern = '_.*_', group = 'Italic' },
-  textifyComment = { pattern = '^•.*', group = 'Comment' },
-  textifyBoolean = { pattern = 'true', group = 'Boolean' },
-  textifyKeyword = { pattern = 'keyword', group = 'Keyword' },
-  textifyTag = { pattern = '@.*', group = 'Tag' },
-  textifyMacro = { pattern = '^#.*', group = 'Macro' },
-  textifyNumber = { pattern = '\\d+', group = 'Number' },
-  textifyFunction = { pattern = 'function', group = 'Macro' },
-  textifyReturn = { pattern = 'return', group = 'Return' },
-  textifyCost = { pattern = 'const', group = 'Keyword' },
-  textifyLocal = { pattern = 'local', group = 'luaLocal' },
+  textifyBoolean = { pattern = '(true|false|\\d+)', group = 'Boolean' },
+  textifyKeyword = { pattern = '(if|else|while|for|const|let)', group = 'Keyword' },
+  textifyMacro = { pattern = '(^#.*|^@.*|function)', group = 'Macro' },
+  textifyReturn = { pattern = '(return|@.*|DONE)', group = 'Return' },
+  textifyLocal = { pattern = '(local|for|end)', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
+  textifySlants = { pattern = "'[^`]*`", group = 'Tag' },
+  textifyComment = { pattern = '^•.*', group = 'Comment' },
   -- textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
 }
 
