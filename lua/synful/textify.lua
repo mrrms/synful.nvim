@@ -21,6 +21,7 @@ local textify = {
   textifyLet = { pattern = 'let', group = 'Keyword' },
   textifyLocal = { pattern = 'local', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
+  textifyTemplateString = { pattern = "'[^`]*`", group = 'Tag' },
   textifyNumber = { pattern = '\\%([0-9]\\+\\|[0-9]\\+\\.[0-9]\\+\\)', group = 'Number' },
   -- textifyLink = { pattern = 'https?://.*', group = 'Underlined' },
   -- textifyTag = { pattern = '@.*', group = 'Tag' },
