@@ -7,12 +7,12 @@ end
 
 local textify = {
   textifyTodo = { pattern = 'TODO', group = 'Todo' },
-  textifyBold = { pattern = '\\*.*\\*', group = 'Bold' },
-  textifyItalic = { pattern = '_.*_', group = 'Italic' },
-  textifyBoolean = { pattern = '(true|false|\\d+)', group = 'Boolean' },
+  textifyBold = { pattern = '\\*', group = 'Bold' },
+  textifyItalic = { pattern = '_', group = 'Italic' },
+  textifyBoolean = { pattern = '(true|false)', group = 'Boolean' },
   textifyKeyword = { pattern = '(if|else|while|for|const|let)', group = 'Keyword' },
   textifyMacro = { pattern = '(^#.*|^@.*|function)', group = 'Macro' },
-  textifyReturn = { pattern = '(return|@.*|DONE)', group = 'Return' },
+  textifyReturn = { pattern = '(return|^@.*|DONE)', group = 'Return' },
   textifyLocal = { pattern = '(local|for|end)', group = 'luaLocal' },
   textifyString = { pattern = "'[^']*'", group = 'String' },
   textifySlants = { pattern = "'[^`]*`", group = 'Tag' },
