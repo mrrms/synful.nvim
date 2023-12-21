@@ -6,6 +6,9 @@ return {
 	orang = "#25201E",
 	blush = "#2F1D23",
 	green = "#2D3D3D",
+	olive = "#5F875F",
+	bazil = "#597a69",
+	paris = "#81b3a9", --> #9EBFBF
 	stone = "#414161",
 	metal = "#555585",
 	steel = "#455585",
@@ -16,9 +19,6 @@ return {
 	rouge = "#A94064",
 	amber = "#DB9280",
 	peach = "#FFCDCD",
-	bazil = "#597a69",
-	olive = "#5F875F",
-	paris = "#81b3a9", --> #9EBFBF
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF #A8B4F6
 }

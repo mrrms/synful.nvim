@@ -114,6 +114,8 @@ return {
 	DiagnosticHint = { link = "Boolean" },
 	DiagnosticInfo = { link = "Todo" },
 	DiagnosticWarn = { link = "Tag" },
+	DiagnositicSignInfo = { link = "FloatBorder" },
+	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	DiffAdd = { link = "String" },
 	DiffChange = { link = "LineNr" },
 	DiffDelete = { link = "Boolean" },
