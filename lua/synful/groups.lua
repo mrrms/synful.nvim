@@ -526,8 +526,15 @@ return {
 	LeapLabelSelected = { link = "Search" },
 	LeapLabelSecondary = { link = "Tag" },
 	NotifyBackground = { bg = colour.space },
+	-- mini
 	MiniCursorword = { bg = colour.rouge },
 	MiniCursorwordCurrent = { bg = colour.mauve },
+	-- illuminate
+	illuminatedWord = { bg = colour.ashen },
+	illuminatedCurWord = { bg = colour.ashen },
+	IlluminatedWordText = { bg = colour.ashen },
+	IlluminatedWordRead = { bg = colour.ashen },
+	IlluminatedWordWrite = { bg = colour.ashen },
 }
 
 -- Mini
@@ -547,7 +554,7 @@ return {
 -- MiniStarterQuery = { fg = colour.info },
 -- MiniStatuslineDevinfo = { fg = colour.fg_dark, bg = colour.bg_highlight },
 -- MiniStatuslineFileinfo = { fg = colour.fg_dark, bg = colour.bg_highlight },
--- MiniStatuslineFilename = { fg = colour.fg_dark, bg = colour.fg_gutter },
+-- MiniStatuslineFilename = { fg = colour.fg_dark, bg = colour.ashen },
 -- MiniStatuslineInactive = { fg = colour.blue, bg = colour.bg_statusline },
 -- MiniStatuslineModeCommand = { fg = colour.black, bg = colour.yellow, bold = true },
 -- MiniStatuslineModeInsert = { fg = colour.black, bg = colour.green, bold = true },
@@ -556,10 +563,10 @@ return {
 -- MiniStatuslineModeReplace = { fg = colour.black, bg = colour.red, bold = true },
 -- MiniStatuslineModeVisual = { fg = colour.black, bg = colour.magenta, bold = true },
 -- MiniSurround = { bg = colour.orange, fg = c.black },
--- MiniTablineCurrent = { fg = c.fg, bg = c.fg_gutter },
+-- MiniTablineCurrent = { fg = c.fg, bg = c.ashen },
 -- MiniTablineFill = { bg = c.black },
 -- MiniTablineHidden = { fg = c.dark5, bg = c.bg_statusline },
--- MiniTablineModifiedCurrent = { fg = c.warning, bg = c.fg_gutter },
+-- MiniTablineModifiedCurrent = { fg = c.warning, bg = c.ashen },
 -- MiniTablineModifiedHidden = { bg = c.bg_statusline, fg = util.darken(c.warning, 0.7) },
 -- MiniTablineModifiedVisible = { fg = c.warning, bg = c.bg_statusline },
 -- MiniTablineTabpagesection = { bg = c.bg_statusline, fg = c.none },
