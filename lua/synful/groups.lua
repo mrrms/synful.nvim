@@ -68,7 +68,7 @@ return {
 	FlashBackdrop = { fg = colour.slate, bg = "NONE" },
 	Comment = { fg = colour.metal, italic = true },
 	Folded = { fg = colour.stone, italic = true },
-	String = { fg = colour.paris, italic = true },
+	String = { fg = colour.paris },
 	DiagnosticUnderlineError = { fg = colour.rouge, undercurl = true },
 	DiagnosticUnderlineHint = { fg = colour.bazil, undercurl = true },
 	DiagnosticUnderlineInfo = { fg = colour.pearl, undercurl = true },

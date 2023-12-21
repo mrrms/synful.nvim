@@ -1,1 +1,1 @@
-require 'synful'.load()
+require("synful").load()
