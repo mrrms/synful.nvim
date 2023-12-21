@@ -1,8 +1,7 @@
 return {
 	space = "#111119",
-	raven = "#191929",
-	death = "#1c1d30",
-	goose = "#232333",
+	raven = "#1c1d30",
+	death = "#232333",
 	orang = "#25201E",
 	blush = "#2F1D23",
 	green = "#2D3D3D",
