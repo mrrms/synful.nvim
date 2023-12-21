@@ -27,6 +27,7 @@ local links = {
 	["@lsp.type.property"] = "@property",
 	["@lsp.type.enumMember"] = "@constant",
 	["@constat.builtin.lua"] = "Conditional",
+	["@punctuation.delimiter.lua"] = "Number",
 	["@lsp.type.function"] = "Function",
 	["@lsp.type.method"] = "@method",
 	["@keyword.return.lua"] = "Return",

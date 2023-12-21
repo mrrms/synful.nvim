@@ -1,19 +1,19 @@
-local groups = require('synful.groups')
+local groups = require("synful.groups")
 
 -- can/ought this be moved to a setup function
-require('synful.lualine')
-require('synful.textify')
+require("synful.lualine")
+require("synful.textify")
 
 return {
-  load = function()
-    if vim.g.colors_name then
-      vim.api.nvim_command('hi clear')
-    end
+	load = function()
+		if vim.g.colors_name then
+			vim.api.nvim_command("hi clear")
+		end
 
-    vim.g.colors_name = 'synful'
+		vim.g.colors_name = "synful"
 
-    for group, styles in pairs(groups) do
-      vim.api.nvim_set_hl(0, tostring(group), styles)
-    end
-  end,
+		for group, styles in pairs(groups) do
+			vim.api.nvim_set_hl(0, tostring(group), styles)
+		end
+	end,
 }
