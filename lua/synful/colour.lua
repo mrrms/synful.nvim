@@ -18,7 +18,7 @@ return {
 	peach = "#FFCDCD",
 	bazil = "#597a69",
 	olive = "#5F875F",
-	paris = "#51867c", --> #9EBFBF
+	paris = "#81b3a9", --> #9EBFBF
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF #A8B4F6
 }

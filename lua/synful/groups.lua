@@ -1,6 +1,6 @@
 local colour = require("synful.colour")
 
---> resolves semantic highlighting for lsp servers
+-- resolves semantic highlighting for lsp servers
 local links = {
 	["@type.tsx"] = "Title",
 	["@tag.tsx"] = "Keyword",
