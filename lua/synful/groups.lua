@@ -493,8 +493,8 @@ return {
 	---------
 	-- cmp --
 	---------
-	CmpItemMenu = { fg = colour.ultra },
-	CmpItemAbbrMatch = { fg = colour.rouge },
+	CmpItemMenu = { fg = colour.pearl },
+	CmpItemAbbrMatch = { fg = colour.paris },
 	CmpItemKindColor = { fg = colour.death },
 	CmpItemKindFolder = { fg = colour.steel },
 	CmpItemKindMethod = { fg = colour.rouge },
