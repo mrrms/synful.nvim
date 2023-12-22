@@ -43,7 +43,8 @@ end
 
 return {
 	Bold = { bold = true },
-	CursorLine = { bg = "NONE" },
+	CursorLine = { bg = colour.raven },
+	CursorLineNr = { fg = colour.bazil, bg = colour.death, bold = true },
 	Italic = { italic = true },
 	Underlined = { fg = colour.rouge },
 	Boolean = { fg = colour.mauve },
@@ -79,7 +80,6 @@ return {
 	DiagnosticVirtualTextInfo = { fg = colour.pearl, bg = colour.stone },
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.orang },
 	WildMenu = { fg = colour.rouge, bg = colour.capri },
-	CursorLineNr = { fg = colour.bazil, bg = "NONE", bold = true },
 	MatchParen = { fg = colour.rouge, bold = true, undercurl = true },
 	PmenuSel = { fg = colour.slate, bg = colour.raven, bold = true },
 	Visual = { fg = colour.capri, bg = colour.steel, bold = true },
