@@ -1,6 +1,6 @@
 return {
 	space = "#111119",
-	raven = "#1c1d30",
+	raven = "#2b2b40",
 	death = "#232333",
 	ashen = "#3b4261",
 	orang = "#25201E",
