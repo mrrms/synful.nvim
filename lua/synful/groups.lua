@@ -535,11 +535,11 @@ return {
 	NotifyTRACETitle = { fg = colour.stone },
 	NotifyWARNTitle = { fg = colour.amber },
 	-- body
-	NotifyDEBUGBody = { fg = colour.ashen },
-	NotifyERRORBody = { fg = colour.ashen },
-	NotifyINFOBody = { fg = colour.ashen },
-	NotifyTRACEBody = { fg = colour.ashen },
-	NotifyWARNBody = { fg = colour.ashen },
+	NotifyDEBUGBody = { fg = colour.slate },
+	NotifyERRORBody = { fg = colour.slate },
+	NotifyINFOBody = { fg = colour.slate },
+	NotifyTRACEBody = { fg = colour.slate },
+	NotifyWARNBody = { fg = colour.slate },
 
 	----------
 	-- mini --
