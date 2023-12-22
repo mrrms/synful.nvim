@@ -517,11 +517,11 @@ return {
 	------------
 	NotifyBackground = { bg = colour.space },
 	-- border
-	NotifyDEBUGBorder = { fg = colour.mauve },
-	NotifyERRORBorder = { fg = colour.rouge },
-	NotifyINFOBorder = { fg = colour.capri },
-	NotifyTRACEBorder = { fg = colour.stone },
-	NotifyWARNBorder = { fg = colour.amber },
+	NotifyDEBUGBorder = { fg = colour.death },
+	NotifyERRORBorder = { fg = colour.death },
+	NotifyINFOBorder = { fg = colour.death },
+	NotifyTRACEBorder = { fg = colour.death },
+	NotifyWARNBorder = { fg = colour.death },
 	-- icon
 	NotifyDEBUGIcon = { fg = colour.mauve },
 	NotifyERRORIcon = { fg = colour.rouge },
