@@ -155,7 +155,7 @@ return {
 	TabLineFill = { link = "Normal" },
 	TabLineSel = { link = "mailSubject" },
 	TelescopeBorder = { link = "FloatBorder" },
-	TelescopeMatching = { link = "Todo" },
+	TelescopeMatching = { fg = colour.stone, bold = true },
 	TelescopePreviewMatch = { link = "MatchParen" },
 	TelescopePromptPrefix = { link = "Boolean" },
 	TelescopePromptTitle = { link = "Macro" },
@@ -484,16 +484,11 @@ return {
 	zshSubstDelim = { link = "Tag" },
 	zshTodo = { link = "Todo" },
 	zslhComment = { link = "Comment" },
-	LeapMatch = { link = "MatchParen" },
-	LeapBackdrop = { fg = "NONE", bg = "NONE" },
-	LeapLabelPrimary = { link = "MatchParen" },
-	LeapLabelSelected = { link = "Search" },
-	LeapLabelSecondary = { link = "Tag" },
 	---------
 	-- cmp --
 	---------
 	CmpItemMenu = { fg = colour.pearl },
-	CmpItemAbbrMatch = { fg = colour.paris },
+	CmpItemAbbrMatch = { fg = colour.stone, bold = true },
 	CmpItemKindColor = { fg = colour.paris },
 	CmpItemKindFolder = { fg = colour.steel },
 	CmpItemKindMethod = { fg = colour.metal },
@@ -505,10 +500,10 @@ return {
 	CmpItemKindOperator = { fg = colour.stone },
 	CmpItemKindProperty = { fg = colour.capri },
 	CmpItemKindVariable = { fg = colour.bazil },
-	CmpItemAbbrMatchFuzzy = { fg = colour.ashen },
-	CmpItemKindMatchFuzzy = { fg = colour.mauve },
-	CmpItemAbbrMatchDefault = { fg = colour.royal },
-	CmpItemAbbrMatchFuzzyDefault = { fg = colour.ashen },
+	CmpItemAbbrMatchFuzzy = { fg = colour.stone, bold = true },
+	CmpItemKindMatchFuzzy = { fg = colour.stone, bold = true },
+	CmpItemAbbrMatchDefault = { fg = colour.stone, bold = true },
+	CmpItemAbbrMatchFuzzyDefault = { fg = colour.stone, bold = true },
 	CmpDocumentation = { fg = colour.ashen, bg = colour.raven },
 
 	------------
