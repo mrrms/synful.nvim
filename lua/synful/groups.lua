@@ -82,7 +82,7 @@ return {
 	WildMenu = { fg = colour.rouge, bg = colour.capri },
 	MatchParen = { fg = colour.rouge, bold = true, undercurl = true },
 	PmenuSel = { fg = colour.slate, bg = colour.raven, bold = true },
-	Visual = { fg = colour.capri, bg = colour.steel, bold = true },
+	Visual = { fg = colour.slate, bg = colour.royal, bold = true },
 	Search = { fg = colour.capri, bg = colour.steel, bold = true },
 	Character = { link = "Boolean" },
 	CodeiumSuggestion = { link = "Normal" },
