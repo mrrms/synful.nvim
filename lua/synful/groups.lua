@@ -67,7 +67,7 @@ return {
 	keyword = { fg = colour.steel, bold = true },
 	mailSubject = { fg = colour.slate, bold = true },
 	FlashLabel = { fg = colour.capri, bg = colour.royal },
-	FlashBackdrop = { fg = colour.ultra, bg = "NONE", bold = true },
+	FlashBackdrop = { fg = colour.pearl, bg = "NONE", bold = true },
 	Comment = { fg = colour.metal, italic = true },
 	Folded = { fg = colour.stone, italic = true },
 	String = { fg = colour.paris },
