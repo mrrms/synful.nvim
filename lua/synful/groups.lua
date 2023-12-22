@@ -43,8 +43,8 @@ end
 
 return {
 	Bold = { bold = true },
-	CursorLine = { bg = colour.raven },
-	CursorLineNr = { fg = colour.bazil, bg = colour.death, bold = true },
+	CursorLine = { bg = "NONE" },
+	CursorLineNr = { fg = colour.bazil, bg = colour.raven, bold = true },
 	Italic = { italic = true },
 	Underlined = { fg = colour.rouge },
 	Boolean = { fg = colour.mauve },
