@@ -65,7 +65,8 @@ return {
 	StatusLineNC = { fg = colour.space, bg = "NONE" },
 	keyword = { fg = colour.steel, bold = true },
 	mailSubject = { fg = colour.slate, bold = true },
-	FlashBackdrop = { fg = colour.slate, bg = "NONE" },
+	FlashLabel = { fg = colour.stone },
+	FlashBackdrop = { fg = colour.slate, bg = colour.stone, bold = true },
 	Comment = { fg = colour.metal, italic = true },
 	Folded = { fg = colour.stone, italic = true },
 	String = { fg = colour.paris },
@@ -84,23 +85,6 @@ return {
 	Visual = { fg = colour.capri, bg = colour.steel, bold = true },
 	Search = { fg = colour.ultra, bg = colour.mauve, bold = true },
 	Character = { link = "Boolean" },
-	CmpCompletionBorder = { link = "FloatBorder" },
-	CmpItemAbbrMatch = { link = "Boolean" },
-	CmpItemAbbrMatchDefault = { link = "Todo" },
-	CmpItemAbbrMatchFuzzy = { link = "Todo" },
-	CmpItemAbbrMatchFuzzyDefault = { link = "Todo" },
-	CmpItemKindColor = { link = "Title" },
-	CmpItemKindConstant = { link = "Macro" },
-	CmpItemKindDefault = { link = "Macro" },
-	CmpItemKindFolder = { link = "Return" },
-	CmpItemKindFunction = { link = "Boolean" },
-	CmpItemKindKeyword = { link = "LineNr" },
-	CmpItemKindMatchFuzzy = { link = "Todo" },
-	CmpItemKindMethod = { link = "Boolean" },
-	CmpItemKindOperator = { link = "Title" },
-	CmpItemKindProperty = { link = "Boolean" },
-	CmpItemKindVariable = { link = "String" },
-	CmpItemMenu = { link = "Todo" },
 	CodeiumSuggestion = { link = "Normal" },
 	ColorColumn = { link = "NonText" },
 	Command = { fg = colour.slate, bold = true },
@@ -505,6 +489,29 @@ return {
 	LeapLabelPrimary = { link = "MatchParen" },
 	LeapLabelSelected = { link = "Search" },
 	LeapLabelSecondary = { link = "Tag" },
+
+	---------
+	-- cmp --
+	---------
+	CmpItemMenu = { fg = colour.ultra },
+	CmpItemAbbrMatch = { fg = colour.rouge },
+	CmpItemKindColor = { fg = colour.death },
+	CmpItemKindFolder = { fg = colour.steel },
+	CmpItemKindMethod = { fg = colour.rouge },
+	CmpItemKindDefault = { fg = colour.metal },
+	CmpItemKindKeyword = { fg = colour.slate },
+	CmpCompletionBorder = { fg = colour.death },
+	CmpItemKindConstant = { fg = colour.stone },
+	CmpItemKindFunction = { fg = colour.royal },
+	CmpItemKindOperator = { fg = colour.stone },
+	CmpItemKindProperty = { fg = colour.capri },
+	CmpItemKindVariable = { fg = colour.bazil },
+	CmpItemAbbrMatchFuzzy = { fg = colour.steel },
+	CmpItemKindMatchFuzzy = { fg = colour.mauve },
+	CmpItemAbbrMatchDefault = { fg = colour.royal },
+	CmpItemAbbrMatchFuzzyDefault = { fg = colour.ashen },
+	CmpDocumentation = { fg = colour.ashen, bg = colour.raven },
+
 	------------
 	-- notify --
 	------------
@@ -539,12 +546,35 @@ return {
 	----------
 	MiniCursorword = { bg = colour.rouge },
 	MiniCursorwordCurrent = { bg = colour.mauve },
+
 	-- illuminate
 	illuminatedWord = { bg = colour.raven },
 	illuminatedCurWord = { bg = colour.raven },
 	IlluminatedWordText = { bg = colour.raven },
 	IlluminatedWordRead = { bg = colour.raven },
 	IlluminatedWordWrite = { bg = colour.raven },
+
+	-------------
+	-- LspSaga --
+	-------------
+	DiagnosticWarning = { link = "DiagnosticWarn" },
+	DiagnosticInformation = { link = "DiagnosticInfo" },
+	LspFloatWinNormal = { bg = colour.raven },
+	LspFloatWinBorder = { fg = colour.ashen },
+	LspSagaBorderTitle = { fg = colour.capri },
+	LspSagaHoverBorder = { fg = colour.royal },
+	LspSagaRenameBorder = { fg = colour.olive },
+	LspSagaDefPreviewBorder = { fg = colour.paris },
+	LspSagaCodeActionBorder = { fg = colour.steel },
+	LspSagaFinderSelection = { fg = colour.stone },
+	LspSagaCodeActionTitle = { fg = colour.steel },
+	LspSagaCodeActionContent = { fg = colour.stone },
+	LspSagaSignatureHelpBorder = { fg = colour.rouge },
+	ReferencesCount = { fg = colour.stone },
+	DefinitionCount = { fg = colour.stone },
+	DefinitionIcon = { fg = colour.royal },
+	ReferencesIcon = { fg = colour.stone },
+	TargetWord = { fg = colour.capri },
 }
 
 -- Mini
