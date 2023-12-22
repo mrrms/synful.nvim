@@ -59,7 +59,7 @@ return {
 	Title = { fg = colour.pearl },
 	NonText = { fg = "NONE", bg = "NONE" },
 	DiagnosticUnnecessary = { fg = colour.ultra, bold = true },
-	Function = { fg = colour.royal, italic = true },
+	Function = { fg = colour.royal, bold = true },
 	NormalFloat = { fg = colour.slate, bg = "NONE" },
 	PmenuThumb = { fg = colour.mauve, bg = "NONE" },
 	Return = { fg = colour.bazil, bold = true },
