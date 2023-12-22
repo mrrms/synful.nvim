@@ -81,7 +81,7 @@ return {
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.orang },
 	WildMenu = { fg = colour.rouge, bg = colour.capri },
 	MatchParen = { fg = colour.rouge, bold = true, undercurl = true },
-	PmenuSel = { fg = colour.slate, bg = colour.stone, bold = true },
+	PmenuSel = { fg = colour.pearl, bg = colour.stone, bold = true },
 	Visual = { fg = colour.capri, bg = colour.steel, bold = true },
 	Search = { fg = colour.capri, bg = colour.steel, bold = true },
 	Character = { link = "Boolean" },
@@ -489,7 +489,6 @@ return {
 	LeapLabelPrimary = { link = "MatchParen" },
 	LeapLabelSelected = { link = "Search" },
 	LeapLabelSecondary = { link = "Tag" },
-
 	---------
 	-- cmp --
 	---------
