@@ -155,7 +155,7 @@ return {
 	TabLineFill = { link = "Normal" },
 	TabLineSel = { link = "mailSubject" },
 	TelescopeBorder = { link = "FloatBorder" },
-	TelescopeMatching = { fg = colour.capri, bold = true },
+	TelescopeMatching = { fg = colour.royal, bold = true },
 	TelescopePreviewMatch = { link = "MatchParen" },
 	TelescopePromptPrefix = { link = "Boolean" },
 	TelescopePromptTitle = { link = "Macro" },
@@ -488,7 +488,7 @@ return {
 	-- cmp --
 	---------
 	CmpItemMenu = { fg = colour.pearl },
-	CmpItemAbbrMatch = { fg = colour.capri, bold = true },
+	CmpItemAbbrMatch = { fg = colour.royal, bold = true },
 	CmpItemKindColor = { fg = colour.paris },
 	CmpItemKindFolder = { fg = colour.steel },
 	CmpItemKindMethod = { fg = colour.metal },
@@ -498,12 +498,12 @@ return {
 	CmpItemKindConstant = { fg = colour.stone },
 	CmpItemKindFunction = { fg = colour.royal },
 	CmpItemKindOperator = { fg = colour.stone },
-	CmpItemKindProperty = { fg = colour.capri },
+	CmpItemKindProperty = { fg = colour.royal },
 	CmpItemKindVariable = { fg = colour.bazil },
-	CmpItemAbbrMatchFuzzy = { fg = colour.capri, bold = true },
-	CmpItemKindMatchFuzzy = { fg = colour.capri, bold = true },
-	CmpItemAbbrMatchDefault = { fg = colour.capri, bold = true },
-	CmpItemAbbrMatchFuzzyDefault = { fg = colour.capri, bold = true },
+	CmpItemAbbrMatchFuzzy = { fg = colour.royal, bold = true },
+	CmpItemKindMatchFuzzy = { fg = colour.royal, bold = true },
+	CmpItemAbbrMatchDefault = { fg = colour.royal, bold = true },
+	CmpItemAbbrMatchFuzzyDefault = { fg = colour.royal, bold = true },
 	CmpDocumentation = { fg = colour.ashen, bg = colour.raven },
 
 	------------
