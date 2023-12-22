@@ -44,7 +44,7 @@ end
 return {
 	Bold = { bold = true },
 	CursorLine = { bg = "NONE" },
-	CursorLineNr = { fg = colour.bazil, bg = colour.raven, bold = true },
+	CursorLineNr = { fg = colour.bazil, bold = true },
 	Italic = { italic = true },
 	Underlined = { fg = colour.rouge },
 	Boolean = { fg = colour.mauve },
