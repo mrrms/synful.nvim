@@ -5,6 +5,7 @@ local links = {
 	["@type.tsx"] = "Title",
 	["@tag.tsx"] = "Constructor",
 	["@function.lua"] = "Command",
+	["@function.tsx"] = "Title",
 	["@lsp.type.namespace"] = "@namespace",
 	["@keyword.return.tsx"] = "Return",
 	["@keyword.lua"] = "Return",
