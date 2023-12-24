@@ -15,6 +15,7 @@ local links = {
 	["@conditional.lua"] = "Macro",
 	["@operator.lua"] = "Operator",
 	["@tag.attribute.tsx"] = "Todo",
+	["@property.css"] = "Macro",
 	["@function.call.lua"] = "Macro",
 	["@lsp.type.interface"] = "Type",
 	["@lsp.type.method"] = "@method",
