@@ -1,9 +1,9 @@
-local groups = {
-	vimBooleanTrue = { string = "true", link = "Boolean" },
-	vimBooleanFalse = { string = "false", link = "Boolean" },
+local vimCustomHighlights = {
+	vimBooleanTrue = { pattern = "true", group = "Boolean" },
+	vimBooleanFalse = { pattern = "false", group = "Boolean" },
 }
 
-for item, value in pairs(groups) do
-	vim.cmd("syntax match " .. item .. " /" .. value.string .. "/")
-	vim.cmd("highlight link " .. item .. " " .. value.link)
+for item, value in pairs(vimCustomHighlights) do
+	vim.cmd("syntax match " .. item .. " /" .. value.pattern .. "/")
+	vim.cmd("highlight link " .. item .. " " .. value.group)
 end
