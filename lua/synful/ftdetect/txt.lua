@@ -1,7 +1,4 @@
-local rms = vim.api.nvim_create_augroup("rms", { clear = true })
-
 function _Autocmd(pattern, opts)
-	opts.group = rms
 	vim.api.nvim_create_autocmd(pattern, opts)
 end
 
@@ -31,8 +28,8 @@ _Autocmd("BufEnter", {
 	pattern = "*.txt",
 	callback = function()
 		for k, v in pairs(textify) do
-			vim.cmd("syntax match " .. k .. " /" .. v.pattern .. "/")
-			vim.cmd("syntax match " .. v.group .. " /" .. v.pattern .. "/")
+			vim.cmd(string.format("syntax match %s /%s/", k, v.pattern))
+			vim.cmd(string.format("syntax match %s /%s/", v.group, v.pattern))
 		end
 	end,
 })
@@ -42,8 +39,7 @@ _Autocmd("TextChanged", {
 	callback = function()
 		local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
 		for i, line in ipairs(lines) do
-			line = line:gsub("[_*]", "")
-			lines[i] = line
+			lines[i] = line:gsub("[_*]", "")
 		end
 		vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
 	end,
