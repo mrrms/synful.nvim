@@ -43,6 +43,7 @@ local links = {
 	["@lsp.type.variable.typescriptreact"] = "Title",
 	["@exception.tsx"] = "Conditional",
 	["@punctuation.delimiter.tsx"] = "Number",
+	["@property.tsx"] = "@property",
 }
 
 for newgroup, oldgroup in pairs(links) do
