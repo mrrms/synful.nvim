@@ -2,6 +2,10 @@ local groups = require("synful.groups")
 
 -- can/ought this be moved to a setup function
 require("synful.lualine")
+require("synful.ftdetect.css")
+require("synful.ftdetect.vim")
+require("synful.ftdetect.lua")
+require("synful.ftdetect.txt")
 
 return {
 	load = function()

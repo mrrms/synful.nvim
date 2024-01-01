@@ -5,7 +5,6 @@ local links = {
 	["@type.tsx"] = "Title",
 	["@repeat.lua"] = "Repeat",
 	["@function.tsx"] = "Title",
-	["@keyword.lua"] = "Return",
 	["@lsp.type.enum"] = "Type",
 	["@lsp.type.type"] = "Type",
 	["@lsp.type.class"] = "Type",
@@ -21,8 +20,11 @@ local links = {
 	["@constructor.lua"] = "Operator",
 	["@operator.typescript"] = "Number",
 	["@function.call.tsx"] = "Command",
+	["@keyword.lua"] = "Return",
+	["@keyword.tsx"] = "Macro",
 	["@keyword.return.lua"] = "Return",
 	["@keyword.return.tsx"] = "Return",
+	["@keyword.coroutine.tsx"] = "Conditional",
 	["@lsp.type.function"] = "Function",
 	["@lsp.type.struct"] = "@structure",
 	["@constructor.tsx"] = "Constructor",
@@ -35,9 +37,12 @@ local links = {
 	["@lsp.type.namespace"] = "@namespace",
 	["@lsp.type.parameter"] = "@parameter",
 	["@constat.builtin.lua"] = "Conditional",
+	["@constant.builtin.tsx"] = "Number",
 	["@punctuation.delimiter.lua"] = "Number",
-	["@keyword.coroutine.tsx"] = "Conditional",
 	["@lsp.type.function.typescriptreact"] = "Title",
+	["@exception.tsx"] = "Conditional",
+	["@punctuation.delimiter.tsx"] = "Number",
+	["@lsp.type.variable.typescriptreact"] = "Conditional",
 }
 
 for newgroup, oldgroup in pairs(links) do
