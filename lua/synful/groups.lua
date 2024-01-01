@@ -40,9 +40,9 @@ local links = {
 	["@constant.builtin.tsx"] = "Number",
 	["@punctuation.delimiter.lua"] = "Number",
 	["@lsp.type.function.typescriptreact"] = "Title",
+	["@lsp.type.variable.typescriptreact"] = "Title",
 	["@exception.tsx"] = "Conditional",
 	["@punctuation.delimiter.tsx"] = "Number",
-	["@lsp.type.variable.typescriptreact"] = "Conditional",
 }
 
 for newgroup, oldgroup in pairs(links) do
