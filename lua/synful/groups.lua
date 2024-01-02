@@ -119,7 +119,7 @@ return {
 	LazyProp = { link = "Boolean" },
 	LineNr = { fg = colour.stone },
 	Macro = { fg = colour.royal },
-	MatchParen = { fg = colour.rouge, bold = true, undercurl = true },
+	MatchParen = { fg = colour.rouge, bold = true },
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	Noise = { link = "Boolean" },
 	NonText = { fg = "NONE", bg = "NONE" },
