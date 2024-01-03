@@ -104,7 +104,7 @@ return {
 	GitGutterChange = { link = "LineNr" },
 	GitGutterChangeDelete = { link = "Tag" },
 	GitGutterDelete = { link = "Boolean" },
-	Identifier = { fg = colour.slate },
+	Identifier = { fg = colour.pearl },
 	Ignore = { link = "LineNr" },
 	IncSearch = { link = "Visual" },
 	Include = { link = "Macro" },
