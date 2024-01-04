@@ -3,7 +3,7 @@ return {
 	raven = "#191929",
 	death = "#232333",
 	ashen = "#3b4261",
-	orang = "#5e1c0f",
+	orang = "#6b330c",
 	blush = "#2F1D23",
 	green = "#2D3D3D",
 	olive = "#5F875F",
