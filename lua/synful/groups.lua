@@ -519,14 +519,6 @@ return {
 	------------
 	-- notify --
 	------------
-	-- NotifyTRACEBorder guifg=#4F3552
-	-- NotifyTRACEIcon   guifg=#D484FF
-	-- NotifyTRACETitle  guifg=#D484FF
-
-	-- NotifyWARNBorder  guifg=#79491D
-	-- NotifyWARNIcon    guifg=#F79000
-	-- NotifyWARNTitle   guifg=#F79000
-
 	NotifyERRORIcon = { fg = colour.rouge },
 	NotifyERRORBody = { fg = colour.normal },
 	NotifyERRORTitle = { fg = colour.rouge },
@@ -547,10 +539,10 @@ return {
 	NotifyTRACETitle = { fg = colour.ultra },
 	NotifyTRACEBorder = { fg = colour.mauve },
 
-	NotifyWARNIcon = { fg = colour.amber },
-	NotifyWARNBorder = { fg = colour.orang },
-	NotifyWARNTitle = { fg = colour.amber },
+	NotifyWARNIcon = { fg = colour.peach },
 	NotifyWARNBody = { fg = colour.normal },
+	NotifyWARNTitle = { fg = colour.peach },
+	NotifyWARNBorder = { fg = colour.amber },
 
 	NotifyBackground = { bg = colour.space },
 
