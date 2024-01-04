@@ -542,7 +542,7 @@ return {
 	NotifyWARNIcon = { fg = colour.peach },
 	NotifyWARNBody = { fg = colour.normal },
 	NotifyWARNTitle = { fg = colour.peach },
-	NotifyWARNBorder = { fg = colour.amber },
+	NotifyWARNBorder = { fg = colour.orang },
 
 	NotifyBackground = { bg = colour.space },
 
