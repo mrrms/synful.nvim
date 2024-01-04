@@ -519,31 +519,40 @@ return {
 	------------
 	-- notify --
 	------------
-	NotifyBackground = { bg = colour.space },
-	-- border
-	NotifyDEBUGBorder = { fg = colour.death },
-	NotifyERRORBorder = { fg = colour.death },
-	NotifyINFOBorder = { fg = colour.death },
-	NotifyTRACEBorder = { fg = colour.death },
-	NotifyWARNBorder = { fg = colour.death },
-	-- icon
-	NotifyDEBUGIcon = { fg = colour.mauve },
+	-- NotifyTRACEBorder guifg=#4F3552
+	-- NotifyTRACEIcon   guifg=#D484FF
+	-- NotifyTRACETitle  guifg=#D484FF
+
+	-- NotifyWARNBorder  guifg=#79491D
+	-- NotifyWARNIcon    guifg=#F79000
+	-- NotifyWARNTitle   guifg=#F79000
+
 	NotifyERRORIcon = { fg = colour.rouge },
-	NotifyINFOIcon = { fg = colour.bazil },
-	NotifyTRACEIcon = { fg = colour.ultra },
-	NotifyWARNIcon = { fg = colour.amber },
-	-- title
-	NotifyDEBUGTitle = { fg = colour.mauve },
+	NotifyERRORBody = { fg = colour.normal },
 	NotifyERRORTitle = { fg = colour.rouge },
+	NotifyERRORBorder = { fg = colour.blush },
+
+	NotifyDEBUGIcon = { fg = colour.ashen },
+	NotifyDEBUGBody = { fg = colour.normal },
+	NotifyDEBUGTitle = { fg = colour.ashen },
+	NotifyDEBUGBorder = { fg = colour.ashen },
+
+	NotifyINFOIcon = { fg = colour.bazil },
+	NotifyINFOBody = { fg = colour.normal },
 	NotifyINFOTitle = { fg = colour.bazil },
+	NotifyINFOBorder = { fg = colour.green },
+
+	NotifyTRACEBody = { fg = colour.normal },
+	NotifyTRACEIcon = { fg = colour.ultra },
 	NotifyTRACETitle = { fg = colour.ultra },
+	NotifyTRACEBorder = { fg = colour.mauve },
+
+	NotifyWARNIcon = { fg = colour.amber },
+	NotifyWARNBorder = { fg = colour.orang },
 	NotifyWARNTitle = { fg = colour.amber },
-	-- body
-	NotifyDEBUGBody = { fg = colour.mauve },
-	NotifyERRORBody = { fg = colour.slate },
-	NotifyINFOBody = { fg = colour.bazil },
-	NotifyTRACEBody = { fg = colour.ultra },
-	NotifyWARNBody = { fg = colour.amber },
+	NotifyWARNBody = { fg = colour.normal },
+
+	NotifyBackground = { bg = colour.space },
 
 	----------
 	-- mini --
