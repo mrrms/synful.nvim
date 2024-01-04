@@ -78,7 +78,7 @@ return {
 	DiagnosticUnnecessary = { fg = colour.ultra, bold = true },
 	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.blush },
 	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
-	DiagnosticVirtualTextInfo = { fg = colour.bazil, bg = colour.stone },
+	DiagnosticVirtualTextInfo = { fg = colour.bazil, bg = colour.steel },
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.orang },
 	DiagnosticWarn = { link = "Tag" },
 	DiffAdd = { link = "String" },
@@ -521,11 +521,11 @@ return {
 	------------
 	NotifyBackground = { bg = colour.space },
 	-- border
-	NotifyDEBUGBorder = { fg = colour.mauve },
-	NotifyERRORBorder = { fg = colour.rouge },
-	NotifyINFOBorder = { fg = colour.bazil },
-	NotifyTRACEBorder = { fg = colour.ultra },
-	NotifyWARNBorder = { fg = colour.amber },
+	NotifyDEBUGBorder = { fg = colour.death },
+	NotifyERRORBorder = { fg = colour.death },
+	NotifyINFOBorder = { fg = colour.death },
+	NotifyTRACEBorder = { fg = colour.death },
+	NotifyWARNBorder = { fg = colour.death },
 	-- icon
 	NotifyDEBUGIcon = { fg = colour.mauve },
 	NotifyERRORIcon = { fg = colour.rouge },
