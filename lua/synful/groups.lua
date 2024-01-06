@@ -2,7 +2,7 @@ local colour = require("synful.colour")
 
 -- resolves semantic highlighting for lsp servers
 local links = {
-	["@type.tsx"] = "CursorLineNr",
+	["@type.tsx"] = "Title",
 	["@keyword.tsx"] = "Macro",
 	["@repeat.lua"] = "Repeat",
 	["@function.tsx"] = "Title",
