@@ -48,6 +48,7 @@ local links = {
 	["@lsp.type.function.typescript"] = "Command",
 	["@keyword.coroutine.typescript"] = "Boolean",
 	["@exception.typescript"] = "Boolean",
+	["@include.typescript"] = "Keyword",
 }
 
 for newgroup, oldgroup in pairs(links) do
@@ -71,20 +72,6 @@ return {
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
 	Delimiter = { fg = colour.stone },
-	DiagnositicSignInfo = { fg = colour.bazil },
-	DiagnosticError = { fg = colour.rouge },
-	DiagnosticHint = { link = "Boolean" },
-	DiagnosticInfo = { fg = colour.bazil },
-	DiagnosticUnderlineError = { fg = colour.rouge, undercurl = true },
-	DiagnosticUnderlineHint = { fg = colour.bazil, undercurl = true },
-	DiagnosticUnderlineInfo = { fg = colour.bazil, undercurl = true },
-	DiagnosticUnderlineWarn = { fg = colour.amber, undercurl = true },
-	DiagnosticUnnecessary = { fg = colour.ultra, bold = true },
-	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.blush },
-	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
-	DiagnosticVirtualTextInfo = { fg = colour.bazil, bg = colour.steel },
-	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.orang },
-	DiagnosticWarn = { link = "Tag" },
 	DiffAdd = { link = "String" },
 	DiffChange = { link = "LineNr" },
 	DiffDelete = { link = "Boolean" },
@@ -400,7 +387,10 @@ return {
 	tsxString = { link = "String" },
 	tsxTag = { link = "LineNr" },
 	tsxTagName = { link = "Keyword" },
-	txsRegion = { link = "LineNr" },
+
+	----------------
+	-- typescript --
+	----------------
 	typescriptArray = { link = "Title" },
 	typescriptArrayMethod = { link = "Macro" },
 	typescriptArrowFunc = { link = "LineNr" },
@@ -472,6 +462,7 @@ return {
 	typescriptVariable = { link = "Keyword" },
 	typescriptVariableDeclaration = { link = "Normal" },
 	typescriptXHRMethod = { link = "Macro" },
+
 	variable = { link = "Title" },
 	vimEnvvar = { link = "Boolean" },
 	vimOper = { link = "Boolean" },
@@ -479,30 +470,34 @@ return {
 	vimUserFunc = { link = "Boolean" },
 	vimVar = { link = "Todo" },
 	xmlEndTag = { link = "Macro" },
-	zshBrackets = { link = "LineNr" },
-	zshCommands = { link = "Macro" },
+
+	---------
+	-- zsh --
+	---------
+	zshTodo = { link = "Todo" },
 	zshDeref = { link = "Todo" },
-	zshFunction = { link = "Function" },
+	zshOption = { link = "Macro" },
+	zshSubst = { link = "LineNr" },
 	zshKeyword = { link = "Title" },
 	zshLineNr = { link = "LineNr" },
 	zshNumber = { link = "Number" },
-	zshOptStart = { link = "Macro" },
-	zshOption = { link = "Macro" },
-	zshParentheses = { link = "LineNr" },
-	zshPrecommand = { link = "Macro" },
 	zshRedirect = { link = "Todo" },
-	zshShortDeref = { link = "Tag" },
 	zshString = { link = "String" },
-	zshStringDelimiter = { link = "String" },
-	zshSubst = { link = "LineNr" },
+	zshCommands = { link = "Macro" },
+	zshOptStart = { link = "Macro" },
+	zshShortDeref = { link = "Tag" },
 	zshSubstDelim = { link = "Tag" },
-	zshTodo = { link = "Todo" },
+	zshBrackets = { link = "LineNr" },
+	zshPrecommand = { link = "Macro" },
 	zslhComment = { link = "Comment" },
+	zshFunction = { link = "Function" },
+	zshParentheses = { link = "LineNr" },
+	zshStringDelimiter = { link = "String" },
+
 	---------
 	-- cmp --
 	---------
 	CmpItemMenu = { fg = colour.pearl },
-	CmpItemAbbrMatch = { fg = colour.royal, bold = true },
 	CmpItemKindColor = { fg = colour.paris },
 	CmpItemKindFolder = { fg = colour.steel },
 	CmpItemKindMethod = { fg = colour.metal },
@@ -514,41 +509,37 @@ return {
 	CmpItemKindOperator = { fg = colour.stone },
 	CmpItemKindProperty = { fg = colour.royal },
 	CmpItemKindVariable = { fg = colour.bazil },
+	CmpItemAbbrMatch = { fg = colour.royal, bold = true },
 	CmpItemAbbrMatchFuzzy = { fg = colour.royal, bold = true },
 	CmpItemKindMatchFuzzy = { fg = colour.royal, bold = true },
+	CmpDocumentation = { fg = colour.ashen, bg = colour.raven },
 	CmpItemAbbrMatchDefault = { fg = colour.royal, bold = true },
 	CmpItemAbbrMatchFuzzyDefault = { fg = colour.royal, bold = true },
-	CmpDocumentation = { fg = colour.ashen, bg = colour.raven },
 
 	------------
 	-- notify --
 	------------
-	NotifyERRORIcon = { fg = colour.rouge },
-	NotifyERRORBody = { fg = colour.normal },
-	NotifyERRORTitle = { fg = colour.rouge },
-	NotifyERRORBorder = { fg = colour.blush },
-
-	NotifyDEBUGIcon = { fg = colour.ashen },
+	NotifyBackground = { bg = colour.space },
 	NotifyDEBUGBody = { fg = colour.normal },
-	NotifyDEBUGTitle = { fg = colour.ashen },
 	NotifyDEBUGBorder = { fg = colour.ashen },
-
-	NotifyINFOIcon = { fg = colour.bazil },
+	NotifyDEBUGIcon = { fg = colour.ashen },
+	NotifyDEBUGTitle = { fg = colour.ashen },
+	NotifyERRORBody = { fg = colour.normal },
+	NotifyERRORBorder = { fg = colour.blush },
+	NotifyERRORIcon = { fg = colour.rouge },
+	NotifyERRORTitle = { fg = colour.rouge },
 	NotifyINFOBody = { fg = colour.normal },
-	NotifyINFOTitle = { fg = colour.bazil },
 	NotifyINFOBorder = { fg = colour.green },
-
+	NotifyINFOIcon = { fg = colour.bazil },
+	NotifyINFOTitle = { fg = colour.bazil },
 	NotifyTRACEBody = { fg = colour.normal },
+	NotifyTRACEBorder = { fg = colour.mauve },
 	NotifyTRACEIcon = { fg = colour.ultra },
 	NotifyTRACETitle = { fg = colour.ultra },
-	NotifyTRACEBorder = { fg = colour.mauve },
-
-	NotifyWARNIcon = { fg = colour.peach },
 	NotifyWARNBody = { fg = colour.normal },
-	NotifyWARNTitle = { fg = colour.peach },
 	NotifyWARNBorder = { fg = colour.orang },
-
-	NotifyBackground = { bg = colour.space },
+	NotifyWARNIcon = { fg = colour.peach },
+	NotifyWARNTitle = { fg = colour.peach },
 
 	----------
 	-- mini --
@@ -556,18 +547,29 @@ return {
 	MiniCursorword = { bg = colour.rouge },
 	MiniCursorwordCurrent = { bg = colour.mauve },
 
-	-- illuminate
-	illuminatedWord = { bg = colour.raven },
-	illuminatedCurWord = { bg = colour.raven },
-	IlluminatedWordText = { bg = colour.raven },
-	IlluminatedWordRead = { bg = colour.raven },
-	IlluminatedWordWrite = { bg = colour.raven },
-
-	-------------
-	-- LspSaga --
-	-------------
-	DiagnosticWarning = { link = "DiagnosticWarn" },
+	-----------------
+	-- Diagnostics --
+	-----------------
+	DiagnosticWarn = { link = "Tag" },
+	DiagnosticHint = { link = "Boolean" },
+	DiagnosticInfo = { fg = colour.bazil },
+	DiagnosticError = { fg = colour.rouge },
+	DiagnositicSignInfo = { fg = colour.bazil },
 	DiagnosticInformation = { fg = colour.bazil },
+	DiagnosticWarning = { link = "DiagnosticWarn" },
+	DiagnosticUnnecessary = { fg = colour.ultra, bold = true },
+	DiagnosticUnderlineHint = { fg = colour.bazil, undercurl = true },
+	DiagnosticUnderlineInfo = { fg = colour.bazil, undercurl = true },
+	DiagnosticUnderlineWarn = { fg = colour.amber, undercurl = true },
+	DiagnosticUnderlineError = { fg = colour.rouge, undercurl = true },
+	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
+	DiagnosticVirtualTextInfo = { fg = colour.bazil, bg = colour.steel },
+	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.orang },
+	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.blush },
+
+	---------
+	-- Lsp --
+	---------
 	LspFloatWinNormal = { bg = colour.raven },
 	LspFloatWinBorder = { fg = colour.ashen },
 	LspSagaBorderTitle = { fg = colour.capri },
