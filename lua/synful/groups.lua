@@ -46,6 +46,8 @@ local links = {
 	["@lsp.type.variable"] = "@variable",
 	["@lsp.type.variable.typescriptreact"] = "Title",
 	["@lsp.type.function.typescript"] = "Command",
+	["@keyword.coroutine.typescript"] = "Boolean",
+	["@exception.typescript"] = "Boolean",
 }
 
 for newgroup, oldgroup in pairs(links) do
