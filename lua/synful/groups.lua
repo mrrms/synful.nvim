@@ -42,8 +42,8 @@ local links = {
 	["@punctuation.delimiter.lua"] = "LineNr",
 	["@punctuation.delimiter.tsx"] = "LineNr",
 	["@keyword.coroutine.tsx"] = "Conditional",
-	["@lsp.type.function.typescriptreact"] = "Title",
 	["@lsp.type.variable.typescriptreact"] = "Title",
+	["@lsp.type.function.typescriptreact"] = "Command",
 }
 
 for newgroup, oldgroup in pairs(links) do
