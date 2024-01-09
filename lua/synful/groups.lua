@@ -49,6 +49,7 @@ local links = {
 	["@keyword.coroutine.typescript"] = "Boolean",
 	["@exception.typescript"] = "Boolean",
 	["@include.typescript"] = "Keyword",
+	["@lsp.type.function.lua "] = "Keyword",
 }
 
 for newgroup, oldgroup in pairs(links) do
@@ -139,8 +140,8 @@ return {
 	SpellRare = { link = "Macro" },
 	Statement = { link = "Macro" },
 	StatusLine = { link = "NonText" },
-	StatusLineNC = { fg = colour.space, bg = "NONE" },
 	StorageClass = { link = "Boolean" },
+	StatusLineNC = { fg = colour.space, bg = "NONE" },
 	String = { fg = colour.paris, italic = true, bold = true },
 	Structure = { link = "Title" },
 	Substitute = { link = "Title" },
