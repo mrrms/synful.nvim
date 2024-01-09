@@ -11,10 +11,10 @@ lualine.setup({
 			normal = {
 				a = { fg = colour.royal, bg = colour.raven, gui = "bold" },
 				b = { fg = colour.ashen, bg = colour.death, gui = "bold" },
-				c = { fg = colour.death, bg = "NONE" },
+				c = { fg = colour.stone, bg = "NONE", gui = "italic,bold" },
 			},
-			insert = { a = { fg = colour.paris, bg = colour.olive, gui = "bold" } },
-			visual = { a = { fg = colour.metal, bg = colour.capri, gui = "bold" } },
+			insert = { a = { fg = colour.paris, bg = colour.green, gui = "bold" } },
+			visual = { a = { fg = colour.capri, bg = colour.steel, gui = "bold" } },
 			replace = { a = { fg = colour.ashen, bg = colour.mauve, gui = "bold" } },
 			inactive = {
 				a = { fg = colour.ashen, bg = colour.space },
