@@ -50,6 +50,7 @@ local links = {
 	["@exception.typescript"] = "Boolean",
 	["@include.typescript"] = "Keyword",
 	["@lsp.type.function.lua"] = "Keyword",
+	["@function.call.bash"] = "TelescopeMatching",
 }
 
 for newgroup, oldgroup in pairs(links) do
@@ -60,8 +61,8 @@ return {
 	Bold = { bold = true },
 	Boolean = { fg = colour.mauve },
 	Character = { link = "Boolean" },
-	CodeiumSuggestion = { link = "Normal" },
 	ColorColumn = { link = "NonText" },
+	CodeiumSuggestion = { link = "Normal" },
 	Command = { fg = colour.slate, bold = true },
 	Comment = { fg = colour.metal, italic = true },
 	Conceal = { fg = colour.paris },
