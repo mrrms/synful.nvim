@@ -49,7 +49,7 @@ local links = {
 	["@keyword.coroutine.typescript"] = "Boolean",
 	["@exception.typescript"] = "Boolean",
 	["@include.typescript"] = "Keyword",
-	["@lsp.type.function.lua "] = "Keyword",
+	["@lsp.type.function.lua"] = "Keyword",
 }
 
 for newgroup, oldgroup in pairs(links) do
