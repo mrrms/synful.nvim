@@ -36,6 +36,7 @@ local links = {
 	["@lsp.type.enumMember"] = "@constant",
 	["@lsp.type.function"] = "Function",
 	["@lsp.type.function.typescriptreact"] = "Title",
+	["@variable.lua"] = "Macro",
 	["@lsp.type.interface"] = "Type",
 	["@lsp.type.macro"] = "Macro",
 	["@lsp.type.method"] = "@method",
@@ -465,7 +466,6 @@ return {
 	typescriptVariable = { link = "Keyword" },
 	typescriptVariableDeclaration = { link = "Normal" },
 	typescriptXHRMethod = { link = "Macro" },
-
 	variable = { link = "Title" },
 	vimEnvvar = { link = "Boolean" },
 	vimOper = { link = "Boolean" },
