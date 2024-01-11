@@ -37,6 +37,7 @@ local links = {
 	["@lsp.type.function"] = "Function",
 	["@lsp.type.function.typescriptreact"] = "Title",
 	["@variable.lua"] = "Macro",
+	["@lsp.type.variable.lua"] = "Macro",
 	["@lsp.type.interface"] = "Type",
 	["@lsp.type.macro"] = "Macro",
 	["@lsp.type.method"] = "@method",
