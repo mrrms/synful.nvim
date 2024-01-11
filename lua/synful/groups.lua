@@ -22,6 +22,7 @@ local links = {
 	["@keyword.return.tsx"] = "Return",
 	["@tag.delimiter.tsx"] = "Delimiter",
 	["@operator.typescript"] = "Number",
+	["@type.typescript"] = "Title",
 	["@function.typescript"] = "Command",
 	["@text.literal.vimdoc"] = "Function",
 	["@constat.builtin.lua"] = "Conditional",
