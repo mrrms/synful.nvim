@@ -63,7 +63,7 @@ end
 
 return {
 	Bold = { bold = true },
-	Boolean = { fg = colour.mauve },
+	Boolean = { fg = colour.mauve, italic = true },
 	Character = { link = "Boolean" },
 	ColorColumn = { link = "NonText" },
 	CodeiumSuggestion = { link = "Normal" },
