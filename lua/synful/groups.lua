@@ -30,6 +30,7 @@ local links = {
 	["@keyword.coroutine.tsx"] = "Conditional",
 	["@punctuation.delimiter.lua"] = "LineNr",
 	["@punctuation.delimiter.tsx"] = "LineNr",
+	["@punctuation.special.typescript"] = "Number",
 	["@lsp.type.class"] = "Type",
 	["@lsp.type.decorator"] = "Function",
 	["@lsp.type.enum"] = "Type",
