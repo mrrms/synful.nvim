@@ -27,6 +27,7 @@ local links = {
 	["@text.literal.vimdoc"] = "Function",
 	["@constat.builtin.lua"] = "Conditional",
 	["@constant.builtin.tsx"] = "Number",
+	["@constant.builtin.lua"] = "Character",
 	["@keyword.coroutine.tsx"] = "Conditional",
 	["@punctuation.delimiter.lua"] = "LineNr",
 	["@punctuation.delimiter.tsx"] = "LineNr",
