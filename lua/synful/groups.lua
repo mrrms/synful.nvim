@@ -56,7 +56,7 @@ local links = {
 	["@include.typescript"] = "Keyword",
 	["@lsp.type.function.lua"] = "Keyword",
 	["@function.call.bash"] = "TelescopeMatching",
-	["@keyword.operator.lua"] = "Tag",
+	["@keyword.operator.lua"] = "Return",
 }
 
 for newgroup, oldgroup in pairs(links) do
