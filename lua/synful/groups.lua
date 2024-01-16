@@ -54,7 +54,7 @@ local links = {
 	["@keyword.coroutine.typescript"] = "Character",
 	["@exception.typescript"] = "Character",
 	["@include.typescript"] = "Keyword",
-	["@lsp.type.function.lua"] = "Command",
+	["@lsp.type.function.lua"] = "Keyword",
 	["@function.call.bash"] = "TelescopeMatching",
 	["@keyword.operator.lua"] = "Return",
 }
