@@ -90,7 +90,7 @@ return {
 	ErrorMsg = { fg = colour.rouge },
 	Exception = { link = "Macro" },
 	Field = { link = "Title" },
-	FlashBackdrop = { fg = colour.pearl, bg = "NONE" },
+	FlashBackdrop = { fg = colour.ashen },
 	FlashLabel = { fg = colour.ultra, bg = colour.stone, bold = true },
 	Float = { link = "Boolean" },
 	FloatBorder = { fg = colour.ashen },
