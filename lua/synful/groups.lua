@@ -1,15 +1,5 @@
 local colour = require("synful.colour")
 
--- Define highlight groups for braces, brackets, and commas
-vim.api.nvim_command("highlight LuaBrace guifg=#ff0000")
-vim.api.nvim_command("highlight LuaBracket guifg=#00ff00")
-vim.api.nvim_command("highlight LuaComma guifg=#0000ff")
-
--- Apply the highlight groups to the appropriate syntax items
-vim.api.nvim_command("syntax match LuaBrace /[{}]/")
-vim.api.nvim_command("syntax match LuaBracket /[][]/")
-vim.api.nvim_command("syntax match LuaComma /,/")
-
 -- resolves semantic highlighting for lsp servers
 local links = {
 	["@type.tsx"] = "Title",
