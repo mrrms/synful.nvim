@@ -385,7 +385,7 @@ return {
 	tsxAttrib = { link = "Todo" },
 	tsxCloseComponentName = { link = "Keyword" },
 	tsxCloseString = { link = "LineNr" },
-	tsxCloseTag = { link = "Keyword" },
+	tsxCloseTag = { link = "LineNr" },
 	tsxCloseTagName = { link = "Keyword" },
 	tsxEqual = { link = "LineNr" },
 	tsxEscJs = { link = "Title" },
@@ -394,7 +394,7 @@ return {
 	tsxRegion = { link = "Title" },
 	tsxString = { link = "String" },
 	tsxTag = { link = "LineNr" },
-	tsxTagName = { link = "Keyword" },
+	tsxTagName = { fg = colour.steel, bold = true },
 
 	----------------
 	-- typescript --
