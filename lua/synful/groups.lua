@@ -477,6 +477,7 @@ return {
 	vimUserFunc = { link = "Boolean" },
 	vimVar = { link = "Todo" },
 	xmlEndTag = { link = "Macro" },
+	WinBar = { fg = colour.stone },
 
 	---------
 	-- zsh --
