@@ -3,7 +3,7 @@ local colour = require("synful.colour")
 -- resolves semantic highlighting for lsp servers
 local links = {
 	["@type.tsx"] = "Title",
-	["@keyword.tsx"] = "Macro",
+	["@keyword.tsx"] = "Keyword",
 	["@repeat.lua"] = "Repeat",
 	["@function.tsx"] = "Title",
 	["@keyword.lua"] = "Return",
@@ -108,7 +108,7 @@ return {
 	IncSearch = { link = "Visual" },
 	Include = { link = "Macro" },
 	Italic = { italic = true },
-	Keyword = { fg = colour.royal },
+	Keyword = { fg = colour.blues },
 	KeywordFunction = { link = "Macro" },
 	KeywordReturn = { fg = colour.olive },
 	Label = { link = "Macro" },
