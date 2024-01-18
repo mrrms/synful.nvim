@@ -10,7 +10,7 @@ return {
 	olive = "#5F875F",
 	bazil = "#597a69",
 	paris = "#81b3a9", --> #9EBFBF
-	steel = "#395391",
+	steel = "#364174",
 	blues = "#445599",
 	royal = "#6070C1",
 	capri = "#7AA7FF",
