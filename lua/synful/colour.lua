@@ -11,7 +11,7 @@ return {
 	paris = "#81b3a9", --> #9EBFBF
 	stone = "#413965",
 	metal = "#555585",
-	steel = "#2c3869",
+	steel = "#364174",
 	royal = "#6070C1",
 	capri = "#7AA7FF",
 	ultra = "#CBA6F7",
