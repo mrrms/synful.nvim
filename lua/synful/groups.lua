@@ -43,6 +43,7 @@ local links = {
 	["@lsp.type.interface"] = "Type",
 	["@lsp.type.macro"] = "Macro",
 	["@lsp.type.method"] = "luaFuncCall",
+	["@lsp.type.function.lua"] = "luaFuncCall",
 	["@lsp.type.namespace"] = "@namespace",
 	["@lsp.type.parameter"] = "@parameter",
 	["@lsp.type.property"] = "Identifier",
@@ -54,7 +55,6 @@ local links = {
 	["@keyword.coroutine.typescript"] = "Character",
 	["@exception.typescript"] = "Character",
 	["@include.typescript"] = "Keyword",
-	["@lsp.type.function.lua"] = "Keyword",
 	["@function.call.bash"] = "TelescopeMatching",
 	["@keyword.operator.lua"] = "Return",
 }
