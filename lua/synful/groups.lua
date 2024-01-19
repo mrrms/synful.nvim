@@ -85,7 +85,7 @@ return {
 	DiffChange = { link = "LineNr" },
 	DiffDelete = { link = "Boolean" },
 	DiffText = { link = "Macro" },
-	Directory = { link = "keyword" },
+	Directory = { fg = colour.steel, bold = true },
 	EndOfBuffer = { link = "StatusLineNC" },
 	Error = { fg = colour.rouge },
 	ErrorMsg = { fg = colour.rouge },
