@@ -468,7 +468,7 @@ return {
 	typescriptTypeReference = { link = "Return" },
 	typescriptURLUtilsProp = { link = "Boolean" },
 	typescriptUnaryOp = { link = "Boolean" },
-	typescriptVariable = { link = "Keyword" },
+	typescriptVariable = { fg = colour.royal },
 	typescriptVariableDeclaration = { link = "Normal" },
 	typescriptXHRMethod = { link = "Macro" },
 	variable = { link = "Title" },
