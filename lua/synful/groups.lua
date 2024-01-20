@@ -431,7 +431,7 @@ return {
 	typescriptExceptions = { link = "Boolean" },
 	typescriptExport = { link = "Keyword" },
 	typescriptFileReaderProp = { link = "Boolean" },
-	typescriptFuncCallArg = { link = "Keyword" },
+	typescriptFuncCallArg = { fg = colour.royal },
 	typescriptFuncComma = { link = "LineNr" },
 	typescriptFuncImpl = { link = "LineNr" },
 	typescriptFuncKeyword = { link = "Keyword" },
