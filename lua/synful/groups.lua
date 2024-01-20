@@ -440,7 +440,7 @@ return {
 	typescriptGlobal = { link = "Boolean" },
 	typescriptHeadersMethod = { link = "Macro" },
 	typescriptIdentifierName = { link = "Boolean" },
-	typescriptImport = { link = "Keyword" },
+	typescriptImport = { fg = colour.royal },
 	typescriptJSONStaticMethod = { link = "Boolean" },
 	typescriptMathStaticMethod = { link = "KeywordReturn" },
 	typescriptNull = { link = "Boolean" },
