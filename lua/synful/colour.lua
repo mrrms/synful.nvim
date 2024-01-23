@@ -11,7 +11,7 @@ return {
 	bazil = "#597A69",
 	paris = "#81B3A9", --> #9EBFBF
 	steel = "#394479",
-	blues = "#44559",
+	blues = "#445599",
 	royal = "#6070C1",
 	capri = "#7AA7FF",
 	ultra = "#CBA6F7",
