@@ -434,7 +434,7 @@ return {
 	typescriptFuncCallArg = { fg = colour.royal },
 	typescriptFuncComma = { link = "LineNr" },
 	typescriptFuncImpl = { link = "LineNr" },
-	typescriptFuncKeyword = { link = "Keyword" },
+	typescriptFuncKeyword = { link = "Macro" },
 	typescriptFuncName = { link = "Title" },
 	typescriptFuncTypeArrow = { link = "LineNr" },
 	typescriptGlobal = { link = "Boolean" },
