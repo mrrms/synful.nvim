@@ -10,13 +10,13 @@ lualine.setup({
 	options = {
 		theme = {
 			normal = {
-				a = { fg = colour.royal, bg = colour.raven, gui = "bold" },
-				b = { fg = colour.purps, bg = colour.death, gui = "bold" },
-				c = { fg = colour.stone, bg = "NONE", gui = "bold" },
+				a = { fg = colour.royal, bg = colour.raven },
+				b = { fg = colour.purps, bg = colour.death },
+				c = { fg = colour.stone, bg = "NONE" },
 			},
-			insert = { a = { fg = colour.paris, bg = colour.green, gui = "bold" } },
-			visual = { a = { fg = colour.capri, bg = colour.steel, gui = "bold" } },
-			replace = { a = { fg = colour.purps, bg = colour.mauve, gui = "bold" } },
+			insert = { a = { fg = colour.paris, bg = colour.green } },
+			visual = { a = { fg = colour.capri, bg = colour.steel } },
+			replace = { a = { fg = colour.purps, bg = colour.mauve } },
 			inactive = {
 				a = { fg = colour.ashen, bg = colour.space },
 				b = { fg = colour.ashen, bg = colour.space },
