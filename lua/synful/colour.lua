@@ -2,7 +2,7 @@ return {
 	space = "#111119",
 	raven = "#191929",
 	death = "#232333",
-	soots = "#2d2d40",
+	soots = "#282136",
 	stone = "#3B4261",
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF
