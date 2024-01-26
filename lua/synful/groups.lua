@@ -443,7 +443,7 @@ return {
 	typescriptImport = { fg = colour.royal },
 	typescriptJSONStaticMethod = { link = "Boolean" },
 	typescriptMathStaticMethod = { link = "KeywordReturn" },
-	typescriptMember = { fg = colour.slate },
+	typescriptMember = { fg = colour.pearl },
 	typescriptNull = { link = "Boolean" },
 	typescriptObjectColon = { link = "LineNr" },
 	typescriptObjectLabel = { link = "Todo" },
