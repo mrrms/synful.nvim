@@ -122,6 +122,7 @@ return {
 	MatchParen = { fg = colour.rouge, bold = true },
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	typescriptAliasKeyword = { fg = colour.bazil },
+	typescriptMemberOptionality = { fg = colour.mauve },
 	Noise = { link = "Boolean" },
 	NonText = { fg = "NONE", bg = "NONE" },
 	Normal = { fg = colour.pearl },
