@@ -76,7 +76,7 @@ return {
 	Conditional = { fg = colour.mauve, italic = true },
 	Constant = { link = "Macro" },
 	Cursor = { link = "Title" },
-	CursorLine = { bg = colour.raven },
+	CursorLine = { bg = "NONE" },
 	CursorLineNr = { fg = colour.bazil, bold = true },
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
