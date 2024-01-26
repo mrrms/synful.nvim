@@ -94,7 +94,7 @@ return {
 	FlashBackdrop = { fg = colour.stone },
 	FlashLabel = { fg = colour.ultra, bg = colour.stone, bold = true },
 	Float = { link = "Boolean" },
-	FloatBorder = { fg = colour.death },
+	FloatBorder = { fg = colour.soots },
 	FloatShadow = { link = "NonText" },
 	FloatShadowThrough = { link = "NonText" },
 	FoldColumn = { link = "Boolean" },
