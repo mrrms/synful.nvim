@@ -339,7 +339,7 @@ return {
 	----------------
 	-- typescript --
 	----------------
-	typescriptArray = { fg = colour.blues, bold = true },
+	typescriptArray = { fg = colour.blues },
 	typescriptArrayMethod = { link = "Macro" },
 	typescriptArrowFunc = { link = "LineNr" },
 	typescriptArrowFuncArg = { link = "Title" },
