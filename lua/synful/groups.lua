@@ -6,7 +6,7 @@ return {
 	Character = { fg = colour.mauve, italic = true },
 	luaBrackets = { fg = colour.stone },
 	ColorColumn = { link = "NonText" },
-	CodeiumSuggestion = { link = "Normal" },
+	CodeiumSuggestion = { fg = colour.metal, bold = true, italic = true },
 	Command = { fg = colour.slate, bold = true },
 	Comment = { fg = colour.metal, italic = true },
 	Conceal = { fg = colour.paris },
