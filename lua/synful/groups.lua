@@ -103,7 +103,7 @@ return {
 	TelescopePromptTitle = { link = "Macro" },
 	TelescopeSelection = { link = "PmenuSel" },
 	TelescopeSelectionCaret = { link = "PmenuSel" },
-	Title = { fg = colour.pearl },
+	Title = { fg = colour.slate },
 	Todo = { fg = colour.capri },
 	Type = { link = "String" },
 	Typedef = { link = "LineNr" },
