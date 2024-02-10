@@ -506,7 +506,7 @@ return {
 	DiagnosticWarning = { link = "DiagnosticWarn" },
 	DiagnositicSignInfo = { fg = colour.bazil },
 	DiagnosticInformation = { fg = colour.bazil },
-	DiagnosticUnnecessary = { fg = colour.ashen },
+	DiagnosticUnnecessary = { fg = colour.purps },
 	DiagnosticUnderlineHint = { fg = colour.bazil, undercurl = true },
 	DiagnosticUnderlineInfo = { fg = colour.bazil, undercurl = true },
 	DiagnosticUnderlineWarn = { fg = colour.amber, undercurl = true },
