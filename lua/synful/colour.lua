@@ -3,6 +3,8 @@ return {
 	raven = "#191929",
 	death = "#232333",
 	soots = "#282136",
+	blush = "#2F1D23",
+	orang = "#25201E",
 	stone = "#3B4261",
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF
@@ -20,8 +22,6 @@ return {
 	metal = "#555585",
 	purps = "#413965",
 	rouge = "#A94064",
-	blush = "#2F1D23",
-	orang = "#25201E",
 	ashen = "#5C4C62",
 	amber = "#DB9280",
 	peach = "#FFCDCD",
