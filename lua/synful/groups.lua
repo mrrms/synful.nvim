@@ -70,7 +70,7 @@ return {
 	Pmenu = { fg = colour.pearl },
 	PmenuSbar = { link = "Title" },
 	PmenuSel = { fg = colour.slate, bg = colour.stone },
-	PmenuThumb = { fg = colour.mauve, bg = "NONE" },
+	PmenuThumb = { fg = colour.space, bg = "NONE" },
 	PreCondit = { link = "LineNr" },
 	PreProc = { link = "Normal" },
 	Repeat = { fg = colour.royal },
