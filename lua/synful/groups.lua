@@ -69,7 +69,7 @@ return {
 	Operator = { fg = colour.stone },
 	Pmenu = { fg = colour.pearl },
 	PmenuSbar = { link = "Title" },
-	PmenuSel = { fg = colour.slate, bg = colour.death },
+	PmenuSel = { fg = colour.golds, bg = colour.death },
 	PmenuThumb = { fg = colour.space, bg = "NONE" },
 	PreCondit = { link = "LineNr" },
 	PreProc = { link = "Normal" },
