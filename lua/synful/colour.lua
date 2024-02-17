@@ -25,5 +25,4 @@ return {
 	ashen = "#5C4C62",
 	amber = "#DB9280",
 	peach = "#FFCDCD",
-	golds = "#774535",
 }
