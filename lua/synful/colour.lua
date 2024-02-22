@@ -4,7 +4,7 @@ return {
 	death = "#232743",
 	soots = "#282136",
 	blush = "#2F1D23",
-	sleet = "#33374f",
+	sleet = "#32385c",
 	orang = "#25201E",
 	stone = "#3B4261",
 	slate = "#676E96", --> #8088b0
