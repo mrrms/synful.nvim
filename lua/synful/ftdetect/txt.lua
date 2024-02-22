@@ -1,19 +1,17 @@
+-- create a table with highlight groups and corresponding regex patterns
 local groups = {
-	{ "Comment", "^--.*" },
-	{ "Identifier", "^%a[%w_]*" },
-	{ "Keyword", "^%a[%w_]*" },
-	{ "Constant", "^%a[%w_]*" },
-	{ "String", "^%a[%w_]*" },
-	{ "Type", "^%a[%w_]*" },
-	{ "Function", "^%a[%w_]*" },
-	{ "Number", "^%d+" },
-	{ "Boolean", "^%a[%w_]*" },
-	{ "Operator", "^%a[%w_]*" },
-	{ "PreProc", "^%a[%w_]*" },
-	{ "Include", "^%a[%w_]*" },
+	{ "^--.*", "Comment" },
+	{ "^%a[%w_]*", "Identifier" },
+	{ "^%d+%.%d+%.%d+%.%d+", "Number" },
+	{ "^%a[%w_]*%s*%a[%w_]*", "Todo" },
+	-- strings between single quotes
+	{ "^'.*'", "String" },
+	{ '^".*"', "String" },
 }
 
--- Loop through the groups table to apply the highlight groups
+-- iterate through the 'groups' table to apply the highlight groups
 for _, group in ipairs(groups) do
+	-- syntax match <group[1]> <group[2]>
+	vim.api.nvim_command("syntax match " .. group[2] .. " /" .. group[1] .. "/")
 	vim.api.nvim_set_hl(0, group[1], { link = group[2] })
 end
