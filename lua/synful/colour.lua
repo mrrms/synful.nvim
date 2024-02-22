@@ -5,7 +5,8 @@ return {
 	soots = "#282136",
 	blush = "#2F1D23",
 	orang = "#25201E",
-	stone = "#3B4261",
+	sleet = "#33374f",
+	stone = "#232743",
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF
 	ghost = "#A8B4F6",
