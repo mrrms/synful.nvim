@@ -440,7 +440,7 @@ return {
 	zshBrackets = { link = "LineNr" },
 	zshPrecommand = { link = "Macro" },
 	zslhComment = { link = "Comment" },
-	zshFunction = { link = "Function" },
+	zshFunction = { fg = colour.amber, italic = true, bold = true },
 	zshParentheses = { link = "LineNr" },
 	zshStringDelimiter = { link = "String" },
 
