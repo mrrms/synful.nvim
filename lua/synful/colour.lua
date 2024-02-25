@@ -1,11 +1,11 @@
 return {
 	space = "#111119",
 	raven = "#191923",
-	death = "#232743",
 	soots = "#282136",
 	blush = "#2F1D23",
-	sleet = "#32385c",
 	orang = "#25201E",
+	death = "#232743",
+	sleet = "#32385c",
 	stone = "#3B4261",
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF
