@@ -5,7 +5,7 @@ return {
 	blush = "#2F1D23",
 	orang = "#25201E",
 	death = "#232743",
-	sleet = "#32385c",
+	sleet = "#32385c", -->
 	stone = "#3B4261",
 	slate = "#676E96", --> #8088b0
 	pearl = "#9FA7CF", --> #9FA7CF
@@ -18,7 +18,7 @@ return {
 	blues = "#445599",
 	royal = "#6070C1",
 	capri = "#7AA7FF",
-	ultra = "#CBA6F7",
+	ultra = "#CBA6F7", --> #b19bb0#43405c
 	mauve = "#734A80",
 	metal = "#555585",
 	purps = "#413965",
