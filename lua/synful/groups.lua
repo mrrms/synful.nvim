@@ -14,7 +14,7 @@ return {
 	Constant = { link = "Macro" },
 	Cursor = { link = "Title" },
 	CursorLine = { bg = colour.death },
-	CursorLineNr = { fg = colour.death, bg = colour.death },
+	CursorLineNr = { fg = colour.amber, bg = colour.death },
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
 	Delimiter = { fg = colour.stone },
