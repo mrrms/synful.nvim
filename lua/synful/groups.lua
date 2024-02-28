@@ -104,7 +104,7 @@ return {
 	TelescopeSelection = { link = "PmenuSel" },
 	TelescopeSelectionCaret = { link = "PmenuSel" },
 	TelescopeNormal = { fg = colour.slate },
-	Title = { fg = colour.pearl },
+	Title = { fg = colour.slate },
 	Todo = { fg = colour.capri },
 	Type = { link = "String" },
 	Typedef = { link = "LineNr" },
