@@ -7,8 +7,8 @@ return {
 	death = "#232743",
 	sleet = "#32385c", -->
 	stone = "#3B4261",
-	slate = "#676E96", --> #8088b0
-	pearl = "#9FA7CF", --> #9FA7CF
+	slate = "#676E96", --> #7583b0
+	pearl = "#7583b0", --> #9FA7CF
 	ghost = "#A8B4F6",
 	green = "#2D3D3D",
 	olive = "#5F875F",
