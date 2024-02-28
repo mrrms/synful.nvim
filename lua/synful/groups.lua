@@ -62,7 +62,7 @@ return {
 	typescriptMemberOptionality = { fg = colour.mauve },
 	Noise = { link = "Boolean" },
 	NonText = { fg = "NONE", bg = "NONE" },
-	Normal = { fg = colour.pearl },
+	Normal = { fg = colour.slate },
 	NormalFloat = { fg = colour.slate, bg = "NONE" },
 	Number = { link = "Boolean" },
 	NvimInternalError = { fg = colour.rouge },
