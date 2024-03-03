@@ -18,9 +18,10 @@ return {
 	blues = "#445599",
 	royal = "#6070C1",
 	capri = "#7AA7FF",
-	ultra = "#CBA6F7", --> #b19bb0#43405c
-	mauve = "#734A80",
-	metal = "#555585",
+	ultra = "#CBA6F7",
+	scrub = "#b19bb0",
+	mauve = "#734A80", -- "#43405c"
+	metal = "#43405c",
 	purps = "#413965",
 	rouge = "#A94064",
 	ashen = "#5C4C62",
