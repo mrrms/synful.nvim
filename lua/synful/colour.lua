@@ -5,7 +5,7 @@ return {
 	blush = "#2F1D23",
 	orang = "#25201E",
 	death = "#232743",
-	sleet = "#32385c", -->
+	sleet = "#32385c",
 	stone = "#3B4261",
 	slate = "#676E96", --> #7583b0
 	pearl = "#97a1cf", --> #9FA7CF

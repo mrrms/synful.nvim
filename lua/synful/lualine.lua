@@ -16,7 +16,7 @@ lualine.setup({
 			},
 			insert = {
 				a = { fg = colour.paris, bg = colour.green },
-				b = { fg = "#b19bb0", bg = "#43405c" },
+				b = { fg = colour.scrub, bg = colour.metal },
 			},
 			visual = { a = { fg = colour.capri, bg = colour.steel } },
 			replace = { a = { fg = colour.purps, bg = colour.mauve } },
