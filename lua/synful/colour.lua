@@ -20,7 +20,7 @@ return {
 	capri = "#7AA7FF",
 	ultra = "#CBA6F7",
 	scrub = "#b19bb0",
-	mauve = "#734A80", -- "#43405c"
+	mauve = "#734A80",
 	metal = "#43405c",
 	purps = "#413965",
 	rouge = "#A94064",
