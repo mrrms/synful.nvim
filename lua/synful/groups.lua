@@ -330,12 +330,12 @@ return {
 	tsxCloseTagName = { link = "Keyword" },
 	tsxEqual = { link = "LineNr" },
 	tsxEscJs = { link = "Title" },
-	tsxIntrinsicTagName = { link = "Keyword" },
 	tsxJsBlock = { link = "Title" },
 	tsxRegion = { link = "Title" },
 	tsxString = { link = "String" },
 	tsxTag = { link = "LineNr" },
 	tsxTagName = { fg = colour.steel, bold = true },
+	tsxIntrinsicTagName = { fg = colour.steel, bold = true },
 
 	----------------
 	-- typescript --
