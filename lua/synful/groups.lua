@@ -8,7 +8,7 @@ return {
 	luaBrackets = { fg = colour.stone },
 	CodeiumSuggestion = { fg = colour.sleet },
 	Command = { fg = colour.slate, bold = true },
-	Comment = { fg = colour.sleet, italic = true },
+	Comment = { fg = colour.purps, italic = true },
 	Conceal = { fg = colour.paris },
 	Conditional = { fg = colour.mauve, italic = true },
 	Constant = { link = "Macro" },
