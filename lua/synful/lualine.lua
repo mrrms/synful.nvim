@@ -16,13 +16,13 @@ lualine.setup({
 			},
 			insert = {
 				a = { fg = colour.paris, bg = colour.green },
-				b = { fg = colour.scrub, bg = colour.metal },
+				b = { fg = colour.ultra, bg = colour.stone },
 			},
 			visual = { a = { fg = colour.capri, bg = colour.steel } },
 			replace = { a = { fg = colour.purps, bg = colour.mauve } },
 			inactive = {
-				a = { fg = colour.ashen, bg = colour.space },
-				b = { fg = colour.ashen, bg = colour.space },
+				a = { fg = colour.slate, bg = colour.space },
+				b = { fg = colour.slate, bg = colour.space },
 				c = { fg = colour.space, bg = colour.space },
 			},
 		},
