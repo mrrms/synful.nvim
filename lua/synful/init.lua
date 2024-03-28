@@ -1,8 +1,6 @@
 local groups = require("synful.groups")
 
--- can/ought this be moved to a setup function
 require("synful.lualine")
-require("synful.syntax.txt")
 
 return {
 	load = function()
