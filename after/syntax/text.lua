@@ -1,3 +1,5 @@
+print("first of all, is this being detected?")
+
 local groups = {
 	Macro = "•",
 	Number = "\\d\\+",
