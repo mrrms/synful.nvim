@@ -17,6 +17,5 @@ return {
 		end
 
 		vim.cmd("colorscheme synful")
-		require("synful.syntax.ts")
 	end,
 }
