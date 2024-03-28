@@ -1,7 +1,4 @@
-local groups = {
-	{ "*", "Boolean" },
-}
+-- When an index.ts file is opened, detect the character * and link the highlight group to 'Boolean'
+-- write this in luascript
 
-for _, group in ipairs(groups) do
-	vim.cmd("syntax match " .. group[2] .. " /" .. group[1] .. "/ contains=" .. group[2])
-end
+vim.cmd("autocmd BufRead,BufNewFile *.ts syntax match Boolean /\\*/")
