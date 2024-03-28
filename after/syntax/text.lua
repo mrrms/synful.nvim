@@ -1,1 +1,1 @@
-vim.cmd("the file has been detected")
+print("the file has been detected")
