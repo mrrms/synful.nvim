@@ -5,6 +5,9 @@ local groups = {
 	{ "Number", "%d+" },
 	{ "Boolean", "true" },
 	{ "Operator", "[%+%-*/]" },
+	{ "Keyword", "/^# .*/" },
+	{ "Function", "/TODO/" },
+	{ "Boolean", "/NOTE/" },
 }
 
 for _, group in ipairs(groups) do
