@@ -1,0 +1,6 @@
+• Does this match a macro?
+-- does this then become a string?
+33 are numbers highlighted?
+true are booleans included
+6 + 10 = 16
+// comment?
