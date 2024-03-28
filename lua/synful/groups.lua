@@ -54,7 +54,7 @@ return {
 	LazyDimmed = { link = "Tag" },
 	LazyNormal = { link = "pmenu" },
 	LazyProp = { link = "Boolean" },
-	LineNr = { fg = colour.stone },
+	LineNr = { fg = colour.ashen },
 	Macro = { fg = colour.royal },
 	MatchParen = { fg = colour.rouge, bold = true },
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
