@@ -1,1 +1,1 @@
-print("./synful/lua/after/syntax/lua.lua")
+print("./synful/lua/lua.lua")
