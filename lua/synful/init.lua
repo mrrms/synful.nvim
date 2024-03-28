@@ -2,7 +2,6 @@ local groups = require("synful.groups")
 
 -- can/ought this be moved to a setup function
 require("synful.lualine")
-require("synful.syntax.ts")
 require("synful.syntax.txt")
 
 return {
@@ -18,5 +17,6 @@ return {
 		end
 
 		vim.cmd("colorscheme synful")
+		require("synful.syntax.ts")
 	end,
 }
