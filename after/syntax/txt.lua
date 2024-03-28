@@ -1,15 +1,14 @@
 local groups = {
-	{ "Function", "TODO" },
-	{ "Boolean", "NOTE" },
-	{ "Macro", "•" },
-	{ "Number", "\\d\\+" },
-	{ "String", "'[^']*'" },
-	{ "Comment", "--.*" },
-	{ "Boolean", "true|false" },
-	{ "Operator", "[%+%-*/]" },
-	{ "Keyword", "^# .*" },
+	Macro = "•",
+	Number = "\\d\\+",
+	String = "'[^']*'",
+	Comment = "--.*",
+	Boolean = "true|false",
+	Operator = "[%+%-*/]",
+	Function = "TODO",
+	Keyword = "^# .*",
 }
 
-for _, group in ipairs(groups) do
-	vim.cmd("syntax match " .. group[1] .. " " .. group[2] .. "'")
+for k, v in pairs(groups) do
+	vim.cmd("syntax match " .. k .. " " .. v)
 end
