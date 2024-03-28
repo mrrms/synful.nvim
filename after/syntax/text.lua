@@ -1,5 +1,4 @@
-print("first of all, is this being detected?")
-
+-- stylua: ignore
 local groups = {
 	Macro = "•",
 	Number = "\\d\\+",
@@ -11,6 +10,7 @@ local groups = {
 	Keyword = "^# .*",
 }
 
+-- stylua: ignore
 for k, v in pairs(groups) do
-	vim.cmd("syntax match " .. k .. " " .. v)
+	vim.cmd('syntax match ' .. k .. ' ' .. v .. "'")
 end
