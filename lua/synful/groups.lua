@@ -60,6 +60,7 @@ return {
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	typescriptAliasKeyword = { fg = colour.olive },
 	typescriptMemberOptionality = { fg = colour.mauve },
+	typescriptDOMFormProp = { fg = colour.olive },
 	Noise = { link = "Boolean" },
 	NonText = { fg = "NONE", bg = "NONE" },
 	Normal = { fg = colour.pearl },
