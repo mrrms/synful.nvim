@@ -1,13 +1,13 @@
 local groups = {
 	{ "Macro", "•" },
-	{ "String", "'[^']*" },
+	{ "String", "'[^']*'" },
 	{ "Comment", "--.*" },
 	{ "Number", "%d+" },
 	{ "Boolean", "true" },
 	{ "Operator", "[%+%-*/]" },
-	{ "Keyword", "/^# .*/" },
-	{ "Function", "/TODO/" },
-	{ "Boolean", "/NOTE/" },
+	{ "Keyword", "^# .*" },
+	{ "Function", "TODO" },
+	{ "Boolean", "NOTE" },
 }
 
 for _, group in ipairs(groups) do
