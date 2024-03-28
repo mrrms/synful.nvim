@@ -1,7 +1,7 @@
 local groups = {
-	{ "*", "Boolean" },
+	{ "^%s*%w+%.", "Boolean" },
 }
 
 for _, group in ipairs(groups) do
-	vim.cmd("syntax match " .. group[2] .. " /" .. group[1] .. "/")
+	vim.cmd("syntax match " .. group[2] .. " " .. group[1])
 end
