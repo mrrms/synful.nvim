@@ -341,7 +341,7 @@ return {
 	----------------
 	-- typescript --
 	----------------
-	typescriptArray = { fg = colour.steel },
+	typescriptArray = { fg = colour.pearl },
 	typescriptArrayMethod = { link = "Macro" },
 	typescriptArrowFunc = { link = "LineNr" },
 	typescriptArrowFuncArg = { link = "Title" },
