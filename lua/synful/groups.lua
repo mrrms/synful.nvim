@@ -49,7 +49,7 @@ return {
 	Keyword = { fg = colour.steel },
 	KeywordFunction = { link = "Macro" },
 	KeywordReturn = { fg = colour.olive },
-	Label = { link = "Macro" },
+	Label = { fg = colour.royal, underline = true },
 	LazyCommit = { link = "Boolean" },
 	LazyDimmed = { link = "Tag" },
 	LazyNormal = { link = "pmenu" },
