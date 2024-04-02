@@ -6,7 +6,7 @@ return {
 	pearl = "#97a1cf",
 	slate = "#676E96",
 	capri = "#7AA7FF",
-	royal = "#6070C1",
+	royal = "#566AB1",
 	steel = "#394479",
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
