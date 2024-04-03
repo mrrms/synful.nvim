@@ -15,11 +15,11 @@ lualine.setup({
 				c = { fg = colour.ashen },
 			},
 			insert = {
-				a = { fg = colour.paris },
+				a = { fg = colour.ashen },
 				b = { fg = colour.ashen },
 			},
-			visual = { a = { fg = colour.royal } },
-			replace = { a = { fg = colour.rouge } },
+			visual = { a = { fg = colour.ashen } },
+			replace = { a = { fg = colour.ashen } },
 			inactive = {
 				a = { fg = colour.ashen },
 				b = { fg = colour.ashen },
