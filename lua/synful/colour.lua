@@ -2,7 +2,7 @@ return {
 	pearl = "#97a1cf",
 	slate = "#68709E",
 	ashen = "#454973",
-	capri = "#7285BC",
+	capri = "#6780CA",
 	royal = "#566AB1",
 	steel = "#3F548F",
 	stone = "#3D3D69",
