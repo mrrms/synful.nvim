@@ -504,7 +504,7 @@ return {
 	DiagnosticWarn = { link = "Tag" },
 	DiagnosticHint = { link = "Boolean" },
 	DiagnosticInfo = { fg = colour.olive },
-	DiagnosticError = { fg = colour.rouge },
+	DiagnosticError = { fg = colour.blush },
 	DiagnosticWarning = { link = "DiagnosticWarn" },
 	DiagnositicSignInfo = { fg = colour.olive },
 	DiagnosticInformation = { fg = colour.olive },
@@ -516,7 +516,7 @@ return {
 	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
 	DiagnosticVirtualTextInfo = { fg = colour.capri, bg = colour.steel },
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.flush },
-	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.rouge },
+	DiagnosticVirtualTextError = { fg = colour.blush, bg = colour.rouge },
 
 	---------
 	-- Lsp --
