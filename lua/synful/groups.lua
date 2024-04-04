@@ -24,8 +24,8 @@ return {
 	DiffText = { link = "Macro" },
 	Directory = { fg = colour.steel, bold = true },
 	EndOfBuffer = { link = "StatusLineNC" },
-	Error = { fg = colour.rouge },
-	ErrorMsg = { fg = colour.rouge },
+	Error = { fg = colour.blush },
+	ErrorMsg = { fg = colour.blush },
 	Exception = { link = "Macro" },
 	Field = { link = "Title" },
 	FlashBackdrop = { fg = colour.stone },
@@ -56,7 +56,7 @@ return {
 	LazyProp = { link = "Boolean" },
 	LineNr = { fg = colour.ashen },
 	Macro = { fg = colour.royal },
-	MatchParen = { fg = colour.rouge, bold = true },
+	MatchParen = { fg = colour.blush, bold = true },
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	typescriptAliasKeyword = { fg = colour.olive },
 	typescriptMemberOptionality = { fg = colour.mauve },
@@ -66,7 +66,7 @@ return {
 	Normal = { fg = colour.pearl },
 	NormalFloat = { fg = colour.slate, bg = "NONE" },
 	Number = { link = "Boolean" },
-	NvimInternalError = { fg = colour.rouge },
+	NvimInternalError = { fg = colour.blush },
 	Operator = { fg = colour.stone },
 	Pmenu = { fg = colour.pearl },
 	PmenuSbar = { link = "Title" },
@@ -109,13 +109,13 @@ return {
 	Todo = { fg = colour.capri },
 	Type = { link = "String" },
 	Typedef = { link = "LineNr" },
-	Underlined = { fg = colour.rouge },
+	Underlined = { fg = colour.blush },
 	VertSplit = { link = "NonText" },
 	Visual = { fg = colour.capri, bg = colour.steel, bold = true },
 	VisualNOS = { link = "Title" },
 	WarningMsg = { link = "LineNr" },
 	Whitespace = { fg = colour.space },
-	WildMenu = { fg = colour.rouge, bg = colour.capri },
+	WildMenu = { fg = colour.blush, bg = colour.capri },
 	constructor = { fg = colour.steel, bold = true },
 	cssAtKeyword = { link = "Tag" },
 	cssAttrRegion = { link = "Todo" },
@@ -477,8 +477,8 @@ return {
 	NotifyDEBUGTitle = { fg = colour.purps },
 	NotifyERRORBody = { fg = colour.normal },
 	NotifyERRORBorder = { fg = colour.blush },
-	NotifyERRORIcon = { fg = colour.rouge },
-	NotifyERRORTitle = { fg = colour.rouge },
+	NotifyERRORIcon = { fg = colour.blush },
+	NotifyERRORTitle = { fg = colour.blush },
 	NotifyINFOBody = { fg = colour.normal },
 	NotifyINFOBorder = { fg = colour.green },
 	NotifyINFOIcon = { fg = colour.olive },
@@ -488,14 +488,14 @@ return {
 	NotifyTRACEIcon = { fg = colour.ultra },
 	NotifyTRACETitle = { fg = colour.ultra },
 	NotifyWARNBody = { fg = colour.normal },
-	NotifyWARNBorder = { fg = colour.orang },
+	NotifyWARNBorder = { fg = colour.flush },
 	NotifyWARNIcon = { fg = colour.peach },
 	NotifyWARNTitle = { fg = colour.peach },
 
 	----------
 	-- mini --
 	----------
-	MiniCursorword = { bg = colour.rouge },
+	MiniCursorword = { bg = colour.blush },
 	MiniCursorwordCurrent = { bg = colour.mauve },
 
 	-----------------
@@ -515,8 +515,8 @@ return {
 	DiagnosticUnderlineError = { fg = colour.rouge, undercurl = true },
 	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
 	DiagnosticVirtualTextInfo = { fg = colour.capri, bg = colour.steel },
-	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.orang },
-	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.blush },
+	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.flush },
+	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.rouge },
 
 	---------
 	-- Lsp --
