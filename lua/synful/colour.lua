@@ -2,7 +2,7 @@ return {
 	space = "#111119",
 	raven = "#191923",
 	stone = "#232340",
-	ashen = "#333355",
+	ashen = "#444466",
 	pearl = "#97a1cf",
 	slate = "#676E96",
 	capri = "#7AA7FF",
