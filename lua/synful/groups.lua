@@ -398,7 +398,7 @@ return {
 	typescriptResponseProp = { link = "Boolean" },
 	typescriptStatementKeyword = { link = "Return" },
 	typescriptStringMethod = { link = "Macro" },
-	typescriptTemplate = { link = "Boolean" },
+	typescriptTemplate = { link = "Tag" },
 	typescriptTemplateSB = { link = "Tag" },
 	typescriptTemplateSubstitution = { link = "Todo" },
 	typescriptTernary = { link = "Todo" },
