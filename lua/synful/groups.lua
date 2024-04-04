@@ -31,7 +31,7 @@ return {
 	FlashBackdrop = { fg = colour.stone },
 	FlashLabel = { fg = colour.ultra, bg = colour.stone, bold = true },
 	Float = { link = "Boolean" },
-	FloatBorder = { fg = colour.stone },
+	FloatBorder = { fg = colour.raven },
 	FloatShadow = { link = "NonText" },
 	FloatShadowThrough = { link = "NonText" },
 	FoldColumn = { link = "Boolean" },
