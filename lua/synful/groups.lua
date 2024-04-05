@@ -46,7 +46,7 @@ return {
 	IncSearch = { link = "Visual" },
 	Include = { link = "Macro" },
 	Italic = { italic = true },
-	Keyword = { fg = colour.steel },
+	Keyword = { link = "Macro" },
 	KeywordFunction = { link = "Macro" },
 	KeywordReturn = { fg = colour.olive },
 	Label = { fg = colour.royal, underline = true },
