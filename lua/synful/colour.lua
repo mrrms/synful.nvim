@@ -9,7 +9,7 @@ return {
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
 	purps = "#413965",
-	paris = "#9DBBB2",
+	paris = "#93B3AA",
 	olive = "#597A69",
 	green = "#2E4545",
 	peach = "#B18B8B",
