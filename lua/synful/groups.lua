@@ -376,7 +376,7 @@ return {
 	typescriptFuncComma = { link = "LineNr" },
 	typescriptFuncImpl = { link = "LineNr" },
 	typescriptFuncKeyword = { link = "Keyword" },
-	typescriptFuncName = { fg = colour.slate, bold = true, italic = true },
+	typescriptFuncName = { fg = colour.slate, bold = true },
 	typescriptFuncTypeArrow = { link = "LineNr" },
 	typescriptGlobal = { link = "Boolean" },
 	typescriptHeadersMethod = { link = "Macro" },
