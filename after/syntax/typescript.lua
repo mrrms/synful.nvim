@@ -1,6 +1,7 @@
 local groups = {
 	{ "Boolean", "*" },
 	{ "String", "from" },
+	{ ",", "LineNr" },
 }
 
 for _, group in ipairs(groups) do
