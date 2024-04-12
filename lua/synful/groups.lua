@@ -6,6 +6,7 @@ return {
 	Character = { fg = colour.mauve, italic = true },
 	ColorColumn = { link = "NonText" },
 	luaBrackets = { fg = colour.stone },
+	luaLoop = { fg = colour.number },
 	CodeiumSuggestion = { fg = colour.purps },
 	Command = { fg = colour.slate, bold = true },
 	Comment = { fg = colour.ashen, italic = true },
