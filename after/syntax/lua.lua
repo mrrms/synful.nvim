@@ -1,3 +1,8 @@
--- provide a syntax match for periods or dots in lua '.'
-vim.cmd("syntax match luaDot '\\.'")
-vim.cmd("hi def link luaDot Number")
+local groups = {
+	{ "Number", "\\." },
+	{ "Number", "_" },
+}
+
+for _, group in ipairs(groups) do
+	vim.cmd("syntax match " .. group[1] .. " '" .. group[2] .. "'")
+end
