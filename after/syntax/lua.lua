@@ -1,6 +1,6 @@
 local groups = {
-	{ "Number", "\\." },
-	{ "Number", "\\_" },
+	{ "Number", "%." },
+	{ "Number", "%_" },
 }
 
 for _, group in ipairs(groups) do
