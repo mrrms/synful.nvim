@@ -15,7 +15,7 @@ return {
 	peach = "#B18B8B",
 	amber = "#A06661",
 	flush = "#2E2624",
-	blush = "#752539",
+	blush = "#852044",
 	rouge = "#441C2A",
 	raven = "#252540",
 	space = "#111119",
