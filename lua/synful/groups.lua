@@ -359,7 +359,7 @@ return {
 	typescriptBraces = { link = "LineNr" },
 	typescriptCall = { link = "Todo" },
 	typescriptConditional = { link = "Keyword" },
-	typescriptConditionalParen = { link = "Title" },
+	typescriptConditionalParen = { link = "Tag" },
 	typescriptDOMDocProp = { link = "Boolean" },
 	typescriptDOMWindowProp = { link = "Boolean" },
 	typescriptDefault = { link = "Return" },
@@ -505,7 +505,7 @@ return {
 	DiagnosticWarn = { link = "Tag" },
 	DiagnosticHint = { link = "Boolean" },
 	DiagnosticInfo = { fg = colour.olive },
-	DiagnosticError = { fg = colour.blush },
+	DiagnosticError = { fg = colour.rouge },
 	DiagnosticWarning = { link = "DiagnosticWarn" },
 	DiagnositicSignInfo = { fg = colour.olive },
 	DiagnosticInformation = { fg = colour.olive },
@@ -518,7 +518,6 @@ return {
 	DiagnosticVirtualTextInfo = { fg = colour.capri, bg = colour.steel },
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.flush },
 	DiagnosticVirtualTextError = { fg = colour.blush, bg = colour.rouge },
-
 	---------
 	-- Lsp --
 	---------
