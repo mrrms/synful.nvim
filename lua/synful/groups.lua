@@ -359,7 +359,7 @@ return {
 	typescriptBraces = { link = "LineNr" },
 	typescriptCall = { link = "Todo" },
 	typescriptConditional = { link = "Keyword" },
-	typescriptConditionalParen = { link = "Tag" },
+	typescriptConditionalParen = { link = "Title" },
 	typescriptDOMDocProp = { link = "Boolean" },
 	typescriptDOMWindowProp = { link = "Boolean" },
 	typescriptDefault = { link = "Return" },
