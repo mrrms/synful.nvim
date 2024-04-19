@@ -1,5 +1,5 @@
 local groups = {
-	{ "luaDot", ".", "Number" },
+	{ "luaDot", "\\.[^\\s\\(\\)\\{\\}\\[\\]\\\"\\']\\+", "Number" },
 	{ "luaLoop", "_", "Number" },
 }
 
