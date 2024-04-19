@@ -1,0 +1,10 @@
+-- Does a lua comment work?
+• It can do bullets?
+Numbers: 22
+Boolean: true, false
+
+'What say you about strings?'
+
+┌───────────┐
+│ BIG TITLE │
+└───────────┘

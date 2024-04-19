@@ -1,6 +1,6 @@
 local groups = {
-	{ "luaDot", "%.", "Number" },
-	{ "luaLoop", "%_", "Number" },
+	{ "luaDot", ".", "Number" },
+	{ "luaLoop", "_", "Number" },
 }
 
 for _, group in ipairs(groups) do
