@@ -1,30 +1,23 @@
-vim.cmd("syntax match txtComment '--.*'")
-vim.cmd("syntax match txtString '\".*\"'")
-vim.cmd("syntax match txtBoolean 'true'")
-vim.cmd("syntax match txtBoolean 'false'")
-vim.cmd("syntax match txtTodo '\\(TODO\\|NOTE\\|FIXME\\)'")
-vim.cmd("syntax match txtWarn '\\(WARNING\\)'")
-vim.cmd("syntax match txtTLCorner '┌.*'")
-vim.cmd("syntax match txtSlash '─.*'")
-vim.cmd("syntax match txtBar '│.*'")
-vim.cmd("syntax match txtBLCorner '└.*'")
-vim.cmd("syntax match txtBullet '•.*'")
-vim.cmd("syntax match txtNumber '\\d\\+'")
-vim.cmd('syntax region txtQuotes start=+"+ end=+"+')
-vim.cmd("syntax region txtTernary start=+`+ end=+`+")
-vim.cmd("syntax region txtSingleQuotes start=+'+ end=+'+")
+local groups = {
+	{ "txtBar", "│.*", "Macro" },
+	{ "txtSlash", "─.*", "Macro" },
+	{ "txtBoolean", "true", "Boolean" },
+	{ "txtBoolean", "false", "Boolean" },
+	{ "txtBullet", "•.*", "Macro" },
+	{ "txtBLCorner", "└.*", "Macro" },
+	{ "txtTLCorner", "┌.*", "Macro" },
+	{ "txtComment", "--.*", "Comment" },
+	{ "txtNumber", "\\d\\+", "Number" },
+	{ "txtString", '".*"', "String" },
+	{ "txtWarn", "\\(WARNING\\)", "Tag" },
+	{ "txtTodo", "\\(TODO\\|NOTE\\|FIXME\\)", "Todo" },
+}
 
-vim.cmd("hi def link txtComment Comment")
-vim.cmd("hi def link txtString String")
-vim.cmd("hi def link txtBoolean Boolean")
-vim.cmd("hi def link txtNumber Number")
-vim.cmd("hi def link txtTodo Todo")
-vim.cmd("hi def link txtTLCorner Macro")
-vim.cmd("hi def link txtSlash Macro")
-vim.cmd("hi def link txtBar Macro")
-vim.cmd("hi def link txtBLCorner Macro")
-vim.cmd("hi def link txtBullet Macro")
-vim.cmd("hi def link txtQuotes String")
-vim.cmd("hi def link txtSingleQuotes String")
-vim.cmd("hi def link txtTernary Tag")
-vim.cmd("hi def link txtWarn Tag")
+for _, group in ipairs(groups) do
+	vim.fn.matchadd(group[1], group[2])
+	vim.api.nvim_set_hl(0, group[1], { link = group[3] })
+end
+
+-- vim.cmd('syntax region txtQuotes start=+"+ end=+"+')
+-- vim.cmd("syntax region txtTernary start=+`+ end=+`+")
+-- vim.cmd("syntax region txtSingleQuotes start=+'+ end=+'+")

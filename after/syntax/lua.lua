@@ -1,8 +1,9 @@
 local groups = {
-	{ "Number", "%." },
-	{ "Number", "%_" },
+	{ "luaDot", "%.", "Number" },
+	{ "luaLoop", "%_", "Number" },
 }
 
 for _, group in ipairs(groups) do
-	vim.cmd("syntax match " .. group[1] .. " '" .. group[2] .. "'")
+	vim.fn.matchadd(group[1], group[2])
+	vim.api.nvim_set_hl(0, group[1], { link = group[3] })
 end
