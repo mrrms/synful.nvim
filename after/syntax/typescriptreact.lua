@@ -1,6 +1,5 @@
 local groups = {
 	{ "tsxComma", ",", "LineNr" },
-	{ "tsxBoolean", "*", "Boolean" },
 	{ "tsxTernary", "||", "Tag" },
 }
 
