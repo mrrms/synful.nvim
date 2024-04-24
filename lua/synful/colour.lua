@@ -2,30 +2,22 @@ return {
 	pearl = "#97a1cf",
 	slate = "#68709E",
 	ashen = "#454973",
-
 	capri = "#7993E0",
-	steel = "#5D6094",
-	stone = "#4F4F75",
-
+	royal = "#5358A1",
+	steel = "#383C76",
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
 	purps = "#413965",
-
 	paris = "#93B3AA",
 	olive = "#597A69",
 	green = "#2E4545",
-
 	peach = "#E8A0A0",
 	amber = "#A06661",
 	flush = "#2E2624",
-
 	blush = "#853045",
 	rouge = "#702533",
 	blood = "#551125",
-
 	raven = "#252540",
 	space = "#111119",
 	depth = "#090917",
 }
-
--- royal = "#394491", -- "#5358A1",
