@@ -517,7 +517,7 @@ return {
 	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
 	DiagnosticVirtualTextInfo = { fg = colour.capri, bg = colour.steel },
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.flush },
-	DiagnosticVirtualTextError = { fg = colour.blush, bg = colour.rouge },
+	DiagnosticVirtualTextError = { fg = colour.blush, bg = colour.blood },
 	---------
 	-- Lsp --
 	---------
