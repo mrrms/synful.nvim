@@ -223,6 +223,7 @@ return {
 	jsonQuote = { link = "Macro" },
 	jsoncBoolean = { link = "Boolean" },
 	jsoncBraces = { link = "LineNr" },
+	jsonBraces = { link = "LineNr" },
 	jsxAttrib = { link = "Todo" },
 	jsxBraces = { link = "LineNr" },
 	jsxCloseComponentName = { link = "Macro" },
