@@ -10,7 +10,7 @@ return {
 	CodeiumSuggestion = { fg = colour.purps },
 	Command = { fg = colour.slate, bold = true },
 	Comment = { fg = colour.ashen },
-	Conceal = { fg = colour.paris },
+	Conceal = { fg = colour.purps },
 	Conditional = { fg = colour.mauve, italic = true },
 	Constant = { link = "Macro" },
 	Cursor = { fg = colour.olive },
