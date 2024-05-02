@@ -6,6 +6,7 @@ local groups = {
 	{ "txtBullet", "•.*", "Macro" },
 	{ "txtBLCorner", "└.*", "LineNr" },
 	{ "txtTLCorner", "┌.*", "LineNr" },
+	{ "txtJunction", "├.*", "LineNr" },
 	{ "txtComment", "--.*", "Comment" },
 	{ "txtNumber", "\\d\\+", "Number" },
 	{ "txtString", '".*"', "String" },
