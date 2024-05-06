@@ -506,7 +506,7 @@ return {
 	DiagnosticWarn = { link = "Tag" },
 	DiagnosticHint = { link = "Boolean" },
 	DiagnosticInfo = { fg = colour.olive },
-	DiagnosticError = { fg = colour.rouge },
+	DiagnosticError = { fg = colour.blood },
 	DiagnosticWarning = { link = "DiagnosticWarn" },
 	DiagnositicSignInfo = { fg = colour.olive },
 	DiagnosticInformation = { fg = colour.olive },
@@ -514,11 +514,11 @@ return {
 	DiagnosticUnderlineHint = { fg = colour.olive, undercurl = true },
 	DiagnosticUnderlineInfo = { fg = colour.olive, undercurl = true },
 	DiagnosticUnderlineWarn = { fg = colour.amber, undercurl = true },
-	DiagnosticUnderlineError = { fg = colour.rouge, undercurl = true },
+	DiagnosticUnderlineError = { fg = colour.blood, undercurl = true },
 	DiagnosticVirtualTextHint = { fg = colour.paris, bg = colour.green },
 	DiagnosticVirtualTextInfo = { fg = colour.capri, bg = colour.steel },
 	DiagnosticVirtualTextWarn = { fg = colour.amber, bg = colour.flush },
-	DiagnosticVirtualTextError = { fg = colour.blush, bg = colour.blood },
+	DiagnosticVirtualTextError = { fg = colour.rouge, bg = colour.blood },
 	---------
 	-- Lsp --
 	---------

@@ -15,7 +15,7 @@ return {
 	amber = "#A06661",
 	flush = "#2E2624",
 	blush = "#853045",
-	rouge = "#702533",
+	rouge = "#752539",
 	blood = "#551125",
 	raven = "#272745",
 	depth = "#191931",
