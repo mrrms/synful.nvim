@@ -380,7 +380,7 @@ return {
 	typescriptFuncKeyword = { link = "Keyword" },
 	typescriptFuncName = { fg = colour.slate, bold = true },
 	typescriptFuncTypeArrow = { link = "LineNr" },
-	typescriptGlobal = { link = "Boolean" },
+	typescriptGlobal = { link = "Return" },
 	typescriptHeadersMethod = { link = "Macro" },
 	typescriptIdentifierName = { link = "Boolean" },
 	typescriptImport = { fg = colour.royal },
