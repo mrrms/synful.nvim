@@ -1,4 +1,5 @@
 return {
+	squal = "#BEBEEF",
 	pearl = "#97a1cf",
 	slate = "#68709E",
 	ashen = "#454565",
