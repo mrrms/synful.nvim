@@ -1,6 +1,7 @@
 local colour = require("synful.colour")
 
 return {
+	LineNr = { fg = colour.ashen },
 	Bold = { bold = true },
 	Boolean = { fg = colour.mauve },
 	Macro = { fg = colour.royal },
@@ -56,7 +57,6 @@ return {
 	LazyDimmed = { link = "Tag" },
 	LazyNormal = { link = "pmenu" },
 	LazyProp = { link = "Boolean" },
-	LineNr = { fg = colour.ashen },
 	MatchParen = { fg = colour.blush, bold = true },
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	typescriptAliasKeyword = { fg = colour.olive },

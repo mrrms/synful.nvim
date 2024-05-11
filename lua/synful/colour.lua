@@ -1,8 +1,8 @@
 return {
-	squal = "#BEBEEF",
-	pearl = "#97a1cf",
 	slate = "#68709E",
-	ashen = "#454565",
+	pearl = "#97a1cf",
+	squal = "#BEBEEF",
+	ashen = "#434377",
 	capri = "#7993E0",
 	royal = "#5358A1",
 	steel = "#383C76",
