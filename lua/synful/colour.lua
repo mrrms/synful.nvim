@@ -11,7 +11,7 @@ return {
 	purps = "#413965",
 	paris = "#93B3AA",
 	olive = "#597A69",
-	green = "#2E4545",
+	bazil = "#2E4545",
 	peach = "#E8A0A0",
 	amber = "#A06661",
 	flush = "#2E2624",
