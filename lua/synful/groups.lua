@@ -57,6 +57,7 @@ return {
 	LazyDimmed = { link = "Tag" },
 	LazyNormal = { link = "pmenu" },
 	LazyProp = { link = "Boolean" },
+	LazyButton = { fg = colour.slate, bg = colour.raven },
 	MatchParen = { fg = colour.blush, bold = true },
 	NoiceCmdlinePopupBorder = { link = "FloatBorder" },
 	typescriptAliasKeyword = { fg = colour.olive },
