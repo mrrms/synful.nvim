@@ -18,7 +18,7 @@ return {
 	blush = "#771545",
 	rouge = "#5D2A37",
 	blood = "#38121C",
-	raven = "#292950",
+	raven = "#232333",
 	depth = "#191933",
 	space = "#000009",
 }
