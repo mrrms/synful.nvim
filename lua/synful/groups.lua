@@ -92,7 +92,7 @@ return {
 	StatusLine = { link = "NonText" },
 	StorageClass = { link = "Boolean" },
 	StatusLineNC = { fg = colour.space, bg = "NONE" },
-	String = { fg = colour.paris, italic = true },
+	String = { fg = colour.paris },
 	Structure = { link = "Title" },
 	Substitute = { link = "Title" },
 	TabLine = { link = "LineNr" },
