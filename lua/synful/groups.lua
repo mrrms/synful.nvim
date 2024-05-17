@@ -109,7 +109,7 @@ return {
 	Operator = { link = "LineNr" },
 	Pmenu = { fg = colour.pearl },
 	PmenuSbar = { link = "Title" },
-	PmenuSel = { fg = colour.pearl, bg = colour.coral },
+	PmenuSel = { fg = colour.space, bg = colour.coral },
 	PmenuThumb = { fg = colour.raven, bg = "NONE" },
 	PreCondit = { link = "LineNr" },
 	PreProc = { link = "Normal" },
