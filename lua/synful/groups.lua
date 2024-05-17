@@ -71,7 +71,7 @@ return {
 	typescriptDOMFormProp = { fg = colour.olive },
 	Noise = { link = "Boolean" },
 	NonText = { fg = "NONE", bg = "NONE" },
-	Normal = { fg = colour.pearl, bg = "NONE" },
+	Normal = { fg = colour.pearl, bg = colour.space },
 	NormalFloat = { fg = colour.depth, bg = colour.depth },
 	Number = { link = "Boolean" },
 	NvimInternalError = { link = "Error" },
