@@ -1,8 +1,12 @@
 local colour = require("synful.colour")
 
 return {
-	LineNr = { fg = colour.ashen },
 	["@variable"] = { fg = colour.pearl },
+	["@keyword.lua"] = { link = "Cursor" },
+	["@keyword.conditional.lua"] = { link = "Cursor" },
+	["@keyword.return.lua"] = { link = "Return" },
+	["@keyword.operator.lua"] = { link = "Boolean" },
+	LineNr = { fg = colour.ashen },
 	Bold = { bold = true },
 	Boolean = { fg = colour.mauve },
 	Macro = { fg = colour.royal },
