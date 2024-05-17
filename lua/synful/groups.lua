@@ -6,6 +6,7 @@ return {
 	["@keyword.conditional.lua"] = { link = "Cursor" },
 	["@keyword.return.lua"] = { link = "Return" },
 	["@keyword.operator.lua"] = { link = "Boolean" },
+	["@constant.builtin.lua"] = { link = "Boolean" },
 	LineNr = { fg = colour.ashen },
 	Bold = { bold = true },
 	Boolean = { fg = colour.mauve },
