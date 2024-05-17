@@ -14,6 +14,8 @@ return {
 	bazil = "#2E4545",
 	peach = "#E8A0A0",
 	amber = "#A06661",
+	coral = "#C95E50",
+	tiger = "#A31925",
 	flush = "#2E2624",
 	blush = "#771545",
 	rouge = "#5D2A37",
