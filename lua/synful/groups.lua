@@ -7,6 +7,8 @@ return {
 	["@keyword.return.lua"] = { link = "Return" },
 	["@keyword.operator.lua"] = { link = "Boolean" },
 	["@constant.builtin.lua"] = { link = "Boolean" },
+	["@punctuation.bracket.lua"] = { link = "LineNr" },
+	["@operator.lua"] = { link = "Operator" },
 	LineNr = { fg = colour.ashen },
 	Bold = { bold = true },
 	Boolean = { fg = colour.mauve },
