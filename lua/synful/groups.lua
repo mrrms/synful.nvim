@@ -72,7 +72,7 @@ return {
 	Noise = { link = "Boolean" },
 	NonText = { fg = "NONE", bg = "NONE" },
 	Normal = { fg = colour.pearl, bg = colour.space },
-	NormalFloat = { fg = colour.depth, bg = colour.depth },
+	NormalFloat = { fg = colour.ashen, bg = colour.depth },
 	Number = { link = "Boolean" },
 	NvimInternalError = { link = "Error" },
 	Operator = { link = "LineNr" },
