@@ -2,6 +2,7 @@ local colour = require("synful.colour")
 
 return {
 	LineNr = { fg = colour.ashen },
+	["@variable"] = { fg = colour.pearl },
 	Bold = { bold = true },
 	Boolean = { fg = colour.mauve },
 	Macro = { fg = colour.royal },
