@@ -48,7 +48,7 @@ return {
 	FloatShadowThrough = { link = "NonText" },
 	FoldColumn = { link = "FloatBorder" },
 	Folded = { fg = colour.purps, italic = true },
-	Function = { fg = colour.steel, bold = true },
+	Function = { fg = colour.squal, bold = true },
 	GitGutterAdd = { link = "KeywordReturn" },
 	GitGutterChange = { link = "LineNr" },
 	GitGutterChangeDelete = { link = "Tag" },
