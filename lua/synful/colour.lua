@@ -21,6 +21,6 @@ return {
 	rouge = "#5D2A37",
 	blood = "#38121C",
 	raven = "#232333",
-	depth = "#191933",
+	depth = "#191927",
 	space = "#000009",
 }
