@@ -76,10 +76,10 @@ return {
 	Number = { link = "Boolean" },
 	NvimInternalError = { link = "Error" },
 	Operator = { link = "LineNr" },
-	Pmenu = { fg = colour.slate, bg = colour.depth },
+	Pmenu = { fg = colour.ashen, bg = colour.depth },
 	PmenuSbar = { link = "Title" },
 	PmenuSel = { fg = colour.space, bg = colour.coral },
-	PmenuThumb = { fg = colour.raven, bg = "NONE" },
+	PmenuThumb = { fg = colour.depth, bg = colour.coral },
 	PreCondit = { link = "LineNr" },
 	PreProc = { link = "Normal" },
 	Repeat = { fg = colour.royal },
@@ -407,12 +407,12 @@ return {
 	---------
 	-- cmp --
 	---------
-	CmpItemAbbr = { fg = colour.pearl },
-	CmpItemMenu = { fg = colour.pearl },
+	CmpItemAbbr = { fg = colour.ashen },
+	CmpItemMenu = { fg = colour.slate },
 	CmpItemKindColor = { fg = colour.paris },
 	CmpItemKindFolder = { fg = colour.steel },
 	CmpItemKindMethod = { fg = colour.steel },
-	CmpItemKindDefault = { fg = colour.steel },
+	CmpItemKindDefault = { fg = colour.ashen },
 	CmpItemKindKeyword = { fg = colour.royal },
 	CmpCompletionBorder = { link = "FloatBorder" },
 	CmpItemKindConstant = { fg = colour.steel },
@@ -423,7 +423,7 @@ return {
 	CmpItemAbbrMatch = { fg = colour.coral },
 	CmpItemAbbrMatchFuzzy = { fg = colour.coral },
 	CmpItemKindMatchFuzzy = { fg = colour.coral },
-	CmpDocumentation = { fg = colour.coral, bg = colour.raven },
+	CmpDocumentation = { fg = colour.ashen, bg = colour.raven },
 	CmpItemAbbrMatchDefault = { fg = colour.coral },
 	CmpItemAbbrMatchFuzzyDefault = { fg = colour.coral },
 
