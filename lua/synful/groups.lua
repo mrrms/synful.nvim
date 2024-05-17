@@ -1,3 +1,4 @@
+-- As of neovim 0.10 new highlight definitions are designed to be more compatible with upstream treesitter definitions. See: https://neovim.io/doc/user/treesitter.html#treesitter-highlight-groups
 local colour = require("synful.colour")
 
 return {
@@ -10,6 +11,22 @@ return {
 	["@punctuation.bracket.lua"] = { link = "LineNr" },
 	["@operator.lua"] = { link = "Operator" },
 	["@constructor.lua"] = { link = "LineNr" },
+	["@string.special.path"] = { fg = colour.bazil },
+	["@string.special.url"] = { fg = colour.royal, italic = true },
+	["@keyword.conditional.ternary"] = { fg = colour.coral },
+	["@punctuation.delimiter"] = { link = "Delimiter" },
+	["@punctuation.bracket"] = { link = "LineNr" },
+	["@punctuation.special"] = { link = "LineNr" },
+	["@comment.documentation"] = { fg = colour.slate },
+	["@comment.error"] = { link = "Error" },
+	["@comment.warning"] = { link = "Tag" },
+	["@comment.todo"] = { fg = colour.capri },
+	["@comment.note"] = { link = "Return" },
+	["@tag"] = { fg = colour.steel, bold = true },
+	["@tag.builtin"] = { link = "@tag" },
+	["@tag.attribute"] = { fg = colour.capri },
+	["@tag.delimiter"] = { link = "LineNr" },
+	["@spell"] = { fg = colour.coral, undercurl = true }, --@spell this commont that nees to speell czecked
 	Boolean = { fg = colour.mauve },
 	Character = { fg = colour.mauve, italic = true },
 	CmpItemAbbrMatch = { fg = colour.coral },
@@ -171,7 +188,7 @@ return {
 	TabLine = { link = "LineNr" },
 	TabLineFill = { link = "Normal" },
 	TabLineSel = { link = "mailSubject" },
-	Tag = { fg = colour.amber },
+	Tag = { fg = colour.coral },
 	TargetWord = { fg = colour.capri },
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeMatching = { fg = colour.coral },
@@ -182,7 +199,6 @@ return {
 	TelescopeSelection = { link = "PmenuSel" },
 	TelescopeSelectionCaret = { link = "PmenuSel" },
 	Title = { link = "Normal" },
-	Todo = { fg = colour.capri },
 	Type = { link = "String" },
 	Typedef = { link = "LineNr" },
 	Underlined = { fg = colour.rouge },
@@ -360,8 +376,6 @@ return {
 	typescriptTemplate = { link = "Tag" },
 	typescriptTemplateSB = { link = "Tag" },
 	typescriptTemplateSubstitution = { link = "Todo" },
-	typescriptTernary = { link = "Todo" },
-	typescriptTernaryOp = { link = "Boolean" },
 	typescriptTry = { link = "Boolean" },
 	typescriptTypeAnnotation = { link = "LineNr" },
 	typescriptTypeBrackets = { link = "LineNr" },
