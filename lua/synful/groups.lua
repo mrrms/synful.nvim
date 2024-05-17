@@ -76,7 +76,7 @@ return {
 	Number = { link = "Boolean" },
 	NvimInternalError = { link = "Error" },
 	Operator = { link = "LineNr" },
-	Pmenu = { fg = colour.pearl },
+	Pmenu = { fg = colour.slate, bg = colour.depth },
 	PmenuSbar = { link = "Title" },
 	PmenuSel = { fg = colour.space, bg = colour.coral },
 	PmenuThumb = { fg = colour.raven, bg = "NONE" },
