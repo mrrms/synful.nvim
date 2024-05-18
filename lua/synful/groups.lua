@@ -108,7 +108,7 @@ return {
 	KeywordFunction = { link = "Macro" },
 	KeywordReturn = { fg = colour.olive, bold = true },
 	Label = { link = "Macro" },
-	LazyButton = { fg = colour.slate, bg = colour.raven },
+	LazyButton = { fg = colour.pearl, bg = colour.raven },
 	LazyCommit = { link = "Boolean" },
 	LazyDimmed = { link = "Tag" },
 	LazyNormal = { link = "Pmenu" },
