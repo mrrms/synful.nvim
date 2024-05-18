@@ -11,8 +11,8 @@ return {
 	mauve = "#734A80",
 	olive = "#7E9B8C",
 	bazil = "#2E4545",
-	peach = "#E8A0A0",
-	amber = "#68403C",
 	rouge = "#642F3D",
 	blood = "#38121C",
+	peach = "#E8A0A0",
+	amber = "#68403C",
 }
