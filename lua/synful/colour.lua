@@ -9,7 +9,7 @@ return {
 	raven = "#353355",
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
-	olive = "#597A69",
+	olive = "#7E9B8C",
 	bazil = "#2E4545",
 	peach = "#E8A0A0",
 	amber = "#68403C",
