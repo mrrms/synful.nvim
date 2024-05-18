@@ -15,7 +15,7 @@ lualine.setup({
 				c = { fg = colour.raven },
 			},
 			insert = {
-				a = { fg = colour.green },
+				a = { fg = colour.bazil },
 				b = { fg = colour.raven },
 			},
 			visual = { a = { fg = colour.capri } },
