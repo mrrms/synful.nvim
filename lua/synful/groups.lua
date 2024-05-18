@@ -113,7 +113,7 @@ return {
 	LazyDimmed = { link = "Tag" },
 	LazyNormal = { link = "Pmenu" },
 	LazyProp = { link = "Boolean" },
-	LineNr = { fg = colour.ashen },
+	LineNr = { fg = colour.raven },
 	LspFloatWinBorder = { link = "Conceal" },
 	LspFloatWinNormal = { bg = colour.raven },
 	LspSagaBorderTitle = { fg = colour.capri },
