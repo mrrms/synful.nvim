@@ -19,7 +19,7 @@ return {
 	tiger = "#A31925",
 	rouge = "#5D2A37",
 	blood = "#38121C",
-	raven = "#232333",
+	raven = "#333355",
 	depth = "#191927",
 	space = "#000009",
 }
