@@ -3,7 +3,7 @@ local colour = require("synful.colour")
 
 return {
 	["@variable"] = { link = "Normal" },
-	["@keyword.lua"] = { link = "Cursor" },
+	["@keyword.lua"] = { fg = colour.olive },
 	["@keyword.conditional.lua"] = { link = "Cursor" },
 	["@keyword.return.lua"] = { link = "Return" },
 	["@keyword.operator.lua"] = { link = "Boolean" },
@@ -53,8 +53,7 @@ return {
 	Conditional = { link = "Character" },
 	Constant = { link = "Macro" },
 	Cursor = { link = "Cursor" },
-	CursorLine = { bg = colour.depth },
-	CursorLineNr = { fg = colour.coral, bg = colour.depth },
+	CursorLineNr = { fg = colour.pearl },
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
 	DefinitionCount = { link = "Delimiter" },
