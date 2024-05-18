@@ -53,6 +53,7 @@ return {
 	Conditional = { link = "Character" },
 	Constant = { link = "Macro" },
 	Cursor = { link = "Cursor" },
+	CursorLine = { bg = colour.space },
 	CursorLineNr = { fg = colour.pearl },
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
