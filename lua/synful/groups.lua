@@ -102,6 +102,7 @@ return {
 	Identifier = { link = "Normal" },
 	Ignore = { link = "LineNr" },
 	IncSearch = { link = "Visual" },
+	CurSearch = { fg = colour.ultra, bg = colour.mauve },
 	Include = { link = "Macro" },
 	Italic = { italic = true },
 	Keyword = { link = "Macro" },
