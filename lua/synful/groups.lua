@@ -3,7 +3,7 @@ local colour = require("synful.colour")
 
 return {
 	["@variable"] = { link = "Normal" },
-	["@keyword.lua"] = { fg = colour.paris },
+	["@keyword.lua"] = { fg = colour.olive },
 	["@keyword.conditional.lua"] = { fg = colour.paris },
 	["@keyword.return.lua"] = { link = "Return" },
 	["@keyword.operator.lua"] = { link = "Boolean" },
@@ -11,7 +11,7 @@ return {
 	["@punctuation.bracket.lua"] = { link = "LineNr" },
 	["@operator.lua"] = { link = "Operator" },
 	["@constructor.lua"] = { link = "LineNr" },
-	["@string.special.path"] = { fg = colour.bazil },
+	["@string.special.path"] = { fg = colour.olive },
 	["@string.special.url"] = { fg = colour.royal, italic = true },
 	["@keyword.conditional.ternary"] = { link = "Tag" },
 	["@punctuation.delimiter"] = { link = "Delimiter" },
@@ -168,7 +168,7 @@ return {
 	ReferencesCount = { link = "Delimiter" },
 	ReferencesIcon = { link = "Delimiter" },
 	Repeat = { link = "Macro" },
-	Return = { fg = colour.bazil, bold = true },
+	Return = { fg = colour.olive, bold = true },
 	Search = { fg = colour.capri, bg = colour.steel, bold = true },
 	SignColumn = { link = "LineNr" },
 	Special = { link = "Macro" },
