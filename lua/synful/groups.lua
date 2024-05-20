@@ -4,7 +4,7 @@ local colour = require("synful.colour")
 return {
 	["@variable"] = { link = "Normal" },
 	["@keyword.lua"] = { fg = colour.olive },
-	["@keyword.conditional.lua"] = { fg = colour.paris },
+	["@keyword.conditional.lua"] = { fg = colour.mauve },
 	["@keyword.return.lua"] = { link = "Return" },
 	["@keyword.operator.lua"] = { link = "Boolean" },
 	["@constant.builtin.lua"] = { link = "Boolean" },
@@ -414,3 +414,5 @@ return {
 	zshTodo = { link = "@comment.todo" },
 	zslhComment = { link = "Comment" },
 }
+
+-- @keyword.conditional.lua
