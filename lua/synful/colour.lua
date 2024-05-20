@@ -10,7 +10,7 @@ return {
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
 	paris = "#7F9B98",
-	bazil = "#355051", -- #2E4545
+	bazil = "#45645E", -- #597A69 #355051
 	blush = "#642F3D",
 	rouge = "#38121C",
 	peach = "#E8A0A0",
