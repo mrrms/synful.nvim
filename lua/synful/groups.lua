@@ -54,7 +54,7 @@ return {
 	Constant = { link = "Macro" },
 	Cursor = { fg = colour.pearl, bg = colour.paris },
 	CursorLine = {},
-	CursorLineNr = { fg = colour.pearl },
+	CursorLineNr = { fg = colour.slate },
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
 	DefinitionCount = { link = "Delimiter" },
