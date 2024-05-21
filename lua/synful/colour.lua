@@ -5,8 +5,8 @@ return {
 	capri = "#7993E0",
 	royal = "#6070C1", --
 	steel = "#383C76",
-	ashen = "#404060",
-	raven = "#353355",
+	ashen = "#434369",
+	raven = "#303050",
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
 	paris = "#93B3AA",
