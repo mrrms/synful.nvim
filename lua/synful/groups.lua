@@ -277,6 +277,8 @@ return {
 	keyword = { fg = colour.steel, bold = true },
 	mailHeader = { link = "LineNr" },
 	mailHeaderKey = { link = "LineNr" },
+	mailHeaderEmail = { link = "@spell" },
+	mailEmail = { link = "@spell" },
 	mailSubject = { fg = colour.slate, bold = true },
 	muttrcAliasEncEmail = { link = "LineNr" },
 	muttrcAliasKey = { link = "LineNr" },
