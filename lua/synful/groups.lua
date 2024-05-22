@@ -17,6 +17,7 @@ return {
 	["@punctuation.delimiter"] = { link = "Delimiter" },
 	["@punctuation.bracket"] = { link = "@comment" },
 	["@punctuation.special"] = { link = "@comment" },
+	["@comment"] = { link = "Comment" },
 	["@comment.documentation"] = { link = "Comment" },
 	["@comment.error"] = { link = "Error" },
 	["@comment.warning"] = { link = "Tag" },
