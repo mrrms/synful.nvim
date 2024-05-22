@@ -1,12 +1,14 @@
 return {
 	space = "#000009",
-	pearl = "#97a1cf",
-	slate = "#68709E",
-	capri = "#7993E0",
-	royal = "#6070C1", --
-	steel = "#383C76",
-	ashen = "#434369",
+	depth = "#111123",
 	raven = "#303050",
+	ashen = "#434369",
+	steel = "#383C76",
+	metal = "#5358A1",
+	royal = "#6070C1", --
+	capri = "#7993E0",
+	slate = "#68709E",
+	pearl = "#97a1cf",
 	ultra = "#CBA6F7",
 	mauve = "#734A80",
 	paris = "#93B3AA",
@@ -15,6 +17,5 @@ return {
 	rouge = "#38121C",
 	peach = "#E8A0A0",
 	amber = "#68403C",
-	metal = "#5358A1",
 	bazil = "#2E4545",
 }
