@@ -161,7 +161,7 @@ return {
 	NvimInternalError = { link = "Error" },
 	Operator = { link = "@comment" },
 	Pmenu = { fg = colour.ashen },
-	PmenuSbar = { link = "Normal" },
+	PmenuSbar = { fg = colour.royal, bg = colour.raven },
 	PmenuSel = { fg = colour.pearl, bg = colour.depth },
 	PmenuThumb = { fg = colour.space, bg = colour.space },
 	PreCondit = { link = "@comment" },
