@@ -160,7 +160,7 @@ return {
 	Number = { link = "Boolean" },
 	NvimInternalError = { link = "Error" },
 	Operator = { link = "@comment" },
-	Pmenu = { fg = colour.ashen, bg = colour.space },
+	Pmenu = { fg = colour.ashen },
 	PmenuSbar = { link = "Normal" },
 	PmenuSel = { fg = colour.pearl, bg = colour.depth },
 	PmenuThumb = { fg = colour.space, bg = colour.space },
