@@ -1,7 +1,5 @@
 local groups = require("synful.groups")
 
-require("synful.lualine")
-
 return {
 	load = function()
 		if vim.g.colors_name then
