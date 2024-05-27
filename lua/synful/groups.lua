@@ -2,7 +2,7 @@
 local colour = require("synful.colour")
 
 return {
-	Normal = { link = "Normal" },
+	Normal = { fg = colour.pearl },
 	Comment = { fg = colour.raven, italic = true },
 	CodeiumSuggestion = { link = "Comment" },
 	Command = { fg = colour.slate, bold = true },
@@ -74,6 +74,11 @@ return {
 	GitGutterChangeDelete = { link = "Tag" },
 	GitGutterDelete = { link = "Boolean" },
 	Directory = { fg = colour.steel, bold = true },
+	LazyButton = { fg = colour.ultra, bg = colour.depth },
+	LazyCommit = { link = "Boolean" },
+	LazyDimmed = { link = "Tag" },
+	LazyNormal = { link = "Pmenu" },
+	LazyProp = { link = "Boolean" },
 	-- mailHeader = { link = "LineNr" },
 	-- mailHeaderKey = { link = "LineNr" },
 	-- mailHeaderEmail = { link = "Boolean" },
@@ -171,11 +176,6 @@ return {
 	-- KeywordFunction = { link = "Macro" },
 	-- KeywordReturn = { link = "Return" },
 	-- Label = { link = "Macro" },
-	-- LazyButton = { fg = colour.pearl, bg = colour.raven },
-	-- LazyCommit = { link = "Boolean" },
-	-- LazyDimmed = { link = "Tag" },
-	-- LazyNormal = { link = "Pmenu" },
-	-- LazyProp = { link = "Boolean" },
 	-- LspFloatWinBorder = { link = "FloatBorder" },
 	-- LspFloatWinNormal = { bg = colour.space },
 	-- LspSagaBorderTitle = { fg = colour.paris },
