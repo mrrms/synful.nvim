@@ -37,6 +37,12 @@ end
 
 vim.api.nvim_create_augroup("backtick_highlight", { clear = true })
 
+vim.api.nvim_create_autocmd("FileType", {
+	group = "backtick_highlight",
+	pattern = ".txt",
+	callback = highlight_backticks,
+})
+
 -- vim.cmd('syntax region txtQuotes start=+"+ end=+"+')
 -- vim.cmd("syntax region txtTernary start=+`+ end=+`+")
 -- vim.cmd("syntax region txtSingleQuotes start=+'+ end=+'+")
