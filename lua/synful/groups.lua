@@ -39,6 +39,7 @@ return {
 	ErrorMsg = { fg = colour.blush },
 	FloatBorder = { fg = colour.raven, bg = "NONE" },
 	Function = { fg = colour.metal, bold = true },
+	["@keyword.function.lua"] = { link = "Function" },
 	GitGutterAdd = { link = "Return" },
 	GitGutterChange = { link = "Macro" },
 	GitGutterChangeDelete = { link = "Tag" },
