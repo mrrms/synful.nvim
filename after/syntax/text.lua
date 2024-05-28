@@ -1,5 +1,6 @@
 local groups = {
 	{ "txtNormal", ".", "CursorLineNr" },
+	{ "txtWarn", "`.*`", "Tag" },
 	{ "txtBar", "│.*", "LineNr" },
 	{ "txtSlash", "─.*", "LineNr" },
 	{ "txtBoolean", "true", "Boolean" },
