@@ -1,4 +1,5 @@
 local groups = {
+	{ "txtNormal", ".", "Pmenu" },
 	{ "txtBar", "│.*", "LineNr" },
 	{ "txtSlash", "─.*", "LineNr" },
 	{ "txtBoolean", "true", "Boolean" },
