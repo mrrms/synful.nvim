@@ -90,7 +90,7 @@ return {
 	PmenuSbar = { fg = colour.royal, bg = colour.raven },
 	PmenuSel = { fg = colour.pearl, bg = colour.depth },
 	PmenuThumb = { fg = colour.space, bg = colour.space },
-	PreProc = { fg = colour.ashen },
+	PreProc = { fg = colour.slate },
 	Return = { fg = colour.olive, bold = true },
 	Search = { fg = colour.capri, bg = colour.steel, bold = true },
 	Special = { link = "Macro" },
