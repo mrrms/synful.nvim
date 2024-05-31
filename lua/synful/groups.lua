@@ -172,7 +172,7 @@ return {
 	typescriptTemplate = { link = "Tag" },
 	typescriptTemplateSB = { link = "Tag" },
 	typescriptTemplateSubstitution = { link = "Todo" },
-	DiffAdd = { link = "String" },
+	Quote = { link = "Macro" },
 	["@variable"] = { link = "Normal" },
 	["@keyword.lua"] = { fg = colour.olive },
 	["@operator.lua"] = { link = "Operator" },
