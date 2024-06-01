@@ -55,7 +55,7 @@ return {
 	NotifyWARNIcon = { fg = colour.peach },
 	NotifyWARNTitle = { fg = colour.peach },
 	Pmenu = { fg = colour.slate },
-	PmenuSel = { fg = colour.pearl, bg = colour.raven },
+	PmenuSel = { bg = colour.depth },
 	PmenuSbar = { fg = colour.steel, bg = colour.depth },
 	PmenuThumb = { fg = colour.space, bg = colour.space },
 	PreProc = { fg = colour.slate },
