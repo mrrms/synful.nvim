@@ -54,7 +54,7 @@ return {
 	NotifyTRACETitle = { fg = colour.ultra },
 	NotifyWARNIcon = { fg = colour.peach },
 	NotifyWARNTitle = { fg = colour.peach },
-	Pmenu = { fg = colour.slate, bg = colour.space },
+	Pmenu = { fg = colour.slate },
 	PmenuSel = { fg = colour.pearl, bg = colour.raven },
 	PmenuSbar = { fg = colour.steel, bg = colour.depth },
 	PmenuThumb = { fg = colour.space, bg = colour.space },
