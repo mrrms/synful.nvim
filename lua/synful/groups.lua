@@ -174,7 +174,7 @@ return {
 	typescriptTemplateSubstitution = { link = "Todo" },
 	Quote = { link = "Macro" },
 	CmpItemKind = { link = "Boolean" },
-	typescriptArrowFunc = { link = "Comment" },
+	typescriptArrowFunc = { link = "LineNr" },
 	typescriptArrowFuncArg = { link = "Normal" },
 	typescriptArrowFuncDef = { link = "Comment" },
 	tsxCloseComponentName = { link = "Keyword" },
