@@ -195,6 +195,7 @@ return {
 	typescriptTypeAnnotation = { link = "Comment" },
 	vimEnvvar = { link = "Boolean" },
 	vimUserFunc = { link = "Normal" },
+	typescriptFuncCallArg = { fg = colour.slate, italic = true },
 	-- typescriptBOM = { link = "Normal" },
 	-- typescriptAliasKeyword = { link = "Macro" },
 	-- typescriptArrayMethod = { link = "Macro" },
