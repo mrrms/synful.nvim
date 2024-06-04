@@ -194,7 +194,7 @@ return {
 	typescriptDotNotation = { link = "Boolean" },
 	typescriptTypeAnnotation = { link = "Comment" },
 	vimEnvvar = { link = "Boolean" },
-	vimUserFunc = { fg = colour.slate, bold = true, italic = true },
+	vimUserFunc = { link = "Normal" },
 	-- typescriptBOM = { link = "Normal" },
 	-- typescriptAliasKeyword = { link = "Macro" },
 	-- typescriptArrayMethod = { link = "Macro" },
