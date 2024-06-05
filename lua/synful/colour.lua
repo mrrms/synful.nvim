@@ -1,7 +1,7 @@
 return {
 	space = "#000009",
 	depth = "#151523",
-	raven = "#333355",
+	raven = "#252539",
 	ashen = "#434369",
 	steel = "#383C76",
 	metal = "#5358A1",
