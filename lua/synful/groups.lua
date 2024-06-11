@@ -204,7 +204,7 @@ return {
 	typescriptTemplateSubstitution = { link = "Todo" },
 	typescriptTernaryOp = { link = "Tag" },
 	typescriptTypeAnnotation = { link = "Comment" },
-	typescriptTypeBracket = { link = "Comment" },
+	typescriptTypeBracket = { link = "LineNr" },
 	typescriptVariable = { link = "Macro" },
 	-- typescriptAliasKeyword = { link = "Macro" },
 	-- typescriptArrayMethod = { link = "Macro" },
