@@ -135,7 +135,7 @@ return {
 	TelescopePreviewMatch = { link = "MatchParen" },
 	TelescopePromptPrefix = { link = "Boolean" },
 	TelescopePromptTitle = { link = "Macro" },
-	TelescopeSelection = { link = "PmenuSel" },
+	TelescopeSelection = { bg = colour.raven },
 	TelescopeSelectionCaret = { link = "PmenuSel" },
 	Title = { link = "Normal" },
 	Todo = { fg = colour.royal, bold = true },
