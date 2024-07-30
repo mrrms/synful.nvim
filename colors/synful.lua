@@ -2,28 +2,7 @@
 -- └─┐└┬┘│││├┤ │ ││
 -- └─┘ ┴ ┘└┘└  └─┘┴─┘
 
-local colour = {
-	space = "#000009",
-	depth = "#191929",
-	raven = "#292941",
-	ashen = "#353561",
-	steel = "#383C76",
-	metal = "#5358A1",
-	royal = "#6070C1",
-	capri = "#7993E0",
-	slate = "#68709E",
-	pearl = "#97A1CF",
-	ghost = "#BEBEEF",
-	ultra = "#CBA6F7",
-	mauve = "#734A80",
-	blush = "#642F3D",
-	peach = "#E8A0A0",
-	amber = "#68403C",
-	rouge = "#38121C",
-	bazil = "#3C4F50",
-	olive = "#597A69",
-	paris = "#93B3AA",
-}
+local colour = require("colour")
 
 vim.g.colors_name = "synful"
 
@@ -137,9 +116,9 @@ local groups = {
 	Number = { link = "Boolean" },
 	NvimInternalError = { link = "Error" },
 	Operator = { link = "LineNr" },
-	Pmenu = { fg = colour.ashen, bg = colour.depth },
-	PmenuSbar = { fg = colour.steel, bg = colour.depth },
+	Pmenu = { fg = colour.ashen },
 	PmenuSel = { bg = colour.ashen, fg = colour.slate },
+	PmenuSbar = { fg = colour.steel, bg = colour.depth },
 	PmenuThumb = { fg = colour.ashen, bg = colour.depth },
 	PreProc = { link = "Type" },
 	Quote = { link = "Macro" },
