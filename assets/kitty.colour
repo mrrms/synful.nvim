@@ -1,0 +1,25 @@
+#------------
+#-- synful --
+#------------
+background #000009
+foreground #97a1cf
+
+cursor #734A80
+url_color #6070C1
+
+color0 #171729
+color1 #38121C
+color2 #597A69
+color3 #68403C
+color4 #383C76
+color5 #734A80
+color6 #5358A1
+color7 #68709E
+color8 #404060
+color9 #642F3D
+color10 #7E9B8C
+color11 #E8A0A0
+color12 #7993E0
+color13 #CBA6F7
+color14 #6070C1
+color15 #97a1cf

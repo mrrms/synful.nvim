@@ -1,0 +1,23 @@
+# synful theme for lazygit
+gui:
+  border: rounded
+  theme:
+    activeBorderColor:
+      - "#7993E0"
+      - bold
+    inactiveBorderColor:
+      - "#404065"
+    searchingActiveBorderColor:
+      - "#CBA6F7"
+    optionsTextColor:
+      - "#BEBEEF"
+    selectedLineBgColor:
+      - "#404065"
+    cherryPickedCommitBgColor:
+      - "#5358A1"
+    cherryPickedCommitFgColor:
+      - "#734A80"
+    unstagedChangesColor:
+      - "#E8A0A0"
+    defaultFgColor:
+      - "#97A1CF"
