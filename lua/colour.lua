@@ -10,6 +10,7 @@ return {
 	pearl = "#97A1CF",
 	ghost = "#BEBEEF",
 	ultra = "#CBA6F7",
+	coola = "#602E4E",
 	mauve = "#734A80",
 	peach = "#E8A0A0",
 	amber = "#68403C",

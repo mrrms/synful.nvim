@@ -25,7 +25,7 @@ return {
 	Constant = { link = "Macro" },
 	CurSearch = { fg = colour.ultra, bg = colour.mauve },
 	CursorLine = { bg = colour.depth },
-	CursorLineNr = { fg = colour.mauve, bold = true },
+	CursorLineNr = { fg = colour.coola, bold = true },
 	Debug = { link = "Boolean" },
 	Define = { link = "Macro" },
 	Delimiter = { fg = colour.raven },
@@ -264,6 +264,7 @@ return {
 	-- custom groups --
 	-------------------
 	Shell = { fg = colour.depth },
+	StatusHL = { fg = colour.raven, bg = colour.depth },
 	Modified = { fg = colour.blush, bg = colour.depth },
 	WinBarPath = { link = "DiagnosticVirtualTextHint" },
 	WinBarShell = { fg = colour.bazil },
