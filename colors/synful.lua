@@ -1,26 +1,21 @@
 -- ┌─┐┬ ┬┌┐┌┌─┐┬ ┬┬
 -- └─┐└┬┘│││├┤ │ ││
 -- └─┘ ┴ ┘└┘└  └─┘┴─┘
-local M = {}
 
-M.name = "synful"
+local colour = require("colour")
+local groups = require("groups")
+local hues = {}
 
-M.hues = {}
-M.colour = require("colour")
-M.groups = require("groups")
+vim.g.colors_name = "synful"
 
-function M.setup()
-	vim.g.colors_name = "synful"
+vim.cmd.colorscheme("synful")
 
-	vim.cmd.colorscheme("synful")
-
-	for group, opts in pairs(M.groups) do
-		vim.api.nvim_set_hl(0, group, opts)
-	end
-
-	for _, v in pairs(M.colour) do
-		table.insert(M.hues, v)
-	end
+for group, opts in pairs(groups) do
+	vim.api.nvim_set_hl(0, group, opts)
 end
 
-return M
+for _, v in pairs(colour) do
+	table.insert(hues, v)
+end
+
+return { hues = hues }
