@@ -17,3 +17,4 @@ for _, v in pairs(colour) do
 end
 
 vim.g.synful = hues
+vim.g.colour = colour
