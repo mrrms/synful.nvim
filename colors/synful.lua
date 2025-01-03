@@ -13,7 +13,6 @@ end
 
 vim.g.synful = colour
 
--- create a colour picker
 vim.api.nvim_create_user_command("Synful", function()
 	local choices = {}
 
